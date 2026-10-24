@@ -1,0 +1,189 @@
+\section*{阅读准备：先把集合语言译成普通话}
+本讲对应 Debreu《Theory of Value》第一章第2节，并包含老师补充的集合运算、集合列极限。集合像一个装东西的盒子；元素像盒中物品，但盒子本身也可以成为另一个盒子的元素。证明不是举几个例子，而是说明任意符合条件的对象都满足结论。
+\begin{itemize}
+\item $\forall x$读作“对每一个$x$”；$\exists x$读作“至少有一个$x$”。证明前者从任意$x$出发，证明后者给出一个合格对象。
+\item $P\Rightarrow Q$读作“如果$P$，那么$Q$”；$P\Leftrightarrow Q$必须证明两个方向。
+\item 证明$A\subseteq B$：任取$x\in A$，推出$x\in B$。证明$A=B$：证明两个包含，或者对任意$x$写出一串成员资格的等价关系。
+\item 否定“所有人都通过”是“至少一个人没通过”；否定“至少一个人通过”是“所有人都没通过”。这就是后面的德摩根律和集合极限的逻辑基础。
+\end{itemize}
+本讲用$\N=\{1,2,\ldots\}$。$C A=S\setminus A$一律相对于事先指定的全集$S$，换全集时补集会变化。
+
+\Slide{1}{集合论：本讲的任务}
+封面表明本讲从集合语言开始，为函数、极限、凸集和不动点搭建共同的表达方式。学习目标不是背英语术语，而是能把“属于、包含、至少一个、每一个”写成数学式，并反过来读懂式子。本讲后半的集合列极限可以等掌握并交补后再读。
+\Slide{2}{集合在全课程中的位置}
+课程顺序为集合、函数与对应、序关系、实数、极限、连续函数、连续对应、向量和不动点。集合题中的逐元素证明会反复出现在后续章节；例如连续性写成“开集的逆像仍然开”，其中逆像首先就是一个集合。
+\Slide{3}{集合论为什么成为基础语言}
+本页介绍 Cantor 及集合论与分析的联系。你只需理解：数、点、函数都能放进集合研究，因此同一套并交补运算可以服务不同问题。实数集合的结构决定极限能否落在实数内，这正是后续完备性问题，而不是这里要求掌握的历史细节。
+\Slide{4}{集合与明确的成员资格}
+集合必须明确一个对象是否属于它。例如“所有大于2的整数”明确；“所有很大的整数”没有规定“大”的标准，就不是明确描述。$\N,\Q,\R$分别表示正整数、有理数、实数。有理数是两个整数之比，分母不能为0。课堂采用朴素集合语言；“所有满足某性质的对象”在严格公理集合论中还要有范围限制，这里通常写成$\{x\in S:P(x)\}$。
+\Slide{5}{从个别对象转向整体结构}
+引入集合是为了同时讨论许多对象。例如某消费者所有买得起的商品组合组成预算集，而不只是某一次购买；一个最优化问题要求在整个预算集中比较。集合语言把“所有可能情况”表达清楚，因此能避免证明只检查几个例子的错误。
+\Slide{6}{元素可以是数，也可以是行动或函数}
+$A=\{\text{公交},\text{步行}\}$和$\N=\{1,2,\ldots\}$都是集合。花括号表示集合，次序和重复不影响它：$\{1,2\}=\{2,1\}=\{1,1,2\}$。“family/class/system”在本课通常只是集合的不同称呼，不另加结构。
+\Slide{7}{先说清楚讨论范围}
+有$I$位参与者，第$i$位的行动集是$A_i$。下标$i$是编号，$A_i$才是集合；不同人的行动集可以不同。任何命题都要检查变量范围，例如“所有行动都可行”究竟指$A_i$中的行动，还是社会全部人的行动？明确范围是证明的第一步。
+\Slide{8}{属于符号与行动的类型}
+$a_i\in A_i$表示第$i$位参与者选择了自己的一个可行行动。$A_i\ni a_i$只是同一件事倒过来写。注意$a_i$是一个行动，$A_i$是一组行动；不要把“选择一个行动”写成$a_i\subseteq A_i$，除非$a_i$本来就定义成集合。
+\Slide{9}{等号表示对象相同}
+$x=x'$说明两个名字指同一个对象，$x\ne x'$则指不同对象。撇号$x'$在此只是另一个名字，不是导数；本讲不需要微积分。集合相等也不是名字相同，而是成员完全相同。
+\Slide{10}{条件描述法}
+$\{x\in S:P(x)\}$先限制$x$来自$S$，再筛选满足$P$的对象。例如$\{x\in\N:x<4\}=\{1,2,3\}$。经济学例子$\{a\in A:a\text{优于}a'\}$中$a'$是固定比较对象，$a$是被筛选的变量；这个集合可能为空。
+\Slide{11}{包含、真包含与相等}
+$X\subseteq S$允许$X=S$，而本课$X\subset S$表示真包含。证明$X\subset S$要做两件事：证明$X\subseteq S$；再找到$s\in S$却$s\notin X$。例如$\{1\}\subset\{1,2\}$的见证是2。相等的标准为
+\[X=S\iff(X\subseteq S\text{且}S\subseteq X).\]
+证明：两个包含保证任何对象属于一边当且仅当属于另一边，即成员完全一致。$\N\subseteq\N$当然成立，因为每个正整数仍是正整数。
+\Slide{12}{空集不是一个含零的集合}
+$\varnothing$没有任何元素；$\{0\}$含有一个元素0；$\{\varnothing\}$含有一个元素空集，三者不同。$\varnothing\subseteq S$对任意$S$成立：若不成立，应有$x\in\varnothing$且$x\notin S$，但第一件事根本不可能。否定$X\subseteq S$要找到一个反例元素，而非只说“看起来不包含”。
+\Slide{13}{元素与单元素集}
+严格证明$x\in X\iff\{x\}\subseteq X$：若$x\in X$，任取$y\in\{x\}$就有$y=x\in X$，所以包含成立；反过来，$x\in\{x\}$，再用$\{x\}\subseteq X$可得$x\in X$。这说明“一个元素”和“装着这个元素的集合”可以转换，但不能混写。
+\Slide{14}{空集保证筛选操作总有结果}
+假设$a'$已是最优行动，严格优于它的行动不存在，因此$\{a\in A:a\text{优于}a'\}=\varnothing$。这不表示表达式无意义；它的值就是空集。证明筛选集为空的标准：假设其中有$a$，根据定义推出与条件矛盾。
+\Slide{15}{集合族与一个复数例题}
+$\{A_\lambda\}_{\lambda\in\Lambda}$表示由指标$\lambda$编号的一组集合。$\Lambda=\N$时称集合列。先不要把$A_\lambda$中的元素与指标混淆。
+\paragraph{例题完整证明。}设$x,y,z$互异且$\{x,y,z\}=\{x^2,y^2,z^2\}=\{xy,yz,zx\}$。若有一个数为0，最后一个集合至多有两个元素，与三个互异元素矛盾；故均非零。三个集合的元素乘积给出$p=xyz=p^2$，所以$p=1$。于是$\{xy,yz,zx\}=\{1/x,1/y,1/z\}$，原集合在取倒数下不变。取倒数两次回原数，因此三个元素中必有一个等于其倒数，即$1$或$-1$。其余两个若互为倒数，则乘积1，结合总乘积1可知该固定元素是1；三个都固定又不可能互异，因为只有$\pm1$两种。故集合是$\{1,u,u^{-1}\}$。平方仍是原集合且元素互异，$u^2$不能等于1，也不能等于$u$，于是$u^2=u^{-1}$，即$u^3=1$且$u\ne1$。解$u^2+u+1=0$得$u=(-1\pm\sqrt3\,i)/2$。若只允许实数，这个例题没有满足条件的三元组。
+\Slide{16}{集合运算对应逻辑运算}
+并集把可能情况合起来，交集要求条件同时满足，差集排除某些情况。可以把它们当成筛选规则，而不是机械图形。下面每条公式都能用“任取一个元素，翻译其成员资格”来验证；画图帮助直觉，文字证明负责完整性。
+\Slide{17}{并集与七条基本性质}
+$x\in A\cup B$等价于$x\in A$或$x\in B$，允许两者同时发生。交换律和结合律来自“或”的顺序与分组不影响真假；$A\subseteq A\cup B$因为属于$A$就满足其中一个条件。$A\cup A=A$、$A\cup S=S$、$A\cup\varnothing=A$分别来自重复条件、全集条件、永假条件（这里$A\subseteq S$）。
+\paragraph{第(7)条证明。}若$A\subseteq B$，并集中的每个元素都在$B$，所以$A\cup B\subseteq B$，而$B\subseteq A\cup B$总成立。反过来若$A\cup B=B$，则$A\subseteq A\cup B=B$。考试中不能只证明其中一边。
+\Slide{18}{任意并集就是存在量词}
+\[x\in\bigcup_{\lambda\in\Lambda}X_\lambda\iff\exists\lambda\in\Lambda:\ x\in X_\lambda.\]
+因此要证明$x$属于并集，找一个合适指标就够；要由$x$属于并集推理，可以取出一个指标作为见证。指标不一定是整数，也可以是实数、集合或其他对象。若指标集为空，并集约定为空集。
+\Slide{19}{有限并与可数并}
+$\bigcup_{n=1}^N A_n$只检查前$N$个集合；$\bigcup_{n=1}^{\infty}A_n$检查所有正整数编号的集合。课件把$\{1,\ldots,N\}$也简记成$N$，容易与数字和$\N$混淆，建议考试中完整写出范围。无穷并的成员不需要同时在所有集合里，出现一次就够。
+\Slide{20}{四个并集例子的端点判断}
+单点集$A_n=\{n\}$的并就是列出所有编号。相邻区间$(n-1,n]$没有缝隙，前$N$个拼成$(0,N]$，全体拼成$(0,\infty)$。
+对$A_n=[-1+1/n,1-1/n]$，集合递增，有限并等于最后一个；无穷并为$(-1,1)$：端点$\pm1$从未出现，若$|x|<1$，取$n>1/(1-|x|)$即可使$x\in A_n$。
+最后$A_\lambda=(\lambda/2,2)$，其中$\lambda\in\Q\cap(0,1)$。任意$0<x<2$都能选择$0<\lambda<\min\{1,2x\}$的有理数，于是$x\in A_\lambda$；反向包含显然由每个区间都在$(0,2)$内得到。
+\Slide{21}{交集与七条基本性质}
+$x\in A\cap B$要求同时属于两者。交换律、结合律对应“且”的交换与结合；$A\cap B\subseteq A$、$A\cap A=A$、$A\cap S=A$、$A\cap\varnothing=\varnothing$都可直接翻译。
+若$A\subseteq B$，则$x\in A$自动满足$x\in B$，故$A\cap B=A$；反过来由$A=A\cap B\subseteq B$得到包含。记住并的吸收判据是$A\cup B=B$，交的判据是$A\cap B=A$。
+\Slide{22}{任意交集就是全称量词}
+\[x\in\bigcap_{\lambda\in\Lambda}X_\lambda\iff\forall\lambda\in\Lambda:\ x\in X_\lambda.\]
+证明交集成员资格必须检查任意指标；否定成员资格只需找到一个指标失败。相对于固定全集$S$，空指标族的交集约定为$S$，因为没有一个条件可以被违反。
+\Slide{23}{有限交与可数交的区别}
+有限交只满足前$N$个约束，可数交满足无穷多个约束。例如“对所有$n$有$|x|<1/n$”远强于只检查前100项；前100项仍允许$0.001$，全体约束最终只允许0。证明时任取一个固定$N$，不能让它代表“无穷大”。
+\Slide{24}{四个交集例子的逐一验证}
+$[0,1+1/n)$递减，有限交为最后一个，无穷交为$[0,1]$。注意1属于每一项，不能因为右端点用了圆括号就删掉1；若$x>1$，取$n>1/(x-1)$将它排除。
+$[n,n+3/2]$的前三项已无公共点：第一项要求$x\le5/2$，第三项要求$x\ge3$。于是更多集合的交也为空。
+$(-1/n,1/n)$的交为$\{0\}$：0始终在内；若$x\ne0$，取$n>1/|x|$排除$x$。
+$\bigcap_{\lambda\in\R}[\lambda,\infty)=\varnothing$：对任何候选$x$，选$\lambda=x+1$就失败。这里可以让反例指标依赖候选$x$。
+\Slide{25}{两两不交与不交并}
+$A\cap B=\varnothing$表示没有共同元素。一个集合族两两不交要求任意两个不同编号的集合无交集；这比“所有集合的总交为空”强。例如$\{1,2\},\{2,3\},\{1,3\}$总交为空却不两两不交。课件用加号记不交并，建议写$\bigsqcup$，避免与数的加法或向量集相加混淆。
+\Slide{26}{并交代数的证明方法}
+交换律、结合律、幂等律已由“或/且”解释。关键是分配律。任取$x$：
+\[x\in A\cap(B\cup C)\iff(x\in A\land x\in B)\lor(x\in A\land x\in C),\]
+因此等于$(A\cap B)\cup(A\cap C)$。另一式可分两种情况：若$x\in A$，两边都包含$x$；若$x\notin A$，两边都要求$x\in B\cap C$，于是$A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$。
+吸收律$A\cup(A\cap B)=A$因为$A\cap B\subseteq A$；$A\cap(A\cup B)=A$因为$A\subseteq A\cup B$。这种“先证明包含，再套定义”的写法比展开长公式更稳。
+\Slide{27}{集合族运算的六条性质}
+(1) 若$x\in\bigcup A_\lambda$，取$\lambda_0$使$x\in A_{\lambda_0}\subseteq A'_{\lambda_0}$，便在右并中。(2) 若$x$在每个$A_\lambda$中，由逐项包含也在每个$A'_\lambda$中，便在右交中。两条特殊情形分别是所有$A_\lambda$都包含于同一集合、同一集合都包含于每个$A'_\lambda$。
+(3) “存在$\lambda$使$x\in A_\lambda$或$x\in A'_\lambda$”等价于“至少有一个$A_\lambda$含$x$，或至少有一个$A'_\lambda$含$x$”。(4) “对每个$\lambda$两个条件同时成立”等价于“两组全称条件同时成立”。
+(5) $x\in A\cap\bigcup A_\lambda$等价于存在$\lambda$使$x\in A\cap A_\lambda$。(6) 若$x\in A$，等式$A\cup\bigcap A_\lambda=\bigcap(A\cup A_\lambda)$两边都成立；若$x\notin A$，两边都要求$x$属于全部$A_\lambda$。这样证明六条都不需要记忆图形。
+\Slide{28}{差集和补集}
+$x\in A\setminus B$等价于$x\in A$且$x\notin B$，即$A\setminus B=A\cap CB$。一般不能把集合减法当数字减法：$(A\setminus B)\cup B=A\cup B$，只有$B\subseteq A$时才等于$A$。证明可按$x$是否属于$B$分情况。补集$CA=S\setminus A$必须标明全集，例如$\N$在$\Z$中的补集与在$\R$中的补集不同。
+\Slide{29}{补集的五条性质}
+全集中没有元素不在全集内，所以$CS=\varnothing$；每个元素都不在空集中，所以$C\varnothing=S$。每个$x\in S$恰好满足$x\in A$、$x\notin A$之一，故$A\cup CA=S$且$A\cap CA=\varnothing$。双重否定给$C(CA)=A$。
+若$A_1\supseteq A_2$且$x\notin A_1$，则$x$不可能在$A_2$内，故$CA_1\subseteq CA_2$：取补集会反转包含。若$A_1\cap A_2=\varnothing$，任意$x\in A_1$必不在$A_2$，故$A_1\subseteq CA_2$；交换指标得另一式。
+\Slide{30}{德摩根律：把否定推进量词}
+任取$x\in S$，
+\[x\in C\Bigl(\bigcup_\lambda A_\lambda\Bigr)\iff\neg\exists\lambda\ (x\in A_\lambda)\iff\forall\lambda\ (x\notin A_\lambda)\iff x\in\bigcap_\lambda CA_\lambda.\]
+另一条将“不是每个都成立”变成“至少一个不成立”：
+\[x\in C\Bigl(\bigcap_\lambda A_\lambda\Bigr)\iff\exists\lambda\ (x\notin A_\lambda)\iff x\in\bigcup_\lambda CA_\lambda.\]
+二集合、有限族、可数族都是这两个证明的特例。考试易错点：取补时既要换并交，也要给每个集合取补。
+\Slide{31}{对称差：恰好属于一个集合}
+$A\triangle B=(A\setminus B)\cup(B\setminus A)$，成员资格是“在$A,B$中恰好出现一次”。这等价于$(A\cup B)\setminus(A\cap B)$。所以$A\triangle B\subseteq A\cup B$；等号成立当且仅当交集为空：若有共同元素，它在并集中却不在对称差里。
+并集可拆为互不相交的两块：恰好属于一个集合的点，以及两个集合都属于的点。这就是$A\cup B=(A\triangle B)\sqcup(A\cap B)$。
+\Slide{32}{对称差的运算与奇偶性}
+对称差交换律由定义对称得到。结合律可用指示函数说明：$1_A(x)$在$x\in A$时取1，否则取0；$1_{A\triangle B}(x)$是$1_A(x)+1_B(x)$除以2的余数。三集合无论怎样加括号，余数相同，因此结合律成立。
+$A\triangle\varnothing=A$，$A\triangle A=\varnothing$，$A\triangle CA=S$，$A\triangle S=CA$，分别检查“恰好属于一个”的条件即可。由结合律，$(A\triangle B)\triangle B=A$；同一个集合出现两次会抵消。
+\Slide{33}{结合律的展开式与排版纠正}
+课件把两边都展开为“四块”：只在$A_1$、只在$A_2$、只在$A_3$、三个都在。
+\[(A_1\triangle A_2)\triangle A_3=\bigcup_{i=1}^3\left(A_i\setminus\bigcup_{j\ne i}A_j\right)\ \cup\ (A_1\cap A_2\cap A_3).\]
+这是出现次数为1或3，即奇数次的全部情形，右式对三个集合对称，故也等于$A_1\triangle(A_2\triangle A_3)$。注意不能把“三集合对称差”误认作“只属于一个”。原页第二组推导中把$A_3\cap C(A_1\cup A_2)$误写成含三重交的项，阅读时以最后正确的四块表达式为准。
+\Slide{34}{抵消律与集合版三角不等式}
+结合律和$B\triangle B=\varnothing$给
+\[(A\triangle B)\triangle(B\triangle C)=A\triangle C.\]
+再用$U\triangle V\subseteq U\cup V$，得到
+\[A\triangle C\subseteq(A\triangle B)\cup(B\triangle C).\]
+直觉：若$A,C$对$x$的成员资格不同，那么$B$至少与其中一个不同。不等式是包含，不是在比较集合的数值大小；对有限集取元素个数才导出通常的数值三角不等式。
+\Slide{35}{交对对称差分配及四个推论}
+$x\in A\cap(B\triangle C)$要求$x\in A$且在$B,C$中恰好一个；这正是$x$在$A\cap B,A\cap C$中恰好一个，证明分配律。
+(1) 同时反转两项成员资格不改变“是否不同”，故$CA\triangle CB=A\triangle B$。(2) $A=A\triangle B$两边再对称差$A$，得$\varnothing=B$，反向显然。(3) 若$E\triangle A=A'$，两边对称差$A$得唯一候选$E=A'\triangle A$；代回成立，故存在且唯一。(4) 并集的对称差包含关系将在第38页用见证指标证明。
+“布尔环”只是把对称差当加法、交当乘法的结构名称。当前考试重点是会证明恒等式，不必先学抽象代数。
+\Slide{36}{分配律的代数证明拆解}
+把$B\triangle C$先换为$(B\setminus C)\cup(C\setminus B)$；再把$A\cap$分配进两项，可得
+\[(A\cap B\cap CC)\cup(A\cap C\cap CB),\]
+其中$CC$在此容易歧义，清楚写作$C(C)$或$S\setminus C$更好。等价地写成
+\[(A\cap B\setminus C)\cup(A\cap C\setminus B).\]
+右边$(A\cap B)\triangle(A\cap C)$展开后也是这两块，因为在已知$x\in A$时，“不在$A\cap C$”恰好要求“不在$C$”。这解释了原页每一行消去重复交项的理由。为避免字母$C$和补集算子混淆，自己做题可把第三集合改名为$D$。
+\Slide{37}{三个对称差推论的短证明与修正}
+(1) $CA\setminus CB=CA\cap B=B\setminus A$；另一项同理，合并得结论。(2) 若$A=A\triangle B$且有$x\in B$，分两种情况：若$x\in A$，则$x$不在对称差中；若$x\notin A$，则$x$在对称差中。两种情况都与集合相等矛盾，所以$B=\varnothing$。原页出现$A\cup\{x_0\}\subseteq A\triangle B$，这一步一般不成立，不应照抄。(3) 解$E\triangle A=A'$时对两边同时对称差$A$，即可得到唯一解；“唯一”来自任何解都必须等于该式，不仅是找到一个解。
+\Slide{38}{并集对称差的包含证明}
+记$U=\bigcup A_\lambda$、$V=\bigcup A'_\lambda$。任取$x\in U\triangle V$。若$x\in U\setminus V$，存在$\lambda_0$使$x\in A_{\lambda_0}$，且$x$不属于任何$A'_\lambda$，尤其不属于$A'_{\lambda_0}$。因此$x\in A_{\lambda_0}\triangle A'_{\lambda_0}$。另一种$x\in V\setminus U$完全对称。
+故$U\triangle V\subseteq\bigcup(A_\lambda\triangle A'_\lambda)$。通常不能反向：取$A_1=\{0\},A_2=\varnothing,A'_1=\varnothing,A'_2=\{0\}$，两个总并相同，所以左边空，右边却为$\{0\}$。
+\Slide{39}{至少两个、恰好两个、恰好一个}
+把一个元素属于三个集合的次数记为$m\in\{0,1,2,3\}$。两两交的并对应$m\ge2$；三集合对称差对应$m=1$或3，所以从总并中扣除它留下$m=2$；对称差再扣除三重交留下$m=1$。
+第一条展开应带括号：
+\[(A_1\cup A_2\cup A_3)\setminus(A_1\triangle A_2\triangle A_3)=\bigl[(A_1\cap A_2)\cup(A_2\cap A_3)\cup(A_3\cap A_1)\bigr]\setminus(A_1\cap A_2\cap A_3).\]
+括号表达从整个并集中删去三重交，不能只从最后一项删去。
+\Slide{40}{巧选特殊集合与补全双向证明}
+题(1)假设对每个$E\subseteq S$均有$E\cap A=E\cup A'$。取$E=S$得$A=S$；取$E=\varnothing$得$A'=\varnothing$。这是“全称条件可以选特别方便的对象”的典型。
+题(2)若$A_1=A_2$，任意$A_3$都满足等式。反之已知与$A_3$的交相同、并相同，把并集等式两边与$CA_3$相交，得$A_1\cap CA_3=A_2\cap CA_3$。再使用
+\[A_i=(A_i\cap A_3)\cup(A_i\cap CA_3),\]
+两块分别相同，故$A_1=A_2$。这一分解用$A_3\cup CA_3=S$，不是靠把空集“分配”出两块。
+\Slide{41}{四组练习的解题入口与单调族证明}
+第1题用德摩根加分配律，第4题用共同并集给两向包含，详见后两页。
+\paragraph{第2题完整证明。}右边包含于左边总成立。若$x$在左边，存在$m,n$使$x\in A_m$且$x\in A'_n$。取$k=\max\{m,n\}$；两列递增保证$x\in A_k\cap A'_k$，所以$x$在右边。关键是把两个可能不同的见证指标统一到更大的指标。
+\paragraph{第3题完整证明。}两列递减时，补集列递增。对$CA_n,CA'_n$应用第2题，得到
+\[(\bigcup CA_n)\cap(\bigcup CA'_n)=\bigcup(CA_n\cap CA'_n).\]
+两边取补并用德摩根律，恰得到题中结论。或者：若$x$不在左边，可找$m,n$分别使$x\notin A_m,A'_n$；取最大指标后递减性保证$x$不在相应并集中，从而不在右边。
+\Slide{42}{练习1：先化简再谈充要条件}
+不论$A$是什么，
+\[C(E\cap A)\cap(CE\cup A)=(CE\cup CA)\cap(CE\cup A)=CE\cup(CA\cap A)=CE.\]
+于是题中等式就是$A'=CE$，它与$CA'=E$由双重补集律等价。原页的$CA\cap\cup A$是排版错误，应为$CA\cap A$。先化简可以避免把两个方向分别写成长式，却仍完整证明“当且仅当”。
+\Slide{43}{练习4：不能漏掉反向包含}
+由$A\cup A'=E\cup E'$及$A\cap E'=\varnothing$，任取$x\in A$必在$E$或$E'$，后者被排除，故$A\subseteq E$。反向任取$x\in E$，共同并集保证$x\in A$或$A'$，由$A'\cap E=\varnothing$排除后者，故$E\subseteq A$。同理$A'\subseteq E'$且$E'\subseteq A'$。原页只写两个正向包含后直接宣布相等，需补上刚才的反向步骤。
+第(2)题直接分配：$(A\cap E)\cup(A\cap E')=A\cap(E\cup E')=A\cap(A\cup A')=A$。
+\Slide{44}{单调集合列的极限}
+递减列中，一个元素若中途被删掉，就永远回不来，因此极限保留属于每一项的元素，即交集。递增列中，一旦加入便永远保留，因此极限保留曾经出现过的元素，即并集。注意这里是在判断每个固定元素的长期成员资格，不是在测量图形之间的距离。
+\Slide{45}{空极限与递增函数的超水平集}
+$A_n=[n,\infty)$每项非空，但交为空：任何固定实数$x$都会被某个$n>x$排除。不能把“每项非空”直接升级成“交集非空”。
+若$f_n(x)\uparrow f(x)$，则$E_n=\{x:f_n(x)>t\}$递增。若$x$在其并集中，某项$f_n(x)>t$，而$f(x)\ge f_n(x)$，故$f(x)>t$。反过来若$f(x)>t$，取$\eps=(f(x)-t)/2>0$；收敛保证某项$f_n(x)>f(x)-\eps>t$。因此并集等于$\{f>t\}$。
+不能随意把$>$改成$\ge$：常数函数$f_n=1-1/n$趋于1，$t=1$时每个$\{f_n\ge1\}$为空，$\{f\ge1\}$却是全域。
+\Slide{46}{上极限：无穷多次出现}
+$B_N=\bigcup_{n\ge N}A_n$收集从第$N$项往后出现过的点；随着$N$增大，搜索范围缩小，故$B_N$递减。定义
+\[\limsup A_n=\bigcap_{N=1}^{\infty}\bigcup_{n\ge N}A_n.\]
+成员资格为“无论从多晚开始看，总还能找到一次出现”。等价于出现无穷多次，不要求连续出现。若只出现有限多次，在最后一次之后取$N$即可排除。
+\Slide{47}{下极限：最终一直出现}
+$B_N=\bigcap_{n\ge N}A_n$收集从第$N$项开始一直出现的点；$N$越大要求越少，故$B_N$递增。定义
+\[\liminf A_n=\bigcup_{N=1}^{\infty}\bigcap_{n\ge N}A_n.\]
+成员资格为“存在一个起点，此后每项都在”。当上下极限相等时才说集合列极限存在。例：$A_{2n}=\{0\},A_{2n-1}=\{1\}$的上极限为$\{0,1\}$、下极限为空，因此没有极限。
+\Slide{48}{量词顺序决定两个极限}
+\[x\in\limsup A_n\iff\forall N\ \exists n\ge N:x\in A_n,\qquad
+x\in\liminf A_n\iff\exists N\ \forall n\ge N:x\in A_n.\]
+证明$\liminf A_n\subseteq\limsup A_n$：若从$N_0$起$x$一直在，任给$N$，取$n=\max\{N,N_0\}$就找到一次出现。反向不成立由上页交替例子可知。考试写量词时应先注明哪个变量可依赖哪个：上极限中的$n$可以依赖$N$；下极限的$N_0$必须一次选定，之后应对所有$n$。
+\Slide{49}{三道集合极限题的完整解答}
+\paragraph{题1：格点集合。}令$A_n=\{m/n:m\in\Z\}$。若$x=p/q\in\Q$，对$n=kq$均有$x=kp/(kq)\in A_n$，故$x$在无穷多项中。无理数不在任何项中，因此$\limsup A_n=\Q$。每个整数在每项中，故$\Z\subseteq\liminf A_n$。反之若$x$从某项起一直属于$A_n$，则对相邻的两个大指标$n,n+1$有$nx,(n+1)x\in\Z$，相减得$x\in\Z$。故下极限为$\Z$。
+对$B_n=(1/n,1+1/n)$，$0<x\le1$时最终满足两端不等式；$x\le0$从不满足；$x>1$时最终右端小于$x$。故上下极限均为$(0,1]$。
+\paragraph{题2：用集合表达函数极限。}右边的含义是：对每个$k$，存在$N$，使所有$n\ge N$有$f_n(x)<t+1/k$。若$f(x)\le t$，收敛性以误差$1/(2k)$给出此条件。反之若$f(x)>t$，取$k$使$1/k<(f(x)-t)/2$；收敛保证充分大$n$时$f_n(x)>(f(x)+t)/2>t+1/k$，与右边条件矛盾。所以两集合相等。
+\paragraph{题3：把数列的极限压成单点。}右边条件对一个候选$x$表示：对每个$k$，最终有$|x-a_n|<1/k$。$x=a$由$a_n\to a$满足条件。若$x\ne a$，设$d=|x-a|>0$，选$k$使$1/k<d/3$；充分大$n$有$|a_n-a|<d/3$，若同时$|x-a_n|<1/k$，三角不等式给$d<2d/3$，矛盾。故只剩$a$。
+\Slide{50}{划分：每个元素恰好归一类}
+划分要求每块非空、不同块两两不交、全部块的并等于$S$。覆盖保证至少属于一块，不交保证至多属于一块，两者合起来就是恰好一块。例如整数按奇偶分为两块；$\{\{1,2\},\{2,3\}\}$不是$\{1,2,3\}$的划分，因为2重复。
+\paragraph{记号修正。}原页写每块$X_\gamma\subset S$，若按前文严格真包含解释就会排除合法划分$\{S\}$。一般定义应为$\varnothing\ne X_\gamma\subseteq S$。平凡划分只有全集一块，完全合法。
+\Slide{51}{笛卡尔积与有序对}
+$S_1\times S_2=\{(x_1,x_2):x_1\in S_1,x_2\in S_2\}$。有序对的次序重要，$(1,2)\ne(2,1)$；集合$\{1,2\}$则没有顺序。两个区间的积对应一个矩形区域。若$A=\{a,b\},B=\{0,1\}$，积有四个元素$(a,0),(a,1),(b,0),(b,1)$，可以逐项列出帮助理解。
+\Slide{52}{多维积与社会行动组合}
+$\prod_{i=1}^N A_i$的一个元素是完整行动组合$(a_1,\ldots,a_N)$，其中每位参与者恰好贡献一个分量。$a_i\in A_i$是一人的选择；$(a_i)_{i=1}^N\in\prod A_i$是所有人的选择。乘积号在此构造有序组，不是在乘数。课件例子“选择行动$A_n$”应读为选择$a_n\in A_n$，区分大小写。
+\Slide{53}{积集定理、反例与选择公理}
+有限个集合均非空时，从每个集合取一元素即得一个积元素；反过来只要积中有$(a_\lambda)$，每个坐标就证明对应集合非空。\textbf{任意无限指标族}的“每项非空推出积非空”使用选择公理，不能当成没有额外基础的有限证明；本课有限维经济学主要用有限积。
+设各$A_\lambda$非空且积包含于$\prod A'_\lambda$。固定$\lambda_0$及任意$a\in A_{\lambda_0}$，先取一个积元素，再把其$\lambda_0$坐标换成$a$；所得仍在原积，故在新积，推出$a\in A'_{\lambda_0}$。因此逐项包含。反向从每个坐标逐项包含立即得到积包含。非空条件不可删：一个因子为空时整个积为空，不能推断其他坐标包含。
+两个积的并包含于逐坐标并的积，因为一个完整元组若全来自第一族或全来自第二族，自然每个坐标都来自对应的并。反向一般不成立：$A_1=A_2=\{0\}$、$A'_1=A'_2=\{1\}$时，$(0,1)$只在右边。交则等号成立：一个元组同时在两个积中，恰好每个坐标同时在两个对应因子中。
+
+\section*{证明考试：闭卷自测与答案骨架}
+\begin{enumerate}
+\item 证明$A\setminus(B\cup C)=(A\setminus B)\cap(A\setminus C)$。答案：任取$x$，左边等价于$x\in A$且$x\notin B$且$x\notin C$，与右边等价。
+\item 为什么$\bigcup_n(A_n\cap B_n)\subseteq(\bigcup_nA_n)\cap(\bigcup_nB_n)$总成立，等号不总成立？答案：同一指标的见证同时服务两个并集；反向两个见证可能不同。反例$A_1=B_2=\{0\},A_2=B_1=\varnothing$，其余为空。递增性允许取最大指标修复问题。
+\item 证明$C(\limsup A_n)=\liminf(CA_n)$。答案：逐层取补，先把外交变并，再把尾并变尾交，得到$\bigcup_N\bigcap_{n\ge N}CA_n$。写出全集保持一致。
+\item 证明$A\triangle B=\varnothing\iff A=B$。答案：没有恰好属于一边的元素，因此任意$x$属于两边的真假相同；反向由$A\triangle A=\varnothing$。
+\end{enumerate}
+掌握标准：看到一个等式，先能用普通话说出两边怎样筛选元素，再独立写出双向包含；看到无穷并交，先写量词再操作。不要用“显然”跳过指标选择。

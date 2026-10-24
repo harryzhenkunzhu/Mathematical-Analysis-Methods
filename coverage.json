@@ -1,0 +1,86 @@
+[
+  {
+    "lecture": "000",
+    "source_pages": 19,
+    "note_pages": 22,
+    "source_sha256": "300883de39c43186dbe90c0a8690f00e6270147b6002f0c862c0c0c23dcd04bd",
+    "pdf_sha256": "950fabd549d9ae7babfd69e67f502b81e6c91f60e7316b506f44e9f034e4a856"
+  },
+  {
+    "lecture": "000-ZSM",
+    "source_pages": 62,
+    "note_pages": 67,
+    "source_sha256": "1e572f0f11283d193ddf40867dc91f4d21a852f2a0e4e7e7c795c6ff844ff134",
+    "pdf_sha256": "3392eb8ce5a69345ed056c6743c740ffe6499b7569652864a7a8da5cc27ab032"
+  },
+  {
+    "lecture": "101",
+    "source_pages": 10,
+    "note_pages": 15,
+    "source_sha256": "329f252926dd43c3af4f11ae09e4df0b8168c7d358fd56f987fa7fce2c9024ab",
+    "pdf_sha256": "d3bd8fe827edcdf2ccd81aad46def4fe0bed2fa13085f81cc31c4027da19c326"
+  },
+  {
+    "lecture": "102",
+    "source_pages": 53,
+    "note_pages": 59,
+    "source_sha256": "597e8e1c96d6a773b5ae3c4decf0fd46a898cb2a8206949a5d3c213495abb9ea",
+    "pdf_sha256": "c9b7b338758c23de592689f67da6180b1643e403505614efd9f8c3836f9f971a"
+  },
+  {
+    "lecture": "103",
+    "source_pages": 35,
+    "note_pages": 39,
+    "source_sha256": "d18776dd7f99cf8afe1b2fa10c5ef4bb019dff9e278efb0a658165f89fa2ce95",
+    "pdf_sha256": "02e5baf394464452e679bf63d11dd81d9b788bbb609befcc8e1aa89f33f81bc8"
+  },
+  {
+    "lecture": "104",
+    "source_pages": 29,
+    "note_pages": 32,
+    "source_sha256": "2c6dd209b6a0c7fcf1051b5f5288f6bd5a9732d3786e4695f9d4297feee94a42",
+    "pdf_sha256": "8d425936b4083c69d9d4e4d14a8b32701be8b6dd910afc9bae79067959ccaaab"
+  },
+  {
+    "lecture": "105",
+    "source_pages": 67,
+    "note_pages": 73,
+    "source_sha256": "3c3fa07e44589bb96959b2d1d6da1b0d4aa0bc36429047a43347a2e45b55540f",
+    "pdf_sha256": "cf3e481146e0dee30c291eb34dbf0c2aa7b365b73a6867fd76240b0b1ec503b6"
+  },
+  {
+    "lecture": "106",
+    "source_pages": 100,
+    "note_pages": 106,
+    "source_sha256": "ac8b7a18bec441fce19947cee01628aeefe170858a3d4574d201c86ed2b9f2e4",
+    "pdf_sha256": "52a6f366068b45282ee48b92cae6b056fcf8a84ba73dab969b46f7d51f3000d3"
+  },
+  {
+    "lecture": "107",
+    "source_pages": 43,
+    "note_pages": 47,
+    "source_sha256": "046cb34a7e940ba5e9eeef4ad2ff6ce630a586f8e44890bba5c62171e218228c",
+    "pdf_sha256": "8abe6960c04db62d6929175e87797eaac484c2f0daf7b85b14f2c4444812687f"
+  },
+  {
+    "lecture": "108",
+    "source_pages": 113,
+    "note_pages": 121,
+    "source_sha256": "0c60f15bea5083560c10488a828abf901ffc0556548e871f6f3eecf45327ce1d",
+    "pdf_sha256": "b5670628d9ca111b6a268cbbc0480419bb013a52574e587e809bd88322f43cc4"
+  },
+  {
+    "lecture": "109",
+    "source_pages": 118,
+    "note_pages": 125,
+    "source_sha256": "9ad2a6006115c74287921664cc6bab5762920caf651a263a49ee20a04fb62ed2",
+    "pdf_sha256": "4655a388e23def1b651f2dd4650b473ad53ad7966f4d40b392be363fc40e1e0f"
+  },
+  {
+    "lecture": "110",
+    "source_pages": 8,
+    "note_pages": 12,
+    "source_sha256": "ea050b61a608741e70b45ee18bc39c1382c3041d7dd00feb47328605b5de6b85",
+    "pdf_sha256": "bca77057769bf9801afe63622df88e5edfd7094a26ecf48b49765ab26cdf2136"
+  }
+]

@@ -1,0 +1,8 @@
+build/
+__pycache__/
+*.aux
+*.log
+*.toc
+*.out
+*.xdv
+*.synctex.gz

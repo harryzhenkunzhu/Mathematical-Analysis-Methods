@@ -1,0 +1,48 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=21mm,headheight=16pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Noto Serif CJK SC}
+\setsansfont{Noto Sans CJK SC}
+\setmonofont{Noto Sans Mono CJK SC}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{graphicx,xcolor,enumitem,fancyhdr,longtable,booktabs}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{0em}{2.8em}}
+\renewcommand{\@pnumwidth}{2.4em}
+\renewcommand{\@tocrmarg}{3em}
+\makeatother
+\definecolor{ink}{HTML}{19384A}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\DeclareMathOperator{\conv}{co}
+\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\Int}{int}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\dist}{dist}
+\newcommand{\Slide}[2]{\clearpage\section{原课件第 #1 页：#2}\label{slide:#1}\begin{center}\includegraphics[page=#1,width=\linewidth,height=.43\textheight,keepaspectratio]{\SourcePDF}\end{center}\noindent{\small\color{gray}上图为课件原页，保留原文、公式、图形及可能的笔误；下文为自学讲解。}\par\medskip}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{.5em}
+\linespread{1.16}
+\setlist{itemsep=2pt,topsep=3pt,leftmargin=2em}
+\emergencystretch=3em
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small 数理分析方法 · 中文自学讲义}\fancyhead[R]{\small\LectureID}\fancyfoot[C]{\thepage}
+\newtheorem{theorem}{定理}
+\newtheorem{lemma}{引理}
+\newtheorem{proposition}{命题}
+\theoremstyle{definition}\newtheorem{definition}{定义}\newtheorem{example}{例}
+\renewcommand{\proofname}{证明}
+\newcommand{\MakeCover}{\begin{titlepage}\vspace*{2cm}{\Huge\sffamily\color{ink}数理分析方法\par}\vspace{1cm}{\LARGE\sffamily\LectureTitle\par}\vspace{.5cm}{\Large Lecture \LectureID\par}\vspace{1cm}原课件逐页保留 · 零基础中文讲解 · 证明训练\par\vfill
+\textbf{材料与编写说明}\par
+课程原页：张顺明教授课件（用户提供）。参考：Gérard Debreu, \emph{Theory of Value} (1959)，第一章 Mathematics。原页与本讲义的补充、纠错、例题分开呈现。本文为辅助自学材料，不代表教师官方讲义。\par
+\textbf{怎样阅读}\par
+先看本页的中文说明，再对照原页符号；遇到证明，先抄出假设和目标，再逐行说明“这一步用的是什么”。遮住证明重写一遍，最后用反例检查条件是否必要。重复或动画展开页仍逐页保留；说明会指出新增步骤或对应的完整论证位置。\par
+“补充”用于补基础或展开原课件略去的论证；“纠错”指出原页需要修正的地方。课程概览及人物介绍页按其原有用途解释，不虚构数学定理。\par
+\vspace{1cm}编写日期：2026 年 10 月 24 日\end{titlepage}\tableofcontents\clearpage}
