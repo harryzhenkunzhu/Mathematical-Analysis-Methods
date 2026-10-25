@@ -33,6 +33,7 @@ for key in entries:
   t=pg.get_text();m=re.search(r'原课件第\s*(\d+)\s*页',t)
   if m:loc[key][int(m.group(1))]=(i+1,t.strip().splitlines()[-1])
 # optional hand-written enhancements replacing overly compressed commentary
+statements=json.loads((out/'statements.json').read_text())
 extra=json.loads((out/'enhancements.json').read_text()) if (out/'enhancements.json').exists() else {}
 tex=[r'''\input{tex/preamble.tex}
 \newcommand{\LectureID}{Proof 汇编}
@@ -40,11 +41,11 @@ tex=[r'''\input{tex/preamble.tex}
 \renewcommand{\l@subsection}{\@dottedtocline{2}{1.5em}{3.8em}}
 \makeatother
 \begin{document}
-\begin{titlepage}\vspace*{2cm}{\Huge 数理分析方法\par}\vspace{1cm}{\LARGE 老师课件证明过程汇编\par}\vspace{1cm}原证明页保留 · 中文展开 · 页码索引\par\vfill
+\begin{titlepage}\vspace*{2cm}{\Huge 数理分析方法\par}\vspace{1cm}{\LARGE 证明详解：按老师课件路线重写\par}\vspace{1cm}中文命题 · 证明思路 · 逐步推导 · 来源页码\par\vfill
 \textbf{收录边界}\par
 仅以 sources/ 中老师原始课件是否实际展示论证为依据。收录显式 Proof、跨页续证、公式推导及带理由的例证；不因出现 “One can prove” 或 Questions/Prove 就收录。只陈述定理而没有推导的不补入。相同证明在不同课件重复出现时保留各自来源。
 \textbf{阅读约定}\par
-每项先给来源，再保留老师原页，随后展开中文步骤。原页是权威定位依据；补充与纠错是本汇编的批注，不假称为教师原文。伪证明保留作辨错，明确不作为有效证明。原课件PDF页码从封面计1；另列已有 gpt 讲义对应页脚，避免把两套页码混淆。证明跨页时统一列出范围。
+每项以重新排版的文字和数学公式写出命题、证明思路与推导，不嵌入任何课件原页或截图。来源页码只用于核对。补充与纠错单独标明，不假称为教师原文。伪证明保留作辨错，明确不作为有效证明。原课件PDF页码从封面计1；另列已有 gpt 讲义对应页脚，避免把两套页码混淆。证明跨页时统一列出范围。
 \textbf{重要说明}\par
 教师出现了不完整论证时，依其原路线补足；原命题不成立时，说明具体错误，不把它包装为正确证明。108的伪定理条目属于原课件实际展示的错误论证。高维 Brouwer、Kakutani 仅陈述，故其证明不在本汇编。
 2026 年 10 月 25 日\end{titlepage}
@@ -66,16 +67,18 @@ for key,spans in entries.items():
   for n in range(a,b+1):
    if n in loc[key]:refs.append(loc[key][n][1])
   if refs:tex.append(f'对应已有 \\texttt{{gpt-{key}.pdf}} 页脚：'+', '.join(refs)+'。\\par')
-  for n in range(a,b+1):
-   tex.append(f'\\noindent\\textbf{{原课件第 {n} 页}}\\par\\begin{{center}}\\includegraphics[page={n},width=\\linewidth,height=.48\\textheight,keepaspectratio]{{sources/{source}}}\\end{{center}}')
-  tex.append('\\paragraph{沿原论证展开与批注}')
+  spec=statements[key+':'+str(a)]
+  tex.append('\\paragraph{命题与条件}'+spec['statement'])
+  tex.append('\\paragraph{证明思路}'+spec['idea'])
+  tex.append('\\paragraph{详细推导与必要批注}')
   bodies=[]
   for n in range(a,b+1):
    body=notes[key][n]
    if body not in bodies:bodies.append(body)
   custom=extra.get(key+':'+str(a))
-  if custom:tex.append(custom)
-  else:tex.append('\n\n'.join(bodies))
+  body=custom if custom else '\n\n'.join(bodies)
+  body=body.replace('原图','原课件').replace('本页','原课件该页').replace('截图','原课件')
+  tex.append(body)
   manifest.append(dict(lecture=key,item=idx,source=source,proof_pages=list(range(a,b+1)),title=title,note_footers=refs))
 tex.append(r'\end{document}')
 (out/'all-proofs.tex').write_text('\n'.join(tex))

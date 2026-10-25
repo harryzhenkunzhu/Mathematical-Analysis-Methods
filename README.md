@@ -1,6 +1,6 @@
 # 数理分析方法：中文自学 Lecture Notes
 
-新增：[老师实际证明过程合并 PDF](pdf/gpt-All-Proofs.pdf) · [证明汇编说明及页码索引](proofs/README.md) · [证明汇编 ZIP 下载](downloads/gpt-Proofs-complete.zip)
+新增：[证明详解 PDF（纯文字与公式重写，无截图）](pdf/gpt-All-Proofs.pdf) · [证明汇编说明及页码索引](proofs/README.md) · [证明汇编 ZIP 下载](downloads/gpt-Proofs-complete.zip)
 
 每份课件对应一本独立 PDF。**原课件全部 657 页逐页嵌入**，其后附中文讲解；相关证明按主题集中展开，后续展开页给出具体原页索引。两份 `000` 是不同课件，因此分别保留为 `gpt-000` 与 `gpt-000-ZSM`。
 

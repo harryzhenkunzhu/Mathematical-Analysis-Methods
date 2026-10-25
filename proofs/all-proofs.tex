@@ -4,11 +4,11 @@
 \renewcommand{\l@subsection}{\@dottedtocline{2}{1.5em}{3.8em}}
 \makeatother
 \begin{document}
-\begin{titlepage}\vspace*{2cm}{\Huge 数理分析方法\par}\vspace{1cm}{\LARGE 老师课件证明过程汇编\par}\vspace{1cm}原证明页保留 · 中文展开 · 页码索引\par\vfill
+\begin{titlepage}\vspace*{2cm}{\Huge 数理分析方法\par}\vspace{1cm}{\LARGE 证明详解：按老师课件路线重写\par}\vspace{1cm}中文命题 · 证明思路 · 逐步推导 · 来源页码\par\vfill
 \textbf{收录边界}\par
 仅以 sources/ 中老师原始课件是否实际展示论证为依据。收录显式 Proof、跨页续证、公式推导及带理由的例证；不因出现 “One can prove” 或 Questions/Prove 就收录。只陈述定理而没有推导的不补入。相同证明在不同课件重复出现时保留各自来源。
 \textbf{阅读约定}\par
-每项先给来源，再保留老师原页，随后展开中文步骤。原页是权威定位依据；补充与纠错是本汇编的批注，不假称为教师原文。伪证明保留作辨错，明确不作为有效证明。原课件PDF页码从封面计1；另列已有 gpt 讲义对应页脚，避免把两套页码混淆。证明跨页时统一列出范围。
+每项以重新排版的文字和数学公式写出命题、证明思路与推导，不嵌入任何课件原页或截图。来源页码只用于核对。补充与纠错单独标明，不假称为教师原文。伪证明保留作辨错，明确不作为有效证明。原课件PDF页码从封面计1；另列已有 gpt 讲义对应页脚，避免把两套页码混淆。证明跨页时统一列出范围。
 \textbf{重要说明}\par
 教师出现了不完整论证时，依其原路线补足；原命题不成立时，说明具体错误，不把它包装为正确证明。108的伪定理条目属于原课件实际展示的错误论证。高维 Brouwer、Kakutani 仅陈述，故其证明不在本汇编。
 2026 年 10 月 25 日\end{titlepage}
@@ -20,9 +20,9 @@
 \clearpage\subsection{由分割公理证明上确界存在}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 19--20 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：23, 24。\par
-\noindent\textbf{原课件第 19 页}\par\begin{center}\includegraphics[page=19,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 20 页}\par\begin{center}\includegraphics[page=20,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数的分割连续性与确界完备性之间的推导：由分割点构造非空有上界集合的上确界（或非空有下界集合的下确界）。
+\paragraph{证明思路}把原集合与全部上界（或下界）组成分割；用分割点验证“是界”及“最小／最大”。
+\paragraph{详细推导与必要批注}
 \paragraph{构造}令 $B$ 为 $S$ 的全部上界，$A=\R\setminus B$。有上界使 $B\ne\varnothing$；选 $s\in S$，$s-1$ 不是上界，故 $A\ne\varnothing$。
 \paragraph{验证分割}若 $a\in A,b\in B$ 而 $a\ge b$，则所有 $s\in S$ 满足 $s\le b\le a$，使 $a$ 也成上界，矛盾。因此 $a<b$，分割公理给分界点 $c$。
 \paragraph{证明端点属于上界侧}若 $c\notin B$，有 $s\in S$ 满足 $s>c$。中点 $m=(c+s)/2$ 大于 $c$，应属于 $B$；但 $m<s$，又不是上界，矛盾。故 $c\in B$。所有 $b\in B$ 都有 $c\le b$，所以 $c=\min B=\sup S$。
@@ -30,13 +30,13 @@
 
 设 $A,B$ 是一个分割。$A$ 非空且任取 $b\in B$ 都是其上界，故可取 $c=\sup A$。
 \paragraph{验证分界性质}若 $x<c$ 而 $x\in B$，则 $x$ 是 $A$ 的上界，违背 $c$ 是最小上界，所以 $x\in A$。若 $x>c$，由于 $c$ 是 $A$ 的上界，$x$ 不可能在 $A$，只能在 $B$。
-\paragraph{唯一性补全}两个不同分界点之间的中点会被同时分入 $A$ 和 $B$，矛盾。故确界公理能推出完整的分割公理。考试中“等价”必须写出两个方向，本页与前页缺一不可。
+\paragraph{唯一性补全}两个不同分界点之间的中点会被同时分入 $A$ 和 $B$，矛盾。故确界公理能推出完整的分割公理。考试中“等价”必须写出两个方向，原课件该页与前页缺一不可。
 \clearpage\subsection{由分割公理证明下确界存在}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 21--22 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：25, 26。\par
-\noindent\textbf{原课件第 21 页}\par\begin{center}\includegraphics[page=21,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 22 页}\par\begin{center}\includegraphics[page=22,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数的分割连续性与确界完备性之间的推导：由分割点构造非空有上界集合的上确界（或非空有下界集合的下确界）。
+\paragraph{证明思路}把原集合与全部上界（或下界）组成分割；用分割点验证“是界”及“最小／最大”。
+\paragraph{详细推导与必要批注}
 令 $A$ 为 $S$ 的全部下界，$B=\R\setminus A$。由下有界，$A\ne\varnothing$；取 $s\in S$，$s+1$ 不是下界，故 $B\ne\varnothing$。若 $a\in A,b\in B$ 且 $a\ge b$，则 $b\le a\le s$ 对所有 $s\in S$ 成立，矛盾，故 $a<b$。
 设分界点为 $c$。如果 $c\in B$，则有 $s\in S$ 满足 $s<c$。中点 $m=(s+c)/2$ 小于 $c$，应在 $A$，但 $m>s$ 又不可能是下界。因此 $c\in A$，且所有下界 $a\le c$，故 $c=\inf S$。
 \paragraph{记忆方法}上确界证明中选择“全部上界”的最小者；这里选择“全部下界”的最大者。中点总是用来挤出与分界方向冲突的数。
@@ -47,24 +47,27 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{上确界逼近刻画的双向证明}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 24 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：28。\par
-\noindent\textbf{原课件第 24 页}\par\begin{center}\includegraphics[page=24,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$b=\sup S$ 当且仅当 $b$ 是 $S$ 的上界，且 $\forall\eps>0\ \exists x\in S:x>b-\eps$；其中 $S\ne\varnothing$。
+\paragraph{证明思路}用更小上界作反证，再用逼近条件排除任何比 $b$ 小的上界。
+\paragraph{详细推导与必要批注}
 \paragraph{必要性}设 $b=\sup S$。它当然是上界。如果某个 $\eps>0$ 下找不到 $x>b-\eps$，那么所有 $x\in S$ 都满足 $x\le b-\eps$，说明 $b-\eps$ 是更小上界，矛盾。
 \paragraph{充分性}设 $b$ 是上界且有逼近性质。任取上界 $u$，要证 $b\le u$。若 $u<b$，令 $\eps=b-u>0$。逼近性质给 $x\in S$ 满足 $x>b-\eps=u$，违反 $u$ 是上界。因此 $b\le u$。
 \paragraph{如何想到选精度}想让 $b-\eps$ 恰好落在反证假设中的 $u$，所以解方程得到 $\eps=b-u$。证明中不是“随便取一个小数”，而是围绕目标构造。
 \clearpage\subsection{下确界逼近刻画的双向证明}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 25 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：29。\par
-\noindent\textbf{原课件第 25 页}\par\begin{center}\includegraphics[page=25,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$l=\inf S$ 当且仅当 $l$ 是 $S$ 的下界，且 $\forall\eps>0\ \exists x\in S:x<l+\eps$。
+\paragraph{证明思路}将上确界证明的大小方向反转，检查下界的最大性。
+\paragraph{详细推导与必要批注}
 \paragraph{必要性}若 $\ell=\inf S$，它是下界。若某个 $\eps>0$ 使所有 $x\in S$ 都满足 $x\ge\ell+\eps$，那么 $\ell+\eps$ 是更大的下界，矛盾。
 \paragraph{充分性}若 $\ell$ 是下界并能从上方逼近，任取下界 $d$。假设 $d>\ell$，令 $\eps=d-\ell$，就有 $x\in S$ 满足 $x<\ell+\eps=d$，违背下界性质。故每个下界 $d\le\ell$。
 \paragraph{一眼识别使用时机}需要构造 $x_n\in S$ 逼近下确界时，逐次取 $\eps=1/n$，得到 $\ell\le x_n<\ell+1/n$，于是 $x_n\to\ell$。存在逼近数列不意味着下确界属于 $S$。
 \clearpage\subsection{递增情形：逐句拆解证明}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 28 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：32。\par
-\noindent\textbf{原课件第 28 页}\par\begin{center}\includegraphics[page=28,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若实数列 $(x_n)$ 递增且有上界，则 $x_n\to\sup\{x_n:n\in\N\}$。
+\paragraph{证明思路}确界给出一个接近极限的项，单调性把“有一项接近”升级为“此后全部项接近”。
+\paragraph{详细推导与必要批注}
 设 $a=\sup\{x_n:n\in\N\}$，存在性来自非空和上有界。由上界定义，对所有 $n$ 有 $x_n\le a$。
 任给 $\eps>0$，由于 $a-\eps<a$，它不可能仍是上界。因此存在某个 $K$，使 $x_K>a-\eps$。单调性告诉我们：只要 $n\ge K$，就有 $x_n\ge x_K>a-\eps$。合起来：
 \[a-\eps<x_K\le x_n\le a,\qquad |x_n-a|=a-x_n<\eps.\]
@@ -73,8 +76,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{递减情形与课件笔误}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 29 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：33。\par
-\noindent\textbf{原课件第 29 页}\par\begin{center}\includegraphics[page=29,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若实数列 $(x_n)$ 递减且有下界，则 $x_n\to\inf\{x_n:n\in\N\}$。
+\paragraph{证明思路}用下确界向上逼近，再借递减性控制尾部。
+\paragraph{详细推导与必要批注}
 \paragraph{原页勘误}证明首段的 ``supremum'' 应改为 ``infimum''；后面的 ``increasing'' 应改为 ``decreasing''。
 \paragraph{完整证明}令 $a=\inf\{x_n:n\in\N\}$。非空且下有界保证存在，并且 $a\le x_n$。任给 $\eps>0$，由下确界逼近性质，存在 $K$ 使 $x_K<a+\eps$。当 $n\ge K$，递减性给 $x_n\le x_K$，因此
 \[a\le x_n\le x_K<a+\eps,\qquad |x_n-a|=x_n-a<\eps.\]
@@ -83,8 +87,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{先把左端点的上确界放入每个区间}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 31 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：35。\par
-\noindent\textbf{原课件第 31 页}\par\begin{center}\includegraphics[page=31,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若非空闭区间 $I_n=[d_n,u_n]$ 嵌套递减，则 $D=\sup_n d_n$ 属于每个 $I_n$。
+\paragraph{证明思路}固定任意一个区间，证明全部左端点均不超过它的右端点，进而把确界夹在两端之间。
+\paragraph{详细推导与必要批注}
 所有 $d_n\le u_1$，因此 $D=\sup_n d_n$ 存在，并且 $d_m\le D$。还要证明 $D\le u_m$，才可说 $D\in I_m$。
 \paragraph{关键交叉比较}固定任意 $m$，对任意 $n$：若 $n\le m$，则 $d_n\le d_m\le u_m$；若 $n>m$，则 $d_n\le u_n\le u_m$。所以 $u_m$ 是\emph{全部}左端点的上界，故 $D\le u_m$。
 于是每个 $m$ 都有 $d_m\le D\le u_m$，即 $D\in\bigcap_m I_m$。
@@ -92,16 +97,18 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{再把右端点的下确界放入每个区间}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 32 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：36。\par
-\noindent\textbf{原课件第 32 页}\par\begin{center}\includegraphics[page=32,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}在同样的闭区间套条件下，$U=\inf_n u_n$ 属于每个 $I_n$。
+\paragraph{证明思路}对右端点取下确界；固定区间后验证 $d_n\le U\le u_n$。
+\paragraph{详细推导与必要批注}
 \paragraph{纠正后证明}所有 $u_n\ge d_1$，所以右端点集合\emph{下有界}，$U=\inf_n u_n$ 存在，且 $U\le u_m$。上一页的交叉比较给固定 $m$ 下，所有 $n$ 满足 $d_m\le u_n$；因此 $d_m$ 是右端点集合的下界，故 $d_m\le U$。所以 $d_m\le U\le u_m$，$U$ 属于每个区间。
 \paragraph{原页勘误}bounded above 应改为 bounded below；后面的 $\sup B$ 应为 $\inf B$；$l_n$、$l_{n'}$ 应统一为左端点 $d_n,d_{n'}$；关键结论是 $d_m\le\inf B=U$，不是 $u_m\le U$。
 本证明只用下确界定义，没有偷偷假设交集非空。
 \clearpage\subsection{为什么交集恰好是一个闭区间}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 33 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：37。\par
-\noindent\textbf{原课件第 33 页}\par\begin{center}\includegraphics[page=33,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上述区间套满足 $\bigcap_n I_n=[D,U]$，其中 $D=\sup_n d_n$，$U=\inf_n u_n$。
+\paragraph{证明思路}分别证明任一交集元素被两个确界夹住，以及两个确界之间的元素属于全部区间。
+\paragraph{详细推导与必要批注}
 要证两个集合相等，标准做法是证明两个包含关系。
 \paragraph{第一方向}若 $x\in[D,U]$，每个 $n$ 都有 $d_n\le D\le x\le U\le u_n$，所以 $x\in I_n$，因此 $x$ 属于交集。
 \paragraph{第二方向}若 $x\in\bigcap_n I_n$，则每个 $n$ 都有 $d_n\le x$，所以 $x$ 是全体左端点的上界，从而 $D\le x$。同理 $x\le u_n$ 对所有 $n$ 成立，使 $x$ 成为右端点集合的下界，所以 $x\le U$。故 $x\in[D,U]$。
@@ -109,8 +116,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{长度趋零如何产生唯一交点}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 34 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：38。\par
-\noindent\textbf{原课件第 34 页}\par\begin{center}\includegraphics[page=34,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若进一步有 $u_n-d_n\to0$，则区间套的交仅含一点，并且 $d_n,u_n$ 都趋于该点。
+\paragraph{证明思路}先取端点的单调极限，再由区间长度趋零强迫两极限相同。
+\paragraph{详细推导与必要批注}
 已有 $d_n\le D\le U\le u_n$，两端相减可得
 \[0\le U-D\le u_n-d_n.\]
 右边趋于 $0$，所以固定非负数 $U-D$ 只能为 $0$，即 $D=U=:a$。交集 $[D,U]=\{a\}$，且单调收敛定理给 $d_n\to a,u_n\to a$。
@@ -119,8 +127,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{Bolzano 定理：二分法抽子列}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 35 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：39。\par
-\noindent\textbf{原课件第 35 页}\par\begin{center}\includegraphics[page=35,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意有界实数列存在收敛子列。
+\paragraph{证明思路}不断二分有界闭区间，保留含无穷多项的一半；在嵌套区间中按严格递增下标选项。
+\paragraph{详细推导与必要批注}
 把全部项放进 $[D,U]$。若 $D=U$，数列常值，直接收敛。否则把区间二等分，至少一半含无穷多个\emph{项的指标}；否则两半加起来仅含有限项。保留这一半，重复二分，得到长度 $(U-D)/2^k$ 的闭区间套 $I_k$。
 每个 $I_k$ 含无穷多个指标，所以可以逐次选 $n_k>n_{k-1}$ 且 $x_{n_k}\in I_k$。区间套定理给唯一交点 $a$。因为 $a,x_{n_k}$ 都在 $I_k$，
 \[|x_{n_k}-a|\le |I_k|=(U-D)2^{-k}\longrightarrow0.\]
@@ -129,9 +138,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{有界无限集合必有聚点：构造阶段}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 36--37 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：40, 41。\par
-\noindent\textbf{原课件第 36 页}\par\begin{center}\includegraphics[page=36,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 37 页}\par\begin{center}\includegraphics[page=37,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意有界无限实数集合都有聚点。
+\paragraph{证明思路}二分并保留含无穷多个集合元素的闭区间，区间套交点的每个邻域均含无穷多个集合点。
+\paragraph{详细推导与必要批注}
 聚点 $a$ 的定义是：每个 $\delta>0$ 都能找到 $x\in E$ 满足 $0<|x-a|<\delta$。允许 $a$ 不属于 $E$，但找出的点必须不同于 $a$。
 把有界无限集合 $E$ 放入 $[-M,M]$，取 $M>0$。二分后至少一个闭半区间仍含 $E$ 的无穷多个\emph{不同点}，否则两边有限，其并也有限。反复保留无限的一半，得到 $I_n$ 嵌套，长度 $2M/2^n$，且 $I_n\cap E$ 无限。
 \paragraph{与上一页的区别}数列版本保留无限指标；集合版本保留无限不同点。这一区别保证下一页能排除交点本身，真正证明“聚点”。原页 $R_0$ 应读作 $I_0$。
@@ -142,9 +151,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{收敛推出柯西：把误差分成两半}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 39--40 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：43, 44。\par
-\noindent\textbf{原课件第 39 页}\par\begin{center}\includegraphics[page=39,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 40 页}\par\begin{center}\includegraphics[page=40,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数列收敛当且仅当它是柯西列；本条为必要性及由有界子列得到极限的充分性。
+\paragraph{证明思路}必要性经共同极限拆成两段误差；充分性先证有界、抽收敛子列，再用柯西性控制整列。
+\paragraph{详细推导与必要批注}
 设 $x_n\to a$。给定最终希望得到的 $\eps>0$，按收敛定义，对精度 $\eps/2$ 选 $K$，使 $n\ge K$ 时 $|x_n-a|<\eps/2$。
 若 $m,n\ge K$，利用三角不等式：
 \[|x_n-x_m|=|(x_n-a)+(a-x_m)|\le|x_n-a|+|x_m-a|<\eps.\]
@@ -159,9 +168,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{柯西充分性的第二证法：尾部下确界}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 41--42 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：45, 46。\par
-\noindent\textbf{原课件第 41 页}\par\begin{center}\includegraphics[page=41,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 42 页}\par\begin{center}\includegraphics[page=42,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}柯西列必收敛：本条保留老师用尾部上、下确界构造极限的路线。
+\paragraph{证明思路}先证有界，再研究尾部的单调确界；尾部振幅由柯西条件压至零。
+\paragraph{详细推导与必要批注}
 柯西列有界的证明同上一页。定义 $y_n=\inf\{x_k:k\ge n\}$。删掉第一项后尾集缩小，下确界只能上升：$y_{n+1}\ge y_n$。原数列的统一上下界也界住 $y_n$，所以 $y_n$ 单调有界，存在极限 $a$。
 \paragraph{几何解释}$y_n$ 是从第 $n$ 项起所有数的“下边界”。它不一定是实际某一项，但总有 $y_n\le x_n$。柯西条件将迫使实际项与这条下边界越来越接近。
 \paragraph{原页勘误}$|nn|$ 应为 $|x_n|$。不用把下确界视作最小值；即使尾集没有最小项，定义与证明仍然有效。
@@ -175,9 +184,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{第三证法：尾部上确界}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 43--44 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：47, 48。\par
-\noindent\textbf{原课件第 43 页}\par\begin{center}\includegraphics[page=43,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 44 页}\par\begin{center}\includegraphics[page=44,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}柯西列必收敛：本条保留老师用尾部上、下确界构造极限的路线。
+\paragraph{证明思路}先证有界，再研究尾部的单调确界；尾部振幅由柯西条件压至零。
+\paragraph{详细推导与必要批注}
 定义 $z_n=\sup\{x_k:k\ge n\}$。尾集合变小使上确界不增，故 $z_n$ 递减；柯西列有界又保证 $z_n$ 有下界。因此单调收敛定理给 $z_n\to a$。
 \paragraph{对照下确界方法}下包络 $y_n$ 从下方上升，上包络 $z_n$ 从上方下降；柯西条件意味着两者之间的尾部振幅趋零。两种方法都是把不单调的数列转为单调边界。
 \paragraph{原页勘误}同样应把 $|nn|$ 改为 $|x_n|$。因为 $z_n$ 是上确界，所以 $x_n\le z_n$，不能反过来。下一页用这一方向完成估计。
@@ -186,13 +195,13 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 固定 $n\ge K$，对所有 $j\ge n$ 有 $x_j<x_n+\eps/2$，所以
 \[x_n\le z_n=\sup_{j\ge n}x_j\le x_n+\eps/2.\]
 于是 $|x_n-a|\le|x_n-z_n|+|z_n-a|<\eps$，整列收敛。
-\paragraph{课件指标修正}不能把 $\sup_{j\ge K}x_j$ 写成任意的 $z_{n_1}$，两者的尾集起点不同。本页证明固定 $n$ 后统一对 $j\ge n$ 取上确界，便消除了这个问题。上下包络证法任选一种熟练掌握即可，但应认识两种思路。
+\paragraph{课件指标修正}不能把 $\sup_{j\ge K}x_j$ 写成任意的 $z_{n_1}$，两者的尾集起点不同。原课件该页证明固定 $n$ 后统一对 $j\ge n$ 取上确界，便消除了这个问题。上下包络证法任选一种熟练掌握即可，但应认识两种思路。
 \clearpage\subsection{有限覆盖定理：把坏区间不断二分}
 \textbf{来源：}\texttt{000-ZSM-PPT.pdf}，原课件 PDF 第 46--47 页。\par
 对应已有 \texttt{gpt-000-ZSM.pdf} 页脚：50, 51。\par
-\noindent\textbf{原课件第 46 页}\par\begin{center}\includegraphics[page=46,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 47 页}\par\begin{center}\includegraphics[page=47,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/000-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭有界区间的每个开覆盖都有有限子覆盖。
+\paragraph{证明思路}反设不存在有限子覆盖，逐次二分保留“不能有限覆盖”的区间，最后用交点处的开邻域得到矛盾。
+\paragraph{详细推导与必要批注}
 先证明闭区间 $[D,U]$。反设存在一个开覆盖，无法抽出有限子覆盖。二分成两个闭半区间，至少一个仍无法有限覆盖；否则两边各取有限个，合起来仍有限，便覆盖了整个区间，矛盾。
 如此递归，得到每个都“无法有限覆盖”的闭区间 $I_n$，且嵌套、长度 $(U-D)/2^n\to0$。闭区间套定理给交点 $a$。
 \paragraph{思路}我们暂时不直接挑覆盖集，而是把“失败的位置”压缩到一个点。开集在该点周围会留出余地，下一页正用这个余地制造矛盾。$D=U$ 的单点区间只需选一个覆盖它的开集，已经成立。
@@ -205,8 +214,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{结合律的展开式与排版纠正}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 33 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：37。\par
-\noindent\textbf{原课件第 33 页}\par\begin{center}\includegraphics[page=33,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$(A\triangle B)\triangle C=A\triangle(B\triangle C)$。
+\paragraph{证明思路}从对称差定义展开左右两边，化为同样的四个部分；不可循环引用待证的结合律。
+\paragraph{详细推导与必要批注}
 \textbf{目标与路线。}证明对称差结合律。按老师的方法展开差集，把两种括号都化成同一个集合，而不把尚待证明的结合律当作已知。
 令 $A=A_1,B=A_2,C=A_3$。先展开
 \[
@@ -232,8 +242,9 @@ C\setminus(A\triangle B)
 \clearpage\subsection{抵消律与集合版三角不等式}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 34 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：38。\par
-\noindent\textbf{原课件第 34 页}\par\begin{center}\includegraphics[page=34,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$(A\triangle B)\triangle(B\triangle C)=A\triangle C$，从而 $A\triangle C\subseteq(A\triangle B)\cup(B\triangle C)$。
+\paragraph{证明思路}结合律使重复集合相邻，再自消；对称差总包含于相应并集。
+\paragraph{详细推导与必要批注}
 老师利用结合律把重复的 $A_2$ 放到一起，再用 $A_2\triangle A_2=\varnothing$ 消去：
 \begin{align*}
 (A_1\triangle A_2)\triangle(A_2\triangle A_3)
@@ -246,8 +257,9 @@ C\setminus(A\triangle B)
 \clearpage\subsection{分配律的代数证明拆解}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 36 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：40。\par
-\noindent\textbf{原课件第 36 页}\par\begin{center}\includegraphics[page=36,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$A\cap(B\triangle C)=(A\cap B)\triangle(A\cap C)$。
+\paragraph{证明思路}分别展开对称差，以交并分配律化简。
+\paragraph{详细推导与必要批注}
 \textbf{老师路线：}展开对称差，把同一公式的左右两边都写成两个互斥部分。
 \begin{align*}
 A\cap(B\triangle C)
@@ -265,20 +277,22 @@ A\cap(B\triangle C)
 \clearpage\subsection{三个对称差推论的短证明与修正}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 37 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：41。\par
-\noindent\textbf{原课件第 37 页}\par\begin{center}\includegraphics[page=37,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-本页有三段证明。\textbf{(1) 两边同时取补不改变对称差。}
+\paragraph{命题与条件}补集保持对称差；$A\triangle B=A\iff B=\varnothing$；方程 $E\triangle A=A'$ 的解为 $E=A'\triangle A$。
+\paragraph{证明思路}三小证明分别用双重补集、反证与包含、对称差自消。
+\paragraph{详细推导与必要批注}
+原课件该页有三段证明。\textbf{(1) 两边同时取补不改变对称差。}
 \[A^c\triangle B^c=(A^c\cap B)\cup(B^c\cap A)=(B\setminus A)\cup(A\setminus B)=A\triangle B.\]
 用到 $X\setminus Y=X\cap Y^c$、双重补集及并的交换律。
-\textbf{(2) $A\triangle B=A\iff B=\varnothing$。}先假设等式。若存在 $x\in B\setminus A$，则 $x\in A\triangle B=A$，与 $x\notin A$ 矛盾。所以 $B\subseteq A$。因此 $B\setminus A=\varnothing$，对称差化为 $A\setminus B$。原假设便是 $A=A\setminus B$。若 $b\in B$，由于 $B\subseteq A$ 有 $b\in A$，但 $b\notin A\setminus B$，又矛盾；故 $B=\varnothing$。反向直接由 $A\triangle\varnothing=A$。原图中 $A\cup\{x\}\subseteq A\triangle B$ 的写法无须且一般不对，真正需要的只是 $\{x\}\subseteq A\triangle B$。
+\textbf{(2) $A\triangle B=A\iff B=\varnothing$。}先假设等式。若存在 $x\in B\setminus A$，则 $x\in A\triangle B=A$，与 $x\notin A$ 矛盾。所以 $B\subseteq A$。因此 $B\setminus A=\varnothing$，对称差化为 $A\setminus B$。原假设便是 $A=A\setminus B$。若 $b\in B$，由于 $B\subseteq A$ 有 $b\in A$，但 $b\notin A\setminus B$，又矛盾；故 $B=\varnothing$。反向直接由 $A\triangle\varnothing=A$。原课件中 $A\cup\{x\}\subseteq A\triangle B$ 的写法无须且一般不对，真正需要的只是 $\{x\}\subseteq A\triangle B$。
 \textbf{(3) 解对称差方程。}若 $E\triangle A=A'$，用已证结合律和 $A\triangle A=\varnothing$：
 \[E=E\triangle\varnothing=E\triangle(A\triangle A)=(E\triangle A)\triangle A=A'\triangle A.\]
 每步分别使用空集恒等元、相同集合自消、结合律及已知方程。反向代入 $E=A'\triangle A$，同样结合后消去两个 $A$，得 $E\triangle A=A'$。这说明“等式两边同时作 $\triangle A$”可以消掉一项，与普通加法移项的思路类似，但依据是对称差的结合与自消。
 \clearpage\subsection{并集对称差的包含证明}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 38 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：42。\par
-\noindent\textbf{原课件第 38 页}\par\begin{center}\includegraphics[page=38,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$(\bigcup_\lambda A_\lambda)\triangle(\bigcup_\lambda A'_\lambda)\subseteq\bigcup_\lambda(A_\lambda\triangle A'_\lambda)$。
+\paragraph{证明思路}先分成两个差集；“不属于一组的并集”意味着不属于该组每一项，从而可使用另一组的同一个见证指标。
+\paragraph{详细推导与必要批注}
 \textbf{目标：}$ (\bigcup_\lambda A_\lambda)\triangle(\bigcup_\lambda A'_\lambda)\subseteq\bigcup_\lambda(A_\lambda\triangle A'_\lambda)$。老师先展开对称差，再分别估计两段差集。
 记 $U=\bigcup_\lambda A_\lambda,V=\bigcup_\lambda A'_\lambda$。任取 $x\in U\setminus V$。$x\in U$ 给出\emph{存在} $\lambda_0$ 使 $x\in A_{\lambda_0}$；$x\notin V$ 则给出\emph{每个} $\lambda$ 都有 $x\notin A'_\lambda$，特别有 $x\notin A'_{\lambda_0}$。于是
 \[
@@ -296,8 +310,9 @@ U\triangle V&=(U\setminus V)\cup(V\setminus U)\\
 \clearpage\subsection{巧选特殊集合与补全双向证明}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 40 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：44。\par
-\noindent\textbf{原课件第 40 页}\par\begin{center}\includegraphics[page=40,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若对所有 $E\subseteq S$ 均有 $E\cap A=E\cup A'$，则 $A=S,A'=\varnothing$；若两集合与同一 $C$ 的交、并分别相同，则两集合相同。
+\paragraph{证明思路}前者选特殊的 $E$；后者把每个集合按 $C$ 内部和外部拆开比较。
+\paragraph{详细推导与必要批注}
 题(1)假设对每个$E\subseteq S$均有$E\cap A=E\cup A'$。取$E=S$得$A=S$；取$E=\varnothing$得$A'=\varnothing$。这是“全称条件可以选特别方便的对象”的典型。
 题(2)若$A_1=A_2$，任意$A_3$都满足等式。反之已知与$A_3$的交相同、并相同，把并集等式两边与$CA_3$相交，得$A_1\cap CA_3=A_2\cap CA_3$。再使用
 \[A_i=(A_i\cap A_3)\cup(A_i\cap CA_3),\]
@@ -305,98 +320,109 @@ U\triangle V&=(U\setminus V)\cup(V\setminus U)\\
 \clearpage\subsection{练习1：先化简再谈充要条件}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 42 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：46。\par
-\noindent\textbf{原课件第 42 页}\par\begin{center}\includegraphics[page=42,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$A'=C(E\cap A)\cap(CE\cup A)$ 当且仅当 $CA'=E$，其中 $C$ 表示相对于同一全集的补集。
+\paragraph{证明思路}用德摩根律及分配律，把右侧表达式化成 $CE$，再取补验证等价。
+\paragraph{详细推导与必要批注}
 不论$A$是什么，
 \[C(E\cap A)\cap(CE\cup A)=(CE\cup CA)\cap(CE\cup A)=CE\cup(CA\cap A)=CE.\]
 于是题中等式就是$A'=CE$，它与$CA'=E$由双重补集律等价。原页的$CA\cap\cup A$是排版错误，应为$CA\cap A$。先化简可以避免把两个方向分别写成长式，却仍完整证明“当且仅当”。
 \clearpage\subsection{练习4：不能漏掉反向包含}
 \textbf{来源：}\texttt{102-ZSM-PPT.pdf}，原课件 PDF 第 43 页。\par
 对应已有 \texttt{gpt-102.pdf} 页脚：47。\par
-\noindent\textbf{原课件第 43 页}\par\begin{center}\includegraphics[page=43,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/102-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若 $A\cup A'=E\cup E'$，$A\cap E'=\varnothing$ 且 $A'\cap E=\varnothing$，则 $A=E,A'=E'$；另证 $(A\cap E)\cup(A\cap E')=A$。
+\paragraph{证明思路}利用共同并集与排斥条件逐元素证明双向包含；第二式用交对并分配律。
+\paragraph{详细推导与必要批注}
 由$A\cup A'=E\cup E'$及$A\cap E'=\varnothing$，任取$x\in A$必在$E$或$E'$，后者被排除，故$A\subseteq E$。反向任取$x\in E$，共同并集保证$x\in A$或$A'$，由$A'\cap E=\varnothing$排除后者，故$E\subseteq A$。同理$A'\subseteq E'$且$E'\subseteq A'$。原页只写两个正向包含后直接宣布相等，需补上刚才的反向步骤。
 第(2)题直接分配：$(A\cap E)\cup(A\cap E')=A\cap(E\cup E')=A\cap(A\cup A')=A$。
 \clearpage\section{103-Proof}
 \clearpage\subsection{补集结论的证明}
 \textbf{来源：}\texttt{103-ZSM-PPT.pdf}，原课件 PDF 第 18 页。\par
 对应已有 \texttt{gpt-103.pdf} 页脚：21。\par
-\noindent\textbf{原课件第 18 页}\par\begin{center}\includegraphics[page=18,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/103-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若对应 $\Phi$ 的实际值域为 $T$，则 $T\setminus\Phi(A)\subseteq\Phi(S\setminus A)$；若不同输入的值集不交，则为等号。
+\paragraph{证明思路}先由实际值域找到一个原像，再排除其落在 $A$ 中的可能；反向使用单射条件。
+\paragraph{详细推导与必要批注}
 在 $T=\Phi(S)$ 下，若 $y\notin\Phi(A)$，从满值域选 $x\in S$ 使 $y\in\Phi(x)$；该 $x$ 不在 $A$，故 $y\in\Phi(S\setminus A)$。反向需不同输入的输出集不相交，否则同一输出可同时由 $A$ 内外产生。
 \clearpage\subsection{常对应与恒等对应}
 \textbf{来源：}\texttt{103-ZSM-PPT.pdf}，原课件 PDF 第 25 页。\par
 对应已有 \texttt{gpt-103.pdf} 页脚：28。\par
-\noindent\textbf{原课件第 25 页}\par\begin{center}\includegraphics[page=25,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/103-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}常对应 $\Delta(x)=C$ 满足 $(\Delta\cap\Phi)(A)=\Delta(A)\cap\Phi(A)$。
+\paragraph{证明思路}把集合像写成逐点值集的并，让固定集合 $C$ 与并集分配；空输入集另检查。
+\paragraph{详细推导与必要批注}
 若 $\Delta(x)=C$，对非空 $A$ 有 $\Delta(A)=C$，所以 $\bigcup_{x\in A}(C\cap\Phi(x))=C\cap\Phi(A)$；空 $A$ 时两边均为空。恒等对应的输出是单点集 $\{x\}$。
 \clearpage\subsection{逆对应}
 \textbf{来源：}\texttt{103-ZSM-PPT.pdf}，原课件 PDF 第 28 页。\par
 对应已有 \texttt{gpt-103.pdf} 页脚：31。\par
-\noindent\textbf{原课件第 28 页}\par\begin{center}\includegraphics[page=28,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/103-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}单值对应的逆对应单射；单射对应在其有效值域上的逆对应单值。另核查原页关于半单值的说法。
+\paragraph{证明思路}沿逆对应定义交换输入与输出，把值集相交的问题改写成原对应的归属问题。
+\paragraph{详细推导与必要批注}
 记 $\Phi^-(y)=\{x:y\in\Phi(x)\}$，以下始终在有效定义域讨论非空值。\textbf{第一结论：单值对应的逆对应单射。}任取不同的 $y,y'$，若逆值集相交，取 $x\in\Phi^-(y)\cap\Phi^-(y')$。逆对应定义给 $y,y'\in\Phi(x)$；但 $\Phi(x)$ 恰含一个点，所以 $y=y'$，矛盾。于是不同输入的逆值集不交，这正是对应的单射定义。
 \textbf{第二结论：单射对应的逆对应单值。}固定有效值域内的 $y$，其逆值非空。若有 $x,x'\in\Phi^-(y)$，则 $y\in\Phi(x)\cap\Phi(x')$，原对应单射使 $x=x'$。因此逆值恰含一个元素。注意必须固定同一个 $y$ 比较两个原像；原页第二段固定同一个 $x$ 比较两个输出，并没有证明此结论。
 \textbf{第三句的额外纠错：}若 semi-single-valued 指每个值集“至多含一个元素”，则它本身不保证逆对应也半单值。反例 $\Phi(0)=\Phi(1)=\{a\}$，每个原值只有一点，但 $\Phi^-(a)=\{0,1\}$。要保证逆值至多一点，仍需要不同输入的值集互不相交。故原页这句不能在没有补充定义或假设时当作已证定理。
 \clearpage\subsection{下逆像}
 \textbf{来源：}\texttt{103-ZSM-PPT.pdf}，原课件 PDF 第 29 页。\par
 对应已有 \texttt{gpt-103.pdf} 页脚：32。\par
-\noindent\textbf{原课件第 29 页}\par\begin{center}\includegraphics[page=29,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/103-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}逆对应取两次回到原对应：$(\Phi^-)^-=\Phi$。
+\paragraph{证明思路}逐元素交换关系 $y\in\Phi(x)\iff x\in\Phi^-(y)$，第二次交换恢复原关系。
+\paragraph{详细推导与必要批注}
 $x\in\Phi^{-}(B)\iff\exists y\in B:y\in\Phi(x)$。交换有序对两坐标再交换回来不变，故逆对应的逆是原对应。集合逆像的“存在”含义对后面下半连续极重要。
 \clearpage\subsection{补集对偶}
 \textbf{来源：}\texttt{103-ZSM-PPT.pdf}，原课件 PDF 第 31--32 页。\par
 对应已有 \texttt{gpt-103.pdf} 页脚：34, 35。\par
-\noindent\textbf{原课件第 31 页}\par\begin{center}\includegraphics[page=31,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/103-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 32 页}\par\begin{center}\includegraphics[page=32,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/103-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空值对应的上下逆像满足补集对偶，且下逆像保持并，上逆像对并给出包含关系。
+\paragraph{证明思路}把“所有输出都在集合中”与“至少一个输出在集合中”分别写成全称与存在命题，再逐层取否定。
+\paragraph{详细推导与必要批注}
 在有效定义域 $S^*$ 内，非“全部在 $B$”等价于“有一个在 $T\setminus B$”。因此 $S^*\setminus\Phi^+(B)=\Phi^-(T\setminus B)$。允许空值却取整个 $S$ 作补集会破坏课件公式。
 
 下逆像保持并：有输出在 $B_1\cup B_2$ 当且仅有输出在至少一个集合。上逆像仅有包含，因为所有输出可能分散在两集合。例值集 $\{0,1\}$，分别取 $B_1=\{0\},B_2=\{1\}$ 即为严格包含。
 \clearpage\subsection{Cantor 对角证明}
 \textbf{来源：}\texttt{103-ZSM-PPT.pdf}，原课件 PDF 第 35 页。\par
 对应已有 \texttt{gpt-103.pdf} 页脚：38。\par
-\noindent\textbf{原课件第 35 页}\par\begin{center}\includegraphics[page=35,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/103-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意集合 $A$ 到其幂集 $\mathcal P(A)$ 都不存在满射；特别地 $\mathcal P(\N)$ 不可数。
+\paragraph{证明思路}假设给定列表，构造与每一项在相应位置都不同的对角集合。
+\paragraph{详细推导与必要批注}
 假设 $f:A\to\mathcal P(A)$ 满射。定义 $B=\{a\in A:a\notin f(a)\}$，由满射存在 $b$ 使 $f(b)=B$。于是 $b\in B\iff b\notin B$，两种可能都矛盾。关键是 $B$ 依赖于假设中的整张列表，必与每个列出集合在其对应位置不同。
 \clearpage\section{104-Proof}
 \clearpage\subsection{负传递的等价形式}
 \textbf{来源：}\texttt{104-ZSM-PPT.pdf}，原课件 PDF 第 17 页。\par
 对应已有 \texttt{gpt-104.pdf} 页脚：19。\par
-\noindent\textbf{原课件第 17 页}\par\begin{center}\includegraphics[page=17,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/104-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}负传递等价于：若 $xRz$，则任意中间点 $y$ 都满足 $xRy$ 或 $yRz$。
+\paragraph{证明思路}对负传递命题取逆否，再用德摩根律展开否定。
+\paragraph{详细推导与必要批注}
 原式的逆否命题是 $x\succ z\Rightarrow(x\succ y\text{ 或 }y\succ z)$，对每个中间点 $y$ 成立。推导用到 $\neg(P\land Q)=\neg P\lor\neg Q$，注意“或”允许两者同时成立。
 \clearpage\subsection{传递与无循环的证明}
 \textbf{来源：}\texttt{104-ZSM-PPT.pdf}，原课件 PDF 第 19 页。\par
 对应已有 \texttt{gpt-104.pdf} 页脚：21。\par
-\noindent\textbf{原课件第 19 页}\par\begin{center}\includegraphics[page=19,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/104-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非对称且负传递的严格偏好关系具有非自反性、传递性和无循环性。
+\paragraph{证明思路}先排除自己优于自己；用负传递的等价形式排除传递性的错误分支，再把有限循环压成自反矛盾。
+\paragraph{详细推导与必要批注}
 非对称排除 $x\succ x$。若 $x\succ y\succ z$，由上页等价式，$x\succ y$ 推出 $x\succ z$ 或 $z\succ y$；后者与 $y\succ z$ 矛盾，故传递。沿有限循环反复传递得到 $x\succ x$，矛盾。
 \clearpage\subsection{命题证明展开}
 \textbf{来源：}\texttt{104-ZSM-PPT.pdf}，原课件 PDF 第 22 页。\par
 对应已有 \texttt{gpt-104.pdf} 页脚：24。\par
-\noindent\textbf{原课件第 22 页}\par\begin{center}\includegraphics[page=22,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/104-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}从非对称、负传递的严格偏好定义弱偏好与无差异，证明三分性、弱偏好的完全和传递、无差异等价关系及二者连接性质。
+\paragraph{证明思路}各项先代入定义，再用负传递或已证传递性；不能把非对称误当反对称。
+\paragraph{详细推导与必要批注}
 假设严格关系 $\succ$ 非对称且负传递，定义 $x\succeq y\iff\neg(y\succ x)$，$x\sim y\iff\neg(x\succ y)\land\neg(y\succ x)$。沿老师六小点依次证明。
 \textbf{[1] 三分性：}非对称排除两个严格方向同时成立；若两个方向均不成立，按定义就是无差异，所以三种情形恰一成立。
 \textbf{[2] 弱偏好完全与传递：}非对称保证 $\neg(x\succ y)$ 或 $\neg(y\succ x)$，故 $y\succeq x$ 或 $x\succeq y$。若 $x\succeq y,y\succeq z$，则 $\neg(y\succ x),\neg(z\succ y)$。对 $z,y,x$ 用负传递，得 $\neg(z\succ x)$，即 $x\succeq z$。
 \textbf{[3] 无差异为等价关系：}非自反性给 $x\sim x$；交换两个否定条件得对称。若 $x\sim y,y\sim z$，负传递分别用于 $x,y,z$ 和 $z,y,x$，得 $\neg(x\succ z)$ 与 $\neg(z\succ x)$，故 $x\sim z$。
-\textbf{[4] 严格与无差异可连接：}设 $x\succ y,y\sim z$。对 $x,z$ 用三分性。如果 $z\succ x$，严格传递给 $z\succ y$，违反 $y\sim z$；如果 $z\sim x$，无差异传递给 $y\sim x$，违反 $x\succ y$。因此只能 $x\succ z$。对 $y\sim z,z\succ w$ 同理得 $y\succ w$。原图三分分支重复书写，应读为正向严格、反向严格、无差异这三种。
+\textbf{[4] 严格与无差异可连接：}设 $x\succ y,y\sim z$。对 $x,z$ 用三分性。如果 $z\succ x$，严格传递给 $z\succ y$，违反 $y\sim z$；如果 $z\sim x$，无差异传递给 $y\sim x$，违反 $x\succ y$。因此只能 $x\succ z$。对 $y\sim z,z\succ w$ 同理得 $y\succ w$。原课件三分分支重复书写，应读为正向严格、反向严格、无差异这三种。
 \textbf{[5] 弱关系分解：}$x\succeq y$ 排除了 $y\succ x$，由三分性只剩 $x\succ y$ 或 $x\sim y$；这两种反过来也都排除 $y\succ x$，故等价。
 \textbf{[6] 双向弱关系：}$x\succeq y$ 且 $y\succeq x$，按定义恰是两个严格方向都不成立，也就是 $x\sim y$。每一项都须区分普通传递与负传递，不能仅凭文字相近交换使用。
 \clearpage\subsection{还原弱关系}
 \textbf{来源：}\texttt{104-ZSM-PPT.pdf}，原课件 PDF 第 28 页。\par
 对应已有 \texttt{gpt-104.pdf} 页脚：30。\par
-\noindent\textbf{原课件第 28 页}\par\begin{center}\includegraphics[page=28,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/104-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}从完全传递弱偏好构造严格偏好，再反向构造，可还原原来的弱偏好和无差异。
+\paragraph{证明思路}先证明新严格关系满足非对称、负传递，再通过双重否定还原原关系。
+\paragraph{详细推导与必要批注}
 原构造给出 $x\succeq y\iff\neg(y\succ' x)\iff\neg\neg(x\succeq' y)\iff x\succeq' y$。严格关系和无差异也由相同定义还原。这里的双重否定是逻辑步骤，不是经验判断。
 \clearpage\section{105-Proof}
 \clearpage\subsection{由分割公理证明上确界存在}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 37--38 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：42, 43。\par
-\noindent\textbf{原课件第 37 页}\par\begin{center}\includegraphics[page=37,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 38 页}\par\begin{center}\includegraphics[page=38,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数的分割连续性与确界完备性之间的推导：由分割点构造非空有上界集合的上确界（或非空有下界集合的下确界）。
+\paragraph{证明思路}把原集合与全部上界（或下界）组成分割；用分割点验证“是界”及“最小／最大”。
+\paragraph{详细推导与必要批注}
 \paragraph{构造}令 $B$ 为 $S$ 的全部上界，$A=\R\setminus B$。有上界使 $B\ne\varnothing$；选 $s\in S$，$s-1$ 不是上界，故 $A\ne\varnothing$。
 \paragraph{验证分割}若 $a\in A,b\in B$ 而 $a\ge b$，则所有 $s\in S$ 满足 $s\le b\le a$，使 $a$ 也成上界，矛盾。因此 $a<b$，分割公理给分界点 $c$。
 \paragraph{证明端点属于上界侧}若 $c\notin B$，有 $s\in S$ 满足 $s>c$。中点 $m=(c+s)/2$ 大于 $c$，应属于 $B$；但 $m<s$，又不是上界，矛盾。故 $c\in B$。所有 $b\in B$ 都有 $c\le b$，所以 $c=\min B=\sup S$。
@@ -404,13 +430,13 @@ $x\in\Phi^{-}(B)\iff\exists y\in B:y\in\Phi(x)$。交换有序对两坐标再交
 
 设 $A,B$ 是一个分割。$A$ 非空且任取 $b\in B$ 都是其上界，故可取 $c=\sup A$。
 \paragraph{验证分界性质}若 $x<c$ 而 $x\in B$，则 $x$ 是 $A$ 的上界，违背 $c$ 是最小上界，所以 $x\in A$。若 $x>c$，由于 $c$ 是 $A$ 的上界，$x$ 不可能在 $A$，只能在 $B$。
-\paragraph{唯一性补全}两个不同分界点之间的中点会被同时分入 $A$ 和 $B$，矛盾。故确界公理能推出完整的分割公理。考试中“等价”必须写出两个方向，本页与前页缺一不可。
+\paragraph{唯一性补全}两个不同分界点之间的中点会被同时分入 $A$ 和 $B$，矛盾。故确界公理能推出完整的分割公理。考试中“等价”必须写出两个方向，原课件该页与前页缺一不可。
 \clearpage\subsection{由分割公理证明下确界存在}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 39--40 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：44, 45。\par
-\noindent\textbf{原课件第 39 页}\par\begin{center}\includegraphics[page=39,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 40 页}\par\begin{center}\includegraphics[page=40,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数的分割连续性与确界完备性之间的推导：由分割点构造非空有上界集合的上确界（或非空有下界集合的下确界）。
+\paragraph{证明思路}把原集合与全部上界（或下界）组成分割；用分割点验证“是界”及“最小／最大”。
+\paragraph{详细推导与必要批注}
 令 $A$ 为 $S$ 的全部下界，$B=\R\setminus A$。由下有界，$A\ne\varnothing$；取 $s\in S$，$s+1$ 不是下界，故 $B\ne\varnothing$。若 $a\in A,b\in B$ 且 $a\ge b$，则 $b\le a\le s$ 对所有 $s\in S$ 成立，矛盾，故 $a<b$。
 设分界点为 $c$。如果 $c\in B$，则有 $s\in S$ 满足 $s<c$。中点 $m=(s+c)/2$ 小于 $c$，应在 $A$，但 $m>s$ 又不可能是下界。因此 $c\in A$，且所有下界 $a\le c$，故 $c=\inf S$。
 \paragraph{记忆方法}上确界证明中选择“全部上界”的最小者；这里选择“全部下界”的最大者。中点总是用来挤出与分界方向冲突的数。
@@ -421,24 +447,27 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{上确界逼近刻画的双向证明}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 42 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：47。\par
-\noindent\textbf{原课件第 42 页}\par\begin{center}\includegraphics[page=42,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$b=\sup S$ 当且仅当 $b$ 是 $S$ 的上界，且 $\forall\eps>0\ \exists x\in S:x>b-\eps$；其中 $S\ne\varnothing$。
+\paragraph{证明思路}用更小上界作反证，再用逼近条件排除任何比 $b$ 小的上界。
+\paragraph{详细推导与必要批注}
 \paragraph{必要性}设 $b=\sup S$。它当然是上界。如果某个 $\eps>0$ 下找不到 $x>b-\eps$，那么所有 $x\in S$ 都满足 $x\le b-\eps$，说明 $b-\eps$ 是更小上界，矛盾。
 \paragraph{充分性}设 $b$ 是上界且有逼近性质。任取上界 $u$，要证 $b\le u$。若 $u<b$，令 $\eps=b-u>0$。逼近性质给 $x\in S$ 满足 $x>b-\eps=u$，违反 $u$ 是上界。因此 $b\le u$。
 \paragraph{如何想到选精度}想让 $b-\eps$ 恰好落在反证假设中的 $u$，所以解方程得到 $\eps=b-u$。证明中不是“随便取一个小数”，而是围绕目标构造。
 \clearpage\subsection{下确界逼近刻画的双向证明}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 43 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：48。\par
-\noindent\textbf{原课件第 43 页}\par\begin{center}\includegraphics[page=43,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$l=\inf S$ 当且仅当 $l$ 是 $S$ 的下界，且 $\forall\eps>0\ \exists x\in S:x<l+\eps$。
+\paragraph{证明思路}将上确界证明的大小方向反转，检查下界的最大性。
+\paragraph{详细推导与必要批注}
 \paragraph{必要性}若 $\ell=\inf S$，它是下界。若某个 $\eps>0$ 使所有 $x\in S$ 都满足 $x\ge\ell+\eps$，那么 $\ell+\eps$ 是更大的下界，矛盾。
 \paragraph{充分性}若 $\ell$ 是下界并能从上方逼近，任取下界 $d$。假设 $d>\ell$，令 $\eps=d-\ell$，就有 $x\in S$ 满足 $x<\ell+\eps=d$，违背下界性质。故每个下界 $d\le\ell$。
 \paragraph{一眼识别使用时机}需要构造 $x_n\in S$ 逼近下确界时，逐次取 $\eps=1/n$，得到 $\ell\le x_n<\ell+1/n$，于是 $x_n\to\ell$。存在逼近数列不意味着下确界属于 $S$。
 \clearpage\subsection{递增情形：逐句拆解证明}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 46 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：51。\par
-\noindent\textbf{原课件第 46 页}\par\begin{center}\includegraphics[page=46,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若实数列 $(x_n)$ 递增且有上界，则 $x_n\to\sup\{x_n:n\in\N\}$。
+\paragraph{证明思路}确界给出一个接近极限的项，单调性把“有一项接近”升级为“此后全部项接近”。
+\paragraph{详细推导与必要批注}
 设 $a=\sup\{x_n:n\in\N\}$，存在性来自非空和上有界。由上界定义，对所有 $n$ 有 $x_n\le a$。
 任给 $\eps>0$，由于 $a-\eps<a$，它不可能仍是上界。因此存在某个 $K$，使 $x_K>a-\eps$。单调性告诉我们：只要 $n\ge K$，就有 $x_n\ge x_K>a-\eps$。合起来：
 \[a-\eps<x_K\le x_n\le a,\qquad |x_n-a|=a-x_n<\eps.\]
@@ -447,8 +476,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{递减情形与课件笔误}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 47 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：52。\par
-\noindent\textbf{原课件第 47 页}\par\begin{center}\includegraphics[page=47,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若实数列 $(x_n)$ 递减且有下界，则 $x_n\to\inf\{x_n:n\in\N\}$。
+\paragraph{证明思路}用下确界向上逼近，再借递减性控制尾部。
+\paragraph{详细推导与必要批注}
 \paragraph{原页勘误}证明首段的 ``supremum'' 应改为 ``infimum''；后面的 ``increasing'' 应改为 ``decreasing''。
 \paragraph{完整证明}令 $a=\inf\{x_n:n\in\N\}$。非空且下有界保证存在，并且 $a\le x_n$。任给 $\eps>0$，由下确界逼近性质，存在 $K$ 使 $x_K<a+\eps$。当 $n\ge K$，递减性给 $x_n\le x_K$，因此
 \[a\le x_n\le x_K<a+\eps,\qquad |x_n-a|=x_n-a<\eps.\]
@@ -457,8 +487,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{先把左端点的上确界放入每个区间}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 49 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：54。\par
-\noindent\textbf{原课件第 49 页}\par\begin{center}\includegraphics[page=49,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若非空闭区间 $I_n=[d_n,u_n]$ 嵌套递减，则 $D=\sup_n d_n$ 属于每个 $I_n$。
+\paragraph{证明思路}固定任意一个区间，证明全部左端点均不超过它的右端点，进而把确界夹在两端之间。
+\paragraph{详细推导与必要批注}
 所有 $d_n\le u_1$，因此 $D=\sup_n d_n$ 存在，并且 $d_m\le D$。还要证明 $D\le u_m$，才可说 $D\in I_m$。
 \paragraph{关键交叉比较}固定任意 $m$，对任意 $n$：若 $n\le m$，则 $d_n\le d_m\le u_m$；若 $n>m$，则 $d_n\le u_n\le u_m$。所以 $u_m$ 是\emph{全部}左端点的上界，故 $D\le u_m$。
 于是每个 $m$ 都有 $d_m\le D\le u_m$，即 $D\in\bigcap_m I_m$。
@@ -466,16 +497,18 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{再把右端点的下确界放入每个区间}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 50 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：55。\par
-\noindent\textbf{原课件第 50 页}\par\begin{center}\includegraphics[page=50,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}在同样的闭区间套条件下，$U=\inf_n u_n$ 属于每个 $I_n$。
+\paragraph{证明思路}对右端点取下确界；固定区间后验证 $d_n\le U\le u_n$。
+\paragraph{详细推导与必要批注}
 \paragraph{纠正后证明}所有 $u_n\ge d_1$，所以右端点集合\emph{下有界}，$U=\inf_n u_n$ 存在，且 $U\le u_m$。上一页的交叉比较给固定 $m$ 下，所有 $n$ 满足 $d_m\le u_n$；因此 $d_m$ 是右端点集合的下界，故 $d_m\le U$。所以 $d_m\le U\le u_m$，$U$ 属于每个区间。
 \paragraph{原页勘误}bounded above 应改为 bounded below；后面的 $\sup B$ 应为 $\inf B$；$l_n$、$l_{n'}$ 应统一为左端点 $d_n,d_{n'}$；关键结论是 $d_m\le\inf B=U$，不是 $u_m\le U$。
 本证明只用下确界定义，没有偷偷假设交集非空。
 \clearpage\subsection{为什么交集恰好是一个闭区间}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 51 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：56。\par
-\noindent\textbf{原课件第 51 页}\par\begin{center}\includegraphics[page=51,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上述区间套满足 $\bigcap_n I_n=[D,U]$，其中 $D=\sup_n d_n$，$U=\inf_n u_n$。
+\paragraph{证明思路}分别证明任一交集元素被两个确界夹住，以及两个确界之间的元素属于全部区间。
+\paragraph{详细推导与必要批注}
 要证两个集合相等，标准做法是证明两个包含关系。
 \paragraph{第一方向}若 $x\in[D,U]$，每个 $n$ 都有 $d_n\le D\le x\le U\le u_n$，所以 $x\in I_n$，因此 $x$ 属于交集。
 \paragraph{第二方向}若 $x\in\bigcap_n I_n$，则每个 $n$ 都有 $d_n\le x$，所以 $x$ 是全体左端点的上界，从而 $D\le x$。同理 $x\le u_n$ 对所有 $n$ 成立，使 $x$ 成为右端点集合的下界，所以 $x\le U$。故 $x\in[D,U]$。
@@ -483,8 +516,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{长度趋零如何产生唯一交点}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 52 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：57。\par
-\noindent\textbf{原课件第 52 页}\par\begin{center}\includegraphics[page=52,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若进一步有 $u_n-d_n\to0$，则区间套的交仅含一点，并且 $d_n,u_n$ 都趋于该点。
+\paragraph{证明思路}先取端点的单调极限，再由区间长度趋零强迫两极限相同。
+\paragraph{详细推导与必要批注}
 已有 $d_n\le D\le U\le u_n$，两端相减可得
 \[0\le U-D\le u_n-d_n.\]
 右边趋于 $0$，所以固定非负数 $U-D$ 只能为 $0$，即 $D=U=:a$。交集 $[D,U]=\{a\}$，且单调收敛定理给 $d_n\to a,u_n\to a$。
@@ -493,8 +527,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{Bolzano 定理：二分法抽子列}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 53 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：58。\par
-\noindent\textbf{原课件第 53 页}\par\begin{center}\includegraphics[page=53,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意有界实数列存在收敛子列。
+\paragraph{证明思路}不断二分有界闭区间，保留含无穷多项的一半；在嵌套区间中按严格递增下标选项。
+\paragraph{详细推导与必要批注}
 把全部项放进 $[D,U]$。若 $D=U$，数列常值，直接收敛。否则把区间二等分，至少一半含无穷多个\emph{项的指标}；否则两半加起来仅含有限项。保留这一半，重复二分，得到长度 $(U-D)/2^k$ 的闭区间套 $I_k$。
 每个 $I_k$ 含无穷多个指标，所以可以逐次选 $n_k>n_{k-1}$ 且 $x_{n_k}\in I_k$。区间套定理给唯一交点 $a$。因为 $a,x_{n_k}$ 都在 $I_k$，
 \[|x_{n_k}-a|\le |I_k|=(U-D)2^{-k}\longrightarrow0.\]
@@ -503,9 +538,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{有界无限集合必有聚点：构造阶段}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 54--55 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：59, 60。\par
-\noindent\textbf{原课件第 54 页}\par\begin{center}\includegraphics[page=54,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 55 页}\par\begin{center}\includegraphics[page=55,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意有界无限实数集合都有聚点。
+\paragraph{证明思路}二分并保留含无穷多个集合元素的闭区间，区间套交点的每个邻域均含无穷多个集合点。
+\paragraph{详细推导与必要批注}
 聚点 $a$ 的定义是：每个 $\delta>0$ 都能找到 $x\in E$ 满足 $0<|x-a|<\delta$。允许 $a$ 不属于 $E$，但找出的点必须不同于 $a$。
 把有界无限集合 $E$ 放入 $[-M,M]$，取 $M>0$。二分后至少一个闭半区间仍含 $E$ 的无穷多个\emph{不同点}，否则两边有限，其并也有限。反复保留无限的一半，得到 $I_n$ 嵌套，长度 $2M/2^n$，且 $I_n\cap E$ 无限。
 \paragraph{与上一页的区别}数列版本保留无限指标；集合版本保留无限不同点。这一区别保证下一页能排除交点本身，真正证明“聚点”。原页 $R_0$ 应读作 $I_0$。
@@ -516,9 +551,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{收敛推出柯西：把误差分成两半}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 57--58 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：62, 63。\par
-\noindent\textbf{原课件第 57 页}\par\begin{center}\includegraphics[page=57,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 58 页}\par\begin{center}\includegraphics[page=58,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数列收敛当且仅当它是柯西列；本条为必要性及由有界子列得到极限的充分性。
+\paragraph{证明思路}必要性经共同极限拆成两段误差；充分性先证有界、抽收敛子列，再用柯西性控制整列。
+\paragraph{详细推导与必要批注}
 设 $x_n\to a$。给定最终希望得到的 $\eps>0$，按收敛定义，对精度 $\eps/2$ 选 $K$，使 $n\ge K$ 时 $|x_n-a|<\eps/2$。
 若 $m,n\ge K$，利用三角不等式：
 \[|x_n-x_m|=|(x_n-a)+(a-x_m)|\le|x_n-a|+|x_m-a|<\eps.\]
@@ -533,9 +568,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{柯西充分性的第二证法：尾部下确界}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 59--60 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：64, 65。\par
-\noindent\textbf{原课件第 59 页}\par\begin{center}\includegraphics[page=59,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 60 页}\par\begin{center}\includegraphics[page=60,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}柯西列必收敛：本条保留老师用尾部上、下确界构造极限的路线。
+\paragraph{证明思路}先证有界，再研究尾部的单调确界；尾部振幅由柯西条件压至零。
+\paragraph{详细推导与必要批注}
 柯西列有界的证明同上一页。定义 $y_n=\inf\{x_k:k\ge n\}$。删掉第一项后尾集缩小，下确界只能上升：$y_{n+1}\ge y_n$。原数列的统一上下界也界住 $y_n$，所以 $y_n$ 单调有界，存在极限 $a$。
 \paragraph{几何解释}$y_n$ 是从第 $n$ 项起所有数的“下边界”。它不一定是实际某一项，但总有 $y_n\le x_n$。柯西条件将迫使实际项与这条下边界越来越接近。
 \paragraph{原页勘误}$|nn|$ 应为 $|x_n|$。不用把下确界视作最小值；即使尾集没有最小项，定义与证明仍然有效。
@@ -549,9 +584,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{第三证法：尾部上确界}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 61--62 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：66, 67。\par
-\noindent\textbf{原课件第 61 页}\par\begin{center}\includegraphics[page=61,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 62 页}\par\begin{center}\includegraphics[page=62,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}柯西列必收敛：本条保留老师用尾部上、下确界构造极限的路线。
+\paragraph{证明思路}先证有界，再研究尾部的单调确界；尾部振幅由柯西条件压至零。
+\paragraph{详细推导与必要批注}
 定义 $z_n=\sup\{x_k:k\ge n\}$。尾集合变小使上确界不增，故 $z_n$ 递减；柯西列有界又保证 $z_n$ 有下界。因此单调收敛定理给 $z_n\to a$。
 \paragraph{对照下确界方法}下包络 $y_n$ 从下方上升，上包络 $z_n$ 从上方下降；柯西条件意味着两者之间的尾部振幅趋零。两种方法都是把不单调的数列转为单调边界。
 \paragraph{原页勘误}同样应把 $|nn|$ 改为 $|x_n|$。因为 $z_n$ 是上确界，所以 $x_n\le z_n$，不能反过来。下一页用这一方向完成估计。
@@ -560,13 +595,13 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 固定 $n\ge K$，对所有 $j\ge n$ 有 $x_j<x_n+\eps/2$，所以
 \[x_n\le z_n=\sup_{j\ge n}x_j\le x_n+\eps/2.\]
 于是 $|x_n-a|\le|x_n-z_n|+|z_n-a|<\eps$，整列收敛。
-\paragraph{课件指标修正}不能把 $\sup_{j\ge K}x_j$ 写成任意的 $z_{n_1}$，两者的尾集起点不同。本页证明固定 $n$ 后统一对 $j\ge n$ 取上确界，便消除了这个问题。上下包络证法任选一种熟练掌握即可，但应认识两种思路。
+\paragraph{课件指标修正}不能把 $\sup_{j\ge K}x_j$ 写成任意的 $z_{n_1}$，两者的尾集起点不同。原课件该页证明固定 $n$ 后统一对 $j\ge n$ 取上确界，便消除了这个问题。上下包络证法任选一种熟练掌握即可，但应认识两种思路。
 \clearpage\subsection{有限覆盖定理：把坏区间不断二分}
 \textbf{来源：}\texttt{105-ZSM-PPT.pdf}，原课件 PDF 第 64--65 页。\par
 对应已有 \texttt{gpt-105.pdf} 页脚：69, 70。\par
-\noindent\textbf{原课件第 64 页}\par\begin{center}\includegraphics[page=64,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 65 页}\par\begin{center}\includegraphics[page=65,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/105-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭有界区间的每个开覆盖都有有限子覆盖。
+\paragraph{证明思路}反设不存在有限子覆盖，逐次二分保留“不能有限覆盖”的区间，最后用交点处的开邻域得到矛盾。
+\paragraph{详细推导与必要批注}
 先证明闭区间 $[D,U]$。反设存在一个开覆盖，无法抽出有限子覆盖。二分成两个闭半区间，至少一个仍无法有限覆盖；否则两边各取有限个，合起来仍有限，便覆盖了整个区间，矛盾。
 如此递归，得到每个都“无法有限覆盖”的闭区间 $I_n$，且嵌套、长度 $(U-D)/2^n\to0$。闭区间套定理给交点 $a$。
 \paragraph{思路}我们暂时不直接挑覆盖集，而是把“失败的位置”压缩到一个点。开集在该点周围会留出余地，下一页正用这个余地制造矛盾。$D=U$ 的单点区间只需选一个覆盖它的开集，已经成立。
@@ -578,8 +613,9 @@ $B$ 非空且任一 $a\in A$ 是其下界，取 $c=\inf B$。若 $x<c$，$x$ 不
 \clearpage\subsection{为什么 $p\to\infty$ 会得到最大坐标}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 8 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：13。\par
-\noindent\textbf{原课件第 8 页}\par\begin{center}\includegraphics[page=8,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限维 $p$ 范数在 $p\to\infty$ 时趋于最大范数。
+\paragraph{证明思路}老师以公式极限推导；把最大坐标提出后，上下界夹逼可补足零坐标及对数边界情形。
+\paragraph{详细推导与必要批注}
 课件用对数和洛必达法则计算；含有 $a_j=0$ 时 $\log a_j$ 需要额外处理。以下夹逼证明更短且覆盖所有情形。令 $M=\max_j a_j$。因为某个 $a_j=M$，而每个 $a_j\le M$，有
 \[
  M^p\le\sum_{j=1}^N a_j^p\le NM^p,
@@ -589,31 +625,34 @@ $N^{1/p}\to1$，故夹逼得 $\rho_p\to M=\rho_\infty$。若 $M=0$，左右本�
 \clearpage\subsection{聚点的数列判别：构造互不相同的点}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 18 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：23。\par
-\noindent\textbf{原课件第 18 页}\par\begin{center}\includegraphics[page=18,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$x$ 是 $E$ 的聚点当且仅当存在互异的 $E$ 中点列收敛到 $x$。
+\paragraph{证明思路}必要性逐个缩小球并排除已选有限点；充分性用收敛尾部在每个球内。
+\paragraph{详细推导与必要批注}
 \paragraph{充分性}若互不相同的 $x_k\in E$ 趋于 $x$，任何球 $B_r(x)$ 都包含全部足够晚的项，因此包含无穷多个不同的点，故 $x\in E'$。
 \paragraph{必要性}假设 $x\in E'$。从 $E\cap B_1(x)$ 选 $x_1\ne x$；已选 $x_1,\ldots,x_k$ 后，从 $E\cap B_{1/(k+1)}(x)$ 中排除有限集合 $\{x,x_1,\ldots,x_k\}$，仍有点可选，记为 $x_{k+1}$。于是点互不相同，且 $\norm{x_k-x}<1/k\to0$。
 \paragraph{容易漏的条件}若允许数列恒为 $x$，只能说明 $x\in\overline E$，不能说明 $x\in E'$。``互不相同''是本定理区别于闭包判别的关键。
 \clearpage\subsection{导集的单调性与有限并公式}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 19 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：24。\par
-\noindent\textbf{原课件第 19 页}\par\begin{center}\includegraphics[page=19,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}导集单调，且 $(A\cup B)'=A'\cup B'$。
+\paragraph{证明思路}单调性给一个包含，另一边排除两侧均非聚点的可能。
+\paragraph{详细推导与必要批注}
 $A\subseteq B$ 时，任意球中无穷多个 $A$ 点也都是 $B$ 点，所以 $A'\subseteq B'$，进而 $\overline A\subseteq\overline B$。
 要证 $(A\cup B)'=A'\cup B'$，容易的一边来自单调性。对另一边用逆否命题更清楚：若 $x\notin A'$ 且 $x\notin B'$，分别有半径 $r,s$ 的球只含有限多个 $A,B$ 点。半径 $\min(r,s)$ 的球只含有限多个 $A\cup B$ 点，故 $x\notin(A\cup B)'$。重复这个论证得到任意\emph{有限}并的公式；无限并不能照搬，例见第43页第3题。
 \clearpage\subsection{内部的单调性与有限交公式}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 20 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：25。\par
-\noindent\textbf{原课件第 20 页}\par\begin{center}\includegraphics[page=20,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}内部算子单调，且 $(A\cap B)^\circ=A^\circ\cap B^\circ$。
+\paragraph{证明思路}两个正半径取最小值，使一个球同时落在两个集合中。
+\paragraph{详细推导与必要批注}
 若 $A\subseteq B$，包含于 $A$ 的小球也包含于 $B$，所以 $A^\circ\subseteq B^\circ$。由此 $(A\cap B)^\circ\subseteq A^\circ\cap B^\circ$。反向取 $x\in A^\circ\cap B^\circ$，存在 $r_A,r_B>0$ 分别使小球落入两集合；令 $r=\min(r_A,r_B)>0$，就有 $B_r(x)\subseteq A\cap B$。因此等号成立。
 课件略去的步骤是把两个可能不同的半径合并成一个。有限交可以取有限个正数的最小值；无限多个正数的下确界可能为0，这正是无限交不保开性的原因。
 \clearpage\subsection{二分立方体证明：不断保留无限多个点}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 22--23 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：27, 28。\par
-\noindent\textbf{原课件第 22 页}\par\begin{center}\includegraphics[page=22,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 23 页}\par\begin{center}\includegraphics[page=23,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有界无限 $E\subseteq\R^N$ 存在聚点。
+\paragraph{证明思路}二分立方体，保留含无穷多个元素的子块，利用套立方体交点。
+\paragraph{详细推导与必要批注}
 把有界集 $E$ 放进 $[-M,M]^N$。沿每个坐标二分，得到 $2^N$ 个闭小方块。若每块只含有限个 $E$ 点，则有限块合起来仍只有有限点，与 $E$ 无限矛盾。因此至少一块仍含无限个点。选这一块再二分，如此构造
 \[
  C_0\supseteq C_1\supseteq\cdots,\qquad
@@ -626,9 +665,9 @@ $A\subseteq B$ 时，任意球中无穷多个 $A$ 点也都是 $B$ 点，所以 
 \clearpage\subsection{孤立点与可数性的证明起点}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 24--25 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：29, 30。\par
-\noindent\textbf{原课件第 24 页}\par\begin{center}\includegraphics[page=24,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 25 页}\par\begin{center}\includegraphics[page=25,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}欧氏空间中每点都孤立的集合至多可数。
+\paragraph{证明思路}给每个孤立点分配一个附近有理点，证明不同孤立点对应不同有理点。
+\paragraph{详细推导与必要批注}
 $x$ 是 $E$ 的孤立点，正确条件是 $x\in E$ 且\emph{存在} $r>0$ 使 $B_r(x)\cap E=\{x\}$，等价于去心球与 $E$ 无交。\textbf{课件修正：}$x\notin D(x,r)$ 总是成立，单独这一句不能定义孤立点。
 若所有点都孤立，对每个 $x\in E$ 选 $r_x>0$ 使 $B_{2r_x}(x)\cap E=\{x\}$，再在 $B_{r_x}(x)$ 中选一个有理坐标点 $q_x\in\Q^N$。有理坐标点的存在来自每一坐标上有理数稠密；下一页证明这些 $q_x$ 不会重复。
 
@@ -639,9 +678,9 @@ $\norm{x-y}<r_x+r_y\le2\max(r_x,r_y)$。
 \clearpage\subsection{聚点也可以用去心邻域定义}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 26--27 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：31, 32。\par
-\noindent\textbf{原课件第 26 页}\par\begin{center}\includegraphics[page=26,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 27 页}\par\begin{center}\includegraphics[page=27,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}聚点判据：每个去心邻域均遇到 $E$，等价于每个邻域中有无穷多个 $E$ 点。
+\paragraph{证明思路}若只剩有限多个不同点，取其与中心距离的最小正值来缩小邻域。
+\paragraph{详细推导与必要批注}
 等价条件是 $x\in E'\iff\forall r>0,\ (B_r(x)\setminus\{x\})\cap E\ne\varnothing$。正向显然：无限多个点不可能只有中心一个。若课件说一个``含 $x$ 的邻域''却以 $y$ 为中心，只要 $x\in B_r(y)$，仍可找到以 $x$ 为中心的小球 $B_{r-\norm{x-y}}(x)\subset B_r(y)$。因为半径差严格为正，两种邻域表述等价。
 
 逆向假设每个去心球都碰到 $E$。若某个 $B_r(x)$ 只含有限个异于 $x$ 的点 $y_1,\ldots,y_m$，取
@@ -650,44 +689,50 @@ $0<s<\min(r,\norm{y_1-x},\ldots,\norm{y_m-x})$，则去心球 $B_s(x)\setminus\{
 \clearpage\subsection{邻域换中心与内部的局部稳定性}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 28 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：33。\par
-\noindent\textbf{原课件第 28 页}\par\begin{center}\includegraphics[page=28,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$x\in E^\circ$ 等价于存在一个以 $x$ 为中心的球包含于 $E$。
+\paragraph{证明思路}按邻域定义处理必要性，再由球内每点附近仍有更小球证明充分性。
+\paragraph{详细推导与必要批注}
 若 $B_r(x)\subseteq E$，且 $y\in B_r(x)$，记 $d=\norm{x-y}<r$。对 $z\in B_{r-d}(y)$，三角不等式给 $\norm{z-x}<r-d+d=r$，故 $z\in E$。所以原球中的每个点也是内点。这一小计算将反复出现：\emph{可移动的余量等于原半径减去已走过的距离}。若从一个非中心邻域反推中心邻域，也用同样的余量公式。
 \clearpage\subsection{连续性与上下水平集闭：补上子列步骤}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 30 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：35。\par
-\noindent\textbf{原课件第 30 页}\par\begin{center}\includegraphics[page=30,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实值函数连续当且仅当每个弱上、弱下水平集都闭。
+\paragraph{证明思路}正向对集内序列取函数极限；反向以阈值构造开邻域控制上下误差。
+\paragraph{详细推导与必要批注}
 \paragraph{正向}若 $f$ 连续，且 $x_k\to x$、$f(x_k)\ge t$，则 $f(x)=\lim f(x_k)\ge t$，故 $\{f\ge t\}$ 闭；$\{f\le t\}$ 同理。
 \paragraph{反向}若在 $x$ 不连续，则存在 $\eps_0>0$，对每个 $k$ 都能选 $\norm{x_k-x}<1/k$ 而 $|f(x_k)-f(x)|\ge\eps_0$。每项至少属于以下一类：$f(x_k)\le f(x)-\eps_0$ 或 $f(x_k)\ge f(x)+\eps_0$。两类中至少一类有无限多个下标，抽取该类子列。例如第一类得到闭集 $\{f\le f(x)-\eps_0\}$ 中的数列趋于 $x$，但 $x$ 不在该闭集，矛盾。第二类同理。
 \textbf{关键补足：}不能假定所有项天然落在同一边；必须先用无限鸽巢原理抽子列。
 \clearpage\subsection{开球的闭包与稠密}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 31 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：36。\par
-\noindent\textbf{原课件第 31 页}\par\begin{center}\includegraphics[page=31,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}正半径开球的闭包等于同中心同半径的闭球。
+\paragraph{证明思路}连续距离函数给一个包含；对边界点用从中心到该点的线段逼近给反向。
+\paragraph{详细推导与必要批注}
 设 $r>0$。若 $x_k\in B_r(a)$ 且 $x_k\to x$，距离连续性给 $\norm{x-a}\le r$，故 $\overline{B_r(a)}\subseteq\overline B_r(a)$。反向对 $x\in\overline B_r(a)$，取 $x_k=a+(1-1/k)(x-a)$，则 $\norm{x_k-a}=(1-1/k)\norm{x-a}<r$，且 $x_k\to x$。因此等号成立。
 $A$ 在 $S$ 中稠密，准确表述是 $A\subseteq S$ 且 $S\subseteq\overline A$，或相对闭包 $\overline A^{\,S}=S$。若直接写环境空间中的 $\overline A=S$，还暗中要求 $S$ 闭。后面的第84--86页使用前一种一般定义。
 \clearpage\subsection{导集与闭包本身都是闭集}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 33 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：38。\par
-\noindent\textbf{原课件第 33 页}\par\begin{center}\includegraphics[page=33,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}导集 $E'$ 及闭包 $\overline E$ 都闭。
+\paragraph{证明思路}对导集的聚点用两层邻域选点，再用闭包表达式处理后者。
+\paragraph{详细推导与必要批注}
 证明 $E'$ 闭：设 $x\in(E')'$。给定 $r>0$，选 $y\in E'$ 满足 $0<\norm{y-x}<r/2$，再取
 $s<\min(r-\norm{y-x},\norm{y-x})$。由于 $y$ 是 $E$ 的聚点，可选 $z\in E\cap B_s(y)$。这个小球不含 $x$，又包含于 $B_r(x)$，因此找到了 $E$ 中异于 $x$ 的近点。由第26--27页，$x\in E'$。
 再用有限并导集公式：$(\overline E)'=(E\cup E')'=E'\cup(E')'\subseteq E'\subseteq\overline E$，所以 $\overline E$ 闭。课件略去的小球半径选择正是证明严密性所在。
 \clearpage\subsection{有限个闭集之并仍闭：导集方法}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 34 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：39。\par
-\noindent\textbf{原课件第 34 页}\par\begin{center}\includegraphics[page=34,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个闭集的并闭：导集方法。
+\paragraph{证明思路}有限并的导集等于导集的有限并，再用各因子闭性。
+\paragraph{详细推导与必要批注}
 设 $F=F_1\cup\cdots\cup F_m$，每个 $F_i$ 闭。由第19页的有限并公式，$F'=F_1'\cup\cdots\cup F_m'\subseteq F_1\cup\cdots\cup F_m=F$，于是 $F$ 闭。注意 ``finite closed sets'' 在这里表示\emph{有限个闭集}，不是每个闭集本身只有有限个点。考试写明 $m<\infty$，防止把定理误用到无限并。
 \clearpage\subsection{同一个有限并结论：闭包方法}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 35 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：40。\par
-\noindent\textbf{原课件第 35 页}\par\begin{center}\includegraphics[page=35,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-本页给另一种代数写法：
+\paragraph{命题与条件}有限个闭集的并闭：闭包方法。
+\paragraph{证明思路}展开为原集与导集的并，再合并有限项。
+\paragraph{详细推导与必要批注}
+原课件该页给另一种代数写法：
 \[
  \overline{\bigcup_{i=1}^m F_i}
  =\bigcup_{i=1}^m(F_i\cup F_i')
@@ -698,32 +743,37 @@ $s<\min(r-\norm{y-x},\norm{y-x})$。由于 $y$ 是 $E$ 的聚点，可选 $z\in 
 \clearpage\subsection{可数个闭集之交仍闭：导集方法}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 36 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：41。\par
-\noindent\textbf{原课件第 36 页}\par\begin{center}\includegraphics[page=36,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}可数闭集交闭：导集方法。
+\paragraph{证明思路}交集包含于每个因子，导集单调性使其聚点仍在每个因子。
+\paragraph{详细推导与必要批注}
 设 $F=\bigcap_{k=1}^\infty F_k$。因为 $F\subseteq F_k$，单调性给 $F'\subseteq F_k'\subseteq F_k$，对\emph{每个} $k$ 都成立，于是 $F'\subseteq\bigcap_k F_k=F$。这里不用交换``求导集''与``无限交''：一般只有包含，不应写成等号。这个证明实际上完全没有用到可数性，下一组页面将推广到任意指标集。
 \clearpage\subsection{可数闭交的闭包写法}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 37 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：42。\par
-\noindent\textbf{原课件第 37 页}\par\begin{center}\includegraphics[page=37,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-对每个 $k$ 有 $\overline F\subseteq\overline{F_k}=F_k$，所以 $\overline F\subseteq F$。再结合总成立的 $F\subseteq\overline F$，得到 $F=\overline F$。本页比上一页多用一次``双向包含推出相等''的动作。若 $F$ 为空，也一样成立，不需要单独假设交集非空。
+\paragraph{命题与条件}可数闭集交闭：闭包方法。
+\paragraph{证明思路}闭包单调性与各因子等于其闭包给所需包含。
+\paragraph{详细推导与必要批注}
+对每个 $k$ 有 $\overline F\subseteq\overline{F_k}=F_k$，所以 $\overline F\subseteq F$。再结合总成立的 $F\subseteq\overline F$，得到 $F=\overline F$。原课件该页比上一页多用一次``双向包含推出相等''的动作。若 $F$ 为空，也一样成立，不需要单独假设交集非空。
 \clearpage\subsection{任意闭集族的交：不需要数得出来}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 38 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：43。\par
-\noindent\textbf{原课件第 38 页}\par\begin{center}\includegraphics[page=38,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意闭集族的交闭：导集方法。
+\paragraph{证明思路}指标族不必可数，因为对每个固定因子的包含分别成立。
+\paragraph{详细推导与必要批注}
 设 $\Gamma$ 可以不可数，$F=\bigcap_{\gamma\in\Gamma}F_\gamma$。任取 $x\in F'$，因为 $F\subseteq F_\gamma$，可知 $x\in F_\gamma'\subseteq F_\gamma$，对所有 $\gamma$ 成立，所以 $x\in F$。原页公式残留可数指标 $n$ 的位置应统一改为 $\gamma\in\Gamma$。若指标集为空，约定交集为整个环境空间，仍为闭集。
 \clearpage\subsection{任意闭交的闭包证明与笔误}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 39 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：44。\par
-\noindent\textbf{原课件第 39 页}\par\begin{center}\includegraphics[page=39,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意闭集族的交闭：闭包方法。
+\paragraph{证明思路}任取一个闭包元素，逐因子核查归属。
+\paragraph{详细推导与必要批注}
 延续第37页，把 $k$ 换成 $\gamma$：$\overline F\subseteq\overline{F_\gamma}=F_\gamma$，故 $\overline F\subseteq\bigcap_\gamma F_\gamma=F$。\textbf{课件修正：}每个 $F_\gamma$ 闭意味着 $\overline{F_\gamma}=F_\gamma$；不意味着 $\overline{F_\gamma}\subseteq F$，因为交集通常比单个集合小。不要把单调性方向倒过来。
 \clearpage\subsection{为什么无限并会出现新极限点}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 40 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：45。\par
-\noindent\textbf{原课件第 40 页}\par\begin{center}\includegraphics[page=40,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}无限个闭集的并不一定闭：原课件给出的区间例证。
+\paragraph{证明思路}实际算出并集，再找一个属于闭包而不属于该并的端点。
+\paragraph{详细推导与必要批注}
 $F_k=[1/(k+1),1/k]$ 都闭，但 $\bigcup_kF_k=(0,1]$ 不含聚点0，所以不闭。具体看 $x_k=1/k$：每项落在某个闭区间，但没有一个固定的区间包含无限多个趋0的项。
 一般总有
 \[
@@ -734,83 +784,95 @@ $F_k=[1/(k+1),1/k]$ 都闭，但 $\bigcup_kF_k=(0,1]$ 不含聚点0，所以不�
 \clearpage\subsection{闭包是包含原集合的最小闭集}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 41 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：46。\par
-\noindent\textbf{原课件第 41 页}\par\begin{center}\includegraphics[page=41,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$\overline A$ 是所有包含 $A$ 的闭集的交。
+\paragraph{证明思路}任一闭超集包含闭包，闭包本身又是其中一个闭超集，分别得到两个包含。
+\paragraph{详细推导与必要批注}
 令 $\mathcal F=\{F:F\text{ 闭且 }A\subseteq F\}$，$C=\bigcap_{F\in\mathcal F}F$。由于 $\overline A$ 本身闭且包含 $A$，它是被求交的成员之一，故 $C\subseteq\overline A$。另一方面每个 $F\in\mathcal F$ 满足 $\overline A\subseteq\overline F=F$，所以 $\overline A\subseteq C$。两边合并得 $C=\overline A$。
 ``最小''按集合包含比较，不是按元素数量比较；$\mathcal F$ 至少含有整个空间，因此并非无从取交。
 \clearpage\subsection{递减非空紧集的交非空：简洁完整证明}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 42 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：47。\par
-\noindent\textbf{原课件第 42 页}\par\begin{center}\includegraphics[page=42,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空有界闭集的递减套列具有非空交。
+\paragraph{证明思路}每项取点，在第一个有界闭集中抽子列，再用固定尾部的闭性。
+\paragraph{详细推导与必要批注}
 设 $F_1\supseteq F_2\supseteq\cdots$，各集非空、闭且 $F_1$ 有界。从每个 $F_k$ 任取 $x_k\in F_k$。整个数列都在 $F_1$ 中，故有收敛子列 $x_{k_j}\to x$。任意固定 $m$，当 $k_j\ge m$ 时，$x_{k_j}\in F_{k_j}\subseteq F_m$。由 $F_m$ 闭得到 $x\in F_m$。因为 $m$ 任意，$x\in\bigcap_mF_m$。
 这个证明自动处理重复集合、重复点，不必按课件分情况。交集未必只有一点；加上直径趋0才唯一。若去掉有界性，$F_k=[k,\infty)$ 给出空交；去掉闭性，$F_k=(0,1/k)$ 也给出空交。
 \clearpage\subsection{内点与内部}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 46 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：51。\par
-\noindent\textbf{原课件第 46 页}\par\begin{center}\includegraphics[page=46,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$E^\circ$ 是开集。
+\paragraph{证明思路}从大球内任一点出发，取“原半径减中心距离”作为新半径。
+\paragraph{详细推导与必要批注}
 $x\in E^\circ$ 指存在 $r>0$ 使 $B(x,r)\subseteq E$。内部不是边界。若 $y\in B(x,r)$，取 $s=r-\norm{x-y}>0$，三角不等式给 $B(y,s)\subseteq B(x,r)$。因此球中每点都是内点，$E^\circ$ 开。内部的单调性来自球的包含，幂等性来自内部本身是开集。
 \clearpage\subsection{有限开集的交}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 47 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：52。\par
-\noindent\textbf{原课件第 47 页}\par\begin{center}\includegraphics[page=47,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限开集交开：内部算子证明。
+\paragraph{证明思路}使用内部保持有限交及开集等于自身内部。
+\paragraph{详细推导与必要批注}
 任取 $x\in\bigcap_{i=1}^mG_i$，各取 $r_i>0$ 使 $B(x,r_i)\subseteq G_i$。有限多个正数的最小值 $r$ 仍正，故 $B(x,r)\subseteq\bigcap_iG_i$。无限交不能照搬：$\bigcap_{n\ge1}(-1/n,1/n)=\{0\}$ 不开。
 \clearpage\subsection{有限开集的交}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 48 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：53。\par
-\noindent\textbf{原课件第 48 页}\par\begin{center}\includegraphics[page=48,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限开集交开：邻域证明。
+\paragraph{证明思路}对各因子球半径取有限最小值。
+\paragraph{详细推导与必要批注}
 任取 $x\in\bigcap_{i=1}^mG_i$，各取 $r_i>0$ 使 $B(x,r_i)\subseteq G_i$。有限多个正数的最小值 $r$ 仍正，故 $B(x,r)\subseteq\bigcap_iG_i$。无限交不能照搬：$\bigcap_{n\ge1}(-1/n,1/n)=\{0\}$ 不开。
 \clearpage\subsection{任意开集的并}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 49 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：54。\par
-\noindent\textbf{原课件第 49 页}\par\begin{center}\includegraphics[page=49,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}可数开集并开：内部算子证明。
+\paragraph{证明思路}单调性给各开因子都在并集内部，再合并。
+\paragraph{详细推导与必要批注}
 若 $x\in\bigcup_iG_i$，只需选一个含 $x$ 的 $G_j$；由其开性取球 $B(x,r)\subseteq G_j\subseteq\bigcup_iG_i$。这不需要所有 $G_i$ 共同的正半径，所以任意甚至不可数并仍开。与有限交比较，关键是“存在一个”与“对所有”的区别。
 \clearpage\subsection{任意开集的并}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 50 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：55。\par
-\noindent\textbf{原课件第 50 页}\par\begin{center}\includegraphics[page=50,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}可数开集并开：邻域证明。
+\paragraph{证明思路}元素属于并集便有一个含它的开因子，从该因子取球即可。
+\paragraph{详细推导与必要批注}
 若 $x\in\bigcup_iG_i$，只需选一个含 $x$ 的 $G_j$；由其开性取球 $B(x,r)\subseteq G_j\subseteq\bigcup_iG_i$。这不需要所有 $G_i$ 共同的正半径，所以任意甚至不可数并仍开。与有限交比较，关键是“存在一个”与“对所有”的区别。
 \clearpage\subsection{任意开集的并}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 51 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：56。\par
-\noindent\textbf{原课件第 51 页}\par\begin{center}\includegraphics[page=51,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意开集并开：内部算子证明。
+\paragraph{证明思路}同样使用单调性，任意并不需要统一半径。
+\paragraph{详细推导与必要批注}
 若 $x\in\bigcup_iG_i$，只需选一个含 $x$ 的 $G_j$；由其开性取球 $B(x,r)\subseteq G_j\subseteq\bigcup_iG_i$。这不需要所有 $G_i$ 共同的正半径，所以任意甚至不可数并仍开。与有限交比较，关键是“存在一个”与“对所有”的区别。
 \clearpage\subsection{任意开集的并}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 52 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：57。\par
-\noindent\textbf{原课件第 52 页}\par\begin{center}\includegraphics[page=52,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意开集并开：邻域证明。
+\paragraph{证明思路}只选一个含给定点的因子，其邻域即为整个并集的邻域。
+\paragraph{详细推导与必要批注}
 若 $x\in\bigcup_iG_i$，只需选一个含 $x$ 的 $G_j$；由其开性取球 $B(x,r)\subseteq G_j\subseteq\bigcup_iG_i$。这不需要所有 $G_i$ 共同的正半径，所以任意甚至不可数并仍开。与有限交比较，关键是“存在一个”与“对所有”的区别。
 \clearpage\subsection{实开集的区间分解}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 54 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：59。\par
-\noindent\textbf{原课件第 54 页}\par\begin{center}\includegraphics[page=54,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实直线非空开集是至多可数个不交开区间之并。
+\paragraph{证明思路}用确界确定各极大区间端点，再向每个不交区间分配有理数。
+\paragraph{详细推导与必要批注}
 对 $a\in G$，把包含 $a$ 且包含于 $G$ 的开区间取并，得极大开区间 $I_a$。两个这样的区间相交，则并仍是区间，因此极大性使其相等。故不同 $I_a$ 不交且覆盖 $G$。每个非空区间含有理数，选其中一个；不同区间对应不同有理数，故只有可数多个区间。端点允许无穷。
 \clearpage\subsection{欧氏开集的方块分解}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 55--56 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：60, 61。\par
-\noindent\textbf{原课件第 55 页}\par\begin{center}\includegraphics[page=55,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 56 页}\par\begin{center}\includegraphics[page=56,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}欧氏开集可分解为可数个互不交的半开方块。
+\paragraph{证明思路}按网格逐层二分，先选粗块再选未覆盖的细块。
+\paragraph{详细推导与必要批注}
 把空间用边长 $2^{-k}$ 的半开方块分割，保留完全包含于 $G$ 且未被更粗已选方块覆盖的方块。每层可数，总层数可数；嵌套网格保证所选方块两两不交。给定 $x\in G$，存在球包含于 $G$，足够细的含 $x$ 方块直径小于该球半径，所以 $x$ 最终被选中方块覆盖。半开约定避免公共边界重复。
 \clearpage\subsection{可数拓扑基}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 57 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：62。\par
-\noindent\textbf{原课件第 57 页}\par\begin{center}\includegraphics[page=57,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有理中心、适当有理半径的球构成欧氏空间的可数开基。
+\paragraph{证明思路}在给定开邻域里插入一个包含原点的有理球，再取并恢复开集。
+\paragraph{详细推导与必要批注}
 所有有理中心、正有理半径的球构成可数族。若 $x\in G$ 开，选 $B(x,r)\subseteq G$，再选有理中心 $q$ 足够近于 $x$，及有理半径 $s$ 满足 $\norm{x-q}<s<r-\norm{x-q}$，便有 $x\in B(q,s)\subseteq G$。因此任何开集都是某些基球的并。
 \clearpage\subsection{紧性与有限子覆盖}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 60 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：65。\par
-\noindent\textbf{原课件第 60 页}\par\begin{center}\includegraphics[page=60,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭有界集合的任意开覆盖有有限子覆盖：可数化反证。
+\paragraph{证明思路}先缩为可数覆盖，假设前 $n$ 项总漏点，再抽漏点的收敛子列。
+\paragraph{详细推导与必要批注}
 \textbf{老师的路线：先把覆盖缩成可数覆盖，再构造避开前面有限项的数列。}先用有理球可数基，将任意开覆盖 $\mathcal U$ 缩为可数子覆盖：对每个包含于某个 $U\in\mathcal U$ 的基球 $V_j$，选择一个这样的 $U_j$。任意 $x\in F$ 都在某覆盖成员中，也在包含于该成员的基球中，因而被某个所选 $U_j$ 覆盖。
 反设不存在有限子覆盖，则每个 $n$ 可选
 \[x_n\in F\setminus\bigcup_{j=1}^nU_j.\]
@@ -818,262 +880,293 @@ $F$ 有界，Bolzano--Weierstrass 给子列 $x_{n_k}\to x$；$F$ 闭，故 $x\in
 \clearpage\subsection{紧性与有限子覆盖}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 61--63 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：66, 67, 68。\par
-\noindent\textbf{原课件第 61 页}\par\begin{center}\includegraphics[page=61,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 62 页}\par\begin{center}\includegraphics[page=62,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 63 页}\par\begin{center}\includegraphics[page=63,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭有界集合的任意开覆盖有有限子覆盖：统一邻域半径法。
+\paragraph{证明思路}先反证得到 Lebesgue 数，再以有限细网格选取覆盖成员。
+\paragraph{详细推导与必要批注}
 开覆盖是开集族，其并包含目标集合；有限子覆盖必须从原覆盖取有限成员。有限维中闭有界等价于紧。证明闭有界给有限子覆盖：若没有，把含 $E$ 的闭方块不断二分，每次保留不能有限覆盖的一个子方块。得到直径趋零的套方块及 $x_n\in E$，其极限 $x\in E$（用闭性）。某原覆盖开集含 $x$，故含 $B(x,r)$；足够小的整个所选方块都落入该球，可由一个开集覆盖，矛盾。另一证明的 Lebesgue 数步骤：若无统一半径，取 $x_n$ 使 $B(x_n,1/n)$ 不被单个覆盖成员包含；抽子列 $x_n\to x$，取 $B(x,r)\subset U$，当 $\norm{x_n-x}<r/2,1/n<r/2$ 时矛盾。闭性和有界性缺一不可：$(0,1)$ 可被 $(1/n,1)$ 覆盖却不能有限覆盖，$\N$ 的局部小区间覆盖也不能有限覆盖。
 \clearpage\subsection{紧性与有限子覆盖}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 64 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：69。\par
-\noindent\textbf{原课件第 64 页}\par\begin{center}\includegraphics[page=64,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}Heine--Borel 定理中闭性与有界性不能随意删去：课件的覆盖反例。
+\paragraph{证明思路}对任何有限子族，找一个没有被它们覆盖的集合点。
+\paragraph{详细推导与必要批注}
 开覆盖是开集族，其并包含目标集合；有限子覆盖必须从原覆盖取有限成员。有限维中闭有界等价于紧。证明闭有界给有限子覆盖：若没有，把含 $E$ 的闭方块不断二分，每次保留不能有限覆盖的一个子方块。得到直径趋零的套方块及 $x_n\in E$，其极限 $x\in E$（用闭性）。某原覆盖开集含 $x$，故含 $B(x,r)$；足够小的整个所选方块都落入该球，可由一个开集覆盖，矛盾。另一证明的 Lebesgue 数步骤：若无统一半径，取 $x_n$ 使 $B(x_n,1/n)$ 不被单个覆盖成员包含；抽子列 $x_n\to x$，取 $B(x,r)\subset U$，当 $\norm{x_n-x}<r/2,1/n<r/2$ 时矛盾。闭性和有界性缺一不可：$(0,1)$ 可被 $(1/n,1)$ 覆盖却不能有限覆盖，$\N$ 的局部小区间覆盖也不能有限覆盖。
 \clearpage\subsection{紧集的邻域与逆定理}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 65 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：70。\par
-\noindent\textbf{原课件第 65 页}\par\begin{center}\includegraphics[page=65,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若紧 $F$ 包含于开 $G$，则存在 $\delta>0$，使 $\|h\|<\delta$ 时 $F+h\subset G$。
+\paragraph{证明思路}半半径球覆盖紧集，有限选择后取共同最小半径。
+\paragraph{详细推导与必要批注}
 若紧 $F\subset G$ 开，给每个 $y\in F$ 选 $B(y,r_y)\subset G$，用半径 $r_y/2$ 的球有限覆盖 $F$，取有限 $r_y/2$ 的最小值 $\delta>0$。任意 $\norm h<\delta$ 都使 $F+h\subset G$。反之紧集必有界，因为球 $B(0,n)$ 覆盖它且有限子覆盖给统一半径；必闭，因为对 $z\notin E$，以 $x\in E$ 为中心取半径 $\norm{x-z}/3$ 的球，有限覆盖后可在 $z$ 周围找到避开 $E$ 的正半径球。
 \clearpage\subsection{紧集的邻域与逆定理}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 66 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：71。\par
-\noindent\textbf{原课件第 66 页}\par\begin{center}\includegraphics[page=66,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若 $E\subseteq\R^N$ 的每个开覆盖都有有限子覆盖，则 $E$ 闭且有界。
+\paragraph{证明思路}用越来越大的球证明有界，再对集外点构造分离球族证明补集开。
+\paragraph{详细推导与必要批注}
 若紧 $F\subset G$ 开，给每个 $y\in F$ 选 $B(y,r_y)\subset G$，用半径 $r_y/2$ 的球有限覆盖 $F$，取有限 $r_y/2$ 的最小值 $\delta>0$。任意 $\norm h<\delta$ 都使 $F+h\subset G$。反之紧集必有界，因为球 $B(0,n)$ 覆盖它且有限子覆盖给统一半径；必闭，因为对 $z\notin E$，以 $x\in E$ 为中心取半径 $\norm{x-z}/3$ 的球，有限覆盖后可在 $z$ 周围找到避开 $E$ 的正半径球。
 \clearpage\subsection{闭包与内部的抽象公理}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 70--71 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：75, 76。\par
-\noindent\textbf{原课件第 70 页}\par\begin{center}\includegraphics[page=70,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 71 页}\par\begin{center}\includegraphics[page=71,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭包算子和内部算子通过取补互相对应。
+\paragraph{证明思路}依次检查扩张/收缩、单调、幂等与空集/全集条件。
+\paragraph{详细推导与必要批注}
 闭包算子 $c$ 满足扩张、单调、幂等及 $c(\varnothing)=\varnothing$；定义 $i(A)=S\setminus c(S\setminus A)$。补集反向包含把扩张变为收缩，单调仍为单调，幂等由两次取补消去得到，$i(S)=S$。反向公式 $c(A)=S\setminus i(S\setminus A)$，因此两构造互逆。闭集是闭包不动集：任意闭集交 $F$ 满足 $c(F)\subseteq c(F_j)=F_j$ 对所有 $j$ 成立，加扩张性得相等。若 $A\subset F$ 闭，则 $c(A)\subset F$；且 $c(A)$ 自己闭，所以它是所有含 $A$ 闭集的交。注意这四条是较一般闭包系统公理，未必单独推出有限闭并性质，欧氏拓扑还有相应额外性质。
 \clearpage\subsection{闭包与内部的抽象公理}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 72 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：77。\par
-\noindent\textbf{原课件第 72 页}\par\begin{center}\includegraphics[page=72,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}相应内部、闭包算子下，闭集的补集开，开集的补集闭。
+\paragraph{证明思路}把不动集条件代入闭包和内部的补集公式。
+\paragraph{详细推导与必要批注}
 闭包算子 $c$ 满足扩张、单调、幂等及 $c(\varnothing)=\varnothing$；定义 $i(A)=S\setminus c(S\setminus A)$。补集反向包含把扩张变为收缩，单调仍为单调，幂等由两次取补消去得到，$i(S)=S$。反向公式 $c(A)=S\setminus i(S\setminus A)$，因此两构造互逆。闭集是闭包不动集：任意闭集交 $F$ 满足 $c(F)\subseteq c(F_j)=F_j$ 对所有 $j$ 成立，加扩张性得相等。若 $A\subset F$ 闭，则 $c(A)\subset F$；且 $c(A)$ 自己闭，所以它是所有含 $A$ 闭集的交。注意这四条是较一般闭包系统公理，未必单独推出有限闭并性质，欧氏拓扑还有相应额外性质。
 \clearpage\subsection{闭包与内部的抽象公理}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 73 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：78。\par
-\noindent\textbf{原课件第 73 页}\par\begin{center}\includegraphics[page=73,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}抽象闭包算子的不动集对任意交封闭。
+\paragraph{证明思路}单调性给闭包包含于每个因子，扩张性给反向。
+\paragraph{详细推导与必要批注}
 闭包算子 $c$ 满足扩张、单调、幂等及 $c(\varnothing)=\varnothing$；定义 $i(A)=S\setminus c(S\setminus A)$。补集反向包含把扩张变为收缩，单调仍为单调，幂等由两次取补消去得到，$i(S)=S$。反向公式 $c(A)=S\setminus i(S\setminus A)$，因此两构造互逆。闭集是闭包不动集：任意闭集交 $F$ 满足 $c(F)\subseteq c(F_j)=F_j$ 对所有 $j$ 成立，加扩张性得相等。若 $A\subset F$ 闭，则 $c(A)\subset F$；且 $c(A)$ 自己闭，所以它是所有含 $A$ 闭集的交。注意这四条是较一般闭包系统公理，未必单独推出有限闭并性质，欧氏拓扑还有相应额外性质。
 \clearpage\subsection{闭包与内部的抽象公理}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 74 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：79。\par
-\noindent\textbf{原课件第 74 页}\par\begin{center}\includegraphics[page=74,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}抽象内部算子的不动集对任意并封闭。
+\paragraph{证明思路}用内部单调性和收缩性分别给出两方向。
+\paragraph{详细推导与必要批注}
 闭包算子 $c$ 满足扩张、单调、幂等及 $c(\varnothing)=\varnothing$；定义 $i(A)=S\setminus c(S\setminus A)$。补集反向包含把扩张变为收缩，单调仍为单调，幂等由两次取补消去得到，$i(S)=S$。反向公式 $c(A)=S\setminus i(S\setminus A)$，因此两构造互逆。闭集是闭包不动集：任意闭集交 $F$ 满足 $c(F)\subseteq c(F_j)=F_j$ 对所有 $j$ 成立，加扩张性得相等。若 $A\subset F$ 闭，则 $c(A)\subset F$；且 $c(A)$ 自己闭，所以它是所有含 $A$ 闭集的交。注意这四条是较一般闭包系统公理，未必单独推出有限闭并性质，欧氏拓扑还有相应额外性质。
 \clearpage\subsection{闭包与内部的抽象公理}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 75 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：80。\par
-\noindent\textbf{原课件第 75 页}\par\begin{center}\includegraphics[page=75,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}抽象闭包是所有闭超集的交。
+\paragraph{证明思路}以不动性证明闭包本身闭，再用最小性给双向包含。
+\paragraph{详细推导与必要批注}
 闭包算子 $c$ 满足扩张、单调、幂等及 $c(\varnothing)=\varnothing$；定义 $i(A)=S\setminus c(S\setminus A)$。补集反向包含把扩张变为收缩，单调仍为单调，幂等由两次取补消去得到，$i(S)=S$。反向公式 $c(A)=S\setminus i(S\setminus A)$，因此两构造互逆。闭集是闭包不动集：任意闭集交 $F$ 满足 $c(F)\subseteq c(F_j)=F_j$ 对所有 $j$ 成立，加扩张性得相等。若 $A\subset F$ 闭，则 $c(A)\subset F$；且 $c(A)$ 自己闭，所以它是所有含 $A$ 闭集的交。注意这四条是较一般闭包系统公理，未必单独推出有限闭并性质，欧氏拓扑还有相应额外性质。
 \clearpage\subsection{闭包的序列判据与相对闭性}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 79 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：84。\par
-\noindent\textbf{原课件第 79 页}\par\begin{center}\includegraphics[page=79,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}欧氏集合的闭包是闭集。
+\paragraph{证明思路}将对闭包的逼近再逼近一次原集合，分配两段 $\eps/2$ 误差。
+\paragraph{详细推导与必要批注}
 $x\in\overline A$ 当且仅对任意 $n$ 可选 $a_n\in A$ 使 $\norm{x-a_n}<1/n$。闭集即任何集内收敛序列的极限仍在集内。闭包幂等可用二段逼近：先在 $\overline A$ 找距 $x$ 小于 $\eps/2$ 的点，再在 $A$ 找距它小于 $\eps/2$ 的点。任意闭交用序列同时属于每个因子；有限闭并则用有限抽屉原理找到无限多项属于某一个闭集的子列。相对闭包为 $S\cap\overline A$，只保留属于背景空间 $S$ 的极限；例如 $(0,1)$ 在自身中闭，却不在 $\R$ 中闭。
 \clearpage\subsection{闭包的序列判据与相对闭性}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 80 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：85。\par
-\noindent\textbf{原课件第 80 页}\par\begin{center}\includegraphics[page=80,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}欧氏任意闭集交闭：序列证明。
+\paragraph{证明思路}交集内序列在每个闭因子中，极限逐因子保留。
+\paragraph{详细推导与必要批注}
 $x\in\overline A$ 当且仅对任意 $n$ 可选 $a_n\in A$ 使 $\norm{x-a_n}<1/n$。闭集即任何集内收敛序列的极限仍在集内。闭包幂等可用二段逼近：先在 $\overline A$ 找距 $x$ 小于 $\eps/2$ 的点，再在 $A$ 找距它小于 $\eps/2$ 的点。任意闭交用序列同时属于每个因子；有限闭并则用有限抽屉原理找到无限多项属于某一个闭集的子列。相对闭包为 $S\cap\overline A$，只保留属于背景空间 $S$ 的极限；例如 $(0,1)$ 在自身中闭，却不在 $\R$ 中闭。
 \clearpage\subsection{闭包的序列判据与相对闭性}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 81 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：86。\par
-\noindent\textbf{原课件第 81 页}\par\begin{center}\includegraphics[page=81,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}欧氏有限闭集并闭：子列证明。
+\paragraph{证明思路}有限抽屉原理保证某个闭因子含无限多项，抽其子列后取极限。
+\paragraph{详细推导与必要批注}
 $x\in\overline A$ 当且仅对任意 $n$ 可选 $a_n\in A$ 使 $\norm{x-a_n}<1/n$。闭集即任何集内收敛序列的极限仍在集内。闭包幂等可用二段逼近：先在 $\overline A$ 找距 $x$ 小于 $\eps/2$ 的点，再在 $A$ 找距它小于 $\eps/2$ 的点。任意闭交用序列同时属于每个因子；有限闭并则用有限抽屉原理找到无限多项属于某一个闭集的子列。相对闭包为 $S\cap\overline A$，只保留属于背景空间 $S$ 的极限；例如 $(0,1)$ 在自身中闭，却不在 $\R$ 中闭。
 \clearpage\subsection{任意欧氏子集都可分}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 84--85 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：89, 90。\par
-\noindent\textbf{原课件第 84 页}\par\begin{center}\includegraphics[page=84,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 85 页}\par\begin{center}\includegraphics[page=85,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}每个欧氏子集都有可数稠密子集。
+\paragraph{证明思路}对每个遇到集合的可数基球选一个集内点，再用球半径控制逼近。
+\paragraph{详细推导与必要批注}
 枚举有理中心有理半径的球，对每个与 $S$ 相交的球选择一个点 $s_j\in S$，形成可数集合 $D$。给定 $x\in S,\eps>0$，由可数基选球 $B$ 满足 $x\in B\subset B(x,\eps)$，其选点 $s_j$ 与 $x$ 距离小于 $\eps$。故 $D\subset S\subset\overline D$。不能直接取 $S\cap\Q^N$，它可能为空，例如 $S=\{\sqrt2\}$。
 \clearpage\subsection{有界、紧与有限积}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 92 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：97。\par
-\noindent\textbf{原课件第 92 页}\par\begin{center}\includegraphics[page=92,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个闭集的积闭；有限个紧集的积紧。
+\paragraph{证明思路}逐坐标保极限证明闭性，各坐标统一界合成总界。
+\paragraph{详细推导与必要批注}
 有界是存在统一 $M$ 使每个点的范数不大于 $M$。有限积的闭性由坐标收敛和各因子闭性给出；有界性由各因子界的平方和给出。因此有限个紧集的积紧。有限维条件很关键，无限维中闭且有界一般不保证紧。
 \clearpage\subsection{连通的多种判据}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 94 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：99。\par
-\noindent\textbf{原课件第 94 页}\par\begin{center}\includegraphics[page=94,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数子集连通当且仅当它是区间：课件第一版本。
+\paragraph{证明思路}缺少中间点会分离；反向用确界制造分离的矛盾。
+\paragraph{详细推导与必要批注}
 连通指不能分成两个非空不交的相对开集；取补立刻等价于不能分成两个非空不交的相对闭集，也等价于没有非平凡既开又闭子集。$\partial A=\overline A\setminus A^\circ=\varnothing$ 等价于 $A$ 既开又闭，故得边界判据。若不交集合 $A,B$ 覆盖空间且互不碰对方闭包，它们在空间中均闭也均开，给分离判据。最后，非平凡 clopen 集 $A$ 的示性函数 $1_A:X\to\{0,1\}$ 连续，因为每个离散开集的逆像均开；反之非常值连续函数到 $\{0,1\}$ 的两个纤维给分离。实数连通集必是区间：若中间缺点 $c$，两侧相对开集分离它。区间必连通：若分离且 $a$ 在一侧、$b>a$ 在另一侧，取 $s=\sup\{t\in[a,b]:t\text{ 在第一侧}\}$，利用任一侧的相对开性都矛盾。
 \clearpage\subsection{连通的多种判据}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 96 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：101。\par
-\noindent\textbf{原课件第 96 页}\par\begin{center}\includegraphics[page=96,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实数子集连通当且仅当它是区间：课件第二版本。
+\paragraph{证明思路}沿两个分离部分选端点，再用端点间集合的确界及相对闭性。
+\paragraph{详细推导与必要批注}
 连通指不能分成两个非空不交的相对开集；取补立刻等价于不能分成两个非空不交的相对闭集，也等价于没有非平凡既开又闭子集。$\partial A=\overline A\setminus A^\circ=\varnothing$ 等价于 $A$ 既开又闭，故得边界判据。若不交集合 $A,B$ 覆盖空间且互不碰对方闭包，它们在空间中均闭也均开，给分离判据。最后，非平凡 clopen 集 $A$ 的示性函数 $1_A:X\to\{0,1\}$ 连续，因为每个离散开集的逆像均开；反之非常值连续函数到 $\{0,1\}$ 的两个纤维给分离。实数连通集必是区间：若中间缺点 $c$，两侧相对开集分离它。区间必连通：若分离且 $a$ 在一侧、$b>a$ 在另一侧，取 $s=\sup\{t\in[a,b]:t\text{ 在第一侧}\}$，利用任一侧的相对开性都矛盾。
 \clearpage\subsection{连通的多种判据}
 \textbf{来源：}\texttt{106-ZSM-PPT.pdf}，原课件 PDF 第 98--99 页。\par
 对应已有 \texttt{gpt-106.pdf} 页脚：103, 104。\par
-\noindent\textbf{原课件第 98 页}\par\begin{center}\includegraphics[page=98,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 99 页}\par\begin{center}\includegraphics[page=99,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/106-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连通性的开分离、闭分离、clopen、空边界、分离集和离散双点像等判据之间的证明。
+\paragraph{证明思路}取补转换开闭分离；示性函数连接非平凡 clopen 集与非常值离散映射。
+\paragraph{详细推导与必要批注}
 连通指不能分成两个非空不交的相对开集；取补立刻等价于不能分成两个非空不交的相对闭集，也等价于没有非平凡既开又闭子集。$\partial A=\overline A\setminus A^\circ=\varnothing$ 等价于 $A$ 既开又闭，故得边界判据。若不交集合 $A,B$ 覆盖空间且互不碰对方闭包，它们在空间中均闭也均开，给分离判据。最后，非平凡 clopen 集 $A$ 的示性函数 $1_A:X\to\{0,1\}$ 连续，因为每个离散开集的逆像均开；反之非常值连续函数到 $\{0,1\}$ 的两个纤维给分离。实数连通集必是区间：若中间缺点 $c$，两侧相对开集分离它。区间必连通：若分离且 $a$ 在一侧、$b>a$ 在另一侧，取 $s=\sup\{t\in[a,b]:t\text{ 在第一侧}\}$，利用任一侧的相对开性都矛盾。
 \clearpage\section{107-Proof}
 \clearpage\subsection{连续性的五个等价条件}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 9--11 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：12, 13, 14。\par
-\noindent\textbf{原课件第 9 页}\par\begin{center}\includegraphics[page=9,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 10 页}\par\begin{center}\includegraphics[page=10,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 11 页}\par\begin{center}\includegraphics[page=11,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连续函数的序列、邻域、开集逆像、闭集逆像以及闭包包含判据等价。
+\paragraph{证明思路}沿课件的蕴含链逐个证明；取补转换开闭，逆像包含关系连接闭包判据。
+\paragraph{详细推导与必要批注}
 连续的 $\eps$--$\delta$ 形式为：对每个 $\eps>0$ 存在 $\delta>0$，所有定义域内距 $x$ 小于 $\delta$ 的点，其像距 $f(x)$ 小于 $\eps$。否定它可逐个取 $\delta=1/n$ 构造 $x_n\to x$ 而像距始终至少 $\eps_0$，所以与数列定义等价。连续推出开集逆像开：$f(x)\in G$ 先取像球包含于 $G$，再用连续性拉回一个输入球。开逆像与闭逆像用补集对偶。闭逆像推出 $f(\overline A)\subseteq\overline{f(A)}$：后者的逆像是含 $A$ 的闭集，故含闭包。反向若有闭包包含性质，取 $A=f^{-1}(F)$ 且 $F$ 闭，则 $f(\overline A)\subseteq F$，故 $\overline A\subseteq A$，逆像闭。不要把像闭包上的横线漏掉。
 \clearpage\subsection{实值连续函数的水平集}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 13 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：16。\par
-\noindent\textbf{原课件第 13 页}\par\begin{center}\includegraphics[page=13,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实值函数连续等价于所有弱上、下水平集都闭。
+\paragraph{证明思路}用实开集的区间分解把水平集条件推广到任意开集逆像。
+\paragraph{详细推导与必要批注}
 实值函数连续当且仅所有 $\{f\le a\}$ 与 $\{f\ge a\}$ 闭。必要性是闭集逆像；充分性先取补得 $\{f>a\},\{f<b\}$ 开，再相交得 $f^{-1}((a,b))$ 开，任意实开集为开区间并，所以逆像开。实开集的极大区间分解见106第53页：不交区间各含不同有理数，因此可数。
 \clearpage\subsection{实值连续函数的水平集}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 14 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：17。\par
-\noindent\textbf{原课件第 14 页}\par\begin{center}\includegraphics[page=14,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}实直线开集是可数个互不交开区间的并。
+\paragraph{证明思路}以两点之间整段是否留在开集中定义类别，再用有理数证明类数可数。
+\paragraph{详细推导与必要批注}
 实值函数连续当且仅所有 $\{f\le a\}$ 与 $\{f\ge a\}$ 闭。必要性是闭集逆像；充分性先取补得 $\{f>a\},\{f<b\}$ 开，再相交得 $f^{-1}((a,b))$ 开，任意实开集为开区间并，所以逆像开。实开集的极大区间分解见106第53页：不交区间各含不同有理数，因此可数。
 \clearpage\subsection{紧集的连续像与极值}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 15 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：18。\par
-\noindent\textbf{原课件第 15 页}\par\begin{center}\includegraphics[page=15,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧集在连续函数下的像紧。
+\paragraph{证明思路}把像集的开覆盖取逆像拉回原紧集，有限覆盖后再取像。
+\paragraph{详细推导与必要批注}
 设 $K$ 非空紧，$\{U_i\}$ 覆盖 $f(K)$，则 $\{f^{-1}(U_i)\}$ 为 $K$ 的开覆盖。取有限子覆盖再取像得 $f(K)$ 的有限子覆盖，故像紧。实值时像非空闭有界，令 $M=\sup f(K)$，选像中数 $y_n>M-1/n$，闭性给 $M\in f(K)$，故有 $x_M\in K$ 达到最大。最小同理。$M$ 是值，$x_M$ 是达到该值的点；最优点可以不唯一。
 \clearpage\subsection{紧集的连续像与极值}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 16 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：19。\par
-\noindent\textbf{原课件第 16 页}\par\begin{center}\includegraphics[page=16,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空紧集上的连续实值函数达到最大、最小值。
+\paragraph{证明思路}连续像紧，实数紧像含其上、下确界。
+\paragraph{详细推导与必要批注}
 设 $K$ 非空紧，$\{U_i\}$ 覆盖 $f(K)$，则 $\{f^{-1}(U_i)\}$ 为 $K$ 的开覆盖。取有限子覆盖再取像得 $f(K)$ 的有限子覆盖，故像紧。实值时像非空闭有界，令 $M=\sup f(K)$，选像中数 $y_n>M-1/n$，闭性给 $M\in f(K)$，故有 $x_M\in K$ 达到最大。最小同理。$M$ 是值，$x_M$ 是达到该值的点；最优点可以不唯一。
 \clearpage\subsection{连通像与介值}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 18 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：21。\par
-\noindent\textbf{原课件第 18 页}\par\begin{center}\includegraphics[page=18,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连通集在连续函数下的像连通。
+\paragraph{证明思路}反设像可分离，用逆像把分离拉回原空间。
+\paragraph{详细推导与必要批注}
 若 $f(K)=A\cup B$ 是两个非空不交相对开集的分离，则逆像为 $K$ 的非空不交相对开分离，矛盾。实数连通集是区间，所以连续函数的两个函数值之间的每个数也是某个函数值。在 $[a,b]$ 上，若 $f(a)f(b)<0$ 就存在零点。仅能得存在，不保证唯一；唯一通常还需严格单调等条件。
 \clearpage\subsection{连通像与介值}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 19 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：22。\par
-\noindent\textbf{原课件第 19 页}\par\begin{center}\includegraphics[page=19,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连通空间上的连续实值函数具有介值性质。
+\paragraph{证明思路}连续像连通且实数连通集是区间，因此中间值属于像。
+\paragraph{详细推导与必要批注}
 若 $f(K)=A\cup B$ 是两个非空不交相对开集的分离，则逆像为 $K$ 的非空不交相对开分离，矛盾。实数连通集是区间，所以连续函数的两个函数值之间的每个数也是某个函数值。在 $[a,b]$ 上，若 $f(a)f(b)<0$ 就存在零点。仅能得存在，不保证唯一；唯一通常还需严格单调等条件。
 \clearpage\subsection{实值半连续的定义与等价判据}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 26 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：29。\par
-\noindent\textbf{原课件第 26 页}\par\begin{center}\includegraphics[page=26,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}下半连续等价于每个严格上水平集开，亦等价于每个弱下水平集闭。
+\paragraph{证明思路}在函数值与阈值之间分配一半误差；再用补集转换开闭。
+\paragraph{详细推导与必要批注}
 下半连续指 $f(x)\le\liminf f(x_n)$，允许向下的低点；上半连续指 $f(x)\ge\limsup f(x_n)$，允许向上的高点。下半连续等价于 $\{f>a\}$ 开，也等价于 $\{f\le a\}$ 闭：若 $a<f(x)$，定义给邻域中 $f>a$；反向对任意 $a<f(x)$ 用该开集取邻域。上半连续用 $-f$ 转化，得到 $\{f<a\}$ 开及 $\{f\ge a\}$ 闭。两者同时成立即连续。例 $f(0)=0,f(x)=1$ 对 $x\ne0$ 下半连续但不连续，其负函数上半连续。
 \clearpage\subsection{实值半连续的定义与等价判据}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 27 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：30。\par
-\noindent\textbf{原课件第 27 页}\par\begin{center}\includegraphics[page=27,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上半连续等价于每个严格下水平集开，亦等价于每个弱上水平集闭。
+\paragraph{证明思路}反转不等式方向，固定阈值后选择正的半间距。
+\paragraph{详细推导与必要批注}
 下半连续指 $f(x)\le\liminf f(x_n)$，允许向下的低点；上半连续指 $f(x)\ge\limsup f(x_n)$，允许向上的高点。下半连续等价于 $\{f>a\}$ 开，也等价于 $\{f\le a\}$ 闭：若 $a<f(x)$，定义给邻域中 $f>a$；反向对任意 $a<f(x)$ 用该开集取邻域。上半连续用 $-f$ 转化，得到 $\{f<a\}$ 开及 $\{f\ge a\}$ 闭。两者同时成立即连续。例 $f(0)=0,f(x)=1$ 对 $x\ne0$ 下半连续但不连续，其负函数上半连续。
 \clearpage\subsection{实值半连续的定义与等价判据}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 28 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：31。\par
-\noindent\textbf{原课件第 28 页}\par\begin{center}\includegraphics[page=28,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}下半连续等价于每个严格上水平集开，亦等价于每个弱下水平集闭。
+\paragraph{证明思路}在函数值与阈值之间分配一半误差；再用补集转换开闭。
+\paragraph{详细推导与必要批注}
 下半连续指 $f(x)\le\liminf f(x_n)$，允许向下的低点；上半连续指 $f(x)\ge\limsup f(x_n)$，允许向上的高点。下半连续等价于 $\{f>a\}$ 开，也等价于 $\{f\le a\}$ 闭：若 $a<f(x)$，定义给邻域中 $f>a$；反向对任意 $a<f(x)$ 用该开集取邻域。上半连续用 $-f$ 转化，得到 $\{f<a\}$ 开及 $\{f\ge a\}$ 闭。两者同时成立即连续。例 $f(0)=0,f(x)=1$ 对 $x\ne0$ 下半连续但不连续，其负函数上半连续。
 \clearpage\subsection{实值半连续的定义与等价判据}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 29 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：32。\par
-\noindent\textbf{原课件第 29 页}\par\begin{center}\includegraphics[page=29,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上半连续等价于每个严格下水平集开，亦等价于每个弱上水平集闭。
+\paragraph{证明思路}反转不等式方向，固定阈值后选择正的半间距。
+\paragraph{详细推导与必要批注}
 下半连续指 $f(x)\le\liminf f(x_n)$，允许向下的低点；上半连续指 $f(x)\ge\limsup f(x_n)$，允许向上的高点。下半连续等价于 $\{f>a\}$ 开，也等价于 $\{f\le a\}$ 闭：若 $a<f(x)$，定义给邻域中 $f>a$；反向对任意 $a<f(x)$ 用该开集取邻域。上半连续用 $-f$ 转化，得到 $\{f<a\}$ 开及 $\{f\ge a\}$ 闭。两者同时成立即连续。例 $f(0)=0,f(x)=1$ 对 $x\ne0$ 下半连续但不连续，其负函数上半连续。
 \clearpage\subsection{半连续函数的极值证明}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 30 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：33。\par
-\noindent\textbf{原课件第 30 页}\par\begin{center}\includegraphics[page=30,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空紧集上的有限实值下半连续函数达到最小值：闭集有限交方法。
+\paragraph{证明思路}先证下界有限，再用非空闭子水平集的有限交性质。
+\paragraph{详细推导与必要批注}
 \textbf{老师使用闭子集的有限交性质，不是直接用最小化序列。}假设 $K$ 非空紧，$f$ 为有限实值下半连续函数。
 先证明有下界：对每个 $x\in K$，下半连续给邻域 $U_x$，使 $f(z)>f(x)-1$ 对 $z\in U_x$ 成立。取有限覆盖 $U_{x_1},\ldots,U_{x_m}$，则 $f(z)>\min_i(f(x_i)-1)$ 对所有 $z\in K$ 成立。因此 $m=\inf_K f$ 有限。
 对每个 $\mu>m$，定义 $F_\mu=\{x\in K:f(x)\le\mu\}$。由确界定义，存在 $x$ 使 $f(x)<\mu$，所以 $F_\mu$ 非空；下半连续使它闭。任意有限多个这样的集合的交就是最小阈值对应的一项，仍非空。紧性的有限交性质给 $\bigcap_{\mu>m}F_\mu\ne\varnothing$。取其中 $x_0$，则 $f(x_0)\le\mu$ 对每个 $\mu>m$ 成立，故 $f(x_0)\le m$；又 $m$ 是下界，故 $f(x_0)=m$。
 \clearpage\subsection{半连续函数的极值证明}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 31--32 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：34, 35。\par
-\noindent\textbf{原课件第 31 页}\par\begin{center}\includegraphics[page=31,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 32 页}\par\begin{center}\includegraphics[page=32,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}同一最小值命题的开覆盖加最小化序列证明。
+\paragraph{证明思路}开水平集有限覆盖先给统一下界，再抽最小化序列的收敛子列。
+\paragraph{详细推导与必要批注}
 非空紧 $K$ 上有限实值下半连续函数先必有下界：若无，取 $f(x_n)<-n$，紧性给子列趋于 $x\in K$，下半连续将推出有限 $f(x)\le-\infty$，矛盾。设有限 $m=\inf_K f$，选 $f(x_n)<m+1/n$，再取收敛子列，得到 $f(x)\le\liminf f(x_n)=m$，而下界给反向，故取到最小值。对 $-f$ 应用此结论得上半连续函数有最大值。原页35趋近的值应为 $M$ 而非 $m$。不能只从紧集直接说任意函数有界。
 \clearpage\subsection{半连续函数的极值证明}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 33 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：36。\par
-\noindent\textbf{原课件第 33 页}\par\begin{center}\includegraphics[page=33,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空紧集上的有限实值上半连续函数达到最大值：闭集有限交方法。
+\paragraph{证明思路}对上水平集应用有限交性质，并验证上确界有限。
+\paragraph{详细推导与必要批注}
 老师用上水平闭集的有限交性质证明取最大值。先由上半连续性对每个 $x$ 取邻域使附近 $f(z)<f(x)+1$，紧性给有限子覆盖，因而全域有共同上界。令 $M=\sup_K f$。对每个 $\mu<M$，$F_\mu=\{x\in K:f(x)\ge\mu\}$ 非空且闭；任意有限交是最大阈值对应的一项，仍非空。故紧性给一点 $x_0$ 属于全部 $F_\mu$。于是 $f(x_0)\ge\mu$ 对每个 $\mu<M$ 成立，迫使 $f(x_0)\ge M$；而上界定义给 $f(x_0)\le M$，所以达到最大值。条件 $K\ne\varnothing$ 及函数实值用于保证有限的 $M$ 有意义。
 \clearpage\subsection{半连续函数的极值证明}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 34--35 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：37, 38。\par
-\noindent\textbf{原课件第 34 页}\par\begin{center}\includegraphics[page=34,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 35 页}\par\begin{center}\includegraphics[page=35,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}同一最大值命题的开覆盖加最大化序列证明。
+\paragraph{证明思路}先得统一上界，再从逼近上确界的序列抽子列并取极限。
+\paragraph{详细推导与必要批注}
 非空紧 $K$ 上有限实值下半连续函数先必有下界：若无，取 $f(x_n)<-n$，紧性给子列趋于 $x\in K$，下半连续将推出有限 $f(x)\le-\infty$，矛盾。设有限 $m=\inf_K f$，选 $f(x_n)<m+1/n$，再取收敛子列，得到 $f(x)\le\liminf f(x_n)=m$，而下界给反向，故取到最小值。对 $-f$ 应用此结论得上半连续函数有最大值。原页35趋近的值应为 $M$ 而非 $m$。不能只从紧集直接说任意函数有界。
 \clearpage\subsection{上确界、下确界与有限运算}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 36 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：39。\par
-\noindent\textbf{原课件第 36 页}\par\begin{center}\includegraphics[page=36,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}下半连续函数族的逐点上确界下半连续（在所讨论实值情形）。
+\paragraph{证明思路}先选一个逼近上确界的函数，再控制它的邻域误差。
+\paragraph{详细推导与必要批注}
 \textbf{沿老师的确界逼近法。}令 $g=\sup_i f_i$，假设 $g(x_0)$ 有限。给 $\eps>0$，由上确界定义选\emph{一个} $i$ 使 $f_i(x_0)>g(x_0)-\eps/2$。下半连续给邻域 $U$ 使 $f_i(x)>f_i(x_0)-\eps/2$。于是对所有 $x\in U$，
 \[g(x)\ge f_i(x)>f_i(x_0)-\eps/2>g(x_0)-\eps.\]
 这正是下半连续。原文的 $2\eps$ 可通过预先分配 $\eps/2$ 改写成标准精度。不需要所有 $i$ 同时有同一个邻域，只需逼近上确界的那个 $i$。
 \clearpage\subsection{上确界、下确界与有限运算}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 37 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：40。\par
-\noindent\textbf{原课件第 37 页}\par\begin{center}\includegraphics[page=37,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上半连续函数族的逐点下确界上半连续。
+\paragraph{证明思路}先选一个逼近下确界的函数，再使用该函数的上半连续性。
+\paragraph{详细推导与必要批注}
 令 $g=\inf_i f_i$，给 $\eps>0$，先选 $i$ 使 $f_i(x_0)<g(x_0)+\eps/2$，再由 $f_i$ 上半连续取邻域使 $f_i(x)<f_i(x_0)+\eps/2$。于是 $g(x)\le f_i(x)<g(x_0)+\eps$，故上半连续。选近似最优项在先，控制该项的邻域在后，量词顺序不能倒过来。
 \clearpage\subsection{上确界、下确界与有限运算}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 38 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：41。\par
-\noindent\textbf{原课件第 38 页}\par\begin{center}\includegraphics[page=38,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个下半连续函数的最小值下半连续。
+\paragraph{证明思路}给每个函数取邻域，再作有限交取得共同控制。
+\paragraph{详细推导与必要批注}
 若 $g=\sup_i f_i$ 且各 $f_i$ 下半连续，则 $\{g>a\}=\bigcup_i\{f_i>a\}$ 开，故 $g$ 下半连续。上半连续函数的任意下确界对偶。有限下半连续函数的最小值满足 $\{\min_i f_i>a\}=\bigcap_i\{f_i>a\}$，有限交开；上半连续函数有限最大值对偶。无限交不保证开，故不能删掉“有限”。若确界可能无穷，应注明把函数视为扩展实值。
 \clearpage\subsection{上确界、下确界与有限运算}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 39 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：42。\par
-\noindent\textbf{原课件第 39 页}\par\begin{center}\includegraphics[page=39,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个上半连续函数的最大值上半连续。
+\paragraph{证明思路}对有限多个输入邻域取交，分别估计每个函数。
+\paragraph{详细推导与必要批注}
 若 $g=\sup_i f_i$ 且各 $f_i$ 下半连续，则 $\{g>a\}=\bigcup_i\{f_i>a\}$ 开，故 $g$ 下半连续。上半连续函数的任意下确界对偶。有限下半连续函数的最小值满足 $\{\min_i f_i>a\}=\bigcap_i\{f_i>a\}$，有限交开；上半连续函数有限最大值对偶。无限交不保证开，故不能删掉“有限”。若确界可能无穷，应注明把函数视为扩展实值。
 \clearpage\subsection{半连续函数的加法与正乘法}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 40 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：43。\par
-\noindent\textbf{原课件第 40 页}\par\begin{center}\includegraphics[page=40,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}两个下半连续实值函数的和下半连续。
+\paragraph{证明思路}把和的严格上水平集写成两个开水平集交的并。
+\paragraph{详细推导与必要批注}
 老师将和函数的水平集拆成开集的并。以 $f+g>a$ 为目标，有
 \[\{x:f(x)+g(x)>a\}=\bigcup_{\lambda\in\R}\big(\{x:f(x)>a-\lambda\}\cap\{x:g(x)>\lambda\}\big).\]
 右边属于某项时，两个不等式相加立即得左边。反向若和严格大于 $a$，就在 $g(x)$ 与 $a-f(x)$ 之间选一个实数 $\lambda$，使两个所需严格不等式同时成立。每项是两个开水平集的交，因此开；任意并仍开，所以和下半连续。并集中的 $\lambda$ 可以随 $x$ 而变，不要求全域共用同一个值。
 \clearpage\subsection{半连续函数的加法与正乘法}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 41 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：44。\par
-\noindent\textbf{原课件第 41 页}\par\begin{center}\includegraphics[page=41,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}两个上半连续实值函数的和上半连续。
+\paragraph{证明思路}在两个函数值之间插入阈值参数，化为开水平集。
+\paragraph{详细推导与必要批注}
 老师将和函数的水平集拆成开集的并。以 $f+g<a$ 为目标，有
 \[\{x:f(x)+g(x)<a\}=\bigcup_{\lambda\in\R}\big(\{x:f(x)<a-\lambda\}\cap\{x:g(x)<\lambda\}\big).\]
 右边属于某项时，两个不等式相加立即得左边。反向若和严格小于 $a$，就在 $g(x)$ 与 $a-f(x)$ 之间选一个实数 $\lambda$，使两个所需严格不等式同时成立。每项是两个开水平集的交，因此开；任意并仍开，所以和上半连续。并集中的 $\lambda$ 可以随 $x$ 而变，不要求全域共用同一个值。
 \clearpage\subsection{半连续函数的加法与正乘法}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 42 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：45。\par
-\noindent\textbf{原课件第 42 页}\par\begin{center}\includegraphics[page=42,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}两个严格正的下半连续实值函数的乘积下半连续。
+\paragraph{证明思路}用正参数分解乘积的严格上水平集。
+\paragraph{详细推导与必要批注}
 假设 $f,g$ 严格正，老师按乘积水平集证明。对 $a>0$，
 \[\{x:f(x)g(x)>a\}=\bigcup_{\lambda>0}\big(\{x:f(x)>\lambda\}\cap\{x:g(x)>a/\lambda\}\big).\]
 右边到左边由正数不等式相乘。左边到右边，在正数 $f(x)$ 与 $a/g(x)$ 之间选 $\lambda$：若乘积大于 $a$，选 $a/g(x)<\lambda<f(x)$；若乘积小于 $a$，选 $f(x)<\lambda<a/g(x)$。这样严格验证集合等式。每项开，故并开。还须处理 $a\le0$：乘积严格正，所以大于 $a$ 的水平集是全域，小于 $a$ 的水平集为空，均开。因此乘积下半连续。正性用于除法及保持不等号方向。
 \clearpage\subsection{半连续函数的加法与正乘法}
 \textbf{来源：}\texttt{107-ZSM-PPT.pdf}，原课件 PDF 第 43 页。\par
 对应已有 \texttt{gpt-107.pdf} 页脚：46。\par
-\noindent\textbf{原课件第 43 页}\par\begin{center}\includegraphics[page=43,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/107-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}两个严格正的上半连续实值函数的乘积上半连续。
+\paragraph{证明思路}用正参数分解乘积的严格下水平集，并单独检查非正阈值。
+\paragraph{详细推导与必要批注}
 假设 $f,g$ 严格正，老师按乘积水平集证明。对 $a>0$，
 \[\{x:f(x)g(x)<a\}=\bigcup_{\lambda>0}\big(\{x:f(x)<\lambda\}\cap\{x:g(x)<a/\lambda\}\big).\]
 右边到左边由正数不等式相乘。左边到右边，在正数 $f(x)$ 与 $a/g(x)$ 之间选 $\lambda$：若乘积大于 $a$，选 $a/g(x)<\lambda<f(x)$；若乘积小于 $a$，选 $f(x)<\lambda<a/g(x)$。这样严格验证集合等式。每项开，故并开。还须处理 $a\le0$：乘积严格正，所以大于 $a$ 的水平集是全域，小于 $a$ 的水平集为空，均开。因此乘积上半连续。正性用于除法及保持不等号方向。
@@ -1081,32 +1174,36 @@ $x\in\overline A$ 当且仅对任意 $n$ 可选 $a_n\in A$ 使 $\norm{x-a_n}<1/n
 \clearpage\subsection{上半连续与闭图：双向证明}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 11 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：17。\par
-\noindent\textbf{原课件第 11 页}\par\begin{center}\includegraphics[page=11,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-本页先采用老师前面给出的闭图式上半连续定义：$x_n\to x,y_n\to y,y_n\in\Phi(x_n)\Rightarrow y\in\Phi(x)$。图为 $G=\{(x,y):y\in\Phi(x)\}$。
+\paragraph{命题与条件}共同紧陪域的本节约定下，闭图式上半连续与图闭等价。
+\paragraph{证明思路}把两条坐标序列视为乘积空间中的一条序列。
+\paragraph{详细推导与必要批注}
+原课件该页先采用老师前面给出的闭图式上半连续定义：$x_n\to x,y_n\to y,y_n\in\Phi(x_n)\Rightarrow y\in\Phi(x)$。图为 $G=\{(x,y):y\in\Phi(x)\}$。
 \textbf{闭图推出该序列条件：}任取满足条件的两列，$(x_n,y_n)\in G$ 且在乘积空间趋于 $(x,y)$。由 $G$ 闭得 $(x,y)\in G$，按图的定义即 $y\in\Phi(x)$。
 \textbf{反向：}任取图中收敛点列 $(x_n,y_n)\to(x,y)$。乘积收敛给两个坐标收敛，图中归属给 $y_n\in\Phi(x_n)$，于是上半连续定义给 $y\in\Phi(x)$，即极限仍在图中，故图闭。
 注意不能删除结果列收敛这个前提。在本节共同紧陪域的背景下，这个闭图判据与后面开集式上半连续相协调；离开该背景时应检查紧性及闭值条件。
 \clearpage\subsection{连续函数与对应的复合}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 12 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：18。\par
-\noindent\textbf{原课件第 12 页}\par\begin{center}\includegraphics[page=12,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连续函数与半连续对应的复合保持相应半连续性。
+\paragraph{证明思路}先让中间输入通过连续函数取极限，再用对应的序列定义。
+\paragraph{详细推导与必要批注}
 令 $\Psi=\Phi\circ f$，即 $\Psi(x)=\Phi(f(x))$。\textbf{上半连续的闭图式证明：}给定 $x_n\to x,y_n\to y,y_n\in\Psi(x_n)$，先由 $f$ 连续令 $z_n=f(x_n)\to f(x)=z$。再把归属重写为 $y_n\in\Phi(z_n)$；由 $\Phi$ 在 $z$ 的条件得 $y\in\Phi(z)=\Psi(x)$。
 \textbf{下半连续：}给定 $x_n\to x$ 及固定 $y\in\Psi(x)$，于是 $y\in\Phi(f(x))$。由 $f$ 连续及 $\Phi$ 下半连续，能选 $y_n\in\Phi(f(x_n))=\Psi(x_n)$ 且 $y_n\to y$，正是所需。原页下半连续段开头的 $y\in\Phi(x)$ 应改为 $y\in\Psi(x)$，否则定义域可能不匹配。上半连续是验证任意已有的收敛选择，下半连续则需要主动构造逼近给定旧选择的输出列。
 \clearpage\subsection{积对应的证明逐步写}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 14 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：20。\par
-\noindent\textbf{原课件第 14 页}\par\begin{center}\includegraphics[page=14,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限积对应具有相应闭图性质；本节紧陪域约定下得到相应上半连续性。
+\paragraph{证明思路}逐坐标取极限，再按乘积的定义组合坐标。
+\paragraph{详细推导与必要批注}
 上半连续：任取 $x_q\to x$、$y^q\in\varphi(x_q)$、$y^q\to y$。对每个 $i$，有 $y_i^q\in\varphi_i(x_q)$ 且 $y_i^q\to y_i$；上半连续得 $y_i\in\varphi_i(x)$，全部坐标同时成立即 $y\in\prod_i\varphi_i(x)$。
 
 下半连续：给定 $y=(y_1,\ldots,y_N)\in\varphi(x)$。对每个 $i$，下半连续允许选 $y_i^q\in\varphi_i(x_q)$ 趋于 $y_i$；合成 $y^q=(y_1^q,\ldots,y_N^q)$，它可行，且 $\norm{y^q-y}^2=\sum_i|y_i^q-y_i|^2\to0$。\textbf{纠正：}课件的 $\varphi_n(z^q)$ 应为 $\varphi_n(x^q)$。
 \clearpage\subsection{最优值连续的完整证明与原页纠错}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 19 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：25。\par
-\noindent\textbf{原课件第 19 页}\par\begin{center}\includegraphics[page=19,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连续目标与非空紧值连续可行对应下，最优值函数连续。
+\paragraph{证明思路}下半连续给可行逼近，上半连续与紧性给最优点子列；用两方向夹住最优值。
+\paragraph{详细推导与必要批注}
 固定任意 $x_n\to x_0$，记 $g_0=g(x_0)$。\textbf{先证明下界。}取一个最优点 $y_0\in\mu(x_0)$。由 $\varphi$ 下半连续，可选 $z_n\in\varphi(x_n)$ 使 $z_n\to y_0$。连续性给
 \[f(x_n,z_n)\to f(x_0,y_0)=g_0,\qquad g(x_n)\ge f(x_n,z_n),\]
 故 $\liminf_n g(x_n)\ge g_0$。这里用 $\liminf$，因为还没有证明 $g(x_n)$ 的极限存在。
@@ -1119,8 +1216,9 @@ $x\in\overline A$ 当且仅对任意 $n$ 可选 $a_n\in A$ 使 $\norm{x-a_n}<1/n
 \clearpage\subsection{最优解对应为何紧且上半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 20 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：26。\par
-\noindent\textbf{原课件第 20 页}\par\begin{center}\includegraphics[page=20,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}相同条件下最优对应非空紧值且上半连续。
+\paragraph{证明思路}对最优点序列取极限，并将任意旧可行点逼近后代入最优不等式。
+\paragraph{详细推导与必要批注}
 对固定 $x$，极值定理给最优点存在。$\mu(x)=\varphi(x)\cap\{y:f(x,y)=g(x)\}$ 是紧集的闭子集，所以紧。接着任取 $x_n\to x_0$、$y_n\in\mu(x_n)$、$y_n\to y$。因为 $\mu(x_n)\subseteq\varphi(x_n)$，闭图给 $y\in\varphi(x_0)$；又
 \[f(x_n,y_n)=g(x_n)\ \Longrightarrow\ f(x_0,y)=g(x_0),\]
 故 $y\in\mu(x_0)$，最优图闭。
@@ -1129,161 +1227,180 @@ $x\in\overline A$ 当且仅对任意 $n$ 可选 $a_n\in A$ 使 $\norm{x-a_n}<1/n
 \clearpage\subsection{最优值连续而最优解不下半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 21 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：27。\par
-\noindent\textbf{原课件第 21 页}\par\begin{center}\includegraphics[page=21,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}最优对应不一定下半连续：目标 $f(x,y)=xy$ 与常可行集 $[0,1]$ 的例证。
+\paragraph{证明思路}分别计算 $x=0$ 与 $x>0$ 时的最优点，再按下半连续定义检查。
+\paragraph{详细推导与必要批注}
 $S=T=[0,1]$，$\varphi(x)=[0,1]$，$f(x,y)=xy$。$x>0$ 时乘以正数保序，所以唯一最优点为1；$x=0$ 时所有收益都为0，故 $\mu(0)=[0,1]$。$g(x)=x$ 连续。
 
 $\mu$ 在0上半连续，因为任何附近最优点的极限都在 $[0,1]$。但不下半连续：取 $x_n=1/n$ 和目标 $y_0=0\in\mu(0)$，每个 $y_n\in\mu(x_n)$ 都只能等于1，不能趋于0。这个反例说明最大值定理的结论已经是恰当强度，不能擅自把 u.s.c. 改为连续。
 \clearpage\subsection{逆像刻画的证明}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 29--30 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：35, 36。\par
-\noindent\textbf{原课件第 29 页}\par\begin{center}\includegraphics[page=29,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 30 页}\par\begin{center}\includegraphics[page=30,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}下半连续对应的开集下逆像开；等价的闭集上逆像判据。
+\paragraph{证明思路}逐点把“开集遇到值集”的定义改写成邻域归属，再取补。
+\paragraph{详细推导与必要批注}
 下逆像 $\Phi^-(V)=\{x:\Phi(x)\cap V\ne\varnothing\}$。下半连续当且仅开集的下逆像开：若某点属于该逆像，定义给整个邻域也属于它；反向取逆像本身为邻域。上逆像 $\Phi^+(V)=\{x:\Phi(x)\subseteq V\}$，同样论证得到上半连续的开逆像判据。非空值下的补集对偶把两种开集判据换成闭集判据；允许空值时应先限制到有效定义域。
 \clearpage\subsection{逆像刻画的证明}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 32--33 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：38, 39。\par
-\noindent\textbf{原课件第 32 页}\par\begin{center}\includegraphics[page=32,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 33 页}\par\begin{center}\includegraphics[page=33,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上半连续对应的开集上逆像开；等价的闭集下逆像判据。
+\paragraph{证明思路}把整个值集在开集中的要求写成上逆像，再逐层取补。
+\paragraph{详细推导与必要批注}
 下逆像 $\Phi^-(V)=\{x:\Phi(x)\cap V\ne\varnothing\}$。下半连续当且仅开集的下逆像开：若某点属于该逆像，定义给整个邻域也属于它；反向取逆像本身为邻域。上逆像 $\Phi^+(V)=\{x:\Phi(x)\subseteq V\}$，同样论证得到上半连续的开逆像判据。非空值下的补集对偶把两种开集判据换成闭集判据；允许空值时应先限制到有效定义域。
 \clearpage\subsection{紧值上半连续对应的紧像}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 34 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：40。\par
-\noindent\textbf{原课件第 34 页}\par\begin{center}\includegraphics[page=34,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧值上半连续对应将紧集映为紧集。
+\paragraph{证明思路}先有限覆盖每个紧值，再用输入集紧性把局部邻域有限化。
+\paragraph{详细推导与必要批注}
 设 $K$ 紧且 $\Phi$ 紧值上半连续。给 $\Phi(K)$ 的任意开覆盖，对每个 $x\in K$ 先有限覆盖紧集 $\Phi(x)$，把对应有限个开集的并记作 $V_x$。上半连续给 $U_x$ 使 $\Phi(U_x)\subset V_x$。再用 $K$ 紧，从 $U_x$ 取有限子覆盖。两次有限选择的总开集数仍有限，覆盖 $\Phi(K)$。两个紧性分别作用于“每个值”和“输入集”。
 \clearpage\subsection{闭对应与闭图}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 39 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：45。\par
-\noindent\textbf{原课件第 39 页}\par\begin{center}\includegraphics[page=39,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}度量空间中图闭等价于收敛的图中序列极限仍在图中。
+\paragraph{证明思路}将图的成员关系逐字替换成对应的值集归属。
+\paragraph{详细推导与必要批注}
 闭图指若 $x_n\to x,y_n\to y,y_n\in\Phi(x_n)$，则 $y\in\Phi(x)$。等价于图在乘积空间闭；也等价于图外每个 $(x,y)$ 可找到乘积开邻域与图不交。固定 $x$ 用常数输入得闭图蕴含闭值。连续 $f(x,y)$ 的弱不等式定义对应有闭图，因为不等式保极限。任意闭图对应的逐点交为图的任意闭交，有限并为有限闭并，有限积由坐标判据闭。闭值本身不推出闭图，例如单值跳跃函数。
 \clearpage\subsection{闭对应与闭图}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 40 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：46。\par
-\noindent\textbf{原课件第 40 页}\par\begin{center}\includegraphics[page=40,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限积对应具有相应闭图性质；本节紧陪域约定下得到相应上半连续性。
+\paragraph{证明思路}逐坐标取极限，再按乘积的定义组合坐标。
+\paragraph{详细推导与必要批注}
 闭图指若 $x_n\to x,y_n\to y,y_n\in\Phi(x_n)$，则 $y\in\Phi(x)$。等价于图在乘积空间闭；也等价于图外每个 $(x,y)$ 可找到乘积开邻域与图不交。固定 $x$ 用常数输入得闭图蕴含闭值。连续 $f(x,y)$ 的弱不等式定义对应有闭图，因为不等式保极限。任意闭图对应的逐点交为图的任意闭交，有限并为有限闭并，有限积由坐标判据闭。闭值本身不推出闭图，例如单值跳跃函数。
 \clearpage\subsection{闭对应与闭图}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 41 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：47。\par
-\noindent\textbf{原课件第 41 页}\par\begin{center}\includegraphics[page=41,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭图对应在每个固定输入处的值集闭。
+\paragraph{证明思路}输入取常数序列，输出取任意值集中收敛序列。
+\paragraph{详细推导与必要批注}
 闭图指若 $x_n\to x,y_n\to y,y_n\in\Phi(x_n)$，则 $y\in\Phi(x)$。等价于图在乘积空间闭；也等价于图外每个 $(x,y)$ 可找到乘积开邻域与图不交。固定 $x$ 用常数输入得闭图蕴含闭值。连续 $f(x,y)$ 的弱不等式定义对应有闭图，因为不等式保极限。任意闭图对应的逐点交为图的任意闭交，有限并为有限闭并，有限积由坐标判据闭。闭值本身不推出闭图，例如单值跳跃函数。
 \clearpage\subsection{闭对应与闭图}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 42 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：48。\par
-\noindent\textbf{原课件第 42 页}\par\begin{center}\includegraphics[page=42,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连续函数弱不等式定义的对应具有闭图。
+\paragraph{证明思路}图是连续实值函数的闭子水平集，或对弱不等式直接取极限。
+\paragraph{详细推导与必要批注}
 闭图指若 $x_n\to x,y_n\to y,y_n\in\Phi(x_n)$，则 $y\in\Phi(x)$。等价于图在乘积空间闭；也等价于图外每个 $(x,y)$ 可找到乘积开邻域与图不交。固定 $x$ 用常数输入得闭图蕴含闭值。连续 $f(x,y)$ 的弱不等式定义对应有闭图，因为不等式保极限。任意闭图对应的逐点交为图的任意闭交，有限并为有限闭并，有限积由坐标判据闭。闭值本身不推出闭图，例如单值跳跃函数。
 \clearpage\subsection{闭对应与闭图}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 43 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：49。\par
-\noindent\textbf{原课件第 43 页}\par\begin{center}\includegraphics[page=43,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意闭图对应的逐点交仍有闭图。
+\paragraph{证明思路}交值归属在每个因子上分别保极限。
+\paragraph{详细推导与必要批注}
 闭图指若 $x_n\to x,y_n\to y,y_n\in\Phi(x_n)$，则 $y\in\Phi(x)$。等价于图在乘积空间闭；也等价于图外每个 $(x,y)$ 可找到乘积开邻域与图不交。固定 $x$ 用常数输入得闭图蕴含闭值。连续 $f(x,y)$ 的弱不等式定义对应有闭图，因为不等式保极限。任意闭图对应的逐点交为图的任意闭交，有限并为有限闭并，有限积由坐标判据闭。闭值本身不推出闭图，例如单值跳跃函数。
 \clearpage\subsection{闭对应与闭图}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 44 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：50。\par
-\noindent\textbf{原课件第 44 页}\par\begin{center}\includegraphics[page=44,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个闭图对应的逐点并仍有闭图。
+\paragraph{证明思路}有限抽屉原理找到同一因子中无限多项，再取该子列极限。
+\paragraph{详细推导与必要批注}
 闭图指若 $x_n\to x,y_n\to y,y_n\in\Phi(x_n)$，则 $y\in\Phi(x)$。等价于图在乘积空间闭；也等价于图外每个 $(x,y)$ 可找到乘积开邻域与图不交。固定 $x$ 用常数输入得闭图蕴含闭值。连续 $f(x,y)$ 的弱不等式定义对应有闭图，因为不等式保极限。任意闭图对应的逐点交为图的任意闭交，有限并为有限闭并，有限积由坐标判据闭。闭值本身不推出闭图，例如单值跳跃函数。
 \clearpage\subsection{闭图与上半连续之间的紧性桥梁}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 45 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：51。\par
-\noindent\textbf{原课件第 45 页}\par\begin{center}\includegraphics[page=45,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧值上半连续对应具有闭图。
+\paragraph{证明思路}将值集与不在其中的输出点分离，再用上半连续排除收敛选择逃出值集。
+\paragraph{详细推导与必要批注}
 紧值上半连续对应有闭图：若 $y\notin\Phi(x)$，紧值闭且 $\dist(y,\Phi(x))>0$，取分离开邻域，再用上半连续，附近图不能靠近 $(x,y)$。若 $\Psi$ 闭图，$\Phi$ 紧值上半连续，则 $\Phi\cap\Psi$ 紧值上半连续。证明反证：若有 $x_n\to x$ 和交值 $y_n$ 逃出包含交值的开集 $G$，紧像性质给子列 $y_n\to y$，两图闭使 $y$ 属于交值，开性使子列最终进 $G$，矛盾。值域空间紧时，闭图亦推出上半连续：逃出开集的选择总能抽取收敛子列。
 \clearpage\subsection{闭图与上半连续之间的紧性桥梁}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 47--49 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：53, 54, 55。\par
-\noindent\textbf{原课件第 47 页}\par\begin{center}\includegraphics[page=47,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 48 页}\par\begin{center}\includegraphics[page=48,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 49 页}\par\begin{center}\includegraphics[page=49,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭图对应与紧值上半连续对应的交仍紧值上半连续。
+\paragraph{证明思路}紧性有限化闭图分离邻域，消去落在目标开集外的交值。
+\paragraph{详细推导与必要批注}
 \textbf{老师路线：用闭图分离，再以紧性把逐点邻域变成有限个共同邻域。}令 $H=\Phi_1\cap\Phi_2$，$\Phi_1$ 闭图，$\Phi_2$ 紧值上半连续。
 先证每个 $H(x)$ 紧：闭图给 $\Phi_1(x)$ 闭，故交值是紧 $\Phi_2(x)$ 的闭子集。
 固定 $x_0$ 及开集 $G\supset H(x_0)$，令 $K=\Phi_2(x_0)\setminus G$。这是紧集。每个 $y\in K$ 都不属于 $\Phi_1(x_0)$，否则属于 $H(x_0)\subset G$，矛盾。闭图分离给邻域 $U_y$ 和 $V_y$，使 $\Phi_1(U_y)\cap V_y=\varnothing$。以有限 $V_{y_i}$ 覆盖紧 $K$，令 $V=\bigcup_i V_{y_i}$，$U_1=\bigcap_iU_{y_i}$；有限交保证 $U_1$ 是邻域，且 $\Phi_1(U_1)\cap V=\varnothing$。又 $\Phi_2(x_0)\subset G\cup V$，由上半连续取 $U_2$ 使 $\Phi_2(U_2)\subset G\cup V$。对 $x\in U_1\cap U_2$，$H(x)$ 既在 $G\cup V$ 中又不碰 $V$，所以 $H(x)\subset G$。这正是上半连续。若 $K$ 为空，直接对 $\Phi_2(x_0)\subset G$ 用上半连续即可。
 \clearpage\subsection{闭图与上半连续之间的紧性桥梁}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 51 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：57。\par
-\noindent\textbf{原课件第 51 页}\par\begin{center}\includegraphics[page=51,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧陪域中，闭图与闭值上半连续之间的等价判据。
+\paragraph{证明思路}与常紧对应取交，应用前一条交对应定理。
+\paragraph{详细推导与必要批注}
 紧值上半连续对应有闭图：若 $y\notin\Phi(x)$，紧值闭且 $\dist(y,\Phi(x))>0$，取分离开邻域，再用上半连续，附近图不能靠近 $(x,y)$。若 $\Psi$ 闭图，$\Phi$ 紧值上半连续，则 $\Phi\cap\Psi$ 紧值上半连续。证明反证：若有 $x_n\to x$ 和交值 $y_n$ 逃出包含交值的开集 $G$，紧像性质给子列 $y_n\to y$，两图闭使 $y$ 属于交值，开性使子列最终进 $G$，矛盾。值域空间紧时，闭图亦推出上半连续：逃出开集的选择总能抽取收敛子列。
 \clearpage\subsection{紧空间上的不变紧集}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 52--53 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：58, 59。\par
-\noindent\textbf{原课件第 52 页}\par\begin{center}\includegraphics[page=52,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 53 页}\par\begin{center}\includegraphics[page=53,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空紧空间上的非空紧值上半连续自对应具有非空紧不变集 $K=\Phi(K)$。
+\paragraph{证明思路}迭代像形成递减紧集套，取交后验证两向包含。
+\paragraph{详细推导与必要批注}
 假设非空紧 $S$、非空紧值上半连续自对应。令 $K_n=\Phi^n(S)$，紧像定理使它们非空紧，单调性使 $K_{n+1}\subseteq K_n$，故交 $K$ 非空紧。单调性给 $\Phi(K)\subseteq K$。对 $a\in K$，可取 $x_n\in K_n$ 使 $a\in\Phi(x_n)$，抽子列 $x_n\to x$，套集闭性给 $x\in K$，闭图给 $a\in\Phi(x)$。故 $K=\Phi(K)$。这不保证某点 $x\in\Phi(x)$，不要把不变集合误当不动点。
 \clearpage\subsection{复合与下半连续并}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 55 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：61。\par
-\noindent\textbf{原课件第 55 页}\par\begin{center}\includegraphics[page=55,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}下半连续对应的复合下半连续。
+\paragraph{证明思路}将复合的开集下逆像写为两次下逆像，再依次使用开性。
+\paragraph{详细推导与必要批注}
 复合的下逆像满足 $(\Psi\circ\Phi)^-(V)=\Phi^-(\Psi^-(V))$，故两次下半连续使开集逐次变开；上逆像的全称量词也能逐层写出，得上半连续复合。任意并的下逆像为各下逆像之并，因此任意并保下半连续。每个等式都来自“存在中间选择”或“所有中间选择”，而不是把对应当单值函数计算。
 \clearpage\subsection{复合与下半连续并}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 56 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：62。\par
-\noindent\textbf{原课件第 56 页}\par\begin{center}\includegraphics[page=56,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}下半连续对应的复合下半连续。
+\paragraph{证明思路}将复合的开集下逆像写为两次下逆像，再依次使用开性。
+\paragraph{详细推导与必要批注}
 复合的下逆像满足 $(\Psi\circ\Phi)^-(V)=\Phi^-(\Psi^-(V))$，故两次下半连续使开集逐次变开；上逆像的全称量词也能逐层写出，得上半连续复合。任意并的下逆像为各下逆像之并，因此任意并保下半连续。每个等式都来自“存在中间选择”或“所有中间选择”，而不是把对应当单值函数计算。
 \clearpage\subsection{复合与下半连续并}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 57 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：63。\par
-\noindent\textbf{原课件第 57 页}\par\begin{center}\includegraphics[page=57,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上半连续对应的复合上半连续。
+\paragraph{证明思路}用全称条件逐层改写复合的上逆像。
+\paragraph{详细推导与必要批注}
 复合的下逆像满足 $(\Psi\circ\Phi)^-(V)=\Phi^-(\Psi^-(V))$，故两次下半连续使开集逐次变开；上逆像的全称量词也能逐层写出，得上半连续复合。任意并的下逆像为各下逆像之并，因此任意并保下半连续。每个等式都来自“存在中间选择”或“所有中间选择”，而不是把对应当单值函数计算。
 \clearpage\subsection{复合与下半连续并}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 58 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：64。\par
-\noindent\textbf{原课件第 58 页}\par\begin{center}\includegraphics[page=58,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上半连续对应的复合上半连续。
+\paragraph{证明思路}用全称条件逐层改写复合的上逆像。
+\paragraph{详细推导与必要批注}
 复合的下逆像满足 $(\Psi\circ\Phi)^-(V)=\Phi^-(\Psi^-(V))$，故两次下半连续使开集逐次变开；上逆像的全称量词也能逐层写出，得上半连续复合。任意并的下逆像为各下逆像之并，因此任意并保下半连续。每个等式都来自“存在中间选择”或“所有中间选择”，而不是把对应当单值函数计算。
 \clearpage\subsection{复合与下半连续并}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 59 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：65。\par
-\noindent\textbf{原课件第 59 页}\par\begin{center}\includegraphics[page=59,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意下半连续对应的并下半连续。
+\paragraph{证明思路}下逆像保持并，再用任意开并仍开。
+\paragraph{详细推导与必要批注}
 复合的下逆像满足 $(\Psi\circ\Phi)^-(V)=\Phi^-(\Psi^-(V))$，故两次下半连续使开集逐次变开；上逆像的全称量词也能逐层写出，得上半连续复合。任意并的下逆像为各下逆像之并，因此任意并保下半连续。每个等式都来自“存在中间选择”或“所有中间选择”，而不是把对应当单值函数计算。
 \clearpage\subsection{复合与下半连续并}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 60 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：66。\par
-\noindent\textbf{原课件第 60 页}\par\begin{center}\includegraphics[page=60,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意下半连续对应的并下半连续。
+\paragraph{证明思路}下逆像保持并，再用任意开并仍开。
+\paragraph{详细推导与必要批注}
 复合的下逆像满足 $(\Psi\circ\Phi)^-(V)=\Phi^-(\Psi^-(V))$，故两次下半连续使开集逐次变开；上逆像的全称量词也能逐层写出，得上半连续复合。任意并的下逆像为各下逆像之并，因此任意并保下半连续。每个等式都来自“存在中间选择”或“所有中间选择”，而不是把对应当单值函数计算。
 \clearpage\subsection{对应交集的条件与伪定理}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 62 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：68。\par
-\noindent\textbf{原课件第 62 页}\par\begin{center}\includegraphics[page=62,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧值上半连续对应族的交具有相应紧值上半连续性，交值的非空性须另检查。
+\paragraph{证明思路}闭图任意交加一个紧值上半连续容器。
+\paragraph{详细推导与必要批注}
 紧值上半连续对应的任意交是闭图，固定一个紧值上半连续因子作容器，运用第45页交集定理得紧值上半连续（交值可能为空）。第63--64页删掉紧值后的证明不能沿用，尤其 $(\bigcap_i\Phi_i)^-(F)$ 一般不等于 $\bigcap_i\Phi_i^-(F)$：各因子与 $F$ 相交可能在不同点。第65--66页明确为伪定理：下半连续的有限交不必下半连续。反例 $\Phi_1(x)=\{0\}$，$\Phi_2(x)=\{x\}$，交仅在0非空；若要求非空值，可改 $\Phi_1(x)=\{0,1\},\Phi_2(x)=\{x,1\}$，在0交含0与1，非零附近只含1，不下半连续。
 \clearpage\subsection{对应交集的条件与伪定理}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 63 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：69。\par
-\noindent\textbf{原课件第 63 页}\par\begin{center}\includegraphics[page=63,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-\textbf{本页展示的论证有错误，不能作为定理的有效证明。}老师试图证明 $\Phi^+(G)=\bigcup_\lambda\Phi_\lambda^+(G)$，从而借开集的并得到开性。但从
+\paragraph{命题与条件}原课件试图在较弱假设下证明任意上半连续交对应仍上半连续；其使用的逆像等式无效。
+\paragraph{证明思路}保留原逆像路线并定位错误的量词互换，不将无效论证当作已证结论。
+\paragraph{详细推导与必要批注}
+\textbf{原课件该页展示的论证有错误，不能作为定理的有效证明。}老师试图证明 $\Phi^+(G)=\bigcup_\lambda\Phi_\lambda^+(G)$，从而借开集的并得到开性。但从
 \[T\setminus G\subseteq\bigcup_\lambda(T\setminus\Phi_\lambda(x))\]
 不能推出存在单个 $\lambda$ 使 $T\setminus G\subseteq T\setminus\Phi_\lambda(x)$。一个集合被许多集合的并覆盖，不意味着被其中某一个覆盖。例 $E=\{0,1\},E_1=\{0\},E_2=\{1\}$ 即否定此推理。
 在对应层面，取某点值 $\Phi_1=\{0,1\},\Phi_2=\{0,2\},G=(-1/2,1/2)$，交值 $\{0\}$ 在 $G$ 内，却没有任何一个原值集整体在 $G$ 内，直接否定老师使用的逆像等式。紧值上半连续交集的正确证明应沿前面第47--49页的闭图加紧容器定理；此处不能因错误等式最后得到开集就宣布证明完成。
 \clearpage\subsection{对应交集的条件与伪定理}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 64 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：70。\par
-\noindent\textbf{原课件第 64 页}\par\begin{center}\includegraphics[page=64,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-\textbf{本页展示的论证有错误，不能作为定理的有效证明。}老师试图证明 $\Phi^+(G)=\bigcup_\lambda\Phi_\lambda^+(G)$，从而借开集的并得到开性。但从
+\paragraph{命题与条件}原课件试图在较弱假设下证明任意上半连续交对应仍上半连续；其使用的逆像等式无效。
+\paragraph{证明思路}保留原逆像路线并定位错误的量词互换，不将无效论证当作已证结论。
+\paragraph{详细推导与必要批注}
+\textbf{原课件该页展示的论证有错误，不能作为定理的有效证明。}老师试图证明 $\Phi^+(G)=\bigcup_\lambda\Phi_\lambda^+(G)$，从而借开集的并得到开性。但从
 \[T\setminus G\subseteq\bigcup_\lambda(T\setminus\Phi_\lambda(x))\]
 不能推出存在单个 $\lambda$ 使 $T\setminus G\subseteq T\setminus\Phi_\lambda(x)$。一个集合被许多集合的并覆盖，不意味着被其中某一个覆盖。例 $E=\{0,1\},E_1=\{0\},E_2=\{1\}$ 即否定此推理。
-在对应层面，取某点值 $\Phi_1=\{0,1\},\Phi_2=\{0,2\},G=(-1/2,1/2)$，交值 $\{0\}$ 在 $G$ 内，却没有任何一个原值集整体在 $G$ 内，直接否定老师使用的逆像等式。紧值上半连续交集的正确证明应沿前面第47--49页的闭图加紧容器定理；此处不能因错误等式最后得到开集就宣布证明完成。本页换成闭集和下逆像也不能回避同一问题：每个值集都与同一个闭集相交，不保证它们的共同交还与该闭集相交，因为各自的交点可能不同。
+在对应层面，取某点值 $\Phi_1=\{0,1\},\Phi_2=\{0,2\},G=(-1/2,1/2)$，交值 $\{0\}$ 在 $G$ 内，却没有任何一个原值集整体在 $G$ 内，直接否定老师使用的逆像等式。紧值上半连续交集的正确证明应沿前面第47--49页的闭图加紧容器定理；此处不能因错误等式最后得到开集就宣布证明完成。原课件该页换成闭集和下逆像也不能回避同一问题：每个值集都与同一个闭集相交，不保证它们的共同交还与该闭集相交，因为各自的交点可能不同。
 \clearpage\subsection{对应交集的条件与伪定理}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 65 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：71。\par
-\noindent\textbf{原课件第 65 页}\par\begin{center}\includegraphics[page=65,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}伪命题：有限下半连续对应的交必下半连续。该命题为假。
+\paragraph{证明思路}指出“分别有交点”不能推出“有共同交点”，再给满足非空值条件的反例。
+\paragraph{详细推导与必要批注}
 \textbf{原页已标为 Pseudo-Theorem（伪定理），这里收录是为了拆解错误。}核心错误为
 \[(\Phi_1\cap\Phi_2)^-(G)=\Phi_1^-(G)\cap\Phi_2^-(G).\]
 左侧要求同一个点同时在两个值集中且在 $G$ 中；右侧允许两个不同交点。取常值 $\Phi_1(x)=\{0,1\},\Phi_2(x)=\{1,2\}$ 和开 $G=(-1/2,1/2)\cup(3/2,5/2)$，右侧为全域而左侧为空，故等式错。
@@ -1291,311 +1408,344 @@ $\mu$ 在0上半连续，因为任何附近最优点的极限都在 $[0,1]$。�
 \clearpage\subsection{对应交集的条件与伪定理}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 66 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：72。\par
-\noindent\textbf{原课件第 66 页}\par\begin{center}\includegraphics[page=66,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}伪命题：有限下半连续对应的交必下半连续。该命题为假。
+\paragraph{证明思路}指出“分别有交点”不能推出“有共同交点”，再给满足非空值条件的反例。
+\paragraph{详细推导与必要批注}
 \textbf{原页已标为 Pseudo-Theorem（伪定理），这里收录是为了拆解错误。}核心错误为
 \[(\Phi_1\cap\Phi_2)^-(G)=\Phi_1^-(G)\cap\Phi_2^-(G).\]
 左侧要求同一个点同时在两个值集中且在 $G$ 中；右侧允许两个不同交点。取常值 $\Phi_1(x)=\{0,1\},\Phi_2(x)=\{1,2\}$ 和开 $G=(-1/2,1/2)\cup(3/2,5/2)$，右侧为全域而左侧为空，故等式错。
-命题本身也假：取 $\Phi_1(x)=\{0,1\}$、$\Phi_2(x)=\{x,1\}$，两者均为非空紧值连续对应。交值在 $x=0$ 为 $\{0,1\}$，在非零 $x$ 只有 $\{1\}$。开邻域 $(-1/4,1/4)$ 遇到交值在0的值集，却不遇到任何非零附近输入的交值，违反下半连续定义。本页第二种证明把“一个集合包含于并集”误换成“包含于某个成员”，同样犯了存在见证不统一的问题。第一种错在把分别存在当共同存在，第二种错在把逐点可选成员当全体共用成员。
+命题本身也假：取 $\Phi_1(x)=\{0,1\}$、$\Phi_2(x)=\{x,1\}$，两者均为非空紧值连续对应。交值在 $x=0$ 为 $\{0,1\}$，在非零 $x$ 只有 $\{1\}$。开邻域 $(-1/4,1/4)$ 遇到交值在0的值集，却不遇到任何非零附近输入的交值，违反下半连续定义。原课件该页第二种证明把“一个集合包含于并集”误换成“包含于某个成员”，同样犯了存在见证不统一的问题。第一种错在把分别存在当共同存在，第二种错在把逐点可选成员当全体共用成员。
 \clearpage\subsection{有限并保持上半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 67 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：73。\par
-\noindent\textbf{原课件第 67 页}\par\begin{center}\includegraphics[page=67,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个上半连续对应的并上半连续；紧值情形有限并亦紧值。
+\paragraph{证明思路}并对应的上逆像是上逆像的有限交。
+\paragraph{详细推导与必要批注}
 若开集 $G$ 包含 $\bigcup_{i=1}^m\Phi_i(x)$，它包含每个 $\Phi_i(x)$。为每个因子取邻域 $U_i$ 使其值在 $G$ 内，有限交 $U$ 仍为邻域，故并值在 $G$ 内。紧值时有限并亦紧。原页逆像公式须注意：并对应的上逆像是各上逆像的交，下逆像是各下逆像的并。不能把两者写成同一种交并。
 \clearpage\subsection{有限并保持上半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 68 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：74。\par
-\noindent\textbf{原课件第 68 页}\par\begin{center}\includegraphics[page=68,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个上半连续对应的并上半连续；紧值情形有限并亦紧值。
+\paragraph{证明思路}并对应的上逆像是上逆像的有限交。
+\paragraph{详细推导与必要批注}
 若开集 $G$ 包含 $\bigcup_{i=1}^m\Phi_i(x)$，它包含每个 $\Phi_i(x)$。为每个因子取邻域 $U_i$ 使其值在 $G$ 内，有限交 $U$ 仍为邻域，故并值在 $G$ 内。紧值时有限并亦紧。原页逆像公式须注意：并对应的上逆像是各上逆像的交，下逆像是各下逆像的并。不能把两者写成同一种交并。
 \clearpage\subsection{有限并保持上半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 69 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：75。\par
-\noindent\textbf{原课件第 69 页}\par\begin{center}\includegraphics[page=69,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个上半连续对应的并上半连续；紧值情形有限并亦紧值。
+\paragraph{证明思路}并对应的上逆像是上逆像的有限交。
+\paragraph{详细推导与必要批注}
 若开集 $G$ 包含 $\bigcup_{i=1}^m\Phi_i(x)$，它包含每个 $\Phi_i(x)$。为每个因子取邻域 $U_i$ 使其值在 $G$ 内，有限交 $U$ 仍为邻域，故并值在 $G$ 内。紧值时有限并亦紧。原页逆像公式须注意：并对应的上逆像是各上逆像的交，下逆像是各下逆像的并。不能把两者写成同一种交并。
 \clearpage\subsection{有限并保持上半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 70 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：76。\par
-\noindent\textbf{原课件第 70 页}\par\begin{center}\includegraphics[page=70,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个上半连续对应的并上半连续；紧值情形有限并亦紧值。
+\paragraph{证明思路}并对应的上逆像是上逆像的有限交。
+\paragraph{详细推导与必要批注}
 若开集 $G$ 包含 $\bigcup_{i=1}^m\Phi_i(x)$，它包含每个 $\Phi_i(x)$。为每个因子取邻域 $U_i$ 使其值在 $G$ 内，有限交 $U$ 仍为邻域，故并值在 $G$ 内。紧值时有限并亦紧。原页逆像公式须注意：并对应的上逆像是各上逆像的交，下逆像是各下逆像的并。不能把两者写成同一种交并。
 \clearpage\subsection{有限积对应的半连续性}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 71--72 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：77, 78。\par
-\noindent\textbf{原课件第 71 页}\par\begin{center}\includegraphics[page=71,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 72 页}\par\begin{center}\includegraphics[page=72,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限下半连续对应的积下半连续。
+\paragraph{证明思路}先检查基本开矩形，再用一般开集是基本开集的并。
+\paragraph{详细推导与必要批注}
 下半连续积：给定值点 $y=(y_i)$ 和含它的开集，取乘积开邻域 $\prod_iV_i$ 包含于其中。各因子的下半连续保证附近可分别选 $y_i'\in\Phi_i(x')\cap V_i$，于是组成积中选择。紧值上半连续积：给任意输入收敛序列及积值选择，依次抽每个因子的收敛子列，有限次后所有坐标同时收敛且极限在积值中；若不满足上半连续，选逃离开邻域的序列即矛盾。没有紧值的第73--74页不能用上述紧性证明，也不能把任意开集当单个开矩形；本讲使用有紧值条件的正确版本。
 \clearpage\subsection{有限积对应的半连续性}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 73--74 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：79, 80。\par
-\noindent\textbf{原课件第 73 页}\par\begin{center}\includegraphics[page=73,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 74 页}\par\begin{center}\includegraphics[page=74,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}原课件一般上半连续积对应的两种证明中，逆像交换步骤不成立。
+\paragraph{证明思路}区分“值集在开集并中”与“值集在某个开集成员中”，标明错误；不照抄伪等式。
+\paragraph{详细推导与必要批注}
 下半连续积：给定值点 $y=(y_i)$ 和含它的开集，取乘积开邻域 $\prod_iV_i$ 包含于其中。各因子的下半连续保证附近可分别选 $y_i'\in\Phi_i(x')\cap V_i$，于是组成积中选择。紧值上半连续积：给任意输入收敛序列及积值选择，依次抽每个因子的收敛子列，有限次后所有坐标同时收敛且极限在积值中；若不满足上半连续，选逃离开邻域的序列即矛盾。没有紧值的第73--74页不能用上述紧性证明，也不能把任意开集当单个开矩形；本讲使用有紧值条件的正确版本。
 \clearpage\subsection{有限积对应的半连续性}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 75--76 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：81, 82。\par
-\noindent\textbf{原课件第 75 页}\par\begin{center}\includegraphics[page=75,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 76 页}\par\begin{center}\includegraphics[page=76,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个紧值上半连续对应的积仍紧值上半连续。
+\paragraph{证明思路}紧值积被有限开矩形覆盖，再选共同输入邻域。
+\paragraph{详细推导与必要批注}
 下半连续积：给定值点 $y=(y_i)$ 和含它的开集，取乘积开邻域 $\prod_iV_i$ 包含于其中。各因子的下半连续保证附近可分别选 $y_i'\in\Phi_i(x')\cap V_i$，于是组成积中选择。紧值上半连续积：给任意输入收敛序列及积值选择，依次抽每个因子的收敛子列，有限次后所有坐标同时收敛且极限在积值中；若不满足上半连续，选逃离开邻域的序列即矛盾。没有紧值的第73--74页不能用上述紧性证明，也不能把任意开集当单个开矩形；本讲使用有紧值条件的正确版本。
 \clearpage\subsection{和对应与凸包}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 78--79 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：84, 85。\par
-\noindent\textbf{原课件第 78 页}\par\begin{center}\includegraphics[page=78,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 79 页}\par\begin{center}\includegraphics[page=79,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个紧值上半连续对应的和仍紧值上半连续。
+\paragraph{证明思路}先得紧值，再给和集取小的共同零邻域控制扰动。
+\paragraph{详细推导与必要批注}
 有限和是积对应经连续加法映射的像，故紧值上半连续性由积与复合得到。下半连续凸包：任取值中一点 $y=\sum_{i=1}^m\lambda_i y_i$，对每个 $y_i$ 用下半连续选取随输入趋近的 $y_{in}$，保持同一组权重，便得凸组合趋于 $y$。紧值上半连续凸包在 $\R^N$ 也成立：Carathéodory 定理把每点表示为至多 $N+1$ 个点的凸组合，权重在紧单纯形中；对权重和值点抽子列得极限仍在凸包。有限维假设不可遗漏。
 \clearpage\subsection{和对应与凸包}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 80 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：86。\par
-\noindent\textbf{原课件第 80 页}\par\begin{center}\includegraphics[page=80,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限维中，下半连续对应的逐点凸包仍下半连续。
+\paragraph{证明思路}固定有限凸组合的权重，分别逼近其中各点后重组。
+\paragraph{详细推导与必要批注}
 有限和是积对应经连续加法映射的像，故紧值上半连续性由积与复合得到。下半连续凸包：任取值中一点 $y=\sum_{i=1}^m\lambda_i y_i$，对每个 $y_i$ 用下半连续选取随输入趋近的 $y_{in}$，保持同一组权重，便得凸组合趋于 $y$。紧值上半连续凸包在 $\R^N$ 也成立：Carathéodory 定理把每点表示为至多 $N+1$ 个点的凸组合，权重在紧单纯形中；对权重和值点抽子列得极限仍在凸包。有限维假设不可遗漏。
 \clearpage\subsection{和对应与凸包}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 81 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：87。\par
-\noindent\textbf{原课件第 81 页}\par\begin{center}\includegraphics[page=81,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限维中，紧值上半连续对应的逐点凸包仍紧值上半连续。
+\paragraph{证明思路}限制凸组合点数、对权重与选点抽子列，再取凸组合极限。
+\paragraph{详细推导与必要批注}
 有限和是积对应经连续加法映射的像，故紧值上半连续性由积与复合得到。下半连续凸包：任取值中一点 $y=\sum_{i=1}^m\lambda_i y_i$，对每个 $y_i$ 用下半连续选取随输入趋近的 $y_{in}$，保持同一组权重，便得凸组合趋于 $y$。紧值上半连续凸包在 $\R^N$ 也成立：Carathéodory 定理把每点表示为至多 $N+1$ 个点的凸组合，权重在紧单纯形中；对权重和值点抽子列得极限仍在凸包。有限维假设不可遗漏。
 \clearpage\subsection{闭包对应与内半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 82 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：88。\par
-\noindent\textbf{原课件第 82 页}\par\begin{center}\includegraphics[page=82,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-本页横线记号应理解为逐点闭包 $\overline\Phi(x)=\overline{\Phi(x)}$，不是凸包。且下半连续必须用“遇到开集”的下逆像，不能用本页误写的“整个值集包含于开集”。修正后仍沿老师的开集判据：对每个开 $G$，
+\paragraph{命题与条件}对应下半连续当且仅当逐点闭包对应下半连续；原课件运算名称和逆像类型须修正。
+\paragraph{证明思路}开集遇到某集合的闭包当且仅当遇到原集合。
+\paragraph{详细推导与必要批注}
+原课件该页横线记号应理解为逐点闭包 $\overline\Phi(x)=\overline{\Phi(x)}$，不是凸包。且下半连续必须用“遇到开集”的下逆像，不能用原课件该页误写的“整个值集包含于开集”。修正后仍沿老师的开集判据：对每个开 $G$，
 \[\overline{\Phi(x)}\cap G\ne\varnothing\iff\Phi(x)\cap G\ne\varnothing.\]
-右到左由 $\Phi(x)\subseteq\overline{\Phi(x)}$。左到右取 $y\in\overline{\Phi(x)}\cap G$，由 $G$ 开选 $B(y,r)\subset G$，闭包定义保证该球遇到 $\Phi(x)$，故 $G$ 也遇到它。因此两对应的下逆像对每个开集都完全相同，开性也相同，由下半连续的开逆像判据完成等价证明。原图有两个术语/符号错误，应先修正再使用。
+右到左由 $\Phi(x)\subseteq\overline{\Phi(x)}$。左到右取 $y\in\overline{\Phi(x)}\cap G$，由 $G$ 开选 $B(y,r)\subset G$，闭包定义保证该球遇到 $\Phi(x)$，故 $G$ 也遇到它。因此两对应的下逆像对每个开集都完全相同，开性也相同，由下半连续的开逆像判据完成等价证明。原课件有两个术语/符号错误，应先修正再使用。
 \clearpage\subsection{闭包对应与内半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 83 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：89。\par
-\noindent\textbf{原课件第 83 页}\par\begin{center}\includegraphics[page=83,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-仍按逐点闭包理解本页的横线，不能称作凸包。固定 $x_0$ 与开集 $G$ 包含 $\overline{\Phi(x_0)}$。在度量空间中，两不交闭集 $\overline{\Phi(x_0)}$ 和 $T\setminus G$ 可取不交开邻域 $V,W$ 分别包含它们（度量空间正规性）；这使 $\overline V\subset T\setminus W\subset G$。由原对应上半连续，取输入邻域 $U$ 使 $\Phi(x)\subset V$ 对 $x\in U$ 成立。取闭包便得 $\overline{\Phi(x)}\subset\overline V\subset G$。这正是闭包对应上半连续。老师的路线是“分离开邻域—上半连续—取闭包”，关键补充是确保选到的 $V$ 的\emph{闭包}仍在 $G$，只写 $V\subset G$ 不足以推出这一点。
+\paragraph{命题与条件}度量空间中，上半连续对应的逐点闭包仍上半连续。
+\paragraph{证明思路}在开集内先选闭包仍留在其中的中间开邻域，再控制附近值集。
+\paragraph{详细推导与必要批注}
+仍按逐点闭包理解原课件该页的横线，不能称作凸包。固定 $x_0$ 与开集 $G$ 包含 $\overline{\Phi(x_0)}$。在度量空间中，两不交闭集 $\overline{\Phi(x_0)}$ 和 $T\setminus G$ 可取不交开邻域 $V,W$ 分别包含它们（度量空间正规性）；这使 $\overline V\subset T\setminus W\subset G$。由原对应上半连续，取输入邻域 $U$ 使 $\Phi(x)\subset V$ 对 $x\in U$ 成立。取闭包便得 $\overline{\Phi(x)}\subset\overline V\subset G$。这正是闭包对应上半连续。老师的路线是“分离开邻域—上半连续—取闭包”，关键补充是确保选到的 $V$ 的\emph{闭包}仍在 $G$，只写 $V\subset G$ 不足以推出这一点。
 \clearpage\subsection{闭包对应与内半连续}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 85--86 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：91, 92。\par
-\noindent\textbf{原课件第 85 页}\par\begin{center}\includegraphics[page=85,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 86 页}\par\begin{center}\includegraphics[page=86,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}度量空间中下半连续等价于每个旧选择可由附近输入的选择序列逼近。
+\paragraph{证明思路}一向反证开逆像不开；另一向对递减球的局部邻域作分段选择。
+\paragraph{详细推导与必要批注}
 第82--83页的横线运算是闭包，不应标为 convex hull。$\Phi$ 与逐点闭包的下逆像对开集相同，因为开集遇到闭包就遇到原集合，故下半连续等价。上半连续的闭包版本用正则性：给开集 $G$ 包含闭包值，先取开邻域 $V$ 使 $\Phi(x)\subset V\subset\overline V\subset G$（紧值时可有限选取），再用上半连续。度量空间中下半连续等价于：任意 $x_n\to x,y\in\Phi(x)$ 可选 $y_n\in\Phi(x_n)$ 趋于 $y$。证明依次对球 $B(y,1/k)$ 取输入邻域，再用足够大的指标分段选择。
 \clearpage\subsection{外半连续的术语与序列选取}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 87--89 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：93, 94, 95。\par
-\noindent\textbf{原课件第 87 页}\par\begin{center}\includegraphics[page=87,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 88 页}\par\begin{center}\includegraphics[page=88,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 89 页}\par\begin{center}\includegraphics[page=89,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧值上半连续与本课件使用的“任意选择可抽收敛子列且极限在旧值中”性质之间的推导。
+\paragraph{证明思路}用紧像抽子列，闭图控制极限；反向选逃出开邻域的点列反证。
+\paragraph{详细推导与必要批注}
 本课此处的 o.s.c. 要求：任意 $x_n\to x$ 及 $y_n\in\Phi(x_n)$，有收敛子列且极限属于 $\Phi(x)$。它比文献中仅要求“已有收敛选择的极限不逃出”的闭图式 outer semicontinuity 更强。紧值上半连续给该性质：集合 $\{x,x_1,x_2,\ldots\}$ 紧，紧像定理给子列，闭图给极限归属。反向若上半连续失效，选开 $G\supset\Phi(x)$ 及逃出 $G$ 的 $y_n$，由假设抽子列极限在 $\Phi(x)$，与开性矛盾。复合用先抽中间值再抽末端值，有限积用有限次子列抽取；不能无限次抽取后还把未构造的子列当作存在。
 \clearpage\subsection{外半连续的术语与序列选取}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 90 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：96。\par
-\noindent\textbf{原课件第 90 页}\par\begin{center}\includegraphics[page=90,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧值上半连续与本课件使用的“任意选择可抽收敛子列且极限在旧值中”性质之间的推导。
+\paragraph{证明思路}用紧像抽子列，闭图控制极限；反向选逃出开邻域的点列反证。
+\paragraph{详细推导与必要批注}
 本课此处的 o.s.c. 要求：任意 $x_n\to x$ 及 $y_n\in\Phi(x_n)$，有收敛子列且极限属于 $\Phi(x)$。它比文献中仅要求“已有收敛选择的极限不逃出”的闭图式 outer semicontinuity 更强。紧值上半连续给该性质：集合 $\{x,x_1,x_2,\ldots\}$ 紧，紧像定理给子列，闭图给极限归属。反向若上半连续失效，选开 $G\supset\Phi(x)$ 及逃出 $G$ 的 $y_n$，由假设抽子列极限在 $\Phi(x)$，与开性矛盾。复合用先抽中间值再抽末端值，有限积用有限次子列抽取；不能无限次抽取后还把未构造的子列当作存在。
 \clearpage\subsection{外半连续的术语与序列选取}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 91 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：97。\par
-\noindent\textbf{原课件第 91 页}\par\begin{center}\includegraphics[page=91,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}紧值上半连续与本课件使用的“任意选择可抽收敛子列且极限在旧值中”性质之间的推导。
+\paragraph{证明思路}用紧像抽子列，闭图控制极限；反向选逃出开邻域的点列反证。
+\paragraph{详细推导与必要批注}
 本课此处的 o.s.c. 要求：任意 $x_n\to x$ 及 $y_n\in\Phi(x_n)$，有收敛子列且极限属于 $\Phi(x)$。它比文献中仅要求“已有收敛选择的极限不逃出”的闭图式 outer semicontinuity 更强。紧值上半连续给该性质：集合 $\{x,x_1,x_2,\ldots\}$ 紧，紧像定理给子列，闭图给极限归属。反向若上半连续失效，选开 $G\supset\Phi(x)$ 及逃出 $G$ 的 $y_n$，由假设抽子列极限在 $\Phi(x)$，与开性矛盾。复合用先抽中间值再抽末端值，有限积用有限次子列抽取；不能无限次抽取后还把未构造的子列当作存在。
 \clearpage\subsection{外半连续的术语与序列选取}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 92 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：98。\par
-\noindent\textbf{原课件第 92 页}\par\begin{center}\includegraphics[page=92,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}内半连续对应的复合内半连续。
+\paragraph{证明思路}先逼近中间选择，再逼近末端选择。
+\paragraph{详细推导与必要批注}
 本课此处的 o.s.c. 要求：任意 $x_n\to x$ 及 $y_n\in\Phi(x_n)$，有收敛子列且极限属于 $\Phi(x)$。它比文献中仅要求“已有收敛选择的极限不逃出”的闭图式 outer semicontinuity 更强。紧值上半连续给该性质：集合 $\{x,x_1,x_2,\ldots\}$ 紧，紧像定理给子列，闭图给极限归属。反向若上半连续失效，选开 $G\supset\Phi(x)$ 及逃出 $G$ 的 $y_n$，由假设抽子列极限在 $\Phi(x)$，与开性矛盾。复合用先抽中间值再抽末端值，有限积用有限次子列抽取；不能无限次抽取后还把未构造的子列当作存在。
 \clearpage\subsection{外半连续的术语与序列选取}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 93 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：99。\par
-\noindent\textbf{原课件第 93 页}\par\begin{center}\includegraphics[page=93,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}本课强外半连续对应的复合保持相应性质。
+\paragraph{证明思路}先抽中间序列子列，再在同一子列上抽末端序列子列。
+\paragraph{详细推导与必要批注}
 本课此处的 o.s.c. 要求：任意 $x_n\to x$ 及 $y_n\in\Phi(x_n)$，有收敛子列且极限属于 $\Phi(x)$。它比文献中仅要求“已有收敛选择的极限不逃出”的闭图式 outer semicontinuity 更强。紧值上半连续给该性质：集合 $\{x,x_1,x_2,\ldots\}$ 紧，紧像定理给子列，闭图给极限归属。反向若上半连续失效，选开 $G\supset\Phi(x)$ 及逃出 $G$ 的 $y_n$，由假设抽子列极限在 $\Phi(x)$，与开性矛盾。复合用先抽中间值再抽末端值，有限积用有限次子列抽取；不能无限次抽取后还把未构造的子列当作存在。
 \clearpage\subsection{外半连续的术语与序列选取}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 94 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：100。\par
-\noindent\textbf{原课件第 94 页}\par\begin{center}\includegraphics[page=94,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个内半连续对应的积内半连续。
+\paragraph{证明思路}逐坐标构造逼近选择，再组合。
+\paragraph{详细推导与必要批注}
 本课此处的 o.s.c. 要求：任意 $x_n\to x$ 及 $y_n\in\Phi(x_n)$，有收敛子列且极限属于 $\Phi(x)$。它比文献中仅要求“已有收敛选择的极限不逃出”的闭图式 outer semicontinuity 更强。紧值上半连续给该性质：集合 $\{x,x_1,x_2,\ldots\}$ 紧，紧像定理给子列，闭图给极限归属。反向若上半连续失效，选开 $G\supset\Phi(x)$ 及逃出 $G$ 的 $y_n$，由假设抽子列极限在 $\Phi(x)$，与开性矛盾。复合用先抽中间值再抽末端值，有限积用有限次子列抽取；不能无限次抽取后还把未构造的子列当作存在。
 \clearpage\subsection{外半连续的术语与序列选取}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 95 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：101。\par
-\noindent\textbf{原课件第 95 页}\par\begin{center}\includegraphics[page=95,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个本课强外半连续对应的积保持相应性质。
+\paragraph{证明思路}逐个坐标作有限次嵌套子列抽取。
+\paragraph{详细推导与必要批注}
 本课此处的 o.s.c. 要求：任意 $x_n\to x$ 及 $y_n\in\Phi(x_n)$，有收敛子列且极限属于 $\Phi(x)$。它比文献中仅要求“已有收敛选择的极限不逃出”的闭图式 outer semicontinuity 更强。紧值上半连续给该性质：集合 $\{x,x_1,x_2,\ldots\}$ 紧，紧像定理给子列，闭图给极限归属。反向若上半连续失效，选开 $G\supset\Phi(x)$ 及逃出 $G$ 的 $y_n$，由假设抽子列极限在 $\Phi(x)$，与开性矛盾。复合用先抽中间值再抽末端值，有限积用有限次子列抽取；不能无限次抽取后还把未构造的子列当作存在。
 \clearpage\subsection{最优值的两种半连续性}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 96 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：102。\par
-\noindent\textbf{原课件第 96 页}\par\begin{center}\includegraphics[page=96,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}下半连续目标与下半连续非空可行对应的上确界值函数下半连续。
+\paragraph{证明思路}先选近似最优的旧可行点，再用两种下半连续性保持一个好的附近选择。
+\paragraph{详细推导与必要批注}
 设 $M(x)=\sup_{y\in\Phi(x)}f(x,y)$。若 $f$ 下半连续且 $\Phi$ 下半连续，任取 $a<M(x)$，选可行 $y$ 满足 $f(x,y)>a$。目标下半连续给乘积邻域使函数值仍大于 $a$，可行对应下半连续给附近可行点落入该邻域，故附近 $M>a$。若 $f$ 上半连续，$\Phi$ 非空紧值上半连续，则每点最大值存在。取输入序列及最优点，由紧像抽子列趋于可行极限，上半连续给 $\limsup M(x_n)\le M(x)$。对 limsup 严格写法需先选逼近它的子列，再抽最优点子列。
 \clearpage\subsection{最优值的两种半连续性}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 98 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：104。\par
-\noindent\textbf{原课件第 98 页}\par\begin{center}\includegraphics[page=98,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}上半连续目标与非空紧值上半连续可行对应的最大值函数上半连续。
+\paragraph{证明思路}有限覆盖旧紧值，并在共同输入邻域上统一估计全部附近可行选择。
+\paragraph{详细推导与必要批注}
 \textbf{保留老师的有限覆盖思路。}固定 $x_0$，令 $M_0=\max_{y\in\Phi(x_0)}f(x_0,y)$；非空紧值与目标上半连续保证最大值存在。给 $\eps>0$。对每个 $y\in\Phi(x_0)$，联合上半连续给乘积邻域 $U_y\times V_y$，使其中 $f(x,z)<f(x_0,y)+\eps\le M_0+\eps$。有限个 $V_{y_i}$ 覆盖紧值 $\Phi(x_0)$。上半连续可行对应给 $U_0$，使 $\Phi(x)\subset\bigcup_iV_{y_i}$ 对 $x\in U_0$ 成立。取 $U=U_0\cap\bigcap_iU_{y_i}$。任意 $x\in U,z\in\Phi(x)$，选覆盖它的 $V_{y_i}$，同时 $x\in U_{y_i}$，于是 $f(x,z)<M_0+\eps$。对所有可行 $z$ 取最大值得 $M(x)\le M_0+\eps$，故上半连续。这里紧性只用于 $x_0$ 的值集上取得有限覆盖，随后才能对输入邻域取有限交。
 \clearpage\subsection{Berge 最大值与唯一选择}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 99 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：105。\par
-\noindent\textbf{原课件第 99 页}\par\begin{center}\includegraphics[page=99,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}Berge 最大值结论：连续目标、非空紧值连续对应给连续最优值及上半连续最优对应。
+\paragraph{证明思路}合并两种最优值半连续性，再以闭图与紧容器处理最优对应。
+\paragraph{详细推导与必要批注}
 必须补充非空紧值：$\Phi$ 连续且非空紧值，$f$ 连续，则第96页的两个方向给 $M$ 连续。最优对应 $A(x)=\{y\in\Phi(x):f(x,y)=M(x)\}$ 非空紧；等式由连续性保极限，故闭图，再以 $\Phi$ 为紧容器得上半连续。若最优点唯一，单点值上半连续等价普通连续，故唯一最优选择连续。实数紧值取 $f(y)=y$，最大值唯一，得到连续选择；没有紧值时例如 $(0,1)$ 根本没有最大点。原页100的球应理解为非空闭球，开球一般不取到坐标最大值。
 \clearpage\subsection{Berge 最大值与唯一选择}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 101 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：107。\par
-\noindent\textbf{原课件第 101 页}\par\begin{center}\includegraphics[page=101,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空紧值连续对应若存在共同连续目标且每个值集中最优点唯一，则唯一最优点构成连续选择；实数紧值可用最大元素。
+\paragraph{证明思路}唯一最优对应为单点值，上半连续便等于普通连续。
+\paragraph{详细推导与必要批注}
 必须补充非空紧值：$\Phi$ 连续且非空紧值，$f$ 连续，则第96页的两个方向给 $M$ 连续。最优对应 $A(x)=\{y\in\Phi(x):f(x,y)=M(x)\}$ 非空紧；等式由连续性保极限，故闭图，再以 $\Phi$ 为紧容器得上半连续。若最优点唯一，单点值上半连续等价普通连续，故唯一最优选择连续。实数紧值取 $f(y)=y$，最大值唯一，得到连续选择；没有紧值时例如 $(0,1)$ 根本没有最大点。原页100的球应理解为非空闭球，开球一般不取到坐标最大值。
 \clearpage\subsection{Berge 最大值与唯一选择}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 102 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：108。\par
-\noindent\textbf{原课件第 102 页}\par\begin{center}\includegraphics[page=102,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空紧值连续对应若存在共同连续目标且每个值集中最优点唯一，则唯一最优点构成连续选择；实数紧值可用最大元素。
+\paragraph{证明思路}唯一最优对应为单点值，上半连续便等于普通连续。
+\paragraph{详细推导与必要批注}
 必须补充非空紧值：$\Phi$ 连续且非空紧值，$f$ 连续，则第96页的两个方向给 $M$ 连续。最优对应 $A(x)=\{y\in\Phi(x):f(x,y)=M(x)\}$ 非空紧；等式由连续性保极限，故闭图，再以 $\Phi$ 为紧容器得上半连续。若最优点唯一，单点值上半连续等价普通连续，故唯一最优选择连续。实数紧值取 $f(y)=y$，最大值唯一，得到连续选择；没有紧值时例如 $(0,1)$ 根本没有最大点。原页100的球应理解为非空闭球，开球一般不取到坐标最大值。
 \clearpage\subsection{最小化的对偶证明}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 103--104 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：109, 110。\par
-\noindent\textbf{原课件第 103 页}\par\begin{center}\includegraphics[page=103,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 104 页}\par\begin{center}\includegraphics[page=104,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-对最小化使用 $-f$ 的最大化，或直接证明：紧值上半连续可行集及下半连续目标给最小值函数下半连续；下半连续可行集及上半连续目标给下确界函数上半连续。后一证明先选 $y_0$ 使 $f(x_0,y_0)<m(x_0)+\eps/2$，再使附近某可行选择的目标小于 $f(x_0,y_0)+\eps/2$。两项合成 $m(x)<m(x_0)+\eps$。第104页末尾应是 $M(x)$，不是 $M(x_0)$；第106页错误的集合包含应改成存在 $y\in\Phi(x)\cap V$。第107页最小对应的等式最安全写为 $f(y)=m(x)$，原图弱不等式方向不能把所有较大值也选入。
+\paragraph{命题与条件}下半连续目标在非空紧值上半连续可行集上的最小值函数下半连续。
+\paragraph{证明思路}按老师的有限覆盖路线，对旧紧值上所有点统一建立下界。
+\paragraph{详细推导与必要批注}
+对最小化使用 $-f$ 的最大化，或直接证明：紧值上半连续可行集及下半连续目标给最小值函数下半连续；下半连续可行集及上半连续目标给下确界函数上半连续。后一证明先选 $y_0$ 使 $f(x_0,y_0)<m(x_0)+\eps/2$，再使附近某可行选择的目标小于 $f(x_0,y_0)+\eps/2$。两项合成 $m(x)<m(x_0)+\eps$。第104页末尾应是 $M(x)$，不是 $M(x_0)$；第106页错误的集合包含应改成存在 $y\in\Phi(x)\cap V$。第107页最小对应的等式最安全写为 $f(y)=m(x)$，原课件弱不等式方向不能把所有较大值也选入。
 \clearpage\subsection{最小化的对偶证明}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 105--106 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：111, 112。\par
-\noindent\textbf{原课件第 105 页}\par\begin{center}\includegraphics[page=105,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 106 页}\par\begin{center}\includegraphics[page=106,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-对最小化使用 $-f$ 的最大化，或直接证明：紧值上半连续可行集及下半连续目标给最小值函数下半连续；下半连续可行集及上半连续目标给下确界函数上半连续。后一证明先选 $y_0$ 使 $f(x_0,y_0)<m(x_0)+\eps/2$，再使附近某可行选择的目标小于 $f(x_0,y_0)+\eps/2$。两项合成 $m(x)<m(x_0)+\eps$。第104页末尾应是 $M(x)$，不是 $M(x_0)$；第106页错误的集合包含应改成存在 $y\in\Phi(x)\cap V$。第107页最小对应的等式最安全写为 $f(y)=m(x)$，原图弱不等式方向不能把所有较大值也选入。
+\paragraph{命题与条件}上半连续目标在非空下半连续可行对应上的下确界值函数上半连续。
+\paragraph{证明思路}选近似最小点，再找附近可行点保持小目标值。
+\paragraph{详细推导与必要批注}
+对最小化使用 $-f$ 的最大化，或直接证明：紧值上半连续可行集及下半连续目标给最小值函数下半连续；下半连续可行集及上半连续目标给下确界函数上半连续。后一证明先选 $y_0$ 使 $f(x_0,y_0)<m(x_0)+\eps/2$，再使附近某可行选择的目标小于 $f(x_0,y_0)+\eps/2$。两项合成 $m(x)<m(x_0)+\eps$。第104页末尾应是 $M(x)$，不是 $M(x_0)$；第106页错误的集合包含应改成存在 $y\in\Phi(x)\cap V$。第107页最小对应的等式最安全写为 $f(y)=m(x)$，原课件弱不等式方向不能把所有较大值也选入。
 \clearpage\subsection{最小化的对偶证明}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 107 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：113。\par
-\noindent\textbf{原课件第 107 页}\par\begin{center}\includegraphics[page=107,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-对最小化使用 $-f$ 的最大化，或直接证明：紧值上半连续可行集及下半连续目标给最小值函数下半连续；下半连续可行集及上半连续目标给下确界函数上半连续。后一证明先选 $y_0$ 使 $f(x_0,y_0)<m(x_0)+\eps/2$，再使附近某可行选择的目标小于 $f(x_0,y_0)+\eps/2$。两项合成 $m(x)<m(x_0)+\eps$。第104页末尾应是 $M(x)$，不是 $M(x_0)$；第106页错误的集合包含应改成存在 $y\in\Phi(x)\cap V$。第107页最小对应的等式最安全写为 $f(y)=m(x)$，原图弱不等式方向不能把所有较大值也选入。
+\paragraph{命题与条件}连续目标、非空紧值连续可行对应的最小值连续，最小点对应上半连续。
+\paragraph{证明思路}合并两方向的值函数估计，再用等值条件刻画最优点闭图。
+\paragraph{详细推导与必要批注}
+对最小化使用 $-f$ 的最大化，或直接证明：紧值上半连续可行集及下半连续目标给最小值函数下半连续；下半连续可行集及上半连续目标给下确界函数上半连续。后一证明先选 $y_0$ 使 $f(x_0,y_0)<m(x_0)+\eps/2$，再使附近某可行选择的目标小于 $f(x_0,y_0)+\eps/2$。两项合成 $m(x)<m(x_0)+\eps$。第104页末尾应是 $M(x)$，不是 $M(x_0)$；第106页错误的集合包含应改成存在 $y\in\Phi(x)\cap V$。第107页最小对应的等式最安全写为 $f(y)=m(x)$，原课件弱不等式方向不能把所有较大值也选入。
 \clearpage\subsection{环境依赖偏好与最大元}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 110--111 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：116, 117。\par
-\noindent\textbf{原课件第 110 页}\par\begin{center}\includegraphics[page=110,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 111 页}\par\begin{center}\includegraphics[page=111,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}在紧值连续可行对应和适当闭的非严格优于关系条件下，极大元对应非空紧值且上半连续。
+\paragraph{证明思路}有限严格下截集覆盖反证非空，再利用下半连续逼近任意竞争点验证极大元图闭。
+\paragraph{详细推导与必要批注}
 假设 $\beta$ 非空紧值连续，每个严格关系传递且非自反，且“可行且非严格优于”的三元组集合闭。若无极大元，每个 $y$ 被某个 $z$ 严格压过，这些严格下截集构成 $\beta(x)$ 的相对开覆盖。有限子覆盖的有限个 $z_i$ 中存在极大者（传递且无循环），它不被任一 $z_i$ 压过，矛盾。极大元集为所有非优于截集的交，故闭且紧。若 $x_n\to x,y_n$ 为极大元且 $y_n\to y$，先由可行图闭得 $y\in\beta(x)$，再对任意 $z\in\beta(x)$ 用下半连续选 $z_n\in\beta(x_n)\to z$。由 $y_n$ 不差于 $z_n$ 及三元组闭性得极限不被 $z$ 压过。第111页 $z_n$ 应属于可行集 $\beta(x_n)$，不必属于最优集。以连续效用定义严格偏好即可回到 Berge 定理；第112页最优对应内目标须写成 $f(x,y)$，并补紧值条件。
 \clearpage\subsection{环境依赖偏好与最大元}
 \textbf{来源：}\texttt{108-ZSM-PPT.pdf}，原课件 PDF 第 113 页。\par
 对应已有 \texttt{gpt-108.pdf} 页脚：119。\par
-\noindent\textbf{原课件第 113 页}\par\begin{center}\includegraphics[page=113,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/108-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}将连续效用的比较关系代入极大元定理，推出最大值与最优选择的稳定性结论。
+\paragraph{证明思路}先把严格偏好写成函数值严格比较，再将最优对应的像变为单点最优值。
+\paragraph{详细推导与必要批注}
 假设 $\beta$ 非空紧值连续，每个严格关系传递且非自反，且“可行且非严格优于”的三元组集合闭。若无极大元，每个 $y$ 被某个 $z$ 严格压过，这些严格下截集构成 $\beta(x)$ 的相对开覆盖。有限子覆盖的有限个 $z_i$ 中存在极大者（传递且无循环），它不被任一 $z_i$ 压过，矛盾。极大元集为所有非优于截集的交，故闭且紧。若 $x_n\to x,y_n$ 为极大元且 $y_n\to y$，先由可行图闭得 $y\in\beta(x)$，再对任意 $z\in\beta(x)$ 用下半连续选 $z_n\in\beta(x_n)\to z$。由 $y_n$ 不差于 $z_n$ 及三元组闭性得极限不被 $z$ 压过。第111页 $z_n$ 应属于可行集 $\beta(x_n)$，不必属于最优集。以连续效用定义严格偏好即可回到 Berge 定理；第112页最优对应内目标须写成 $f(x,y)$，并补紧值条件。
 \clearpage\section{109-Proof}
 \clearpage\subsection{集合取负、作差与闭包的和}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 10 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：16。\par
-\noindent\textbf{原课件第 10 页}\par\begin{center}\includegraphics[page=10,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-$-A=\{-a:a\in A\}$，$A-B=A+(-B)$，并非集合差 $A\setminus B$。本页命题正确读作
+\paragraph{命题与条件}$\sum_i\overline{C_i}\subseteq\overline{\sum_i C_i}$（有限和）。
+\paragraph{证明思路}每个坐标点分别从原集中逼近，再对有限和取极限。
+\paragraph{详细推导与必要批注}
+$-A=\{-a:a\in A\}$，$A-B=A+(-B)$，并非集合差 $A\setminus B$。原课件该页命题正确读作
 \[\overline{A_1}+\cdots+\overline{A_K}\subseteq\overline{A_1+\cdots+A_K}.\]
 任取左边的 $z=\sum_k a_k$。因为 $a_k\in\overline{A_k}$，对每个 $k$ 选 $a_{k,q}\in A_k$ 使 $a_{k,q}\to a_k$。有限个极限可以相加，故 $z_q=\sum_k a_{k,q}\to z$，且 $z_q$ 在和集内。按闭包定义，$z$ 在右边。横线所在位置至关重要；这并没有说闭集之和一定闭。
 \clearpage\subsection{紧集之和紧：先看有界性}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 11 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：17。\par
-\noindent\textbf{原课件第 11 页}\par\begin{center}\includegraphics[page=11,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个紧集的和紧。
+\paragraph{证明思路}保留原页的连续像或逐因子抽子列路线；闭性和有界性须分别解释。
+\paragraph{详细推导与必要批注}
 若 $A_k$ 紧，则有常数 $M_k$ 使 $\norm{a_k}\le M_k$。任取 $z\in\sum_k A_k$，有 $z=\sum_k a_k$，从而 $\norm z\le\sum_k\norm{a_k}\le\sum_k M_k$。上界不依赖所选 $z$，故整个和集有界。如果有一个 $A_k=\varnothing$，和集为空，紧性自动成立；下面默认各集合非空。此页只完成“有界”，还不能宣告紧。
 \clearpage\subsection{紧集之和紧：连续像的短证明}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 12 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：18。\par
-\noindent\textbf{原课件第 12 页}\par\begin{center}\includegraphics[page=12,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个紧集的和紧。
+\paragraph{证明思路}保留原页的连续像或逐因子抽子列路线；闭性和有界性须分别解释。
+\paragraph{详细推导与必要批注}
 有限乘积 $P=A_1\times\cdots\times A_K$ 紧，映射 $F(a_1,\ldots,a_K)=\sum_k a_k$ 连续，而 $F(P)=\sum_k A_k$。连续映射把紧集送到紧集，所以结论成立。这条论证其实已同时得到闭性和有界性。
 \paragraph{为什么不能把紧换成闭。} 在 $\R^2$ 中取 $A=\{(u,1/u):u>0\}$、$B=\{(v,0):v\in\R\}$，两者都闭，然而 $A+B=\R\times(0,\infty)$ 不闭。$A$ 的闭性来自：若它的点列有有限极限，则第一坐标不可能趋于 $0$ 或无穷，极限仍满足乘积为 $1$ 且正。
 \clearpage\subsection{紧集之和紧：逐层抽取子列}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 13 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：19。\par
-\noindent\textbf{原课件第 13 页}\par\begin{center}\includegraphics[page=13,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个紧集的和紧。
+\paragraph{证明思路}保留原页的连续像或逐因子抽子列路线；闭性和有界性须分别解释。
+\paragraph{详细推导与必要批注}
 不用连续像定理也能证明。给定 $z_q=\sum_{k=1}^K a_{k,q}$，先利用 $A_1$ 紧，挑索引子列，使第一个分量收敛；\emph{只在这条子列中}再挑，使第二个分量收敛。第一个分量仍然收敛，因为收敛序列的子列保留原极限。重复有限次，得到同一条索引子列 $q_j$，使每个 $a_{k,q_j}\to a_k\in A_k$。不能分别随意选 $K$ 条不同索引子列后直接相加。
 \clearpage\subsection{对应之和半连续：补全漏掉的抽子列步骤}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 17 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：23。\par
-\noindent\textbf{原课件第 17 页}\par\begin{center}\includegraphics[page=17,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}共同紧陪域约定下，有限个上半连续对应的和具有相应上半连续性。
+\paragraph{证明思路}给和中的每项选择一个分解，再逐分量抽子列，不能直接假设每个分量已收敛。
+\paragraph{详细推导与必要批注}
 \paragraph{上半连续。} 设 $x_q\to x_0$，$y_q\in\varphi(x_q)$，$y_q\to y$。分解 $y_q=\sum_k y_{k,q}$，其中 $y_{k,q}\in\varphi_k(x_q)\subset T_k$。由各 $T_k$ 紧，\emph{取共同子列}使 $y_{k,q_j}\to y_k$。各对应在 $x_0$ 的闭图性质给 $y_k\in\varphi_k(x_0)$，故 $y=\sum_k y_k\in\varphi(x_0)$。总值域紧，因此这推出所需上半连续性。原页直接写各分量收敛，省略了关键依据。
 \paragraph{下半连续。} 给定 $y=\sum_k y_k\in\varphi(x_0)$ 和任意 $x_q\to x_0$。各 $\varphi_k$ 下半连续，存在 $y_{k,q}\in\varphi_k(x_q)$ 且 $y_{k,q}\to y_k$；取和便得 $y_q\in\varphi(x_q)$ 且 $y_q\to y$。这里要逼近的是\emph{指定的}旧选择 $y$。
 \clearpage\subsection{正半独立：方向不能抵消}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 23 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：29。\par
-\noindent\textbf{原课件第 23 页}\par\begin{center}\includegraphics[page=23,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}两个含0的锥正半独立当且仅当 $C_1\cap(-C_2)=\{0\}$。
+\paragraph{证明思路}把 $d_1+d_2=0$ 改写为 $d_1=-d_2$，在交集中判断。
+\paragraph{详细推导与必要批注}
 锥 $C_1,\ldots,C_K$ 正半独立，意思是 $x_k\in C_k$ 且 $\sum_kx_k=0$ 只能发生在全部 $x_k=0$ 时。两个锥时等价于 $C_1\cap(-C_2)=\{0\}$。
 \paragraph{两方向证明。} 若交仅含 $0$，由 $x_1+x_2=0$ 得 $x_1=-x_2\in C_1\cap(-C_2)$，所以两者均零。反过来，若正半独立，任取 $z\in C_1\cap(-C_2)$，则 $z\in C_1$、$-z\in C_2$，两者和为零，故 $z=0$。两个同向非负射线正半独立，两个相反射线则不满足。
 \clearpage\subsection{为什么截尾锥递减；闭包不能漏}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 25 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：31。\par
-\noindent\textbf{原课件第 25 页}\par\begin{center}\includegraphics[page=25,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}截尾集合及其生成闭锥随截尾阈值增大而递减；生成闭锥须保留闭包。
+\paragraph{证明思路}先比较原截尾集包含，再用生成闭锥的单调性取交。
+\paragraph{详细推导与必要批注}
 若 $M_1\le M_2$，距离门槛提高，故 $S^{M_2}\subset S^{M_1}$，进而 $\Gamma(S^{M_2})\subset\Gamma(S^{M_1})$。所谓极限就是递减集合族的交。准确的公式是
 \[\Gamma(E)=\overline{\{\alpha x:\alpha\ge0,\ x\in E\}\cup\{0\}}.\]
 闭包负责加入仅能逼近的边界方向；$\{0\}$ 负责空集情形。去掉闭包、或把“存在任意接近的点”误写成“恰好存在同方向的点”，都会使后面的证明失效。
 \clearpage\subsection{有界当且仅当没有非零渐近方向}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 29 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：35。\par
-\noindent\textbf{原课件第 29 页}\par\begin{center}\includegraphics[page=29,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空集合有界当且仅当其序列式渐近锥只有零向量。
+\paragraph{证明思路}有界时除以趋无穷标度；无界时选范数趋无穷点列并单位化抽子列。
+\paragraph{详细推导与必要批注}
 若 $\norm x\le M$ 对所有 $x\in C$ 成立，那么任意 $x_k/t_k$ 的范数至多 $M/t_k\to0$，故只可能得到 $0$；非空性保证 $0$ 确实存在。
 反向用逆否命题：若 $C$ 无界，对每个整数 $k$ 选 $x_k\in C$ 使 $\norm{x_k}\ge k$。单位向量 $u_k=x_k/\norm{x_k}$ 位于紧的单位球面，所以有子列趋向 $u$，且 $\norm u=1$。取 $t_j=\norm{x_{k_j}}\to\infty$，就得到 $u\in C_\infty$，是非零方向。关键是“无界—归一化—球面紧—非零极限”。
 \clearpage\subsection{单调性、平移不变性与乘积的预告}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 30 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：36。\par
-\noindent\textbf{原课件第 30 页}\par\begin{center}\includegraphics[page=30,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}渐近锥随原集合包含而单调；给非空集合加另一非空集合使渐近锥不缩小。
+\paragraph{证明思路}先用截尾包含证明单调，再固定一个平移点应用平移不变性。
+\paragraph{详细推导与必要批注}
 $S_1\subset S_2$ 时，在 $S_1$ 中见证某渐近方向的点列也在 $S_2$ 中，所以 $AS_1\subset AS_2$。若 $T\ne\varnothing$，取固定 $a\in T$，则 $S+a\subset S+T$；结合平移不变性，$AS=A(S+a)\subset A(S+T)$。这里 $a$ 必须固定，不能随序列任意变化。乘积的结论一般只是包含，原因是各分量需要共同的缩放尺度，见第33页。
 \clearpage\subsection{平移不改变渐近锥：逐步证明}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 31 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：37。\par
-\noindent\textbf{原课件第 31 页}\par\begin{center}\includegraphics[page=31,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}平移不改变渐近锥：$(C+a)_\infty=C_\infty$。
+\paragraph{证明思路}把见证序列加减固定向量；除以趋无穷标度后平移项趋零。
+\paragraph{详细推导与必要批注}
 设 $d\in(S+a)_\infty$，存在 $z_k\in S+a$、$t_k\to\infty$ 使 $z_k/t_k\to d$。写 $z_k=x_k+a$，$x_k\in S$，则
 \[\norm{x_k/t_k-d}\le\norm{z_k/t_k-d}+\norm a/t_k\to0.\]
 故 $(S+a)_\infty\subset S_\infty$。把 $S+a$ 当作新集合，再平移 $-a$，得到反向包含。直观是固定距离的搬动除以越来越大的尺度后消失。
 \clearpage\subsection{平移不变性的等价链写法}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 32 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：38。\par
-\noindent\textbf{原课件第 32 页}\par\begin{center}\includegraphics[page=32,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-本页将第31页的双包含压缩为等价关系。核心等式是 $(x_k+a)/t_k=x_k/t_k+a/t_k$，最后一项趋于 $0$，所以两边具有同一个极限。练习时先自行写出 $x_k$ 属于哪个集合，再写极限；不必背每一行排版。若平移量变为 $a_k$ 且 $a_k/t_k$ 不趋零，结论便可能改变。
+\paragraph{命题与条件}平移不改变渐近锥：$(C+a)_\infty=C_\infty$。
+\paragraph{证明思路}把见证序列加减固定向量；除以趋无穷标度后平移项趋零。
+\paragraph{详细推导与必要批注}
+原课件该页将第31页的双包含压缩为等价关系。核心等式是 $(x_k+a)/t_k=x_k/t_k+a/t_k$，最后一项趋于 $0$，所以两边具有同一个极限。练习时先自行写出 $x_k$ 属于哪个集合，再写极限；不必背每一行排版。若平移量变为 $a_k$ 且 $a_k/t_k$ 不趋零，结论便可能改变。
 \clearpage\subsection{乘积的渐近锥包含于各渐近锥的乘积}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 33 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：39。\par
-\noindent\textbf{原课件第 33 页}\par\begin{center}\includegraphics[page=33,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限积的渐近锥包含于各因子渐近锥的积。
+\paragraph{证明思路}对共同标度下的向量极限逐坐标取极限；原页截尾等式的错误另外说明。
+\paragraph{详细推导与必要批注}
 设 $C=S_1\times\cdots\times S_K$ 非空，$d\in C_\infty$。取 $x_q=(x_{1,q},\ldots,x_{K,q})\in C$、$t_q\to\infty$ 使 $x_q/t_q\to d=(d_1,\ldots,d_K)$。向量收敛蕴含每个坐标块收敛，所以 $x_{k,q}/t_q\to d_k$，即 $d_k\in(S_k)_\infty$。因此
 \[C_\infty\subset\prod_{k=1}^K(S_k)_\infty.\]
 反向不自动成立：各个方向的见证序列可能只在互不匹配的尺度出现。对凸集，可由第105--108页的渐近正则性解决尺度匹配问题。
 \clearpage\subsection{交集有界：用单调性证明}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 35 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：41。\par
-\noindent\textbf{原课件第 35 页}\par\begin{center}\includegraphics[page=35,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若各集合渐近锥的交至多为零方向，则原集合的交有界。
+\paragraph{证明思路}交集包含于每一因子，先用锥单调性，再用有界性判据。
+\paragraph{详细推导与必要批注}
 令 $D=\bigcap_{\gamma\in I}C_\gamma$。若 $D=\varnothing$，有界性直接成立。若非空，则 $D\subset C_\gamma$ 给 $D_\infty\subset(C_\gamma)_\infty$ 对每个 $\gamma$ 成立，因此
 \[D_\infty\subset\bigcap_\gamma(C_\gamma)_\infty=\{0\}.\]
 因为 $D$ 非空，$0\in D_\infty$，于是 $D_\infty=\{0\}$，第29页即给 $D$ 有界。这就是“先处理空集，再使用非空定理”的标准写法。
 \clearpage\subsection{不能从递减交直接跳到某个截尾为空}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 36 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：42。\par
-\noindent\textbf{原课件第 36 页}\par\begin{center}\includegraphics[page=36,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
-本页用截尾集合重述第35页。结论正确，但中间“存在 $M_0$ 使截尾为空”需要第29页的有界性判别，不能只由递减集合交为空或交为 $\{0\}$ 直接断言。一般递减非空集可以有空交，例如 $[n,\infty)$。在这里，可反证：若交集无界，就抽出单位极限方向，同时属于全部渐近锥，与仅含零矛盾。
+\paragraph{命题与条件}若各集合渐近锥的交至多为零方向，则原集合的交有界。
+\paragraph{证明思路}交集包含于每一因子，先用锥单调性，再用有界性判据。
+\paragraph{详细推导与必要批注}
+原课件该页用截尾集合重述第35页。结论正确，但中间“存在 $M_0$ 使截尾为空”需要第29页的有界性判别，不能只由递减集合交为空或交为 $\{0\}$ 直接断言。一般递减非空集可以有空交，例如 $[n,\infty)$。在这里，可反证：若交集无界，就抽出单位极限方向，同时属于全部渐近锥，与仅含零矛盾。
 \clearpage\subsection{线性像证明的核心：归一化反证}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 38--41 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：44, 45, 46, 47。\par
-\noindent\textbf{原课件第 38 页}\par\begin{center}\includegraphics[page=38,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 39 页}\par\begin{center}\includegraphics[page=39,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 40 页}\par\begin{center}\includegraphics[page=40,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 41 页}\par\begin{center}\includegraphics[page=41,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭 $C$ 满足 $\ker L\cap C_\infty=\{0\}$ 时，线性像 $L(C)$ 闭且 $L(C_\infty)=(L(C))_\infty$。
+\paragraph{证明思路}归一化反证原像有界；抽子列证像闭；两向分别构造渐近方向。
+\paragraph{详细推导与必要批注}
 若存在 $x_k\in C$，$\norm{x_k}\to\infty$，而 $L(x_k)$ 有界，则单位向量取子列 $x_k/\norm{x_k}\to u$，$\norm u=1$。按定义 $u\in C_\infty$；连续性和线性给
 \[L(u)=\lim_k \frac{L(x_k)}{\norm{x_k}}=0.\]
 于是 $u\in\ker L\cap C_\infty$ 且非零，与条件矛盾。更准确的可用结论是：$C$ 中任何像有界的点列自身必有界；若自身无界，先抽取范数趋无穷的子列，再运用本证明。
@@ -1610,228 +1760,248 @@ $S_1\subset S_2$ 时，在 $S_1$ 中见证某渐近方向的点列也在 $S_2$ �
 \clearpage\subsection{闭集和与正半独立}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 43--44 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：49, 50。\par
-\noindent\textbf{原课件第 43 页}\par\begin{center}\includegraphics[page=43,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 44 页}\par\begin{center}\includegraphics[page=44,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭集族渐近锥正半独立时，有限集合和闭，且和的渐近锥包含于各锥之和。
+\paragraph{证明思路}将和表示为积集在线性求和映射下的像，检查其核与渐近锥交。
+\paragraph{详细推导与必要批注}
 正半独立指若 $d_i\in(C_i)_\infty$ 且 $\sum_i d_i=0$，则每个 $d_i=0$。设积集 $C=\prod_iC_i$，线性映射 $L(x_1,\ldots,x_m)=\sum_i x_i$。逐坐标极限给 $C_\infty\subseteq\prod_i(C_i)_\infty$，所以核条件成立。前面的线性像定理给 $L(C)=\sum_iC_i$ 闭，且 $(\sum_i C_i)_\infty=L(C_\infty)\subseteq\sum_i(C_i)_\infty$。这说明渐近方向不能互相抵消是保证闭和的重要条件；闭集的和一般不自动闭。
 \clearpage\subsection{闭集和与正半独立}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 45 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：51。\par
-\noindent\textbf{原课件第 45 页}\par\begin{center}\includegraphics[page=45,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭集族渐近锥正半独立时，有限集合和闭，且和的渐近锥包含于各锥之和。
+\paragraph{证明思路}将和表示为积集在线性求和映射下的像，检查其核与渐近锥交。
+\paragraph{详细推导与必要批注}
 正半独立指若 $d_i\in(C_i)_\infty$ 且 $\sum_i d_i=0$，则每个 $d_i=0$。设积集 $C=\prod_iC_i$，线性映射 $L(x_1,\ldots,x_m)=\sum_i x_i$。逐坐标极限给 $C_\infty\subseteq\prod_i(C_i)_\infty$，所以核条件成立。前面的线性像定理给 $L(C)=\sum_iC_i$ 闭，且 $(\sum_i C_i)_\infty=L(C_\infty)\subseteq\sum_i(C_i)_\infty$。这说明渐近方向不能互相抵消是保证闭和的重要条件；闭集的和一般不自动闭。
 \clearpage\subsection{凸性的基本运算及连通性}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 49 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：55。\par
-\noindent\textbf{原课件第 49 页}\par\begin{center}\includegraphics[page=49,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}任意凸集族的交凸。
+\paragraph{证明思路}任取两端点，凸组合在每个因子中，因而在交中。
+\paragraph{详细推导与必要批注}
 交：两端点属于每个凸因子，线段逐个属于它们，故属于交。和：写 $x=\sum x_i,y=\sum y_i$，则 $tx+(1-t)y=\sum(tx_i+(1-t)y_i)$ 属于和；积逐坐标同理。闭包：选 $x_n,y_n\in C$ 趋于闭包两点，凸组合在 $C$，极限在闭包。凸集连通：若被相对开集分离，连接两侧点的连续路径 $t\mapsto tx+(1-t)y$ 把分离拉回 $[0,1]$，与区间连通矛盾。最后若 $C$ 闭凸且含0，$x_n/t_n\to d$ 且 $t_n\to\infty$，充分大时 $x_n/t_n=(1-1/t_n)0+x_n/t_n\in C$，闭性给 $d\in C$。
 \clearpage\subsection{凸性的基本运算及连通性}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 50 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：56。\par
-\noindent\textbf{原课件第 50 页}\par\begin{center}\includegraphics[page=50,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限个凸集的和与积均凸。
+\paragraph{证明思路}分解两端点后，以同一个权重逐因子作凸组合。
+\paragraph{详细推导与必要批注}
 交：两端点属于每个凸因子，线段逐个属于它们，故属于交。和：写 $x=\sum x_i,y=\sum y_i$，则 $tx+(1-t)y=\sum(tx_i+(1-t)y_i)$ 属于和；积逐坐标同理。闭包：选 $x_n,y_n\in C$ 趋于闭包两点，凸组合在 $C$，极限在闭包。凸集连通：若被相对开集分离，连接两侧点的连续路径 $t\mapsto tx+(1-t)y$ 把分离拉回 $[0,1]$，与区间连通矛盾。最后若 $C$ 闭凸且含0，$x_n/t_n\to d$ 且 $t_n\to\infty$，充分大时 $x_n/t_n=(1-1/t_n)0+x_n/t_n\in C$，闭性给 $d\in C$。
 \clearpage\subsection{凸性的基本运算及连通性}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 51 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：57。\par
-\noindent\textbf{原课件第 51 页}\par\begin{center}\includegraphics[page=51,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}凸集的闭包凸。
+\paragraph{证明思路}用原集内序列逼近两端点，对对应凸组合取极限。
+\paragraph{详细推导与必要批注}
 交：两端点属于每个凸因子，线段逐个属于它们，故属于交。和：写 $x=\sum x_i,y=\sum y_i$，则 $tx+(1-t)y=\sum(tx_i+(1-t)y_i)$ 属于和；积逐坐标同理。闭包：选 $x_n,y_n\in C$ 趋于闭包两点，凸组合在 $C$，极限在闭包。凸集连通：若被相对开集分离，连接两侧点的连续路径 $t\mapsto tx+(1-t)y$ 把分离拉回 $[0,1]$，与区间连通矛盾。最后若 $C$ 闭凸且含0，$x_n/t_n\to d$ 且 $t_n\to\infty$，充分大时 $x_n/t_n=(1-1/t_n)0+x_n/t_n\in C$，闭性给 $d\in C$。
 \clearpage\subsection{凸性的基本运算及连通性}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 52 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：58。\par
-\noindent\textbf{原课件第 52 页}\par\begin{center}\includegraphics[page=52,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}凸集连通。
+\paragraph{证明思路}反设可分离，把连接两侧点的线段参数拉回区间，违反区间连通。
+\paragraph{详细推导与必要批注}
 交：两端点属于每个凸因子，线段逐个属于它们，故属于交。和：写 $x=\sum x_i,y=\sum y_i$，则 $tx+(1-t)y=\sum(tx_i+(1-t)y_i)$ 属于和；积逐坐标同理。闭包：选 $x_n,y_n\in C$ 趋于闭包两点，凸组合在 $C$，极限在闭包。凸集连通：若被相对开集分离，连接两侧点的连续路径 $t\mapsto tx+(1-t)y$ 把分离拉回 $[0,1]$，与区间连通矛盾。最后若 $C$ 闭凸且含0，$x_n/t_n\to d$ 且 $t_n\to\infty$，充分大时 $x_n/t_n=(1-1/t_n)0+x_n/t_n\in C$，闭性给 $d\in C$。
 \clearpage\subsection{凸性的基本运算及连通性}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 53 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：59。\par
-\noindent\textbf{原课件第 53 页}\par\begin{center}\includegraphics[page=53,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}含0的闭凸集包含其渐近锥。
+\paragraph{证明思路}将渐近方向见证点缩小到0与该点的线段上，最后用闭性。
+\paragraph{详细推导与必要批注}
 交：两端点属于每个凸因子，线段逐个属于它们，故属于交。和：写 $x=\sum x_i,y=\sum y_i$，则 $tx+(1-t)y=\sum(tx_i+(1-t)y_i)$ 属于和；积逐坐标同理。闭包：选 $x_n,y_n\in C$ 趋于闭包两点，凸组合在 $C$，极限在闭包。凸集连通：若被相对开集分离，连接两侧点的连续路径 $t\mapsto tx+(1-t)y$ 把分离拉回 $[0,1]$，与区间连通矛盾。最后若 $C$ 闭凸且含0，$x_n/t_n\to d$ 且 $t_n\to\infty$，充分大时 $x_n/t_n=(1-1/t_n)0+x_n/t_n\in C$，闭性给 $d\in C$。
 \clearpage\subsection{凸性的基本运算及连通性}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 54 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：60。\par
-\noindent\textbf{原课件第 54 页}\par\begin{center}\includegraphics[page=54,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}含0的闭凸集包含其渐近锥。
+\paragraph{证明思路}将渐近方向见证点缩小到0与该点的线段上，最后用闭性。
+\paragraph{详细推导与必要批注}
 交：两端点属于每个凸因子，线段逐个属于它们，故属于交。和：写 $x=\sum x_i,y=\sum y_i$，则 $tx+(1-t)y=\sum(tx_i+(1-t)y_i)$ 属于和；积逐坐标同理。闭包：选 $x_n,y_n\in C$ 趋于闭包两点，凸组合在 $C$，极限在闭包。凸集连通：若被相对开集分离，连接两侧点的连续路径 $t\mapsto tx+(1-t)y$ 把分离拉回 $[0,1]$，与区间连通矛盾。最后若 $C$ 闭凸且含0，$x_n/t_n\to d$ 且 $t_n\to\infty$，充分大时 $x_n/t_n=(1-1/t_n)0+x_n/t_n\in C$，闭性给 $d\in C$。
 \clearpage\subsection{凸包与和的交换及证明纠错}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 57--59 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：63, 64, 65。\par
-\noindent\textbf{原课件第 57 页}\par\begin{center}\includegraphics[page=57,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 58 页}\par\begin{center}\includegraphics[page=58,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 59 页}\par\begin{center}\includegraphics[page=59,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}$\operatorname{co}(\sum_i C_i)=\sum_i\operatorname{co}(C_i)$（有限和）。
+\paragraph{证明思路}正向分配有限和；反向以乘积权重重组凸组合，不能简单归一化改变目标点。
+\paragraph{详细推导与必要批注}
 凸包是所有包含 $S$ 的凸集的交，等价于有限凸组合全体。闭凸包是它的闭包。证明 $\operatorname{co}(A+B)=\operatorname{co}A+\operatorname{co}B$：一边把 $\sum\lambda_i(a_i+b_i)$ 分成两凸组合；另一边若 $a=\sum_i\alpha_i a_i,b=\sum_j\beta_j b_j$，则 $a+b=\sum_{i,j}\alpha_i\beta_j(a_i+b_j)$，积权重非负且总和1。有限多集合用权重 $\prod_k\lambda_{ki_k}$。第58页直接把总权重 $K$ 归一化会把目标点也除以 $K$，因此不成立；第59页积权重论证才正确。
 \clearpage\subsection{三种无穷远方向及量词}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 69--70 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：75, 76。\par
-\noindent\textbf{原课件第 69 页}\par\begin{center}\includegraphics[page=69,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 70 页}\par\begin{center}\includegraphics[page=70,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}截尾集合及其生成闭锥随截尾阈值增大而递减；生成闭锥须保留闭包。
+\paragraph{证明思路}先比较原截尾集包含，再用生成闭锥的单调性取交。
+\paragraph{详细推导与必要批注}
 截尾定义先保留 $\norm x\ge M$ 的点，再取所生成最小闭锥，最后对全部 $M$ 取交。序列定义为 $d\in C_\infty\iff\exists x_n\in C,\ t_n\to+\infty:x_n/t_n\to d$。衰退锥为 $\operatorname{rec}C=\{d:\forall x\in C,\forall t\ge0,x+td\in C\}$，要求所有起点都可以一直沿该方向走；只在非空闭凸情形才保证与渐近锥一致。单位方向归一化必须选范数趋于无穷的子列，而不仅是声称任意无界序列范数都趋无穷。截尾最小闭锥不是凸锥，闭包横线不能漏。
 \clearpage\subsection{渐近锥闭性及闭包不变}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 77--78 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：83, 84。\par
-\noindent\textbf{原课件第 77 页}\par\begin{center}\includegraphics[page=77,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 78 页}\par\begin{center}\includegraphics[page=78,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空集合的序列式渐近锥是闭锥。
+\paragraph{证明思路}缩放构造锥性，选择每层精度与标度的对角点构造闭性。
+\paragraph{详细推导与必要批注}
 非空 $C$ 时固定 $x\in C$ 并取 $t_n=n$ 得0属于渐近锥。正倍数通过把 $t_n$ 换为 $t_n/\lambda$ 得到。闭性用对角选取：若 $d_j\to d$，对每个 $j$ 从其见证序列选一点使 $t_j>j$ 且 $\norm{x_j/t_j-d_j}<1/j$；三角不等式给 $x_j/t_j\to d$。闭包不改变锥：用 $x_j'\in C$ 逼近 $x_j\in\overline C$ 至误差 $1/j$，除以 $t_j$ 后误差更趋0。若 $C$ 本身是闭锥，取 $x_n=nd,t_n=n$ 得 $C\subset C_\infty$，反向用每个 $x_n/t_n\in C$ 与闭性；非闭锥的结论为 $C_\infty=\overline C$。
 \clearpage\subsection{渐近锥闭性及闭包不变}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 79 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：85。\par
-\noindent\textbf{原课件第 79 页}\par\begin{center}\includegraphics[page=79,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}取闭包不改变渐近锥。
+\paragraph{证明思路}用原集点逼近闭包中的见证点，控制除以标度后的误差。
+\paragraph{详细推导与必要批注}
 非空 $C$ 时固定 $x\in C$ 并取 $t_n=n$ 得0属于渐近锥。正倍数通过把 $t_n$ 换为 $t_n/\lambda$ 得到。闭性用对角选取：若 $d_j\to d$，对每个 $j$ 从其见证序列选一点使 $t_j>j$ 且 $\norm{x_j/t_j-d_j}<1/j$；三角不等式给 $x_j/t_j\to d$。闭包不改变锥：用 $x_j'\in C$ 逼近 $x_j\in\overline C$ 至误差 $1/j$，除以 $t_j$ 后误差更趋0。若 $C$ 本身是闭锥，取 $x_n=nd,t_n=n$ 得 $C\subset C_\infty$，反向用每个 $x_n/t_n\in C$ 与闭性；非闭锥的结论为 $C_\infty=\overline C$。
 \clearpage\subsection{渐近锥闭性及闭包不变}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 80 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：86。\par
-\noindent\textbf{原课件第 80 页}\par\begin{center}\includegraphics[page=80,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭锥的渐近锥等于自身；一般锥的渐近锥等于其闭包。
+\paragraph{证明思路}一边选 $x_n=nd$，另一边用锥在缩放下封闭及闭性。
+\paragraph{详细推导与必要批注}
 非空 $C$ 时固定 $x\in C$ 并取 $t_n=n$ 得0属于渐近锥。正倍数通过把 $t_n$ 换为 $t_n/\lambda$ 得到。闭性用对角选取：若 $d_j\to d$，对每个 $j$ 从其见证序列选一点使 $t_j>j$ 且 $\norm{x_j/t_j-d_j}<1/j$；三角不等式给 $x_j/t_j\to d$。闭包不改变锥：用 $x_j'\in C$ 逼近 $x_j\in\overline C$ 至误差 $1/j$，除以 $t_j$ 后误差更趋0。若 $C$ 本身是闭锥，取 $x_n=nd,t_n=n$ 得 $C\subset C_\infty$，反向用每个 $x_n/t_n\in C$ 与闭性；非闭锥的结论为 $C_\infty=\overline C$。
 \clearpage\subsection{截尾与序列定义等价}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 82 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：88。\par
-\noindent\textbf{原课件第 82 页}\par\begin{center}\includegraphics[page=82,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}截尾生成闭锥定义与序列式渐近锥定义等价。
+\paragraph{证明思路}非零方向的见证点最终越过每个截尾阈值；反向逐层选近似点并证明缩放系数趋零。
+\paragraph{详细推导与必要批注}
 非零 $d=x_n/t_n$ 的极限使 $\norm{x_n}\to\infty$，所以对任意 $M$，最终原点均属截尾集，其缩放极限落入截尾闭锥，故属于交。反向对非零 $d$，每个整数 $M$ 选 $\alpha_M x_M$ 距 $d$ 小于 $1/M$，且 $\norm{x_M}\ge M$。由 $\alpha_M\le(\norm d+1/M)/M\to0$，取 $t_M=1/\alpha_M\to\infty$，得到见证序列。零向量对非空集合单独处理。归一化方向全体再取非负倍数得到相同锥；有界集方向集为空时需单独按约定加入0。
 \clearpage\subsection{截尾与序列定义等价}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 83 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：89。\par
-\noindent\textbf{原课件第 83 页}\par\begin{center}\includegraphics[page=83,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}无界集合的渐近方向可由无穷远单位方向及非负缩放描述；有界情形另补零方向约定。
+\paragraph{证明思路}分离长度比例与单位方向，分别抽子列与取极限。
+\paragraph{详细推导与必要批注}
 非零 $d=x_n/t_n$ 的极限使 $\norm{x_n}\to\infty$，所以对任意 $M$，最终原点均属截尾集，其缩放极限落入截尾闭锥，故属于交。反向对非零 $d$，每个整数 $M$ 选 $\alpha_M x_M$ 距 $d$ 小于 $1/M$，且 $\norm{x_M}\ge M$。由 $\alpha_M\le(\norm d+1/M)/M\to0$，取 $t_M=1/\alpha_M\to\infty$，得到见证序列。零向量对非空集合单独处理。归一化方向全体再取非负倍数得到相同锥；有界集方向集为空时需单独按约定加入0。
 \clearpage\subsection{有界判据与平移不变}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 84 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：90。\par
-\noindent\textbf{原课件第 84 页}\par\begin{center}\includegraphics[page=84,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空集合有界当且仅当其序列式渐近锥只有零向量。
+\paragraph{证明思路}有界时除以趋无穷标度；无界时选范数趋无穷点列并单位化抽子列。
+\paragraph{详细推导与必要批注}
 非空有界 $C$ 的任意 $x_n/t_n$ 趋于0，故渐近锥只有0。若无界，选 $\norm{x_n}\to\infty$，单位向量抽子列趋于单位 $d$，令 $t_n=\norm{x_n}$ 得非零渐近方向，矛盾。平移 $C+a$ 不改变方向，因为 $(x_n+a)/t_n-x_n/t_n=a/t_n\to0$。若 $E$ 非空，固定 $a\in E$，由 $C+a\subset C+E$ 及单调性得 $C_\infty\subset(C+E)_\infty$。
 \clearpage\subsection{有界判据与平移不变}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 85 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：91。\par
-\noindent\textbf{原课件第 85 页}\par\begin{center}\includegraphics[page=85,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}平移不改变渐近锥：$(C+a)_\infty=C_\infty$。
+\paragraph{证明思路}把见证序列加减固定向量；除以趋无穷标度后平移项趋零。
+\paragraph{详细推导与必要批注}
 非空有界 $C$ 的任意 $x_n/t_n$ 趋于0，故渐近锥只有0。若无界，选 $\norm{x_n}\to\infty$，单位向量抽子列趋于单位 $d$，令 $t_n=\norm{x_n}$ 得非零渐近方向，矛盾。平移 $C+a$ 不改变方向，因为 $(x_n+a)/t_n-x_n/t_n=a/t_n\to0$。若 $E$ 非空，固定 $a\in E$，由 $C+a\subset C+E$ 及单调性得 $C_\infty\subset(C+E)_\infty$。
 \clearpage\subsection{有界判据与平移不变}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 86 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：92。\par
-\noindent\textbf{原课件第 86 页}\par\begin{center}\includegraphics[page=86,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}平移不改变渐近锥：$(C+a)_\infty=C_\infty$。
+\paragraph{证明思路}把见证序列加减固定向量；除以趋无穷标度后平移项趋零。
+\paragraph{详细推导与必要批注}
 非空有界 $C$ 的任意 $x_n/t_n$ 趋于0，故渐近锥只有0。若无界，选 $\norm{x_n}\to\infty$，单位向量抽子列趋于单位 $d$，令 $t_n=\norm{x_n}$ 得非零渐近方向，矛盾。平移 $C+a$ 不改变方向，因为 $(x_n+a)/t_n-x_n/t_n=a/t_n\to0$。若 $E$ 非空，固定 $a\in E$，由 $C+a\subset C+E$ 及单调性得 $C_\infty\subset(C+E)_\infty$。
 \clearpage\subsection{有界判据与平移不变}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 87 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：93。\par
-\noindent\textbf{原课件第 87 页}\par\begin{center}\includegraphics[page=87,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空 $E$ 下，$C_\infty\subseteq(C+E)_\infty$。
+\paragraph{证明思路}固定 $a\in E$，结合 $C+a\subseteq C+E$ 与平移不变性。
+\paragraph{详细推导与必要批注}
 非空有界 $C$ 的任意 $x_n/t_n$ 趋于0，故渐近锥只有0。若无界，选 $\norm{x_n}\to\infty$，单位向量抽子列趋于单位 $d$，令 $t_n=\norm{x_n}$ 得非零渐近方向，矛盾。平移 $C+a$ 不改变方向，因为 $(x_n+a)/t_n-x_n/t_n=a/t_n\to0$。若 $E$ 非空，固定 $a\in E$，由 $C+a\subset C+E$ 及单调性得 $C_\infty\subset(C+E)_\infty$。
 \clearpage\subsection{乘积与交集的渐近方向}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 88 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：94。\par
-\noindent\textbf{原课件第 88 页}\par\begin{center}\includegraphics[page=88,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限积的渐近锥包含于各因子渐近锥的积。
+\paragraph{证明思路}对共同标度下的向量极限逐坐标取极限；原页截尾等式的错误另外说明。
+\paragraph{详细推导与必要批注}
 若 $(x_{1n},\ldots,x_{mn})/t_n\to(d_1,\ldots,d_m)$，逐坐标就是 $x_{in}/t_n\to d_i$，所以积的渐近锥包含于渐近锥之积。反向一般不能单靠各自见证序列，因为缩放速度未必相同。第89页把总范数截尾当成各分量都截尾的等式错误，例如 $(M,0)$ 总范数大但第二分量不大。交集包含于每个集合，锥的单调性给交集锥包含于各锥交；若右边只有0，交集有界（空交集本身有界，非空时用第84页）。
 \clearpage\subsection{乘积与交集的渐近方向}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 89 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：95。\par
-\noindent\textbf{原课件第 89 页}\par\begin{center}\includegraphics[page=89,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}有限积的渐近锥包含于各因子渐近锥的积。
+\paragraph{证明思路}对共同标度下的向量极限逐坐标取极限；原页截尾等式的错误另外说明。
+\paragraph{详细推导与必要批注}
 若 $(x_{1n},\ldots,x_{mn})/t_n\to(d_1,\ldots,d_m)$，逐坐标就是 $x_{in}/t_n\to d_i$，所以积的渐近锥包含于渐近锥之积。反向一般不能单靠各自见证序列，因为缩放速度未必相同。第89页把总范数截尾当成各分量都截尾的等式错误，例如 $(M,0)$ 总范数大但第二分量不大。交集包含于每个集合，锥的单调性给交集锥包含于各锥交；若右边只有0，交集有界（空交集本身有界，非空时用第84页）。
 \clearpage\subsection{乘积与交集的渐近方向}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 90 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：96。\par
-\noindent\textbf{原课件第 90 页}\par\begin{center}\includegraphics[page=90,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若各集合渐近锥的交至多为零方向，则原集合的交有界。
+\paragraph{证明思路}交集包含于每一因子，先用锥单调性，再用有界性判据。
+\paragraph{详细推导与必要批注}
 若 $(x_{1n},\ldots,x_{mn})/t_n\to(d_1,\ldots,d_m)$，逐坐标就是 $x_{in}/t_n\to d_i$，所以积的渐近锥包含于渐近锥之积。反向一般不能单靠各自见证序列，因为缩放速度未必相同。第89页把总范数截尾当成各分量都截尾的等式错误，例如 $(M,0)$ 总范数大但第二分量不大。交集包含于每个集合，锥的单调性给交集锥包含于各锥交；若右边只有0，交集有界（空交集本身有界，非空时用第84页）。
 \clearpage\subsection{乘积与交集的渐近方向}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 91 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：97。\par
-\noindent\textbf{原课件第 91 页}\par\begin{center}\includegraphics[page=91,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若各集合渐近锥的交至多为零方向，则原集合的交有界。
+\paragraph{证明思路}交集包含于每一因子，先用锥单调性，再用有界性判据。
+\paragraph{详细推导与必要批注}
 若 $(x_{1n},\ldots,x_{mn})/t_n\to(d_1,\ldots,d_m)$，逐坐标就是 $x_{in}/t_n\to d_i$，所以积的渐近锥包含于渐近锥之积。反向一般不能单靠各自见证序列，因为缩放速度未必相同。第89页把总范数截尾当成各分量都截尾的等式错误，例如 $(M,0)$ 总范数大但第二分量不大。交集包含于每个集合，锥的单调性给交集锥包含于各锥交；若右边只有0，交集有界（空交集本身有界，非空时用第84页）。
 \clearpage\subsection{线性像定理再证明}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 93--96 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：99, 100, 101, 102。\par
-\noindent\textbf{原课件第 93 页}\par\begin{center}\includegraphics[page=93,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 94 页}\par\begin{center}\includegraphics[page=94,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 95 页}\par\begin{center}\includegraphics[page=95,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 96 页}\par\begin{center}\includegraphics[page=96,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭 $C$ 满足 $\ker L\cap C_\infty=\{0\}$ 时，线性像 $L(C)$ 闭且 $L(C_\infty)=(L(C))_\infty$。
+\paragraph{证明思路}归一化反证原像有界；抽子列证像闭；两向分别构造渐近方向。
+\paragraph{详细推导与必要批注}
 本段重复第37--41页的重要定理。核心核条件为 $\ker L\cap C_\infty=\{0\}$。若 $Lx_n$ 有界而 $x_n$ 无界，取范数趋无穷子列并单位化，极限是非零渐近方向且被 $L$ 送到0，矛盾。因此像序列收敛时原像可抽收敛子列，闭 $C$ 与连续 $L$ 给像闭。锥像的容易包含是对 $x_n/t_n$ 直接取 $L$；困难包含须用第41页的缩放反证，不可仅引用原集合上的有界性。
 \clearpage\subsection{闭和定理的两个证明}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 98--100 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：104, 105, 106。\par
-\noindent\textbf{原课件第 98 页}\par\begin{center}\includegraphics[page=98,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 99 页}\par\begin{center}\includegraphics[page=99,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 100 页}\par\begin{center}\includegraphics[page=100,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭集族渐近锥正半独立时，有限集合和闭，且和的渐近锥包含于各锥之和。
+\paragraph{证明思路}将和表示为积集在线性求和映射下的像，检查其核与渐近锥交。
+\paragraph{详细推导与必要批注}
 积集加求和映射的证明已在第42页完整给出。两集合的直接证明：若 $z_n=a_n+b_n\to z$ 而 $a_n$ 无界，选 $r_n=\norm{a_n}\to\infty$ 及 $a_n/r_n\to d$，$\norm d=1$。由 $z_n/r_n\to0$ 得 $b_n/r_n\to-d$，于是 $d\in A_\infty,-d\in B_\infty$，违反正半独立。故 $a_n$ 有界，抽子列趋于 $a\in A$，再由 $b_n=z_n-a_n\to z-a\in B$，得 $z\in A+B$。有限多集合用积方法最直接，避免在归纳时漏检中间和的渐近锥条件。
 \clearpage\subsection{闭和定理的两个证明}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 101--103 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：107, 108, 109。\par
-\noindent\textbf{原课件第 101 页}\par\begin{center}\includegraphics[page=101,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 102 页}\par\begin{center}\includegraphics[page=102,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 103 页}\par\begin{center}\includegraphics[page=103,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭和定理的直接归一化反证版本。
+\paragraph{证明思路}若分解中的一个分量无界，除以其范数后得到两个抵消的非零方向。
+\paragraph{详细推导与必要批注}
 积集加求和映射的证明已在第42页完整给出。两集合的直接证明：若 $z_n=a_n+b_n\to z$ 而 $a_n$ 无界，选 $r_n=\norm{a_n}\to\infty$ 及 $a_n/r_n\to d$，$\norm d=1$。由 $z_n/r_n\to0$ 得 $b_n/r_n\to-d$，于是 $d\in A_\infty,-d\in B_\infty$，违反正半独立。故 $a_n$ 有界，抽子列趋于 $a\in A$，再由 $b_n=z_n-a_n\to z-a\in B$，得 $z\in A+B$。有限多集合用积方法最直接，避免在归纳时漏检中间和的渐近锥条件。
 \clearpage\subsection{渐近正则性与凸渐近锥}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 106--107 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：112, 113。\par
-\noindent\textbf{原课件第 106 页}\par\begin{center}\includegraphics[page=106,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 107 页}\par\begin{center}\includegraphics[page=107,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空凸集渐近正则：任意趋无穷标度均能构造给定方向的见证点。
+\paragraph{证明思路}从已有标度选更大的见证点，再沿固定基点的线段按比例缩回所需标度。
+\paragraph{详细推导与必要批注}
 正则性把“存在缩放速度”增强为“每一种趋无穷速度都可匹配”。设 $x_j/s_j\to d$，固定 $a\in C$，给任意 $t_n\to\infty$ 选 $j(n)\to\infty$ 且 $s_{j(n)}\ge t_n$。由凸性 $z_n=a+(t_n/s_{j(n)})(x_{j(n)}-a)\in C$，且 $z_n/t_n=a/t_n+(x_{j(n)}-a)/s_{j(n)}\to d$。因此任意非空凸集渐近正则。对两方向使用共同 $t_n=n$ 的见证点，再作相同权重凸组合，就证明渐近锥凸；其闭锥性质已由第76页给出。
 \clearpage\subsection{渐近正则性与凸渐近锥}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 108 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：114。\par
-\noindent\textbf{原课件第 108 页}\par\begin{center}\includegraphics[page=108,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空凸集的渐近锥是闭凸锥。
+\paragraph{证明思路}利用渐近正则性统一两组见证点的标度，再作凸组合。
+\paragraph{详细推导与必要批注}
 正则性把“存在缩放速度”增强为“每一种趋无穷速度都可匹配”。设 $x_j/s_j\to d$，固定 $a\in C$，给任意 $t_n\to\infty$ 选 $j(n)\to\infty$ 且 $s_{j(n)}\ge t_n$。由凸性 $z_n=a+(t_n/s_{j(n)})(x_{j(n)}-a)\in C$，且 $z_n/t_n=a/t_n+(x_{j(n)}-a)/s_{j(n)}\to d$。因此任意非空凸集渐近正则。对两方向使用共同 $t_n=n$ 的见证点，再作相同权重凸组合，就证明渐近锥凸；其闭锥性质已由第76页给出。
 \clearpage\subsection{衰退锥相等与非闭反例}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 110--111 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：116, 117。\par
-\noindent\textbf{原课件第 110 页}\par\begin{center}\includegraphics[page=110,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 111 页}\par\begin{center}\includegraphics[page=111,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}衰退锥包含于渐近锥；非空闭凸时两锥相等。
+\paragraph{证明思路}一边沿射线取点；另一边以凸组合逼近任意基点加任意长度方向，再用闭性。
+\paragraph{详细推导与必要批注}
 任意非空集合有 $\operatorname{rec}C\subset C_\infty$：固定 $a\in C$，用 $x_n=a+nd$。反向需要闭凸：若 $x_n/t_n\to d$，对任意 $a\in C$ 和固定 $t>0$，充分大时 $a+(t/t_n)(x_n-a)\in C$，取极限得 $a+td\in C$。所以 $\operatorname{rec}C=C_\infty$。第112页反例 $C=([0,1)\times[0,\infty))\cup\{(1,0)\}$ 中，衰退方向必须让 $(1,0)$ 及任意 $(0,y)$ 都留在集合，迫使两个方向分量均0，故衰退锥是 $\{0\}$，不是空集；渐近锥是 $\{(0,v):v\ge0\}$，不是整条竖直线。闭凸时 $C+C_\infty=C$ 由衰退定义及0在锥中立即得到。
 \clearpage\subsection{衰退锥相等与非闭反例}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 112 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：118。\par
-\noindent\textbf{原课件第 112 页}\par\begin{center}\includegraphics[page=112,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非闭凸集的衰退锥与渐近锥可以不同：课件条带加端点例证。
+\paragraph{证明思路}逐坐标检查哪些射线能从所有基点出发，再直接构造无穷远缩放序列。
+\paragraph{详细推导与必要批注}
 任意非空集合有 $\operatorname{rec}C\subset C_\infty$：固定 $a\in C$，用 $x_n=a+nd$。反向需要闭凸：若 $x_n/t_n\to d$，对任意 $a\in C$ 和固定 $t>0$，充分大时 $a+(t/t_n)(x_n-a)\in C$，取极限得 $a+td\in C$。所以 $\operatorname{rec}C=C_\infty$。第112页反例 $C=([0,1)\times[0,\infty))\cup\{(1,0)\}$ 中，衰退方向必须让 $(1,0)$ 及任意 $(0,y)$ 都留在集合，迫使两个方向分量均0，故衰退锥是 $\{0\}$，不是空集；渐近锥是 $\{(0,v):v\ge0\}$，不是整条竖直线。闭凸时 $C+C_\infty=C$ 由衰退定义及0在锥中立即得到。
 \clearpage\subsection{衰退锥相等与非闭反例}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 113 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：119。\par
-\noindent\textbf{原课件第 113 页}\par\begin{center}\includegraphics[page=113,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}非空闭凸集满足 $C+C_\infty=C$。
+\paragraph{证明思路}0方向给一个包含；反向用渐近见证点的凸组合趋于所需和点。
+\paragraph{详细推导与必要批注}
 任意非空集合有 $\operatorname{rec}C\subset C_\infty$：固定 $a\in C$，用 $x_n=a+nd$。反向需要闭凸：若 $x_n/t_n\to d$，对任意 $a\in C$ 和固定 $t>0$，充分大时 $a+(t/t_n)(x_n-a)\in C$，取极限得 $a+td\in C$。所以 $\operatorname{rec}C=C_\infty$。第112页反例 $C=([0,1)\times[0,\infty))\cup\{(1,0)\}$ 中，衰退方向必须让 $(1,0)$ 及任意 $(0,y)$ 都留在集合，迫使两个方向分量均0，故衰退锥是 $\{0\}$，不是空集；渐近锥是 $\{(0,v):v\ge0\}$，不是整条竖直线。闭凸时 $C+C_\infty=C$ 由衰退定义及0在锥中立即得到。
 \clearpage\subsection{最大可含锥与基点无关}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 114 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：120。\par
-\noindent\textbf{原课件第 114 页}\par\begin{center}\includegraphics[page=114,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}若闭凸集含0，则其渐近锥包含于它本身。
+\paragraph{证明思路}把0代入已证 $C+C_\infty=C$。
+\paragraph{详细推导与必要批注}
 闭凸 $S$、$a\in S$ 下，令 $D_a=\bigcap_{\lambda>0}\lambda(S-a)$。$d\in D_a$ 等价于任意 $t>0$ 有 $a+td\in S$，因此它是从 $a$ 出发可完整放入 $S$ 的最大锥。若 $b\in S$，取 $T\to\infty$，由凸性 $(1-t/T)b+(t/T)(a+Td)\in S$，极限为 $b+td$，闭性给后者在 $S$，所以基点可以任意换，$D_a=\operatorname{rec}S=S_\infty$。当0在 $S$ 中，取 $a=0,t=1$ 就得到渐近锥包含于原集。本段所有闭性使用均在最后取极限处，不是多余假设。
 \clearpage\subsection{最大可含锥与基点无关}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 115 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：121。\par
-\noindent\textbf{原课件第 115 页}\par\begin{center}\includegraphics[page=115,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}含0的闭凸集包含其渐近锥。
+\paragraph{证明思路}将渐近方向见证点缩小到0与该点的线段上，最后用闭性。
+\paragraph{详细推导与必要批注}
 闭凸 $S$、$a\in S$ 下，令 $D_a=\bigcap_{\lambda>0}\lambda(S-a)$。$d\in D_a$ 等价于任意 $t>0$ 有 $a+td\in S$，因此它是从 $a$ 出发可完整放入 $S$ 的最大锥。若 $b\in S$，取 $T\to\infty$，由凸性 $(1-t/T)b+(t/T)(a+Td)\in S$，极限为 $b+td$，闭性给后者在 $S$，所以基点可以任意换，$D_a=\operatorname{rec}S=S_\infty$。当0在 $S$ 中，取 $a=0,t=1$ 就得到渐近锥包含于原集。本段所有闭性使用均在最后取极限处，不是多余假设。
 \clearpage\subsection{最大可含锥与基点无关}
 \textbf{来源：}\texttt{109-ZSM-PPT.pdf}，原课件 PDF 第 117--118 页。\par
 对应已有 \texttt{gpt-109.pdf} 页脚：123, 124。\par
-\noindent\textbf{原课件第 117 页}\par\begin{center}\includegraphics[page=117,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\noindent\textbf{原课件第 118 页}\par\begin{center}\includegraphics[page=118,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/109-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}闭凸集在某基点可容纳的最大锥等于 $\bigcap_{\lambda>0}\lambda(C-a)$，与基点无关，并等于渐近锥。
+\paragraph{证明思路}先把交归属变为整条射线归属，再借凸性和闭性将射线平移到任意另一基点。
+\paragraph{详细推导与必要批注}
 闭凸 $S$、$a\in S$ 下，令 $D_a=\bigcap_{\lambda>0}\lambda(S-a)$。$d\in D_a$ 等价于任意 $t>0$ 有 $a+td\in S$，因此它是从 $a$ 出发可完整放入 $S$ 的最大锥。若 $b\in S$，取 $T\to\infty$，由凸性 $(1-t/T)b+(t/T)(a+Td)\in S$，极限为 $b+td$，闭性给后者在 $S$，所以基点可以任意换，$D_a=\operatorname{rec}S=S_\infty$。当0在 $S$ 中，取 $a=0,t=1$ 就得到渐近锥包含于原集。本段所有闭性使用均在最后取极限处，不是多余假设。
 \clearpage\section{110-Proof}
 \clearpage\subsection{球与一般紧凸集的归约纠错}
 \textbf{来源：}\texttt{110-ZSM-PPT.pdf}，原课件 PDF 第 5 页。\par
 对应已有 \texttt{gpt-110.pdf} 页脚：7。\par
-\noindent\textbf{原课件第 5 页}\par\begin{center}\includegraphics[page=5,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/110-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}在确实存在同胚 $\varphi:D\to S$ 的条件下，两集合上的连续自映射可通过共轭转移不动点。
+\paragraph{证明思路}复合中间插入 $\varphi^{-1}\circ\varphi$，对不动点方程两侧施加相应同胚。一般紧凸集不一定同胚于同维闭球，须明确此限制。
+\paragraph{详细推导与必要批注}
 \textbf{老师证明的是同胚变换下的不动点转移，不是高维 Brouwer 本身。}先明确此页论证的适用前提：确实存在同胚 $\varphi:D\to S$，即双射且 $\varphi,\varphi^{-1}$ 都连续。
 由球版到 $S$ 版：定义 $h=\varphi^{-1}\circ f\circ\varphi:D\to D$。各步的定义域与值域匹配，连续映射复合仍连续。若引用球版得到 $h(u)=u$，则 $\varphi^{-1}(f(\varphi(u)))=u$。两边施加 $\varphi$ 得 $f(\varphi(u))=\varphi(u)$，故 $\varphi(u)$ 是固定点。
 反向定义 $f=\varphi\circ h\circ\varphi^{-1}:S\to S$，若 $f(v)=v$，两边施加 $\varphi^{-1}$，得 $h(\varphi^{-1}(v))=\varphi^{-1}(v)$，完成转移。原页反向中多写一层 $\varphi$ 的公式应按此复合定义修正。
@@ -1839,7 +2009,8 @@ $S_1\subset S_2$ 时，在 $S_1$ 中见证某渐近方向的点列也在 $S_2$ �
 \clearpage\subsection{一维证明与值域纠错}
 \textbf{来源：}\texttt{110-ZSM-PPT.pdf}，原课件 PDF 第 6 页。\par
 对应已有 \texttt{gpt-110.pdf} 页脚：8。\par
-\noindent\textbf{原课件第 6 页}\par\begin{center}\includegraphics[page=6,width=\linewidth,height=.48\textheight,keepaspectratio]{sources/110-ZSM-PPT.pdf}\end{center}
-\paragraph{沿原论证展开与批注}
+\paragraph{命题与条件}连续自映射 $h:[-1,1]\to[-1,1]$ 存在不动点。
+\paragraph{证明思路}令实值函数 $g=h-\mathrm{Id}$，检验两端点异号或有零点，再引用介值定理。
+\paragraph{详细推导与必要批注}
 设 $h:[-1,1]\to[-1,1]$ 连续，$g(x)=h(x)-x$ 为实值连续函数，值域不一定在 $[-1,1]$，原页此处应改为 $\R$。端点有 $g(-1)\ge0,g(1)\le0$，若等于0已得到不动点，否则介值定理给内点零点。$h'$ 在课件只是新函数符号，不能误读为导数。
 \end{document}
