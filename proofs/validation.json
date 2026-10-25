@@ -1,0 +1,13 @@
+{
+  "source_entries": 232,
+  "embedded_source_pages": 293,
+  "compiled_pages": 314,
+  "sha256": "45c2074ea393f4fdb3381997f81c589bfce2f4c25f4e5d26f806d27f1202f09d",
+  "checks": [
+    "source page ranges valid",
+    "all explicit Proof mentions accounted for or specifically excluded",
+    "compiled PDF forms present",
+    "no missing glyphs",
+    "no overfull boxes"
+  ]
+}

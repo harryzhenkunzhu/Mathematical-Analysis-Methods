@@ -1,0 +1,2908 @@
+[
+  {
+    "lecture": "000-ZSM",
+    "item": 1,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      19,
+      20
+    ],
+    "title": "由分割公理证明上确界存在",
+    "note_footers": [
+      "23",
+      "24"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 2,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      21,
+      22
+    ],
+    "title": "由分割公理证明下确界存在",
+    "note_footers": [
+      "25",
+      "26"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 3,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      24
+    ],
+    "title": "上确界逼近刻画的双向证明",
+    "note_footers": [
+      "28"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 4,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      25
+    ],
+    "title": "下确界逼近刻画的双向证明",
+    "note_footers": [
+      "29"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 5,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      28
+    ],
+    "title": "递增情形：逐句拆解证明",
+    "note_footers": [
+      "32"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 6,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      29
+    ],
+    "title": "递减情形与课件笔误",
+    "note_footers": [
+      "33"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 7,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      31
+    ],
+    "title": "先把左端点的上确界放入每个区间",
+    "note_footers": [
+      "35"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 8,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      32
+    ],
+    "title": "再把右端点的下确界放入每个区间",
+    "note_footers": [
+      "36"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 9,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      33
+    ],
+    "title": "为什么交集恰好是一个闭区间",
+    "note_footers": [
+      "37"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 10,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      34
+    ],
+    "title": "长度趋零如何产生唯一交点",
+    "note_footers": [
+      "38"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 11,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      35
+    ],
+    "title": "Bolzano 定理：二分法抽子列",
+    "note_footers": [
+      "39"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 12,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      36,
+      37
+    ],
+    "title": "有界无限集合必有聚点：构造阶段",
+    "note_footers": [
+      "40",
+      "41"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 13,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      39,
+      40
+    ],
+    "title": "收敛推出柯西：把误差分成两半",
+    "note_footers": [
+      "43",
+      "44"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 14,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      41,
+      42
+    ],
+    "title": "柯西充分性的第二证法：尾部下确界",
+    "note_footers": [
+      "45",
+      "46"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 15,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      43,
+      44
+    ],
+    "title": "第三证法：尾部上确界",
+    "note_footers": [
+      "47",
+      "48"
+    ]
+  },
+  {
+    "lecture": "000-ZSM",
+    "item": 16,
+    "source": "000-ZSM-PPT.pdf",
+    "proof_pages": [
+      46,
+      47
+    ],
+    "title": "有限覆盖定理：把坏区间不断二分",
+    "note_footers": [
+      "50",
+      "51"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 1,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      33
+    ],
+    "title": "结合律的展开式与排版纠正",
+    "note_footers": [
+      "37"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 2,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      34
+    ],
+    "title": "抵消律与集合版三角不等式",
+    "note_footers": [
+      "38"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 3,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      36
+    ],
+    "title": "分配律的代数证明拆解",
+    "note_footers": [
+      "40"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 4,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      37
+    ],
+    "title": "三个对称差推论的短证明与修正",
+    "note_footers": [
+      "41"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 5,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      38
+    ],
+    "title": "并集对称差的包含证明",
+    "note_footers": [
+      "42"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 6,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      40
+    ],
+    "title": "巧选特殊集合与补全双向证明",
+    "note_footers": [
+      "44"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 7,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      42
+    ],
+    "title": "练习1：先化简再谈充要条件",
+    "note_footers": [
+      "46"
+    ]
+  },
+  {
+    "lecture": "102",
+    "item": 8,
+    "source": "102-ZSM-PPT.pdf",
+    "proof_pages": [
+      43
+    ],
+    "title": "练习4：不能漏掉反向包含",
+    "note_footers": [
+      "47"
+    ]
+  },
+  {
+    "lecture": "103",
+    "item": 1,
+    "source": "103-ZSM-PPT.pdf",
+    "proof_pages": [
+      18
+    ],
+    "title": "补集结论的证明",
+    "note_footers": [
+      "21"
+    ]
+  },
+  {
+    "lecture": "103",
+    "item": 2,
+    "source": "103-ZSM-PPT.pdf",
+    "proof_pages": [
+      25
+    ],
+    "title": "常对应与恒等对应",
+    "note_footers": [
+      "28"
+    ]
+  },
+  {
+    "lecture": "103",
+    "item": 3,
+    "source": "103-ZSM-PPT.pdf",
+    "proof_pages": [
+      28
+    ],
+    "title": "逆对应",
+    "note_footers": [
+      "31"
+    ]
+  },
+  {
+    "lecture": "103",
+    "item": 4,
+    "source": "103-ZSM-PPT.pdf",
+    "proof_pages": [
+      29
+    ],
+    "title": "下逆像",
+    "note_footers": [
+      "32"
+    ]
+  },
+  {
+    "lecture": "103",
+    "item": 5,
+    "source": "103-ZSM-PPT.pdf",
+    "proof_pages": [
+      31,
+      32
+    ],
+    "title": "补集对偶",
+    "note_footers": [
+      "34",
+      "35"
+    ]
+  },
+  {
+    "lecture": "103",
+    "item": 6,
+    "source": "103-ZSM-PPT.pdf",
+    "proof_pages": [
+      35
+    ],
+    "title": "Cantor 对角证明",
+    "note_footers": [
+      "38"
+    ]
+  },
+  {
+    "lecture": "104",
+    "item": 1,
+    "source": "104-ZSM-PPT.pdf",
+    "proof_pages": [
+      17
+    ],
+    "title": "负传递的等价形式",
+    "note_footers": [
+      "19"
+    ]
+  },
+  {
+    "lecture": "104",
+    "item": 2,
+    "source": "104-ZSM-PPT.pdf",
+    "proof_pages": [
+      19
+    ],
+    "title": "传递与无循环的证明",
+    "note_footers": [
+      "21"
+    ]
+  },
+  {
+    "lecture": "104",
+    "item": 3,
+    "source": "104-ZSM-PPT.pdf",
+    "proof_pages": [
+      22
+    ],
+    "title": "命题证明展开",
+    "note_footers": [
+      "24"
+    ]
+  },
+  {
+    "lecture": "104",
+    "item": 4,
+    "source": "104-ZSM-PPT.pdf",
+    "proof_pages": [
+      28
+    ],
+    "title": "还原弱关系",
+    "note_footers": [
+      "30"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 1,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      37,
+      38
+    ],
+    "title": "由分割公理证明上确界存在",
+    "note_footers": [
+      "42",
+      "43"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 2,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      39,
+      40
+    ],
+    "title": "由分割公理证明下确界存在",
+    "note_footers": [
+      "44",
+      "45"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 3,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      42
+    ],
+    "title": "上确界逼近刻画的双向证明",
+    "note_footers": [
+      "47"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 4,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      43
+    ],
+    "title": "下确界逼近刻画的双向证明",
+    "note_footers": [
+      "48"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 5,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      46
+    ],
+    "title": "递增情形：逐句拆解证明",
+    "note_footers": [
+      "51"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 6,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      47
+    ],
+    "title": "递减情形与课件笔误",
+    "note_footers": [
+      "52"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 7,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      49
+    ],
+    "title": "先把左端点的上确界放入每个区间",
+    "note_footers": [
+      "54"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 8,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      50
+    ],
+    "title": "再把右端点的下确界放入每个区间",
+    "note_footers": [
+      "55"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 9,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      51
+    ],
+    "title": "为什么交集恰好是一个闭区间",
+    "note_footers": [
+      "56"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 10,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      52
+    ],
+    "title": "长度趋零如何产生唯一交点",
+    "note_footers": [
+      "57"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 11,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      53
+    ],
+    "title": "Bolzano 定理：二分法抽子列",
+    "note_footers": [
+      "58"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 12,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      54,
+      55
+    ],
+    "title": "有界无限集合必有聚点：构造阶段",
+    "note_footers": [
+      "59",
+      "60"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 13,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      57,
+      58
+    ],
+    "title": "收敛推出柯西：把误差分成两半",
+    "note_footers": [
+      "62",
+      "63"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 14,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      59,
+      60
+    ],
+    "title": "柯西充分性的第二证法：尾部下确界",
+    "note_footers": [
+      "64",
+      "65"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 15,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      61,
+      62
+    ],
+    "title": "第三证法：尾部上确界",
+    "note_footers": [
+      "66",
+      "67"
+    ]
+  },
+  {
+    "lecture": "105",
+    "item": 16,
+    "source": "105-ZSM-PPT.pdf",
+    "proof_pages": [
+      64,
+      65
+    ],
+    "title": "有限覆盖定理：把坏区间不断二分",
+    "note_footers": [
+      "69",
+      "70"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 1,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      8
+    ],
+    "title": "为什么 $p\\to\\infty$ 会得到最大坐标",
+    "note_footers": [
+      "13"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 2,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      18
+    ],
+    "title": "聚点的数列判别：构造互不相同的点",
+    "note_footers": [
+      "23"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 3,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      19
+    ],
+    "title": "导集的单调性与有限并公式",
+    "note_footers": [
+      "24"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 4,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      20
+    ],
+    "title": "内部的单调性与有限交公式",
+    "note_footers": [
+      "25"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 5,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      22,
+      23
+    ],
+    "title": "二分立方体证明：不断保留无限多个点",
+    "note_footers": [
+      "27",
+      "28"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 6,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      24,
+      25
+    ],
+    "title": "孤立点与可数性的证明起点",
+    "note_footers": [
+      "29",
+      "30"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 7,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      26,
+      27
+    ],
+    "title": "聚点也可以用去心邻域定义",
+    "note_footers": [
+      "31",
+      "32"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 8,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      28
+    ],
+    "title": "邻域换中心与内部的局部稳定性",
+    "note_footers": [
+      "33"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 9,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      30
+    ],
+    "title": "连续性与上下水平集闭：补上子列步骤",
+    "note_footers": [
+      "35"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 10,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      31
+    ],
+    "title": "开球的闭包与稠密",
+    "note_footers": [
+      "36"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 11,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      33
+    ],
+    "title": "导集与闭包本身都是闭集",
+    "note_footers": [
+      "38"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 12,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      34
+    ],
+    "title": "有限个闭集之并仍闭：导集方法",
+    "note_footers": [
+      "39"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 13,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      35
+    ],
+    "title": "同一个有限并结论：闭包方法",
+    "note_footers": [
+      "40"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 14,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      36
+    ],
+    "title": "可数个闭集之交仍闭：导集方法",
+    "note_footers": [
+      "41"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 15,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      37
+    ],
+    "title": "可数闭交的闭包写法",
+    "note_footers": [
+      "42"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 16,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      38
+    ],
+    "title": "任意闭集族的交：不需要数得出来",
+    "note_footers": [
+      "43"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 17,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      39
+    ],
+    "title": "任意闭交的闭包证明与笔误",
+    "note_footers": [
+      "44"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 18,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      40
+    ],
+    "title": "为什么无限并会出现新极限点",
+    "note_footers": [
+      "45"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 19,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      41
+    ],
+    "title": "闭包是包含原集合的最小闭集",
+    "note_footers": [
+      "46"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 20,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      42
+    ],
+    "title": "递减非空紧集的交非空：简洁完整证明",
+    "note_footers": [
+      "47"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 21,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      46
+    ],
+    "title": "内点与内部",
+    "note_footers": [
+      "51"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 22,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      47
+    ],
+    "title": "有限开集的交",
+    "note_footers": [
+      "52"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 23,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      48
+    ],
+    "title": "有限开集的交",
+    "note_footers": [
+      "53"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 24,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      49
+    ],
+    "title": "任意开集的并",
+    "note_footers": [
+      "54"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 25,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      50
+    ],
+    "title": "任意开集的并",
+    "note_footers": [
+      "55"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 26,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      51
+    ],
+    "title": "任意开集的并",
+    "note_footers": [
+      "56"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 27,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      52
+    ],
+    "title": "任意开集的并",
+    "note_footers": [
+      "57"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 28,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      54
+    ],
+    "title": "实开集的区间分解",
+    "note_footers": [
+      "59"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 29,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      55,
+      56
+    ],
+    "title": "欧氏开集的方块分解",
+    "note_footers": [
+      "60",
+      "61"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 30,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      57
+    ],
+    "title": "可数拓扑基",
+    "note_footers": [
+      "62"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 31,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      60
+    ],
+    "title": "紧性与有限子覆盖",
+    "note_footers": [
+      "65"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 32,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      61,
+      62,
+      63
+    ],
+    "title": "紧性与有限子覆盖",
+    "note_footers": [
+      "66",
+      "67",
+      "68"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 33,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      64
+    ],
+    "title": "紧性与有限子覆盖",
+    "note_footers": [
+      "69"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 34,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      65
+    ],
+    "title": "紧集的邻域与逆定理",
+    "note_footers": [
+      "70"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 35,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      66
+    ],
+    "title": "紧集的邻域与逆定理",
+    "note_footers": [
+      "71"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 36,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      70,
+      71
+    ],
+    "title": "闭包与内部的抽象公理",
+    "note_footers": [
+      "75",
+      "76"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 37,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      72
+    ],
+    "title": "闭包与内部的抽象公理",
+    "note_footers": [
+      "77"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 38,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      73
+    ],
+    "title": "闭包与内部的抽象公理",
+    "note_footers": [
+      "78"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 39,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      74
+    ],
+    "title": "闭包与内部的抽象公理",
+    "note_footers": [
+      "79"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 40,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      75
+    ],
+    "title": "闭包与内部的抽象公理",
+    "note_footers": [
+      "80"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 41,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      79
+    ],
+    "title": "闭包的序列判据与相对闭性",
+    "note_footers": [
+      "84"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 42,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      80
+    ],
+    "title": "闭包的序列判据与相对闭性",
+    "note_footers": [
+      "85"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 43,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      81
+    ],
+    "title": "闭包的序列判据与相对闭性",
+    "note_footers": [
+      "86"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 44,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      84,
+      85
+    ],
+    "title": "任意欧氏子集都可分",
+    "note_footers": [
+      "89",
+      "90"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 45,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      92
+    ],
+    "title": "有界、紧与有限积",
+    "note_footers": [
+      "97"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 46,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      94
+    ],
+    "title": "连通的多种判据",
+    "note_footers": [
+      "99"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 47,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      96
+    ],
+    "title": "连通的多种判据",
+    "note_footers": [
+      "101"
+    ]
+  },
+  {
+    "lecture": "106",
+    "item": 48,
+    "source": "106-ZSM-PPT.pdf",
+    "proof_pages": [
+      98,
+      99
+    ],
+    "title": "连通的多种判据",
+    "note_footers": [
+      "103",
+      "104"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 1,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      9,
+      10,
+      11
+    ],
+    "title": "连续性的五个等价条件",
+    "note_footers": [
+      "12",
+      "13",
+      "14"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 2,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      13
+    ],
+    "title": "实值连续函数的水平集",
+    "note_footers": [
+      "16"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 3,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      14
+    ],
+    "title": "实值连续函数的水平集",
+    "note_footers": [
+      "17"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 4,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      15
+    ],
+    "title": "紧集的连续像与极值",
+    "note_footers": [
+      "18"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 5,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      16
+    ],
+    "title": "紧集的连续像与极值",
+    "note_footers": [
+      "19"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 6,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      18
+    ],
+    "title": "连通像与介值",
+    "note_footers": [
+      "21"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 7,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      19
+    ],
+    "title": "连通像与介值",
+    "note_footers": [
+      "22"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 8,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      26
+    ],
+    "title": "实值半连续的定义与等价判据",
+    "note_footers": [
+      "29"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 9,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      27
+    ],
+    "title": "实值半连续的定义与等价判据",
+    "note_footers": [
+      "30"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 10,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      28
+    ],
+    "title": "实值半连续的定义与等价判据",
+    "note_footers": [
+      "31"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 11,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      29
+    ],
+    "title": "实值半连续的定义与等价判据",
+    "note_footers": [
+      "32"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 12,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      30
+    ],
+    "title": "半连续函数的极值证明",
+    "note_footers": [
+      "33"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 13,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      31,
+      32
+    ],
+    "title": "半连续函数的极值证明",
+    "note_footers": [
+      "34",
+      "35"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 14,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      33
+    ],
+    "title": "半连续函数的极值证明",
+    "note_footers": [
+      "36"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 15,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      34,
+      35
+    ],
+    "title": "半连续函数的极值证明",
+    "note_footers": [
+      "37",
+      "38"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 16,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      36
+    ],
+    "title": "上确界、下确界与有限运算",
+    "note_footers": [
+      "39"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 17,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      37
+    ],
+    "title": "上确界、下确界与有限运算",
+    "note_footers": [
+      "40"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 18,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      38
+    ],
+    "title": "上确界、下确界与有限运算",
+    "note_footers": [
+      "41"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 19,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      39
+    ],
+    "title": "上确界、下确界与有限运算",
+    "note_footers": [
+      "42"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 20,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      40
+    ],
+    "title": "半连续函数的加法与正乘法",
+    "note_footers": [
+      "43"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 21,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      41
+    ],
+    "title": "半连续函数的加法与正乘法",
+    "note_footers": [
+      "44"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 22,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      42
+    ],
+    "title": "半连续函数的加法与正乘法",
+    "note_footers": [
+      "45"
+    ]
+  },
+  {
+    "lecture": "107",
+    "item": 23,
+    "source": "107-ZSM-PPT.pdf",
+    "proof_pages": [
+      43
+    ],
+    "title": "半连续函数的加法与正乘法",
+    "note_footers": [
+      "46"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 1,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      11
+    ],
+    "title": "上半连续与闭图：双向证明",
+    "note_footers": [
+      "17"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 2,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      12
+    ],
+    "title": "连续函数与对应的复合",
+    "note_footers": [
+      "18"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 3,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      14
+    ],
+    "title": "积对应的证明逐步写",
+    "note_footers": [
+      "20"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 4,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      19
+    ],
+    "title": "最优值连续的完整证明与原页纠错",
+    "note_footers": [
+      "25"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 5,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      20
+    ],
+    "title": "最优解对应为何紧且上半连续",
+    "note_footers": [
+      "26"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 6,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      21
+    ],
+    "title": "最优值连续而最优解不下半连续",
+    "note_footers": [
+      "27"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 7,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      29,
+      30
+    ],
+    "title": "逆像刻画的证明",
+    "note_footers": [
+      "35",
+      "36"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 8,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      32,
+      33
+    ],
+    "title": "逆像刻画的证明",
+    "note_footers": [
+      "38",
+      "39"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 9,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      34
+    ],
+    "title": "紧值上半连续对应的紧像",
+    "note_footers": [
+      "40"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 10,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      39
+    ],
+    "title": "闭对应与闭图",
+    "note_footers": [
+      "45"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 11,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      40
+    ],
+    "title": "闭对应与闭图",
+    "note_footers": [
+      "46"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 12,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      41
+    ],
+    "title": "闭对应与闭图",
+    "note_footers": [
+      "47"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 13,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      42
+    ],
+    "title": "闭对应与闭图",
+    "note_footers": [
+      "48"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 14,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      43
+    ],
+    "title": "闭对应与闭图",
+    "note_footers": [
+      "49"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 15,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      44
+    ],
+    "title": "闭对应与闭图",
+    "note_footers": [
+      "50"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 16,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      45
+    ],
+    "title": "闭图与上半连续之间的紧性桥梁",
+    "note_footers": [
+      "51"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 17,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      47,
+      48,
+      49
+    ],
+    "title": "闭图与上半连续之间的紧性桥梁",
+    "note_footers": [
+      "53",
+      "54",
+      "55"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 18,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      51
+    ],
+    "title": "闭图与上半连续之间的紧性桥梁",
+    "note_footers": [
+      "57"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 19,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      52,
+      53
+    ],
+    "title": "紧空间上的不变紧集",
+    "note_footers": [
+      "58",
+      "59"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 20,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      55
+    ],
+    "title": "复合与下半连续并",
+    "note_footers": [
+      "61"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 21,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      56
+    ],
+    "title": "复合与下半连续并",
+    "note_footers": [
+      "62"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 22,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      57
+    ],
+    "title": "复合与下半连续并",
+    "note_footers": [
+      "63"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 23,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      58
+    ],
+    "title": "复合与下半连续并",
+    "note_footers": [
+      "64"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 24,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      59
+    ],
+    "title": "复合与下半连续并",
+    "note_footers": [
+      "65"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 25,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      60
+    ],
+    "title": "复合与下半连续并",
+    "note_footers": [
+      "66"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 26,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      62
+    ],
+    "title": "对应交集的条件与伪定理",
+    "note_footers": [
+      "68"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 27,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      63
+    ],
+    "title": "对应交集的条件与伪定理",
+    "note_footers": [
+      "69"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 28,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      64
+    ],
+    "title": "对应交集的条件与伪定理",
+    "note_footers": [
+      "70"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 29,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      65
+    ],
+    "title": "对应交集的条件与伪定理",
+    "note_footers": [
+      "71"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 30,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      66
+    ],
+    "title": "对应交集的条件与伪定理",
+    "note_footers": [
+      "72"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 31,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      67
+    ],
+    "title": "有限并保持上半连续",
+    "note_footers": [
+      "73"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 32,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      68
+    ],
+    "title": "有限并保持上半连续",
+    "note_footers": [
+      "74"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 33,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      69
+    ],
+    "title": "有限并保持上半连续",
+    "note_footers": [
+      "75"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 34,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      70
+    ],
+    "title": "有限并保持上半连续",
+    "note_footers": [
+      "76"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 35,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      71,
+      72
+    ],
+    "title": "有限积对应的半连续性",
+    "note_footers": [
+      "77",
+      "78"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 36,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      73,
+      74
+    ],
+    "title": "有限积对应的半连续性",
+    "note_footers": [
+      "79",
+      "80"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 37,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      75,
+      76
+    ],
+    "title": "有限积对应的半连续性",
+    "note_footers": [
+      "81",
+      "82"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 38,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      78,
+      79
+    ],
+    "title": "和对应与凸包",
+    "note_footers": [
+      "84",
+      "85"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 39,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      80
+    ],
+    "title": "和对应与凸包",
+    "note_footers": [
+      "86"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 40,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      81
+    ],
+    "title": "和对应与凸包",
+    "note_footers": [
+      "87"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 41,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      82
+    ],
+    "title": "闭包对应与内半连续",
+    "note_footers": [
+      "88"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 42,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      83
+    ],
+    "title": "闭包对应与内半连续",
+    "note_footers": [
+      "89"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 43,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      85,
+      86
+    ],
+    "title": "闭包对应与内半连续",
+    "note_footers": [
+      "91",
+      "92"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 44,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      87,
+      88,
+      89
+    ],
+    "title": "外半连续的术语与序列选取",
+    "note_footers": [
+      "93",
+      "94",
+      "95"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 45,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      90
+    ],
+    "title": "外半连续的术语与序列选取",
+    "note_footers": [
+      "96"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 46,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      91
+    ],
+    "title": "外半连续的术语与序列选取",
+    "note_footers": [
+      "97"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 47,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      92
+    ],
+    "title": "外半连续的术语与序列选取",
+    "note_footers": [
+      "98"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 48,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      93
+    ],
+    "title": "外半连续的术语与序列选取",
+    "note_footers": [
+      "99"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 49,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      94
+    ],
+    "title": "外半连续的术语与序列选取",
+    "note_footers": [
+      "100"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 50,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      95
+    ],
+    "title": "外半连续的术语与序列选取",
+    "note_footers": [
+      "101"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 51,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      96
+    ],
+    "title": "最优值的两种半连续性",
+    "note_footers": [
+      "102"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 52,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      98
+    ],
+    "title": "最优值的两种半连续性",
+    "note_footers": [
+      "104"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 53,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      99
+    ],
+    "title": "Berge 最大值与唯一选择",
+    "note_footers": [
+      "105"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 54,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      101
+    ],
+    "title": "Berge 最大值与唯一选择",
+    "note_footers": [
+      "107"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 55,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      102
+    ],
+    "title": "Berge 最大值与唯一选择",
+    "note_footers": [
+      "108"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 56,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      103,
+      104
+    ],
+    "title": "最小化的对偶证明",
+    "note_footers": [
+      "109",
+      "110"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 57,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      105,
+      106
+    ],
+    "title": "最小化的对偶证明",
+    "note_footers": [
+      "111",
+      "112"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 58,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      107
+    ],
+    "title": "最小化的对偶证明",
+    "note_footers": [
+      "113"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 59,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      110,
+      111
+    ],
+    "title": "环境依赖偏好与最大元",
+    "note_footers": [
+      "116",
+      "117"
+    ]
+  },
+  {
+    "lecture": "108",
+    "item": 60,
+    "source": "108-ZSM-PPT.pdf",
+    "proof_pages": [
+      113
+    ],
+    "title": "环境依赖偏好与最大元",
+    "note_footers": [
+      "119"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 1,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      10
+    ],
+    "title": "集合取负、作差与闭包的和",
+    "note_footers": [
+      "16"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 2,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      11
+    ],
+    "title": "紧集之和紧：先看有界性",
+    "note_footers": [
+      "17"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 3,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      12
+    ],
+    "title": "紧集之和紧：连续像的短证明",
+    "note_footers": [
+      "18"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 4,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      13
+    ],
+    "title": "紧集之和紧：逐层抽取子列",
+    "note_footers": [
+      "19"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 5,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      17
+    ],
+    "title": "对应之和半连续：补全漏掉的抽子列步骤",
+    "note_footers": [
+      "23"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 6,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      23
+    ],
+    "title": "正半独立：方向不能抵消",
+    "note_footers": [
+      "29"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 7,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      25
+    ],
+    "title": "为什么截尾锥递减；闭包不能漏",
+    "note_footers": [
+      "31"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 8,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      29
+    ],
+    "title": "有界当且仅当没有非零渐近方向",
+    "note_footers": [
+      "35"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 9,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      30
+    ],
+    "title": "单调性、平移不变性与乘积的预告",
+    "note_footers": [
+      "36"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 10,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      31
+    ],
+    "title": "平移不改变渐近锥：逐步证明",
+    "note_footers": [
+      "37"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 11,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      32
+    ],
+    "title": "平移不变性的等价链写法",
+    "note_footers": [
+      "38"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 12,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      33
+    ],
+    "title": "乘积的渐近锥包含于各渐近锥的乘积",
+    "note_footers": [
+      "39"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 13,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      35
+    ],
+    "title": "交集有界：用单调性证明",
+    "note_footers": [
+      "41"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 14,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      36
+    ],
+    "title": "不能从递减交直接跳到某个截尾为空",
+    "note_footers": [
+      "42"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 15,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      38,
+      39,
+      40,
+      41
+    ],
+    "title": "线性像证明的核心：归一化反证",
+    "note_footers": [
+      "44",
+      "45",
+      "46",
+      "47"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 16,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      43,
+      44
+    ],
+    "title": "闭集和与正半独立",
+    "note_footers": [
+      "49",
+      "50"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 17,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      45
+    ],
+    "title": "闭集和与正半独立",
+    "note_footers": [
+      "51"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 18,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      49
+    ],
+    "title": "凸性的基本运算及连通性",
+    "note_footers": [
+      "55"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 19,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      50
+    ],
+    "title": "凸性的基本运算及连通性",
+    "note_footers": [
+      "56"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 20,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      51
+    ],
+    "title": "凸性的基本运算及连通性",
+    "note_footers": [
+      "57"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 21,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      52
+    ],
+    "title": "凸性的基本运算及连通性",
+    "note_footers": [
+      "58"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 22,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      53
+    ],
+    "title": "凸性的基本运算及连通性",
+    "note_footers": [
+      "59"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 23,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      54
+    ],
+    "title": "凸性的基本运算及连通性",
+    "note_footers": [
+      "60"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 24,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      57,
+      58,
+      59
+    ],
+    "title": "凸包与和的交换及证明纠错",
+    "note_footers": [
+      "63",
+      "64",
+      "65"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 25,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      69,
+      70
+    ],
+    "title": "三种无穷远方向及量词",
+    "note_footers": [
+      "75",
+      "76"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 26,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      77,
+      78
+    ],
+    "title": "渐近锥闭性及闭包不变",
+    "note_footers": [
+      "83",
+      "84"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 27,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      79
+    ],
+    "title": "渐近锥闭性及闭包不变",
+    "note_footers": [
+      "85"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 28,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      80
+    ],
+    "title": "渐近锥闭性及闭包不变",
+    "note_footers": [
+      "86"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 29,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      82
+    ],
+    "title": "截尾与序列定义等价",
+    "note_footers": [
+      "88"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 30,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      83
+    ],
+    "title": "截尾与序列定义等价",
+    "note_footers": [
+      "89"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 31,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      84
+    ],
+    "title": "有界判据与平移不变",
+    "note_footers": [
+      "90"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 32,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      85
+    ],
+    "title": "有界判据与平移不变",
+    "note_footers": [
+      "91"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 33,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      86
+    ],
+    "title": "有界判据与平移不变",
+    "note_footers": [
+      "92"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 34,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      87
+    ],
+    "title": "有界判据与平移不变",
+    "note_footers": [
+      "93"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 35,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      88
+    ],
+    "title": "乘积与交集的渐近方向",
+    "note_footers": [
+      "94"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 36,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      89
+    ],
+    "title": "乘积与交集的渐近方向",
+    "note_footers": [
+      "95"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 37,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      90
+    ],
+    "title": "乘积与交集的渐近方向",
+    "note_footers": [
+      "96"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 38,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      91
+    ],
+    "title": "乘积与交集的渐近方向",
+    "note_footers": [
+      "97"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 39,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      93,
+      94,
+      95,
+      96
+    ],
+    "title": "线性像定理再证明",
+    "note_footers": [
+      "99",
+      "100",
+      "101",
+      "102"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 40,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      98,
+      99,
+      100
+    ],
+    "title": "闭和定理的两个证明",
+    "note_footers": [
+      "104",
+      "105",
+      "106"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 41,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      101,
+      102,
+      103
+    ],
+    "title": "闭和定理的两个证明",
+    "note_footers": [
+      "107",
+      "108",
+      "109"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 42,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      106,
+      107
+    ],
+    "title": "渐近正则性与凸渐近锥",
+    "note_footers": [
+      "112",
+      "113"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 43,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      108
+    ],
+    "title": "渐近正则性与凸渐近锥",
+    "note_footers": [
+      "114"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 44,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      110,
+      111
+    ],
+    "title": "衰退锥相等与非闭反例",
+    "note_footers": [
+      "116",
+      "117"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 45,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      112
+    ],
+    "title": "衰退锥相等与非闭反例",
+    "note_footers": [
+      "118"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 46,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      113
+    ],
+    "title": "衰退锥相等与非闭反例",
+    "note_footers": [
+      "119"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 47,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      114
+    ],
+    "title": "最大可含锥与基点无关",
+    "note_footers": [
+      "120"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 48,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      115
+    ],
+    "title": "最大可含锥与基点无关",
+    "note_footers": [
+      "121"
+    ]
+  },
+  {
+    "lecture": "109",
+    "item": 49,
+    "source": "109-ZSM-PPT.pdf",
+    "proof_pages": [
+      117,
+      118
+    ],
+    "title": "最大可含锥与基点无关",
+    "note_footers": [
+      "123",
+      "124"
+    ]
+  },
+  {
+    "lecture": "110",
+    "item": 1,
+    "source": "110-ZSM-PPT.pdf",
+    "proof_pages": [
+      5
+    ],
+    "title": "球与一般紧凸集的归约纠错",
+    "note_footers": [
+      "7"
+    ]
+  },
+  {
+    "lecture": "110",
+    "item": 2,
+    "source": "110-ZSM-PPT.pdf",
+    "proof_pages": [
+      6
+    ],
+    "title": "一维证明与值域纠错",
+    "note_footers": [
+      "8"
+    ]
+  }
+]
