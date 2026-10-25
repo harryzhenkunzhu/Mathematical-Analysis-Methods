@@ -9,4 +9,5 @@ for n in (1,2):
     (dest/f'pass-{n}.txt').write_text(p.stdout+p.stderr)
     if p.returncode:raise SystemExit(p.stdout[-5000:])
 shutil.copy2(dest/'all-proofs.pdf',root/'pdf'/'gpt-All-Proofs.pdf')
-print('Built pdf/gpt-All-Proofs.pdf')
+shutil.copy2(dest/'all-proofs.pdf',root/'pdf'/'gpt-Proofs-Full-Steps.pdf')
+print('Built pdf/gpt-Proofs-Full-Steps.pdf and compatibility copy.')

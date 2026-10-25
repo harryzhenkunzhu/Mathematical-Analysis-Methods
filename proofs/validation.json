@@ -1,13 +1,15 @@
 {
-  "source_entries": 232,
-  "referenced_source_pages": 293,
-  "compiled_pages": 253,
-  "sha256": "ed7bdccf10a34582ded72f9973b31758b95e5ba631655e58eee70b095239ecb6",
+  "source_entries": 231,
+  "referenced_source_pages": 294,
+  "compiled_pages": 254,
+  "sha256": "1fe880a5e45fcad2dadf8cab627eadaa092ef85659d14bd155d9dd98fcc67f27",
   "checks": [
     "source page ranges valid",
     "all explicit Proof mentions accounted for or specifically excluded",
     "no embedded images or PDF page forms",
     "no missing glyphs",
-    "no overfull boxes"
+    "no overfull boxes",
+    "every item has a dedicated detailed body",
+    "109 pages 13 and 14 form one complete proof"
   ]
 }

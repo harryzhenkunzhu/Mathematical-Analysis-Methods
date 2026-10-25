@@ -11,6 +11,10 @@
     "note_footers": [
       "23",
       "24"
+    ],
+    "compilation_pdf_pages": [
+      13,
+      13
     ]
   },
   {
@@ -25,6 +29,10 @@
     "note_footers": [
       "25",
       "26"
+    ],
+    "compilation_pdf_pages": [
+      14,
+      14
     ]
   },
   {
@@ -37,6 +45,10 @@
     "title": "上确界逼近刻画的双向证明",
     "note_footers": [
       "28"
+    ],
+    "compilation_pdf_pages": [
+      15,
+      15
     ]
   },
   {
@@ -49,6 +61,10 @@
     "title": "下确界逼近刻画的双向证明",
     "note_footers": [
       "29"
+    ],
+    "compilation_pdf_pages": [
+      16,
+      16
     ]
   },
   {
@@ -61,6 +77,10 @@
     "title": "递增情形：逐句拆解证明",
     "note_footers": [
       "32"
+    ],
+    "compilation_pdf_pages": [
+      17,
+      17
     ]
   },
   {
@@ -73,6 +93,10 @@
     "title": "递减情形与课件笔误",
     "note_footers": [
       "33"
+    ],
+    "compilation_pdf_pages": [
+      18,
+      18
     ]
   },
   {
@@ -85,6 +109,10 @@
     "title": "先把左端点的上确界放入每个区间",
     "note_footers": [
       "35"
+    ],
+    "compilation_pdf_pages": [
+      19,
+      19
     ]
   },
   {
@@ -97,6 +125,10 @@
     "title": "再把右端点的下确界放入每个区间",
     "note_footers": [
       "36"
+    ],
+    "compilation_pdf_pages": [
+      20,
+      20
     ]
   },
   {
@@ -109,6 +141,10 @@
     "title": "为什么交集恰好是一个闭区间",
     "note_footers": [
       "37"
+    ],
+    "compilation_pdf_pages": [
+      21,
+      21
     ]
   },
   {
@@ -121,6 +157,10 @@
     "title": "长度趋零如何产生唯一交点",
     "note_footers": [
       "38"
+    ],
+    "compilation_pdf_pages": [
+      22,
+      22
     ]
   },
   {
@@ -133,6 +173,10 @@
     "title": "Bolzano 定理：二分法抽子列",
     "note_footers": [
       "39"
+    ],
+    "compilation_pdf_pages": [
+      23,
+      23
     ]
   },
   {
@@ -147,6 +191,10 @@
     "note_footers": [
       "40",
       "41"
+    ],
+    "compilation_pdf_pages": [
+      24,
+      24
     ]
   },
   {
@@ -161,6 +209,10 @@
     "note_footers": [
       "43",
       "44"
+    ],
+    "compilation_pdf_pages": [
+      25,
+      25
     ]
   },
   {
@@ -175,6 +227,10 @@
     "note_footers": [
       "45",
       "46"
+    ],
+    "compilation_pdf_pages": [
+      26,
+      26
     ]
   },
   {
@@ -189,6 +245,10 @@
     "note_footers": [
       "47",
       "48"
+    ],
+    "compilation_pdf_pages": [
+      27,
+      27
     ]
   },
   {
@@ -203,6 +263,10 @@
     "note_footers": [
       "50",
       "51"
+    ],
+    "compilation_pdf_pages": [
+      28,
+      30
     ]
   },
   {
@@ -215,6 +279,10 @@
     "title": "结合律的展开式与排版纠正",
     "note_footers": [
       "37"
+    ],
+    "compilation_pdf_pages": [
+      31,
+      31
     ]
   },
   {
@@ -227,6 +295,10 @@
     "title": "抵消律与集合版三角不等式",
     "note_footers": [
       "38"
+    ],
+    "compilation_pdf_pages": [
+      32,
+      32
     ]
   },
   {
@@ -239,6 +311,10 @@
     "title": "分配律的代数证明拆解",
     "note_footers": [
       "40"
+    ],
+    "compilation_pdf_pages": [
+      33,
+      33
     ]
   },
   {
@@ -251,6 +327,10 @@
     "title": "三个对称差推论的短证明与修正",
     "note_footers": [
       "41"
+    ],
+    "compilation_pdf_pages": [
+      34,
+      34
     ]
   },
   {
@@ -263,6 +343,10 @@
     "title": "并集对称差的包含证明",
     "note_footers": [
       "42"
+    ],
+    "compilation_pdf_pages": [
+      35,
+      35
     ]
   },
   {
@@ -275,6 +359,10 @@
     "title": "巧选特殊集合与补全双向证明",
     "note_footers": [
       "44"
+    ],
+    "compilation_pdf_pages": [
+      36,
+      36
     ]
   },
   {
@@ -287,6 +375,10 @@
     "title": "练习1：先化简再谈充要条件",
     "note_footers": [
       "46"
+    ],
+    "compilation_pdf_pages": [
+      37,
+      37
     ]
   },
   {
@@ -299,6 +391,10 @@
     "title": "练习4：不能漏掉反向包含",
     "note_footers": [
       "47"
+    ],
+    "compilation_pdf_pages": [
+      38,
+      39
     ]
   },
   {
@@ -311,6 +407,10 @@
     "title": "补集结论的证明",
     "note_footers": [
       "21"
+    ],
+    "compilation_pdf_pages": [
+      40,
+      40
     ]
   },
   {
@@ -323,6 +423,10 @@
     "title": "常对应与恒等对应",
     "note_footers": [
       "28"
+    ],
+    "compilation_pdf_pages": [
+      41,
+      41
     ]
   },
   {
@@ -335,6 +439,10 @@
     "title": "逆对应",
     "note_footers": [
       "31"
+    ],
+    "compilation_pdf_pages": [
+      42,
+      42
     ]
   },
   {
@@ -347,6 +455,10 @@
     "title": "下逆像",
     "note_footers": [
       "32"
+    ],
+    "compilation_pdf_pages": [
+      43,
+      43
     ]
   },
   {
@@ -361,6 +473,10 @@
     "note_footers": [
       "34",
       "35"
+    ],
+    "compilation_pdf_pages": [
+      44,
+      44
     ]
   },
   {
@@ -373,6 +489,10 @@
     "title": "Cantor 对角证明",
     "note_footers": [
       "38"
+    ],
+    "compilation_pdf_pages": [
+      45,
+      46
     ]
   },
   {
@@ -385,6 +505,10 @@
     "title": "负传递的等价形式",
     "note_footers": [
       "19"
+    ],
+    "compilation_pdf_pages": [
+      47,
+      47
     ]
   },
   {
@@ -397,6 +521,10 @@
     "title": "传递与无循环的证明",
     "note_footers": [
       "21"
+    ],
+    "compilation_pdf_pages": [
+      48,
+      48
     ]
   },
   {
@@ -409,6 +537,10 @@
     "title": "命题证明展开",
     "note_footers": [
       "24"
+    ],
+    "compilation_pdf_pages": [
+      49,
+      49
     ]
   },
   {
@@ -421,6 +553,10 @@
     "title": "还原弱关系",
     "note_footers": [
       "30"
+    ],
+    "compilation_pdf_pages": [
+      50,
+      51
     ]
   },
   {
@@ -435,6 +571,10 @@
     "note_footers": [
       "42",
       "43"
+    ],
+    "compilation_pdf_pages": [
+      52,
+      52
     ]
   },
   {
@@ -449,6 +589,10 @@
     "note_footers": [
       "44",
       "45"
+    ],
+    "compilation_pdf_pages": [
+      53,
+      53
     ]
   },
   {
@@ -461,6 +605,10 @@
     "title": "上确界逼近刻画的双向证明",
     "note_footers": [
       "47"
+    ],
+    "compilation_pdf_pages": [
+      54,
+      54
     ]
   },
   {
@@ -473,6 +621,10 @@
     "title": "下确界逼近刻画的双向证明",
     "note_footers": [
       "48"
+    ],
+    "compilation_pdf_pages": [
+      55,
+      55
     ]
   },
   {
@@ -485,6 +637,10 @@
     "title": "递增情形：逐句拆解证明",
     "note_footers": [
       "51"
+    ],
+    "compilation_pdf_pages": [
+      56,
+      56
     ]
   },
   {
@@ -497,6 +653,10 @@
     "title": "递减情形与课件笔误",
     "note_footers": [
       "52"
+    ],
+    "compilation_pdf_pages": [
+      57,
+      57
     ]
   },
   {
@@ -509,6 +669,10 @@
     "title": "先把左端点的上确界放入每个区间",
     "note_footers": [
       "54"
+    ],
+    "compilation_pdf_pages": [
+      58,
+      58
     ]
   },
   {
@@ -521,6 +685,10 @@
     "title": "再把右端点的下确界放入每个区间",
     "note_footers": [
       "55"
+    ],
+    "compilation_pdf_pages": [
+      59,
+      59
     ]
   },
   {
@@ -533,6 +701,10 @@
     "title": "为什么交集恰好是一个闭区间",
     "note_footers": [
       "56"
+    ],
+    "compilation_pdf_pages": [
+      60,
+      60
     ]
   },
   {
@@ -545,6 +717,10 @@
     "title": "长度趋零如何产生唯一交点",
     "note_footers": [
       "57"
+    ],
+    "compilation_pdf_pages": [
+      61,
+      61
     ]
   },
   {
@@ -557,6 +733,10 @@
     "title": "Bolzano 定理：二分法抽子列",
     "note_footers": [
       "58"
+    ],
+    "compilation_pdf_pages": [
+      62,
+      62
     ]
   },
   {
@@ -571,6 +751,10 @@
     "note_footers": [
       "59",
       "60"
+    ],
+    "compilation_pdf_pages": [
+      63,
+      63
     ]
   },
   {
@@ -585,6 +769,10 @@
     "note_footers": [
       "62",
       "63"
+    ],
+    "compilation_pdf_pages": [
+      64,
+      64
     ]
   },
   {
@@ -599,6 +787,10 @@
     "note_footers": [
       "64",
       "65"
+    ],
+    "compilation_pdf_pages": [
+      65,
+      65
     ]
   },
   {
@@ -613,6 +805,10 @@
     "note_footers": [
       "66",
       "67"
+    ],
+    "compilation_pdf_pages": [
+      66,
+      66
     ]
   },
   {
@@ -627,6 +823,10 @@
     "note_footers": [
       "69",
       "70"
+    ],
+    "compilation_pdf_pages": [
+      67,
+      68
     ]
   },
   {
@@ -639,6 +839,10 @@
     "title": "为什么 $p\\to\\infty$ 会得到最大坐标",
     "note_footers": [
       "13"
+    ],
+    "compilation_pdf_pages": [
+      69,
+      69
     ]
   },
   {
@@ -651,6 +855,10 @@
     "title": "聚点的数列判别：构造互不相同的点",
     "note_footers": [
       "23"
+    ],
+    "compilation_pdf_pages": [
+      70,
+      70
     ]
   },
   {
@@ -663,6 +871,10 @@
     "title": "导集的单调性与有限并公式",
     "note_footers": [
       "24"
+    ],
+    "compilation_pdf_pages": [
+      71,
+      71
     ]
   },
   {
@@ -675,6 +887,10 @@
     "title": "内部的单调性与有限交公式",
     "note_footers": [
       "25"
+    ],
+    "compilation_pdf_pages": [
+      72,
+      72
     ]
   },
   {
@@ -689,6 +905,10 @@
     "note_footers": [
       "27",
       "28"
+    ],
+    "compilation_pdf_pages": [
+      73,
+      73
     ]
   },
   {
@@ -703,6 +923,10 @@
     "note_footers": [
       "29",
       "30"
+    ],
+    "compilation_pdf_pages": [
+      74,
+      74
     ]
   },
   {
@@ -717,6 +941,10 @@
     "note_footers": [
       "31",
       "32"
+    ],
+    "compilation_pdf_pages": [
+      75,
+      75
     ]
   },
   {
@@ -729,6 +957,10 @@
     "title": "邻域换中心与内部的局部稳定性",
     "note_footers": [
       "33"
+    ],
+    "compilation_pdf_pages": [
+      76,
+      76
     ]
   },
   {
@@ -741,6 +973,10 @@
     "title": "连续性与上下水平集闭：补上子列步骤",
     "note_footers": [
       "35"
+    ],
+    "compilation_pdf_pages": [
+      77,
+      77
     ]
   },
   {
@@ -753,6 +989,10 @@
     "title": "开球的闭包与稠密",
     "note_footers": [
       "36"
+    ],
+    "compilation_pdf_pages": [
+      78,
+      78
     ]
   },
   {
@@ -765,6 +1005,10 @@
     "title": "导集与闭包本身都是闭集",
     "note_footers": [
       "38"
+    ],
+    "compilation_pdf_pages": [
+      79,
+      79
     ]
   },
   {
@@ -777,6 +1021,10 @@
     "title": "有限个闭集之并仍闭：导集方法",
     "note_footers": [
       "39"
+    ],
+    "compilation_pdf_pages": [
+      80,
+      80
     ]
   },
   {
@@ -789,6 +1037,10 @@
     "title": "同一个有限并结论：闭包方法",
     "note_footers": [
       "40"
+    ],
+    "compilation_pdf_pages": [
+      81,
+      81
     ]
   },
   {
@@ -801,6 +1053,10 @@
     "title": "可数个闭集之交仍闭：导集方法",
     "note_footers": [
       "41"
+    ],
+    "compilation_pdf_pages": [
+      82,
+      82
     ]
   },
   {
@@ -813,6 +1069,10 @@
     "title": "可数闭交的闭包写法",
     "note_footers": [
       "42"
+    ],
+    "compilation_pdf_pages": [
+      83,
+      83
     ]
   },
   {
@@ -825,6 +1085,10 @@
     "title": "任意闭集族的交：不需要数得出来",
     "note_footers": [
       "43"
+    ],
+    "compilation_pdf_pages": [
+      84,
+      84
     ]
   },
   {
@@ -837,6 +1101,10 @@
     "title": "任意闭交的闭包证明与笔误",
     "note_footers": [
       "44"
+    ],
+    "compilation_pdf_pages": [
+      85,
+      85
     ]
   },
   {
@@ -849,6 +1117,10 @@
     "title": "为什么无限并会出现新极限点",
     "note_footers": [
       "45"
+    ],
+    "compilation_pdf_pages": [
+      86,
+      86
     ]
   },
   {
@@ -861,6 +1133,10 @@
     "title": "闭包是包含原集合的最小闭集",
     "note_footers": [
       "46"
+    ],
+    "compilation_pdf_pages": [
+      87,
+      87
     ]
   },
   {
@@ -873,6 +1149,10 @@
     "title": "递减非空紧集的交非空：简洁完整证明",
     "note_footers": [
       "47"
+    ],
+    "compilation_pdf_pages": [
+      88,
+      88
     ]
   },
   {
@@ -885,6 +1165,10 @@
     "title": "内点与内部",
     "note_footers": [
       "51"
+    ],
+    "compilation_pdf_pages": [
+      89,
+      89
     ]
   },
   {
@@ -897,6 +1181,10 @@
     "title": "有限开集的交",
     "note_footers": [
       "52"
+    ],
+    "compilation_pdf_pages": [
+      90,
+      90
     ]
   },
   {
@@ -909,6 +1197,10 @@
     "title": "有限开集的交",
     "note_footers": [
       "53"
+    ],
+    "compilation_pdf_pages": [
+      91,
+      91
     ]
   },
   {
@@ -921,6 +1213,10 @@
     "title": "任意开集的并",
     "note_footers": [
       "54"
+    ],
+    "compilation_pdf_pages": [
+      92,
+      92
     ]
   },
   {
@@ -933,6 +1229,10 @@
     "title": "任意开集的并",
     "note_footers": [
       "55"
+    ],
+    "compilation_pdf_pages": [
+      93,
+      93
     ]
   },
   {
@@ -945,6 +1245,10 @@
     "title": "任意开集的并",
     "note_footers": [
       "56"
+    ],
+    "compilation_pdf_pages": [
+      94,
+      94
     ]
   },
   {
@@ -957,6 +1261,10 @@
     "title": "任意开集的并",
     "note_footers": [
       "57"
+    ],
+    "compilation_pdf_pages": [
+      95,
+      95
     ]
   },
   {
@@ -969,6 +1277,10 @@
     "title": "实开集的区间分解",
     "note_footers": [
       "59"
+    ],
+    "compilation_pdf_pages": [
+      96,
+      96
     ]
   },
   {
@@ -983,6 +1295,10 @@
     "note_footers": [
       "60",
       "61"
+    ],
+    "compilation_pdf_pages": [
+      97,
+      97
     ]
   },
   {
@@ -995,6 +1311,10 @@
     "title": "可数拓扑基",
     "note_footers": [
       "62"
+    ],
+    "compilation_pdf_pages": [
+      98,
+      98
     ]
   },
   {
@@ -1007,6 +1327,10 @@
     "title": "紧性与有限子覆盖",
     "note_footers": [
       "65"
+    ],
+    "compilation_pdf_pages": [
+      99,
+      99
     ]
   },
   {
@@ -1023,6 +1347,10 @@
       "66",
       "67",
       "68"
+    ],
+    "compilation_pdf_pages": [
+      100,
+      100
     ]
   },
   {
@@ -1035,6 +1363,10 @@
     "title": "紧性与有限子覆盖",
     "note_footers": [
       "69"
+    ],
+    "compilation_pdf_pages": [
+      101,
+      101
     ]
   },
   {
@@ -1047,6 +1379,10 @@
     "title": "紧集的邻域与逆定理",
     "note_footers": [
       "70"
+    ],
+    "compilation_pdf_pages": [
+      102,
+      102
     ]
   },
   {
@@ -1059,6 +1395,10 @@
     "title": "紧集的邻域与逆定理",
     "note_footers": [
       "71"
+    ],
+    "compilation_pdf_pages": [
+      103,
+      103
     ]
   },
   {
@@ -1073,6 +1413,10 @@
     "note_footers": [
       "75",
       "76"
+    ],
+    "compilation_pdf_pages": [
+      104,
+      104
     ]
   },
   {
@@ -1085,6 +1429,10 @@
     "title": "闭包与内部的抽象公理",
     "note_footers": [
       "77"
+    ],
+    "compilation_pdf_pages": [
+      105,
+      105
     ]
   },
   {
@@ -1097,6 +1445,10 @@
     "title": "闭包与内部的抽象公理",
     "note_footers": [
       "78"
+    ],
+    "compilation_pdf_pages": [
+      106,
+      106
     ]
   },
   {
@@ -1109,6 +1461,10 @@
     "title": "闭包与内部的抽象公理",
     "note_footers": [
       "79"
+    ],
+    "compilation_pdf_pages": [
+      107,
+      107
     ]
   },
   {
@@ -1121,6 +1477,10 @@
     "title": "闭包与内部的抽象公理",
     "note_footers": [
       "80"
+    ],
+    "compilation_pdf_pages": [
+      108,
+      108
     ]
   },
   {
@@ -1133,6 +1493,10 @@
     "title": "闭包的序列判据与相对闭性",
     "note_footers": [
       "84"
+    ],
+    "compilation_pdf_pages": [
+      109,
+      109
     ]
   },
   {
@@ -1145,6 +1509,10 @@
     "title": "闭包的序列判据与相对闭性",
     "note_footers": [
       "85"
+    ],
+    "compilation_pdf_pages": [
+      110,
+      110
     ]
   },
   {
@@ -1157,6 +1525,10 @@
     "title": "闭包的序列判据与相对闭性",
     "note_footers": [
       "86"
+    ],
+    "compilation_pdf_pages": [
+      111,
+      111
     ]
   },
   {
@@ -1171,6 +1543,10 @@
     "note_footers": [
       "89",
       "90"
+    ],
+    "compilation_pdf_pages": [
+      112,
+      112
     ]
   },
   {
@@ -1183,6 +1559,10 @@
     "title": "有界、紧与有限积",
     "note_footers": [
       "97"
+    ],
+    "compilation_pdf_pages": [
+      113,
+      113
     ]
   },
   {
@@ -1195,6 +1575,10 @@
     "title": "连通的多种判据",
     "note_footers": [
       "99"
+    ],
+    "compilation_pdf_pages": [
+      114,
+      114
     ]
   },
   {
@@ -1207,6 +1591,10 @@
     "title": "连通的多种判据",
     "note_footers": [
       "101"
+    ],
+    "compilation_pdf_pages": [
+      115,
+      115
     ]
   },
   {
@@ -1221,6 +1609,10 @@
     "note_footers": [
       "103",
       "104"
+    ],
+    "compilation_pdf_pages": [
+      116,
+      117
     ]
   },
   {
@@ -1237,6 +1629,10 @@
       "12",
       "13",
       "14"
+    ],
+    "compilation_pdf_pages": [
+      118,
+      119
     ]
   },
   {
@@ -1249,6 +1645,10 @@
     "title": "实值连续函数的水平集",
     "note_footers": [
       "16"
+    ],
+    "compilation_pdf_pages": [
+      120,
+      120
     ]
   },
   {
@@ -1261,6 +1661,10 @@
     "title": "实值连续函数的水平集",
     "note_footers": [
       "17"
+    ],
+    "compilation_pdf_pages": [
+      121,
+      121
     ]
   },
   {
@@ -1273,6 +1677,10 @@
     "title": "紧集的连续像与极值",
     "note_footers": [
       "18"
+    ],
+    "compilation_pdf_pages": [
+      122,
+      122
     ]
   },
   {
@@ -1285,6 +1693,10 @@
     "title": "紧集的连续像与极值",
     "note_footers": [
       "19"
+    ],
+    "compilation_pdf_pages": [
+      123,
+      123
     ]
   },
   {
@@ -1297,6 +1709,10 @@
     "title": "连通像与介值",
     "note_footers": [
       "21"
+    ],
+    "compilation_pdf_pages": [
+      124,
+      124
     ]
   },
   {
@@ -1309,6 +1725,10 @@
     "title": "连通像与介值",
     "note_footers": [
       "22"
+    ],
+    "compilation_pdf_pages": [
+      125,
+      125
     ]
   },
   {
@@ -1321,6 +1741,10 @@
     "title": "实值半连续的定义与等价判据",
     "note_footers": [
       "29"
+    ],
+    "compilation_pdf_pages": [
+      126,
+      126
     ]
   },
   {
@@ -1333,6 +1757,10 @@
     "title": "实值半连续的定义与等价判据",
     "note_footers": [
       "30"
+    ],
+    "compilation_pdf_pages": [
+      127,
+      127
     ]
   },
   {
@@ -1345,6 +1773,10 @@
     "title": "实值半连续的定义与等价判据",
     "note_footers": [
       "31"
+    ],
+    "compilation_pdf_pages": [
+      128,
+      128
     ]
   },
   {
@@ -1357,6 +1789,10 @@
     "title": "实值半连续的定义与等价判据",
     "note_footers": [
       "32"
+    ],
+    "compilation_pdf_pages": [
+      129,
+      129
     ]
   },
   {
@@ -1369,6 +1805,10 @@
     "title": "半连续函数的极值证明",
     "note_footers": [
       "33"
+    ],
+    "compilation_pdf_pages": [
+      130,
+      130
     ]
   },
   {
@@ -1383,6 +1823,10 @@
     "note_footers": [
       "34",
       "35"
+    ],
+    "compilation_pdf_pages": [
+      131,
+      131
     ]
   },
   {
@@ -1395,6 +1839,10 @@
     "title": "半连续函数的极值证明",
     "note_footers": [
       "36"
+    ],
+    "compilation_pdf_pages": [
+      132,
+      132
     ]
   },
   {
@@ -1409,6 +1857,10 @@
     "note_footers": [
       "37",
       "38"
+    ],
+    "compilation_pdf_pages": [
+      133,
+      133
     ]
   },
   {
@@ -1421,6 +1873,10 @@
     "title": "上确界、下确界与有限运算",
     "note_footers": [
       "39"
+    ],
+    "compilation_pdf_pages": [
+      134,
+      134
     ]
   },
   {
@@ -1433,6 +1889,10 @@
     "title": "上确界、下确界与有限运算",
     "note_footers": [
       "40"
+    ],
+    "compilation_pdf_pages": [
+      135,
+      135
     ]
   },
   {
@@ -1445,6 +1905,10 @@
     "title": "上确界、下确界与有限运算",
     "note_footers": [
       "41"
+    ],
+    "compilation_pdf_pages": [
+      136,
+      136
     ]
   },
   {
@@ -1457,6 +1921,10 @@
     "title": "上确界、下确界与有限运算",
     "note_footers": [
       "42"
+    ],
+    "compilation_pdf_pages": [
+      137,
+      137
     ]
   },
   {
@@ -1469,6 +1937,10 @@
     "title": "半连续函数的加法与正乘法",
     "note_footers": [
       "43"
+    ],
+    "compilation_pdf_pages": [
+      138,
+      138
     ]
   },
   {
@@ -1481,6 +1953,10 @@
     "title": "半连续函数的加法与正乘法",
     "note_footers": [
       "44"
+    ],
+    "compilation_pdf_pages": [
+      139,
+      139
     ]
   },
   {
@@ -1493,6 +1969,10 @@
     "title": "半连续函数的加法与正乘法",
     "note_footers": [
       "45"
+    ],
+    "compilation_pdf_pages": [
+      140,
+      140
     ]
   },
   {
@@ -1505,6 +1985,10 @@
     "title": "半连续函数的加法与正乘法",
     "note_footers": [
       "46"
+    ],
+    "compilation_pdf_pages": [
+      141,
+      142
     ]
   },
   {
@@ -1517,6 +2001,10 @@
     "title": "上半连续与闭图：双向证明",
     "note_footers": [
       "17"
+    ],
+    "compilation_pdf_pages": [
+      143,
+      143
     ]
   },
   {
@@ -1529,6 +2017,10 @@
     "title": "连续函数与对应的复合",
     "note_footers": [
       "18"
+    ],
+    "compilation_pdf_pages": [
+      144,
+      144
     ]
   },
   {
@@ -1541,6 +2033,10 @@
     "title": "积对应的证明逐步写",
     "note_footers": [
       "20"
+    ],
+    "compilation_pdf_pages": [
+      145,
+      145
     ]
   },
   {
@@ -1553,6 +2049,10 @@
     "title": "最优值连续的完整证明与原页纠错",
     "note_footers": [
       "25"
+    ],
+    "compilation_pdf_pages": [
+      146,
+      146
     ]
   },
   {
@@ -1565,6 +2065,10 @@
     "title": "最优解对应为何紧且上半连续",
     "note_footers": [
       "26"
+    ],
+    "compilation_pdf_pages": [
+      147,
+      147
     ]
   },
   {
@@ -1577,6 +2081,10 @@
     "title": "最优值连续而最优解不下半连续",
     "note_footers": [
       "27"
+    ],
+    "compilation_pdf_pages": [
+      148,
+      148
     ]
   },
   {
@@ -1591,6 +2099,10 @@
     "note_footers": [
       "35",
       "36"
+    ],
+    "compilation_pdf_pages": [
+      149,
+      149
     ]
   },
   {
@@ -1605,6 +2117,10 @@
     "note_footers": [
       "38",
       "39"
+    ],
+    "compilation_pdf_pages": [
+      150,
+      150
     ]
   },
   {
@@ -1617,6 +2133,10 @@
     "title": "紧值上半连续对应的紧像",
     "note_footers": [
       "40"
+    ],
+    "compilation_pdf_pages": [
+      151,
+      151
     ]
   },
   {
@@ -1629,6 +2149,10 @@
     "title": "闭对应与闭图",
     "note_footers": [
       "45"
+    ],
+    "compilation_pdf_pages": [
+      152,
+      152
     ]
   },
   {
@@ -1641,6 +2165,10 @@
     "title": "闭对应与闭图",
     "note_footers": [
       "46"
+    ],
+    "compilation_pdf_pages": [
+      153,
+      153
     ]
   },
   {
@@ -1653,6 +2181,10 @@
     "title": "闭对应与闭图",
     "note_footers": [
       "47"
+    ],
+    "compilation_pdf_pages": [
+      154,
+      154
     ]
   },
   {
@@ -1665,6 +2197,10 @@
     "title": "闭对应与闭图",
     "note_footers": [
       "48"
+    ],
+    "compilation_pdf_pages": [
+      155,
+      155
     ]
   },
   {
@@ -1677,6 +2213,10 @@
     "title": "闭对应与闭图",
     "note_footers": [
       "49"
+    ],
+    "compilation_pdf_pages": [
+      156,
+      156
     ]
   },
   {
@@ -1689,6 +2229,10 @@
     "title": "闭对应与闭图",
     "note_footers": [
       "50"
+    ],
+    "compilation_pdf_pages": [
+      157,
+      157
     ]
   },
   {
@@ -1701,6 +2245,10 @@
     "title": "闭图与上半连续之间的紧性桥梁",
     "note_footers": [
       "51"
+    ],
+    "compilation_pdf_pages": [
+      158,
+      158
     ]
   },
   {
@@ -1717,6 +2265,10 @@
       "53",
       "54",
       "55"
+    ],
+    "compilation_pdf_pages": [
+      159,
+      159
     ]
   },
   {
@@ -1729,6 +2281,10 @@
     "title": "闭图与上半连续之间的紧性桥梁",
     "note_footers": [
       "57"
+    ],
+    "compilation_pdf_pages": [
+      160,
+      160
     ]
   },
   {
@@ -1743,6 +2299,10 @@
     "note_footers": [
       "58",
       "59"
+    ],
+    "compilation_pdf_pages": [
+      161,
+      161
     ]
   },
   {
@@ -1755,6 +2315,10 @@
     "title": "复合与下半连续并",
     "note_footers": [
       "61"
+    ],
+    "compilation_pdf_pages": [
+      162,
+      162
     ]
   },
   {
@@ -1767,6 +2331,10 @@
     "title": "复合与下半连续并",
     "note_footers": [
       "62"
+    ],
+    "compilation_pdf_pages": [
+      163,
+      163
     ]
   },
   {
@@ -1779,6 +2347,10 @@
     "title": "复合与下半连续并",
     "note_footers": [
       "63"
+    ],
+    "compilation_pdf_pages": [
+      164,
+      164
     ]
   },
   {
@@ -1791,6 +2363,10 @@
     "title": "复合与下半连续并",
     "note_footers": [
       "64"
+    ],
+    "compilation_pdf_pages": [
+      165,
+      165
     ]
   },
   {
@@ -1803,6 +2379,10 @@
     "title": "复合与下半连续并",
     "note_footers": [
       "65"
+    ],
+    "compilation_pdf_pages": [
+      166,
+      166
     ]
   },
   {
@@ -1815,6 +2395,10 @@
     "title": "复合与下半连续并",
     "note_footers": [
       "66"
+    ],
+    "compilation_pdf_pages": [
+      167,
+      167
     ]
   },
   {
@@ -1827,6 +2411,10 @@
     "title": "对应交集的条件与伪定理",
     "note_footers": [
       "68"
+    ],
+    "compilation_pdf_pages": [
+      168,
+      168
     ]
   },
   {
@@ -1839,6 +2427,10 @@
     "title": "对应交集的条件与伪定理",
     "note_footers": [
       "69"
+    ],
+    "compilation_pdf_pages": [
+      169,
+      169
     ]
   },
   {
@@ -1851,6 +2443,10 @@
     "title": "对应交集的条件与伪定理",
     "note_footers": [
       "70"
+    ],
+    "compilation_pdf_pages": [
+      170,
+      170
     ]
   },
   {
@@ -1863,6 +2459,10 @@
     "title": "对应交集的条件与伪定理",
     "note_footers": [
       "71"
+    ],
+    "compilation_pdf_pages": [
+      171,
+      171
     ]
   },
   {
@@ -1875,6 +2475,10 @@
     "title": "对应交集的条件与伪定理",
     "note_footers": [
       "72"
+    ],
+    "compilation_pdf_pages": [
+      172,
+      172
     ]
   },
   {
@@ -1887,6 +2491,10 @@
     "title": "有限并保持上半连续",
     "note_footers": [
       "73"
+    ],
+    "compilation_pdf_pages": [
+      173,
+      173
     ]
   },
   {
@@ -1899,6 +2507,10 @@
     "title": "有限并保持上半连续",
     "note_footers": [
       "74"
+    ],
+    "compilation_pdf_pages": [
+      174,
+      174
     ]
   },
   {
@@ -1911,6 +2523,10 @@
     "title": "有限并保持上半连续",
     "note_footers": [
       "75"
+    ],
+    "compilation_pdf_pages": [
+      175,
+      175
     ]
   },
   {
@@ -1923,6 +2539,10 @@
     "title": "有限并保持上半连续",
     "note_footers": [
       "76"
+    ],
+    "compilation_pdf_pages": [
+      176,
+      176
     ]
   },
   {
@@ -1937,6 +2557,10 @@
     "note_footers": [
       "77",
       "78"
+    ],
+    "compilation_pdf_pages": [
+      177,
+      177
     ]
   },
   {
@@ -1951,6 +2575,10 @@
     "note_footers": [
       "79",
       "80"
+    ],
+    "compilation_pdf_pages": [
+      178,
+      178
     ]
   },
   {
@@ -1965,6 +2593,10 @@
     "note_footers": [
       "81",
       "82"
+    ],
+    "compilation_pdf_pages": [
+      179,
+      179
     ]
   },
   {
@@ -1979,6 +2611,10 @@
     "note_footers": [
       "84",
       "85"
+    ],
+    "compilation_pdf_pages": [
+      180,
+      180
     ]
   },
   {
@@ -1991,6 +2627,10 @@
     "title": "和对应与凸包",
     "note_footers": [
       "86"
+    ],
+    "compilation_pdf_pages": [
+      181,
+      181
     ]
   },
   {
@@ -2003,6 +2643,10 @@
     "title": "和对应与凸包",
     "note_footers": [
       "87"
+    ],
+    "compilation_pdf_pages": [
+      182,
+      182
     ]
   },
   {
@@ -2015,6 +2659,10 @@
     "title": "闭包对应与内半连续",
     "note_footers": [
       "88"
+    ],
+    "compilation_pdf_pages": [
+      183,
+      183
     ]
   },
   {
@@ -2027,6 +2675,10 @@
     "title": "闭包对应与内半连续",
     "note_footers": [
       "89"
+    ],
+    "compilation_pdf_pages": [
+      184,
+      184
     ]
   },
   {
@@ -2041,6 +2693,10 @@
     "note_footers": [
       "91",
       "92"
+    ],
+    "compilation_pdf_pages": [
+      185,
+      185
     ]
   },
   {
@@ -2057,6 +2713,10 @@
       "93",
       "94",
       "95"
+    ],
+    "compilation_pdf_pages": [
+      186,
+      186
     ]
   },
   {
@@ -2069,6 +2729,10 @@
     "title": "外半连续的术语与序列选取",
     "note_footers": [
       "96"
+    ],
+    "compilation_pdf_pages": [
+      187,
+      187
     ]
   },
   {
@@ -2081,6 +2745,10 @@
     "title": "外半连续的术语与序列选取",
     "note_footers": [
       "97"
+    ],
+    "compilation_pdf_pages": [
+      188,
+      188
     ]
   },
   {
@@ -2093,6 +2761,10 @@
     "title": "外半连续的术语与序列选取",
     "note_footers": [
       "98"
+    ],
+    "compilation_pdf_pages": [
+      189,
+      189
     ]
   },
   {
@@ -2105,6 +2777,10 @@
     "title": "外半连续的术语与序列选取",
     "note_footers": [
       "99"
+    ],
+    "compilation_pdf_pages": [
+      190,
+      190
     ]
   },
   {
@@ -2117,6 +2793,10 @@
     "title": "外半连续的术语与序列选取",
     "note_footers": [
       "100"
+    ],
+    "compilation_pdf_pages": [
+      191,
+      191
     ]
   },
   {
@@ -2129,6 +2809,10 @@
     "title": "外半连续的术语与序列选取",
     "note_footers": [
       "101"
+    ],
+    "compilation_pdf_pages": [
+      192,
+      192
     ]
   },
   {
@@ -2141,6 +2825,10 @@
     "title": "最优值的两种半连续性",
     "note_footers": [
       "102"
+    ],
+    "compilation_pdf_pages": [
+      193,
+      193
     ]
   },
   {
@@ -2153,6 +2841,10 @@
     "title": "最优值的两种半连续性",
     "note_footers": [
       "104"
+    ],
+    "compilation_pdf_pages": [
+      194,
+      194
     ]
   },
   {
@@ -2165,6 +2857,10 @@
     "title": "Berge 最大值与唯一选择",
     "note_footers": [
       "105"
+    ],
+    "compilation_pdf_pages": [
+      195,
+      195
     ]
   },
   {
@@ -2177,6 +2873,10 @@
     "title": "Berge 最大值与唯一选择",
     "note_footers": [
       "107"
+    ],
+    "compilation_pdf_pages": [
+      196,
+      196
     ]
   },
   {
@@ -2189,6 +2889,10 @@
     "title": "Berge 最大值与唯一选择",
     "note_footers": [
       "108"
+    ],
+    "compilation_pdf_pages": [
+      197,
+      197
     ]
   },
   {
@@ -2203,6 +2907,10 @@
     "note_footers": [
       "109",
       "110"
+    ],
+    "compilation_pdf_pages": [
+      198,
+      198
     ]
   },
   {
@@ -2217,6 +2925,10 @@
     "note_footers": [
       "111",
       "112"
+    ],
+    "compilation_pdf_pages": [
+      199,
+      199
     ]
   },
   {
@@ -2229,6 +2941,10 @@
     "title": "最小化的对偶证明",
     "note_footers": [
       "113"
+    ],
+    "compilation_pdf_pages": [
+      200,
+      200
     ]
   },
   {
@@ -2243,6 +2959,10 @@
     "note_footers": [
       "116",
       "117"
+    ],
+    "compilation_pdf_pages": [
+      201,
+      201
     ]
   },
   {
@@ -2255,6 +2975,10 @@
     "title": "环境依赖偏好与最大元",
     "note_footers": [
       "119"
+    ],
+    "compilation_pdf_pages": [
+      202,
+      203
     ]
   },
   {
@@ -2267,6 +2991,10 @@
     "title": "集合取负、作差与闭包的和",
     "note_footers": [
       "16"
+    ],
+    "compilation_pdf_pages": [
+      204,
+      204
     ]
   },
   {
@@ -2274,11 +3002,17 @@
     "item": 2,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      11
+      11,
+      12
     ],
     "title": "紧集之和紧：先看有界性",
     "note_footers": [
-      "17"
+      "17",
+      "18"
+    ],
+    "compilation_pdf_pages": [
+      205,
+      205
     ]
   },
   {
@@ -2286,11 +3020,17 @@
     "item": 3,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      12
+      13,
+      14
     ],
-    "title": "紧集之和紧：连续像的短证明",
+    "title": "紧集之和紧：逐层抽取子列",
     "note_footers": [
-      "18"
+      "19",
+      "20"
+    ],
+    "compilation_pdf_pages": [
+      206,
+      206
     ]
   },
   {
@@ -2298,11 +3038,15 @@
     "item": 4,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      13
+      17
     ],
-    "title": "紧集之和紧：逐层抽取子列",
+    "title": "对应之和半连续：补全漏掉的抽子列步骤",
     "note_footers": [
-      "19"
+      "23"
+    ],
+    "compilation_pdf_pages": [
+      207,
+      207
     ]
   },
   {
@@ -2310,11 +3054,15 @@
     "item": 5,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      17
+      23
     ],
-    "title": "对应之和半连续：补全漏掉的抽子列步骤",
+    "title": "正半独立：方向不能抵消",
     "note_footers": [
-      "23"
+      "29"
+    ],
+    "compilation_pdf_pages": [
+      208,
+      208
     ]
   },
   {
@@ -2322,11 +3070,15 @@
     "item": 6,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      23
+      25
     ],
-    "title": "正半独立：方向不能抵消",
+    "title": "为什么截尾锥递减；闭包不能漏",
     "note_footers": [
-      "29"
+      "31"
+    ],
+    "compilation_pdf_pages": [
+      209,
+      209
     ]
   },
   {
@@ -2334,11 +3086,15 @@
     "item": 7,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      25
+      29
     ],
-    "title": "为什么截尾锥递减；闭包不能漏",
+    "title": "有界当且仅当没有非零渐近方向",
     "note_footers": [
-      "31"
+      "35"
+    ],
+    "compilation_pdf_pages": [
+      210,
+      210
     ]
   },
   {
@@ -2346,11 +3102,15 @@
     "item": 8,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      29
+      30
     ],
-    "title": "有界当且仅当没有非零渐近方向",
+    "title": "单调性、平移不变性与乘积的预告",
     "note_footers": [
-      "35"
+      "36"
+    ],
+    "compilation_pdf_pages": [
+      211,
+      211
     ]
   },
   {
@@ -2358,11 +3118,15 @@
     "item": 9,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      30
+      31
     ],
-    "title": "单调性、平移不变性与乘积的预告",
+    "title": "平移不改变渐近锥：逐步证明",
     "note_footers": [
-      "36"
+      "37"
+    ],
+    "compilation_pdf_pages": [
+      212,
+      212
     ]
   },
   {
@@ -2370,11 +3134,15 @@
     "item": 10,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      31
+      32
     ],
-    "title": "平移不改变渐近锥：逐步证明",
+    "title": "平移不变性的等价链写法",
     "note_footers": [
-      "37"
+      "38"
+    ],
+    "compilation_pdf_pages": [
+      213,
+      213
     ]
   },
   {
@@ -2382,11 +3150,15 @@
     "item": 11,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      32
+      33
     ],
-    "title": "平移不变性的等价链写法",
+    "title": "乘积的渐近锥包含于各渐近锥的乘积",
     "note_footers": [
-      "38"
+      "39"
+    ],
+    "compilation_pdf_pages": [
+      214,
+      214
     ]
   },
   {
@@ -2394,11 +3166,15 @@
     "item": 12,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      33
+      35
     ],
-    "title": "乘积的渐近锥包含于各渐近锥的乘积",
+    "title": "交集有界：用单调性证明",
     "note_footers": [
-      "39"
+      "41"
+    ],
+    "compilation_pdf_pages": [
+      215,
+      215
     ]
   },
   {
@@ -2406,28 +3182,20 @@
     "item": 13,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
-      35
-    ],
-    "title": "交集有界：用单调性证明",
-    "note_footers": [
-      "41"
-    ]
-  },
-  {
-    "lecture": "109",
-    "item": 14,
-    "source": "109-ZSM-PPT.pdf",
-    "proof_pages": [
       36
     ],
     "title": "不能从递减交直接跳到某个截尾为空",
     "note_footers": [
       "42"
+    ],
+    "compilation_pdf_pages": [
+      216,
+      216
     ]
   },
   {
     "lecture": "109",
-    "item": 15,
+    "item": 14,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       38,
@@ -2441,11 +3209,15 @@
       "45",
       "46",
       "47"
+    ],
+    "compilation_pdf_pages": [
+      217,
+      217
     ]
   },
   {
     "lecture": "109",
-    "item": 16,
+    "item": 15,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       43,
@@ -2455,11 +3227,15 @@
     "note_footers": [
       "49",
       "50"
+    ],
+    "compilation_pdf_pages": [
+      218,
+      218
     ]
   },
   {
     "lecture": "109",
-    "item": 17,
+    "item": 16,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       45
@@ -2467,11 +3243,15 @@
     "title": "闭集和与正半独立",
     "note_footers": [
       "51"
+    ],
+    "compilation_pdf_pages": [
+      219,
+      219
     ]
   },
   {
     "lecture": "109",
-    "item": 18,
+    "item": 17,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       49
@@ -2479,11 +3259,15 @@
     "title": "凸性的基本运算及连通性",
     "note_footers": [
       "55"
+    ],
+    "compilation_pdf_pages": [
+      220,
+      220
     ]
   },
   {
     "lecture": "109",
-    "item": 19,
+    "item": 18,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       50
@@ -2491,11 +3275,15 @@
     "title": "凸性的基本运算及连通性",
     "note_footers": [
       "56"
+    ],
+    "compilation_pdf_pages": [
+      221,
+      221
     ]
   },
   {
     "lecture": "109",
-    "item": 20,
+    "item": 19,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       51
@@ -2503,11 +3291,15 @@
     "title": "凸性的基本运算及连通性",
     "note_footers": [
       "57"
+    ],
+    "compilation_pdf_pages": [
+      222,
+      222
     ]
   },
   {
     "lecture": "109",
-    "item": 21,
+    "item": 20,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       52
@@ -2515,11 +3307,15 @@
     "title": "凸性的基本运算及连通性",
     "note_footers": [
       "58"
+    ],
+    "compilation_pdf_pages": [
+      223,
+      223
     ]
   },
   {
     "lecture": "109",
-    "item": 22,
+    "item": 21,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       53
@@ -2527,11 +3323,15 @@
     "title": "凸性的基本运算及连通性",
     "note_footers": [
       "59"
+    ],
+    "compilation_pdf_pages": [
+      224,
+      224
     ]
   },
   {
     "lecture": "109",
-    "item": 23,
+    "item": 22,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       54
@@ -2539,11 +3339,15 @@
     "title": "凸性的基本运算及连通性",
     "note_footers": [
       "60"
+    ],
+    "compilation_pdf_pages": [
+      225,
+      225
     ]
   },
   {
     "lecture": "109",
-    "item": 24,
+    "item": 23,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       57,
@@ -2555,11 +3359,15 @@
       "63",
       "64",
       "65"
+    ],
+    "compilation_pdf_pages": [
+      226,
+      226
     ]
   },
   {
     "lecture": "109",
-    "item": 25,
+    "item": 24,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       69,
@@ -2569,11 +3377,15 @@
     "note_footers": [
       "75",
       "76"
+    ],
+    "compilation_pdf_pages": [
+      227,
+      227
     ]
   },
   {
     "lecture": "109",
-    "item": 26,
+    "item": 25,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       77,
@@ -2583,11 +3395,15 @@
     "note_footers": [
       "83",
       "84"
+    ],
+    "compilation_pdf_pages": [
+      228,
+      228
     ]
   },
   {
     "lecture": "109",
-    "item": 27,
+    "item": 26,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       79
@@ -2595,11 +3411,15 @@
     "title": "渐近锥闭性及闭包不变",
     "note_footers": [
       "85"
+    ],
+    "compilation_pdf_pages": [
+      229,
+      229
     ]
   },
   {
     "lecture": "109",
-    "item": 28,
+    "item": 27,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       80
@@ -2607,11 +3427,15 @@
     "title": "渐近锥闭性及闭包不变",
     "note_footers": [
       "86"
+    ],
+    "compilation_pdf_pages": [
+      230,
+      230
     ]
   },
   {
     "lecture": "109",
-    "item": 29,
+    "item": 28,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       82
@@ -2619,11 +3443,15 @@
     "title": "截尾与序列定义等价",
     "note_footers": [
       "88"
+    ],
+    "compilation_pdf_pages": [
+      231,
+      231
     ]
   },
   {
     "lecture": "109",
-    "item": 30,
+    "item": 29,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       83
@@ -2631,11 +3459,15 @@
     "title": "截尾与序列定义等价",
     "note_footers": [
       "89"
+    ],
+    "compilation_pdf_pages": [
+      232,
+      232
     ]
   },
   {
     "lecture": "109",
-    "item": 31,
+    "item": 30,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       84
@@ -2643,11 +3475,15 @@
     "title": "有界判据与平移不变",
     "note_footers": [
       "90"
+    ],
+    "compilation_pdf_pages": [
+      233,
+      233
     ]
   },
   {
     "lecture": "109",
-    "item": 32,
+    "item": 31,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       85
@@ -2655,11 +3491,15 @@
     "title": "有界判据与平移不变",
     "note_footers": [
       "91"
+    ],
+    "compilation_pdf_pages": [
+      234,
+      234
     ]
   },
   {
     "lecture": "109",
-    "item": 33,
+    "item": 32,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       86
@@ -2667,11 +3507,15 @@
     "title": "有界判据与平移不变",
     "note_footers": [
       "92"
+    ],
+    "compilation_pdf_pages": [
+      235,
+      235
     ]
   },
   {
     "lecture": "109",
-    "item": 34,
+    "item": 33,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       87
@@ -2679,11 +3523,15 @@
     "title": "有界判据与平移不变",
     "note_footers": [
       "93"
+    ],
+    "compilation_pdf_pages": [
+      236,
+      236
     ]
   },
   {
     "lecture": "109",
-    "item": 35,
+    "item": 34,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       88
@@ -2691,11 +3539,15 @@
     "title": "乘积与交集的渐近方向",
     "note_footers": [
       "94"
+    ],
+    "compilation_pdf_pages": [
+      237,
+      237
     ]
   },
   {
     "lecture": "109",
-    "item": 36,
+    "item": 35,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       89
@@ -2703,11 +3555,15 @@
     "title": "乘积与交集的渐近方向",
     "note_footers": [
       "95"
+    ],
+    "compilation_pdf_pages": [
+      238,
+      238
     ]
   },
   {
     "lecture": "109",
-    "item": 37,
+    "item": 36,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       90
@@ -2715,11 +3571,15 @@
     "title": "乘积与交集的渐近方向",
     "note_footers": [
       "96"
+    ],
+    "compilation_pdf_pages": [
+      239,
+      239
     ]
   },
   {
     "lecture": "109",
-    "item": 38,
+    "item": 37,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       91
@@ -2727,11 +3587,15 @@
     "title": "乘积与交集的渐近方向",
     "note_footers": [
       "97"
+    ],
+    "compilation_pdf_pages": [
+      240,
+      240
     ]
   },
   {
     "lecture": "109",
-    "item": 39,
+    "item": 38,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       93,
@@ -2745,11 +3609,15 @@
       "100",
       "101",
       "102"
+    ],
+    "compilation_pdf_pages": [
+      241,
+      241
     ]
   },
   {
     "lecture": "109",
-    "item": 40,
+    "item": 39,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       98,
@@ -2761,11 +3629,15 @@
       "104",
       "105",
       "106"
+    ],
+    "compilation_pdf_pages": [
+      242,
+      242
     ]
   },
   {
     "lecture": "109",
-    "item": 41,
+    "item": 40,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       101,
@@ -2777,11 +3649,15 @@
       "107",
       "108",
       "109"
+    ],
+    "compilation_pdf_pages": [
+      243,
+      243
     ]
   },
   {
     "lecture": "109",
-    "item": 42,
+    "item": 41,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       106,
@@ -2791,11 +3667,15 @@
     "note_footers": [
       "112",
       "113"
+    ],
+    "compilation_pdf_pages": [
+      244,
+      244
     ]
   },
   {
     "lecture": "109",
-    "item": 43,
+    "item": 42,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       108
@@ -2803,11 +3683,15 @@
     "title": "渐近正则性与凸渐近锥",
     "note_footers": [
       "114"
+    ],
+    "compilation_pdf_pages": [
+      245,
+      245
     ]
   },
   {
     "lecture": "109",
-    "item": 44,
+    "item": 43,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       110,
@@ -2817,11 +3701,15 @@
     "note_footers": [
       "116",
       "117"
+    ],
+    "compilation_pdf_pages": [
+      246,
+      246
     ]
   },
   {
     "lecture": "109",
-    "item": 45,
+    "item": 44,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       112
@@ -2829,11 +3717,15 @@
     "title": "衰退锥相等与非闭反例",
     "note_footers": [
       "118"
+    ],
+    "compilation_pdf_pages": [
+      247,
+      247
     ]
   },
   {
     "lecture": "109",
-    "item": 46,
+    "item": 45,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       113
@@ -2841,11 +3733,15 @@
     "title": "衰退锥相等与非闭反例",
     "note_footers": [
       "119"
+    ],
+    "compilation_pdf_pages": [
+      248,
+      248
     ]
   },
   {
     "lecture": "109",
-    "item": 47,
+    "item": 46,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       114
@@ -2853,11 +3749,15 @@
     "title": "最大可含锥与基点无关",
     "note_footers": [
       "120"
+    ],
+    "compilation_pdf_pages": [
+      249,
+      249
     ]
   },
   {
     "lecture": "109",
-    "item": 48,
+    "item": 47,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       115
@@ -2865,11 +3765,15 @@
     "title": "最大可含锥与基点无关",
     "note_footers": [
       "121"
+    ],
+    "compilation_pdf_pages": [
+      250,
+      250
     ]
   },
   {
     "lecture": "109",
-    "item": 49,
+    "item": 48,
     "source": "109-ZSM-PPT.pdf",
     "proof_pages": [
       117,
@@ -2879,6 +3783,10 @@
     "note_footers": [
       "123",
       "124"
+    ],
+    "compilation_pdf_pages": [
+      251,
+      252
     ]
   },
   {
@@ -2891,6 +3799,10 @@
     "title": "球与一般紧凸集的归约纠错",
     "note_footers": [
       "7"
+    ],
+    "compilation_pdf_pages": [
+      253,
+      253
     ]
   },
   {
@@ -2903,6 +3815,10 @@
     "title": "一维证明与值域纠错",
     "note_footers": [
       "8"
+    ],
+    "compilation_pdf_pages": [
+      254,
+      254
     ]
   }
 ]
