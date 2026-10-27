@@ -24,16 +24,42 @@ def compile_one(lec):
  return lec,{'pdf_pages':len(doc),'extracted_characters':len(text),'bytes':dst.stat().st_size,
              'sha256':hashlib.sha256(dst.read_bytes()).hexdigest(),'compile_checks':'passed'}
 report=dict(ThreadPoolExecutor(2).map(compile_one,['108','109']))
-combined=fitz.open(); toc=[]
-for lec in ['108','109']:
- doc=fitz.open(PDF/f'gpt-{lec}-exam.pdf'); offset=len(combined)
- toc.append([1,f'Lecture {lec}',offset+1])
- toc.extend([[level+1,title,page+offset] for level,title,page in doc.get_toc()])
- combined.insert_pdf(doc)
-combined.set_toc(toc)
-combined.set_metadata({'title':'108与109：证明考试中文自学讲义','author':'中文自学讲义'})
-combined.save(PDF/'gpt-108-109-exam.pdf',garbage=4,deflate=True)
-report['combined_pages']=len(combined)
+# Compile a genuine single LaTeX document. Concatenating two standalone PDFs
+# retains two unrelated internal contents pages, not a unified printed TOC.
+def compile_combined():
+ for _ in range(3):
+  result=subprocess.run(['xelatex','-interaction=nonstopmode','-halt-on-error',
+   '-output-directory=../build','gpt-108-109-exam.tex'],
+   cwd=HERE/'latex',stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+  (BUILD/'compile-108-109.txt').write_bytes(result.stdout)
+  if result.returncode:
+   raise RuntimeError(result.stdout[-4000:].decode(errors='replace'))
+ log=(BUILD/'gpt-108-109-exam.log').read_text()
+ for bad in ['Overfull','Missing character:','undefined references','Label(s) may have changed']:
+  if bad in log:raise RuntimeError(f'108-109: unresolved compilation issue: {bad}')
+ src=BUILD/'gpt-108-109-exam.pdf'
+ dst=PDF/src.name
+ shutil.copy(src,dst)
+ doc=fitz.open(dst)
+ toc=doc.get_toc()
+ titles=[title for level,title,page in toc]
+ p108=next((page for level,title,page in toc if 'Lecture 108' in title),None)
+ p109=next((page for level,title,page in toc if 'Lecture 109' in title),None)
+ assert p108 is not None and p109 is not None and p108 < p109, \
+  'Unified PDF bookmarks must contain both lectures in order'
+ contents_text='\n'.join(doc[i].get_text() for i in range(min(7,len(doc))))
+ assert 'Lecture 108' in contents_text and 'Lecture 109' in contents_text, \
+  'Both lectures must appear in the front printed table of contents'
+ assert '原课件逐页对应索引' in '\n'.join(p.get_text() for p in doc)
+ assert len(doc)>70 and not any(p.get_images() for p in doc)
+ return {'pages':len(doc),'lecture_108_starts':p108,'lecture_109_starts':p109,
+  'toc_entries':len(toc),'bytes':dst.stat().st_size,
+  'sha256':hashlib.sha256(dst.read_bytes()).hexdigest(),
+  'compile_checks':'passed','unified_printed_toc':'both lectures confirmed'}
+
+joint=compile_combined()
+report['combined_pages']=joint['pages']
+report['combined_toc']=joint
 (HERE/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 archive=HERE.parent/'downloads/gpt-108-109-exam.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
