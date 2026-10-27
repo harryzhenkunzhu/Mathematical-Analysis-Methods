@@ -8,6 +8,9 @@
 }
 % Distinct, continuously navigable section identifiers across the two lectures.
 \renewcommand{\thesection}{\thepart.\arabic{section}}
+% Hyperref destinations must stay unique when section counters restart in Part II.
+\renewcommand{\theHsection}{\arabic{part}.\arabic{section}}
+\renewcommand{\theHsubsection}{\arabic{part}.\arabic{section}.\arabic{subsection}}
 \begin{document}
 \begin{titlepage}
 \vspace*{1.4cm}
