@@ -1,0 +1,1673 @@
+{
+  "108": {
+    "page_map": {
+      "1": {
+        "section_start": 1,
+        "section_title": "为什么要研究连续对应"
+      },
+      "2": {
+        "section_start": 1,
+        "section_title": "为什么要研究连续对应"
+      },
+      "3": {
+        "section_start": 1,
+        "section_title": "为什么要研究连续对应"
+      },
+      "4": {
+        "section_start": 1,
+        "section_title": "为什么要研究连续对应"
+      },
+      "5": {
+        "section_start": 1,
+        "section_title": "为什么要研究连续对应"
+      },
+      "6": {
+        "section_start": 6,
+        "section_title": "上半连续、下半连续：把量词读对"
+      },
+      "7": {
+        "section_start": 6,
+        "section_title": "上半连续、下半连续：把量词读对"
+      },
+      "8": {
+        "section_start": 6,
+        "section_title": "上半连续、下半连续：把量词读对"
+      },
+      "9": {
+        "section_start": 6,
+        "section_title": "上半连续、下半连续：把量词读对"
+      },
+      "10": {
+        "section_start": 6,
+        "section_title": "上半连续、下半连续：把量词读对"
+      },
+      "11": {
+        "section_start": 11,
+        "section_title": "闭图、复合与有限积的第一轮证明"
+      },
+      "12": {
+        "section_start": 11,
+        "section_title": "闭图、复合与有限积的第一轮证明"
+      },
+      "13": {
+        "section_start": 11,
+        "section_title": "闭图、复合与有限积的第一轮证明"
+      },
+      "14": {
+        "section_start": 11,
+        "section_title": "闭图、复合与有限积的第一轮证明"
+      },
+      "15": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "16": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "17": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "18": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "19": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "20": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "21": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "22": {
+        "section_start": 15,
+        "section_title": "最大值定理：可行集、最优值、最优解"
+      },
+      "23": {
+        "section_start": 23,
+        "section_title": "把序列直观翻译成邻域与逆像"
+      },
+      "24": {
+        "section_start": 23,
+        "section_title": "把序列直观翻译成邻域与逆像"
+      },
+      "25": {
+        "section_start": 23,
+        "section_title": "把序列直观翻译成邻域与逆像"
+      },
+      "26": {
+        "section_start": 23,
+        "section_title": "把序列直观翻译成邻域与逆像"
+      },
+      "27": {
+        "section_start": 23,
+        "section_title": "把序列直观翻译成邻域与逆像"
+      },
+      "28": {
+        "section_start": 28,
+        "section_title": "两组逆像等价定理"
+      },
+      "29": {
+        "section_start": 28,
+        "section_title": "两组逆像等价定理"
+      },
+      "30": {
+        "section_start": 28,
+        "section_title": "两组逆像等价定理"
+      },
+      "31": {
+        "section_start": 28,
+        "section_title": "两组逆像等价定理"
+      },
+      "32": {
+        "section_start": 28,
+        "section_title": "两组逆像等价定理"
+      },
+      "33": {
+        "section_start": 28,
+        "section_title": "两组逆像等价定理"
+      },
+      "34": {
+        "section_start": 34,
+        "section_title": "紧像定理：两次使用有限覆盖"
+      },
+      "35": {
+        "section_start": 35,
+        "section_title": "闭对应的三种等价表达"
+      },
+      "36": {
+        "section_start": 35,
+        "section_title": "闭对应的三种等价表达"
+      },
+      "37": {
+        "section_start": 35,
+        "section_title": "闭对应的三种等价表达"
+      },
+      "38": {
+        "section_start": 35,
+        "section_title": "闭对应的三种等价表达"
+      },
+      "39": {
+        "section_start": 35,
+        "section_title": "闭对应的三种等价表达"
+      },
+      "40": {
+        "section_start": 40,
+        "section_title": "闭图在积、交、有限并下的保存"
+      },
+      "41": {
+        "section_start": 40,
+        "section_title": "闭图在积、交、有限并下的保存"
+      },
+      "42": {
+        "section_start": 40,
+        "section_title": "闭图在积、交、有限并下的保存"
+      },
+      "43": {
+        "section_start": 40,
+        "section_title": "闭图在积、交、有限并下的保存"
+      },
+      "44": {
+        "section_start": 40,
+        "section_title": "闭图在积、交、有限并下的保存"
+      },
+      "45": {
+        "section_start": 45,
+        "section_title": "闭图与上半连续之间的桥梁"
+      },
+      "46": {
+        "section_start": 45,
+        "section_title": "闭图与上半连续之间的桥梁"
+      },
+      "47": {
+        "section_start": 45,
+        "section_title": "闭图与上半连续之间的桥梁"
+      },
+      "48": {
+        "section_start": 45,
+        "section_title": "闭图与上半连续之间的桥梁"
+      },
+      "49": {
+        "section_start": 45,
+        "section_title": "闭图与上半连续之间的桥梁"
+      },
+      "50": {
+        "section_start": 45,
+        "section_title": "闭图与上半连续之间的桥梁"
+      },
+      "51": {
+        "section_start": 45,
+        "section_title": "闭图与上半连续之间的桥梁"
+      },
+      "52": {
+        "section_start": 52,
+        "section_title": "迭代像与非空紧不变集"
+      },
+      "53": {
+        "section_start": 52,
+        "section_title": "迭代像与非空紧不变集"
+      },
+      "54": {
+        "section_start": 52,
+        "section_title": "迭代像与非空紧不变集"
+      },
+      "55": {
+        "section_start": 55,
+        "section_title": "对应的复合与下半连续并"
+      },
+      "56": {
+        "section_start": 55,
+        "section_title": "对应的复合与下半连续并"
+      },
+      "57": {
+        "section_start": 55,
+        "section_title": "对应的复合与下半连续并"
+      },
+      "58": {
+        "section_start": 55,
+        "section_title": "对应的复合与下半连续并"
+      },
+      "59": {
+        "section_start": 55,
+        "section_title": "对应的复合与下半连续并"
+      },
+      "60": {
+        "section_start": 55,
+        "section_title": "对应的复合与下半连续并"
+      },
+      "61": {
+        "section_start": 61,
+        "section_title": "交对应：正确命题与伪命题"
+      },
+      "62": {
+        "section_start": 61,
+        "section_title": "交对应：正确命题与伪命题"
+      },
+      "63": {
+        "section_start": 61,
+        "section_title": "交对应：正确命题与伪命题"
+      },
+      "64": {
+        "section_start": 61,
+        "section_title": "交对应：正确命题与伪命题"
+      },
+      "65": {
+        "section_start": 61,
+        "section_title": "交对应：正确命题与伪命题"
+      },
+      "66": {
+        "section_start": 61,
+        "section_title": "交对应：正确命题与伪命题"
+      },
+      "67": {
+        "section_start": 67,
+        "section_title": "有限并为什么保持上半连续"
+      },
+      "68": {
+        "section_start": 67,
+        "section_title": "有限并为什么保持上半连续"
+      },
+      "69": {
+        "section_start": 67,
+        "section_title": "有限并为什么保持上半连续"
+      },
+      "70": {
+        "section_start": 67,
+        "section_title": "有限并为什么保持上半连续"
+      },
+      "71": {
+        "section_start": 71,
+        "section_title": "积对应：从错误等式到有限矩形覆盖"
+      },
+      "72": {
+        "section_start": 71,
+        "section_title": "积对应：从错误等式到有限矩形覆盖"
+      },
+      "73": {
+        "section_start": 71,
+        "section_title": "积对应：从错误等式到有限矩形覆盖"
+      },
+      "74": {
+        "section_start": 71,
+        "section_title": "积对应：从错误等式到有限矩形覆盖"
+      },
+      "75": {
+        "section_start": 71,
+        "section_title": "积对应：从错误等式到有限矩形覆盖"
+      },
+      "76": {
+        "section_start": 71,
+        "section_title": "积对应：从错误等式到有限矩形覆盖"
+      },
+      "77": {
+        "section_start": 77,
+        "section_title": "和对应与凸包对应"
+      },
+      "78": {
+        "section_start": 77,
+        "section_title": "和对应与凸包对应"
+      },
+      "79": {
+        "section_start": 77,
+        "section_title": "和对应与凸包对应"
+      },
+      "80": {
+        "section_start": 77,
+        "section_title": "和对应与凸包对应"
+      },
+      "81": {
+        "section_start": 77,
+        "section_title": "和对应与凸包对应"
+      },
+      "82": {
+        "section_start": 82,
+        "section_title": "逐点闭包：修正原稿的术语与判据"
+      },
+      "83": {
+        "section_start": 82,
+        "section_title": "逐点闭包：修正原稿的术语与判据"
+      },
+      "84": {
+        "section_start": 84,
+        "section_title": "内半连续与下半连续的等价"
+      },
+      "85": {
+        "section_start": 84,
+        "section_title": "内半连续与下半连续的等价"
+      },
+      "86": {
+        "section_start": 84,
+        "section_title": "内半连续与下半连续的等价"
+      },
+      "87": {
+        "section_start": 87,
+        "section_title": "本课外半连续：必须能抽出子列"
+      },
+      "88": {
+        "section_start": 87,
+        "section_title": "本课外半连续：必须能抽出子列"
+      },
+      "89": {
+        "section_start": 87,
+        "section_title": "本课外半连续：必须能抽出子列"
+      },
+      "90": {
+        "section_start": 87,
+        "section_title": "本课外半连续：必须能抽出子列"
+      },
+      "91": {
+        "section_start": 87,
+        "section_title": "本课外半连续：必须能抽出子列"
+      },
+      "92": {
+        "section_start": 92,
+        "section_title": "用序列再证明复合与积"
+      },
+      "93": {
+        "section_start": 92,
+        "section_title": "用序列再证明复合与积"
+      },
+      "94": {
+        "section_start": 92,
+        "section_title": "用序列再证明复合与积"
+      },
+      "95": {
+        "section_start": 92,
+        "section_title": "用序列再证明复合与积"
+      },
+      "96": {
+        "section_start": 96,
+        "section_title": "一般最大值定理：先分别证明两种半连续"
+      },
+      "97": {
+        "section_start": 96,
+        "section_title": "一般最大值定理：先分别证明两种半连续"
+      },
+      "98": {
+        "section_start": 96,
+        "section_title": "一般最大值定理：先分别证明两种半连续"
+      },
+      "99": {
+        "section_start": 96,
+        "section_title": "一般最大值定理：先分别证明两种半连续"
+      },
+      "100": {
+        "section_start": 100,
+        "section_title": "唯一最优点与连续选择"
+      },
+      "101": {
+        "section_start": 100,
+        "section_title": "唯一最优点与连续选择"
+      },
+      "102": {
+        "section_start": 100,
+        "section_title": "唯一最优点与连续选择"
+      },
+      "103": {
+        "section_start": 103,
+        "section_title": "最小值定理：不等号如何全部翻转"
+      },
+      "104": {
+        "section_start": 103,
+        "section_title": "最小值定理：不等号如何全部翻转"
+      },
+      "105": {
+        "section_start": 103,
+        "section_title": "最小值定理：不等号如何全部翻转"
+      },
+      "106": {
+        "section_start": 103,
+        "section_title": "最小值定理：不等号如何全部翻转"
+      },
+      "107": {
+        "section_start": 103,
+        "section_title": "最小值定理：不等号如何全部翻转"
+      },
+      "108": {
+        "section_start": 108,
+        "section_title": "环境依赖偏好与极大元对应"
+      },
+      "109": {
+        "section_start": 108,
+        "section_title": "环境依赖偏好与极大元对应"
+      },
+      "110": {
+        "section_start": 108,
+        "section_title": "环境依赖偏好与极大元对应"
+      },
+      "111": {
+        "section_start": 108,
+        "section_title": "环境依赖偏好与极大元对应"
+      },
+      "112": {
+        "section_start": 108,
+        "section_title": "环境依赖偏好与极大元对应"
+      },
+      "113": {
+        "section_start": 108,
+        "section_title": "环境依赖偏好与极大元对应"
+      }
+    },
+    "source_pages": 113,
+    "all_pages_mapped": true,
+    "teacher_proof_units": 60,
+    "rendered_proof_sections": 52,
+    "proofs": [
+      {
+        "source_pages": [
+          11
+        ],
+        "section": "闭图、复合与有限积的第一轮证明",
+        "key": "108:11"
+      },
+      {
+        "source_pages": [
+          12
+        ],
+        "section": "闭图、复合与有限积的第一轮证明",
+        "key": "108:12"
+      },
+      {
+        "source_pages": [
+          14
+        ],
+        "section": "闭图、复合与有限积的第一轮证明",
+        "key": "108:14"
+      },
+      {
+        "source_pages": [
+          19
+        ],
+        "section": "最大值定理：可行集、最优值、最优解",
+        "key": "108:19"
+      },
+      {
+        "source_pages": [
+          20
+        ],
+        "section": "最大值定理：可行集、最优值、最优解",
+        "key": "108:20"
+      },
+      {
+        "source_pages": [
+          21
+        ],
+        "section": "最大值定理：可行集、最优值、最优解",
+        "key": "108:21"
+      },
+      {
+        "source_pages": [
+          29,
+          30
+        ],
+        "section": "两组逆像等价定理",
+        "key": "108:29"
+      },
+      {
+        "source_pages": [
+          32,
+          33
+        ],
+        "section": "两组逆像等价定理",
+        "key": "108:32"
+      },
+      {
+        "source_pages": [
+          34
+        ],
+        "section": "紧像定理：两次使用有限覆盖",
+        "key": "108:34"
+      },
+      {
+        "source_pages": [
+          39
+        ],
+        "section": "闭对应的三种等价表达",
+        "key": "108:39"
+      },
+      {
+        "source_pages": [
+          40
+        ],
+        "section": "闭图在积、交、有限并下的保存",
+        "key": "108:40"
+      },
+      {
+        "source_pages": [
+          41
+        ],
+        "section": "闭图在积、交、有限并下的保存",
+        "key": "108:41"
+      },
+      {
+        "source_pages": [
+          42
+        ],
+        "section": "闭图在积、交、有限并下的保存",
+        "key": "108:42"
+      },
+      {
+        "source_pages": [
+          43
+        ],
+        "section": "闭图在积、交、有限并下的保存",
+        "key": "108:43"
+      },
+      {
+        "source_pages": [
+          44
+        ],
+        "section": "闭图在积、交、有限并下的保存",
+        "key": "108:44"
+      },
+      {
+        "source_pages": [
+          45
+        ],
+        "section": "闭图与上半连续之间的桥梁",
+        "key": "108:45"
+      },
+      {
+        "source_pages": [
+          47,
+          48,
+          49
+        ],
+        "section": "闭图与上半连续之间的桥梁",
+        "key": "108:47"
+      },
+      {
+        "source_pages": [
+          51
+        ],
+        "section": "闭图与上半连续之间的桥梁",
+        "key": "108:51"
+      },
+      {
+        "source_pages": [
+          52,
+          53
+        ],
+        "section": "迭代像与非空紧不变集",
+        "key": "108:52"
+      },
+      {
+        "source_pages": [
+          55,
+          56
+        ],
+        "section": "对应的复合与下半连续并",
+        "key": "108:55"
+      },
+      {
+        "source_pages": [
+          57,
+          58
+        ],
+        "section": "对应的复合与下半连续并",
+        "key": "108:57"
+      },
+      {
+        "source_pages": [
+          59,
+          60
+        ],
+        "section": "对应的复合与下半连续并",
+        "key": "108:59"
+      },
+      {
+        "source_pages": [
+          62
+        ],
+        "section": "交对应：正确命题与伪命题",
+        "key": "108:62"
+      },
+      {
+        "source_pages": [
+          63
+        ],
+        "section": "交对应：正确命题与伪命题",
+        "key": "108:63"
+      },
+      {
+        "source_pages": [
+          64
+        ],
+        "section": "交对应：正确命题与伪命题",
+        "key": "108:64"
+      },
+      {
+        "source_pages": [
+          65
+        ],
+        "section": "交对应：正确命题与伪命题",
+        "key": "108:65"
+      },
+      {
+        "source_pages": [
+          66
+        ],
+        "section": "交对应：正确命题与伪命题",
+        "key": "108:66"
+      },
+      {
+        "source_pages": [
+          67,
+          68,
+          69,
+          70
+        ],
+        "section": "有限并为什么保持上半连续",
+        "key": "108:67"
+      },
+      {
+        "source_pages": [
+          71,
+          72
+        ],
+        "section": "积对应：从错误等式到有限矩形覆盖",
+        "key": "108:71"
+      },
+      {
+        "source_pages": [
+          73,
+          74
+        ],
+        "section": "积对应：从错误等式到有限矩形覆盖",
+        "key": "108:73"
+      },
+      {
+        "source_pages": [
+          75,
+          76
+        ],
+        "section": "积对应：从错误等式到有限矩形覆盖",
+        "key": "108:75"
+      },
+      {
+        "source_pages": [
+          78,
+          79
+        ],
+        "section": "和对应与凸包对应",
+        "key": "108:78"
+      },
+      {
+        "source_pages": [
+          80
+        ],
+        "section": "和对应与凸包对应",
+        "key": "108:80"
+      },
+      {
+        "source_pages": [
+          81
+        ],
+        "section": "和对应与凸包对应",
+        "key": "108:81"
+      },
+      {
+        "source_pages": [
+          82
+        ],
+        "section": "逐点闭包：修正原稿的术语与判据",
+        "key": "108:82"
+      },
+      {
+        "source_pages": [
+          83
+        ],
+        "section": "逐点闭包：修正原稿的术语与判据",
+        "key": "108:83"
+      },
+      {
+        "source_pages": [
+          85,
+          86
+        ],
+        "section": "内半连续与下半连续的等价",
+        "key": "108:85"
+      },
+      {
+        "source_pages": [
+          87,
+          88,
+          89
+        ],
+        "section": "本课外半连续：必须能抽出子列",
+        "key": "108:87"
+      },
+      {
+        "source_pages": [
+          90,
+          91
+        ],
+        "section": "本课外半连续：必须能抽出子列",
+        "key": "108:90"
+      },
+      {
+        "source_pages": [
+          92
+        ],
+        "section": "用序列再证明复合与积",
+        "key": "108:92"
+      },
+      {
+        "source_pages": [
+          93
+        ],
+        "section": "用序列再证明复合与积",
+        "key": "108:93"
+      },
+      {
+        "source_pages": [
+          94
+        ],
+        "section": "用序列再证明复合与积",
+        "key": "108:94"
+      },
+      {
+        "source_pages": [
+          95
+        ],
+        "section": "用序列再证明复合与积",
+        "key": "108:95"
+      },
+      {
+        "source_pages": [
+          96
+        ],
+        "section": "一般最大值定理：先分别证明两种半连续",
+        "key": "108:96"
+      },
+      {
+        "source_pages": [
+          98
+        ],
+        "section": "一般最大值定理：先分别证明两种半连续",
+        "key": "108:98"
+      },
+      {
+        "source_pages": [
+          99
+        ],
+        "section": "一般最大值定理：先分别证明两种半连续",
+        "key": "108:99"
+      },
+      {
+        "source_pages": [
+          101,
+          102
+        ],
+        "section": "唯一最优点与连续选择",
+        "key": "108:101"
+      },
+      {
+        "source_pages": [
+          103,
+          104
+        ],
+        "section": "最小值定理：不等号如何全部翻转",
+        "key": "108:103"
+      },
+      {
+        "source_pages": [
+          105,
+          106
+        ],
+        "section": "最小值定理：不等号如何全部翻转",
+        "key": "108:105"
+      },
+      {
+        "source_pages": [
+          107
+        ],
+        "section": "最小值定理：不等号如何全部翻转",
+        "key": "108:107"
+      },
+      {
+        "source_pages": [
+          110,
+          111
+        ],
+        "section": "环境依赖偏好与极大元对应",
+        "key": "108:110"
+      },
+      {
+        "source_pages": [
+          113
+        ],
+        "section": "环境依赖偏好与极大元对应",
+        "key": "108:113"
+      }
+    ],
+    "source_sha256": "0c60f15bea5083560c10488a828abf901ffc0556548e871f6f3eecf45327ce1d"
+  },
+  "109": {
+    "page_map": {
+      "1": {
+        "section_start": 1,
+        "section_title": "向量运算、连续性与平移"
+      },
+      "2": {
+        "section_start": 1,
+        "section_title": "向量运算、连续性与平移"
+      },
+      "3": {
+        "section_start": 1,
+        "section_title": "向量运算、连续性与平移"
+      },
+      "4": {
+        "section_start": 1,
+        "section_title": "向量运算、连续性与平移"
+      },
+      "5": {
+        "section_start": 1,
+        "section_title": "向量运算、连续性与平移"
+      },
+      "6": {
+        "section_start": 1,
+        "section_title": "向量运算、连续性与平移"
+      },
+      "7": {
+        "section_start": 1,
+        "section_title": "向量运算、连续性与平移"
+      },
+      "8": {
+        "section_start": 8,
+        "section_title": "集合和、集合差与闭包"
+      },
+      "9": {
+        "section_start": 8,
+        "section_title": "集合和、集合差与闭包"
+      },
+      "10": {
+        "section_start": 8,
+        "section_title": "集合和、集合差与闭包"
+      },
+      "11": {
+        "section_start": 11,
+        "section_title": "紧集的和：老师的两条证明"
+      },
+      "12": {
+        "section_start": 11,
+        "section_title": "紧集的和：老师的两条证明"
+      },
+      "13": {
+        "section_start": 11,
+        "section_title": "紧集的和：老师的两条证明"
+      },
+      "14": {
+        "section_start": 11,
+        "section_title": "紧集的和：老师的两条证明"
+      },
+      "15": {
+        "section_start": 15,
+        "section_title": "函数相加与对应相加"
+      },
+      "16": {
+        "section_start": 15,
+        "section_title": "函数相加与对应相加"
+      },
+      "17": {
+        "section_start": 15,
+        "section_title": "函数相加与对应相加"
+      },
+      "18": {
+        "section_start": 18,
+        "section_title": "线段、射线、锥与正半独立"
+      },
+      "19": {
+        "section_start": 18,
+        "section_title": "线段、射线、锥与正半独立"
+      },
+      "20": {
+        "section_start": 18,
+        "section_title": "线段、射线、锥与正半独立"
+      },
+      "21": {
+        "section_start": 18,
+        "section_title": "线段、射线、锥与正半独立"
+      },
+      "22": {
+        "section_start": 18,
+        "section_title": "线段、射线、锥与正半独立"
+      },
+      "23": {
+        "section_start": 18,
+        "section_title": "线段、射线、锥与正半独立"
+      },
+      "24": {
+        "section_start": 24,
+        "section_title": "三种无穷远描述：先把定义分开"
+      },
+      "25": {
+        "section_start": 24,
+        "section_title": "三种无穷远描述：先把定义分开"
+      },
+      "26": {
+        "section_start": 24,
+        "section_title": "三种无穷远描述：先把定义分开"
+      },
+      "27": {
+        "section_start": 24,
+        "section_title": "三种无穷远描述：先把定义分开"
+      },
+      "28": {
+        "section_start": 24,
+        "section_title": "三种无穷远描述：先把定义分开"
+      },
+      "29": {
+        "section_start": 29,
+        "section_title": "有界判据、平移不变与乘积包含"
+      },
+      "30": {
+        "section_start": 29,
+        "section_title": "有界判据、平移不变与乘积包含"
+      },
+      "31": {
+        "section_start": 29,
+        "section_title": "有界判据、平移不变与乘积包含"
+      },
+      "32": {
+        "section_start": 29,
+        "section_title": "有界判据、平移不变与乘积包含"
+      },
+      "33": {
+        "section_start": 29,
+        "section_title": "有界判据、平移不变与乘积包含"
+      },
+      "34": {
+        "section_start": 34,
+        "section_title": "渐近锥怎样控制交集的有界性"
+      },
+      "35": {
+        "section_start": 34,
+        "section_title": "渐近锥怎样控制交集的有界性"
+      },
+      "36": {
+        "section_start": 34,
+        "section_title": "渐近锥怎样控制交集的有界性"
+      },
+      "37": {
+        "section_start": 37,
+        "section_title": "线性像定理：归一化反证的完整链条"
+      },
+      "38": {
+        "section_start": 37,
+        "section_title": "线性像定理：归一化反证的完整链条"
+      },
+      "39": {
+        "section_start": 37,
+        "section_title": "线性像定理：归一化反证的完整链条"
+      },
+      "40": {
+        "section_start": 37,
+        "section_title": "线性像定理：归一化反证的完整链条"
+      },
+      "41": {
+        "section_start": 37,
+        "section_title": "线性像定理：归一化反证的完整链条"
+      },
+      "42": {
+        "section_start": 42,
+        "section_title": "闭集相加：正半独立排除抵消"
+      },
+      "43": {
+        "section_start": 42,
+        "section_title": "闭集相加：正半独立排除抵消"
+      },
+      "44": {
+        "section_start": 42,
+        "section_title": "闭集相加：正半独立排除抵消"
+      },
+      "45": {
+        "section_start": 42,
+        "section_title": "闭集相加：正半独立排除抵消"
+      },
+      "46": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "47": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "48": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "49": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "50": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "51": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "52": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "53": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "54": {
+        "section_start": 46,
+        "section_title": "凸集的定义、运算与连通性"
+      },
+      "55": {
+        "section_start": 55,
+        "section_title": "凸包、闭凸包与凸包和公式"
+      },
+      "56": {
+        "section_start": 55,
+        "section_title": "凸包、闭凸包与凸包和公式"
+      },
+      "57": {
+        "section_start": 55,
+        "section_title": "凸包、闭凸包与凸包和公式"
+      },
+      "58": {
+        "section_start": 55,
+        "section_title": "凸包、闭凸包与凸包和公式"
+      },
+      "59": {
+        "section_start": 55,
+        "section_title": "凸包、闭凸包与凸包和公式"
+      },
+      "60": {
+        "section_start": 60,
+        "section_title": "内积、超平面与 Minkowski 定理"
+      },
+      "61": {
+        "section_start": 60,
+        "section_title": "内积、超平面与 Minkowski 定理"
+      },
+      "62": {
+        "section_start": 60,
+        "section_title": "内积、超平面与 Minkowski 定理"
+      },
+      "63": {
+        "section_start": 60,
+        "section_title": "内积、超平面与 Minkowski 定理"
+      },
+      "64": {
+        "section_start": 60,
+        "section_title": "内积、超平面与 Minkowski 定理"
+      },
+      "65": {
+        "section_start": 65,
+        "section_title": "极锥与坐标偏序"
+      },
+      "66": {
+        "section_start": 65,
+        "section_title": "极锥与坐标偏序"
+      },
+      "67": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "68": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "69": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "70": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "71": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "72": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "73": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "74": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "75": {
+        "section_start": 67,
+        "section_title": "重新审视渐近方向与衰退方向"
+      },
+      "76": {
+        "section_start": 76,
+        "section_title": "渐近锥闭性、闭包不变与锥的特例"
+      },
+      "77": {
+        "section_start": 76,
+        "section_title": "渐近锥闭性、闭包不变与锥的特例"
+      },
+      "78": {
+        "section_start": 76,
+        "section_title": "渐近锥闭性、闭包不变与锥的特例"
+      },
+      "79": {
+        "section_start": 76,
+        "section_title": "渐近锥闭性、闭包不变与锥的特例"
+      },
+      "80": {
+        "section_start": 76,
+        "section_title": "渐近锥闭性、闭包不变与锥的特例"
+      },
+      "81": {
+        "section_start": 81,
+        "section_title": "三个渐近描述为什么等价"
+      },
+      "82": {
+        "section_start": 81,
+        "section_title": "三个渐近描述为什么等价"
+      },
+      "83": {
+        "section_start": 81,
+        "section_title": "三个渐近描述为什么等价"
+      },
+      "84": {
+        "section_start": 84,
+        "section_title": "用序列重证有界性与平移性质"
+      },
+      "85": {
+        "section_start": 84,
+        "section_title": "用序列重证有界性与平移性质"
+      },
+      "86": {
+        "section_start": 84,
+        "section_title": "用序列重证有界性与平移性质"
+      },
+      "87": {
+        "section_start": 84,
+        "section_title": "用序列重证有界性与平移性质"
+      },
+      "88": {
+        "section_start": 88,
+        "section_title": "乘积与交：不能交换的运算"
+      },
+      "89": {
+        "section_start": 88,
+        "section_title": "乘积与交：不能交换的运算"
+      },
+      "90": {
+        "section_start": 88,
+        "section_title": "乘积与交：不能交换的运算"
+      },
+      "91": {
+        "section_start": 88,
+        "section_title": "乘积与交：不能交换的运算"
+      },
+      "92": {
+        "section_start": 92,
+        "section_title": "再走一遍线性像定理"
+      },
+      "93": {
+        "section_start": 92,
+        "section_title": "再走一遍线性像定理"
+      },
+      "94": {
+        "section_start": 92,
+        "section_title": "再走一遍线性像定理"
+      },
+      "95": {
+        "section_start": 92,
+        "section_title": "再走一遍线性像定理"
+      },
+      "96": {
+        "section_start": 92,
+        "section_title": "再走一遍线性像定理"
+      },
+      "97": {
+        "section_start": 97,
+        "section_title": "闭和定理：线性映射法与直接子列法"
+      },
+      "98": {
+        "section_start": 97,
+        "section_title": "闭和定理：线性映射法与直接子列法"
+      },
+      "99": {
+        "section_start": 97,
+        "section_title": "闭和定理：线性映射法与直接子列法"
+      },
+      "100": {
+        "section_start": 97,
+        "section_title": "闭和定理：线性映射法与直接子列法"
+      },
+      "101": {
+        "section_start": 97,
+        "section_title": "闭和定理：线性映射法与直接子列法"
+      },
+      "102": {
+        "section_start": 97,
+        "section_title": "闭和定理：线性映射法与直接子列法"
+      },
+      "103": {
+        "section_start": 97,
+        "section_title": "闭和定理：线性映射法与直接子列法"
+      },
+      "104": {
+        "section_start": 104,
+        "section_title": "渐近正则：把不同尺度统一"
+      },
+      "105": {
+        "section_start": 104,
+        "section_title": "渐近正则：把不同尺度统一"
+      },
+      "106": {
+        "section_start": 104,
+        "section_title": "渐近正则：把不同尺度统一"
+      },
+      "107": {
+        "section_start": 104,
+        "section_title": "渐近正则：把不同尺度统一"
+      },
+      "108": {
+        "section_start": 104,
+        "section_title": "渐近正则：把不同尺度统一"
+      },
+      "109": {
+        "section_start": 109,
+        "section_title": "闭凸集的渐近锥等于衰退锥"
+      },
+      "110": {
+        "section_start": 109,
+        "section_title": "闭凸集的渐近锥等于衰退锥"
+      },
+      "111": {
+        "section_start": 109,
+        "section_title": "闭凸集的渐近锥等于衰退锥"
+      },
+      "112": {
+        "section_start": 109,
+        "section_title": "闭凸集的渐近锥等于衰退锥"
+      },
+      "113": {
+        "section_start": 109,
+        "section_title": "闭凸集的渐近锥等于衰退锥"
+      },
+      "114": {
+        "section_start": 114,
+        "section_title": "最大可含锥：与基点无关"
+      },
+      "115": {
+        "section_start": 114,
+        "section_title": "最大可含锥：与基点无关"
+      },
+      "116": {
+        "section_start": 114,
+        "section_title": "最大可含锥：与基点无关"
+      },
+      "117": {
+        "section_start": 114,
+        "section_title": "最大可含锥：与基点无关"
+      },
+      "118": {
+        "section_start": 114,
+        "section_title": "最大可含锥：与基点无关"
+      }
+    },
+    "source_pages": 118,
+    "all_pages_mapped": true,
+    "teacher_proof_units": 48,
+    "rendered_proof_sections": 45,
+    "proofs": [
+      {
+        "source_pages": [
+          10
+        ],
+        "section": "集合和、集合差与闭包",
+        "key": "109:10"
+      },
+      {
+        "source_pages": [
+          11,
+          12
+        ],
+        "section": "紧集的和：老师的两条证明",
+        "key": "109:11"
+      },
+      {
+        "source_pages": [
+          13,
+          14
+        ],
+        "section": "紧集的和：老师的两条证明",
+        "key": "109:13"
+      },
+      {
+        "source_pages": [
+          17
+        ],
+        "section": "函数相加与对应相加",
+        "key": "109:17"
+      },
+      {
+        "source_pages": [
+          23
+        ],
+        "section": "线段、射线、锥与正半独立",
+        "key": "109:23"
+      },
+      {
+        "source_pages": [
+          25
+        ],
+        "section": "三种无穷远描述：先把定义分开",
+        "key": "109:25"
+      },
+      {
+        "source_pages": [
+          29
+        ],
+        "section": "有界判据、平移不变与乘积包含",
+        "key": "109:29"
+      },
+      {
+        "source_pages": [
+          30
+        ],
+        "section": "有界判据、平移不变与乘积包含",
+        "key": "109:30"
+      },
+      {
+        "source_pages": [
+          31
+        ],
+        "section": "有界判据、平移不变与乘积包含",
+        "key": "109:31"
+      },
+      {
+        "source_pages": [
+          32
+        ],
+        "section": "有界判据、平移不变与乘积包含",
+        "key": "109:32"
+      },
+      {
+        "source_pages": [
+          33
+        ],
+        "section": "有界判据、平移不变与乘积包含",
+        "key": "109:33"
+      },
+      {
+        "source_pages": [
+          35,
+          36
+        ],
+        "section": "渐近锥怎样控制交集的有界性",
+        "key": "109:35"
+      },
+      {
+        "source_pages": [
+          38,
+          39,
+          40,
+          41
+        ],
+        "section": "线性像定理：归一化反证的完整链条",
+        "key": "109:38"
+      },
+      {
+        "source_pages": [
+          43,
+          44,
+          45
+        ],
+        "section": "闭集相加：正半独立排除抵消",
+        "key": "109:43"
+      },
+      {
+        "source_pages": [
+          49
+        ],
+        "section": "凸集的定义、运算与连通性",
+        "key": "109:49"
+      },
+      {
+        "source_pages": [
+          50
+        ],
+        "section": "凸集的定义、运算与连通性",
+        "key": "109:50"
+      },
+      {
+        "source_pages": [
+          51
+        ],
+        "section": "凸集的定义、运算与连通性",
+        "key": "109:51"
+      },
+      {
+        "source_pages": [
+          52
+        ],
+        "section": "凸集的定义、运算与连通性",
+        "key": "109:52"
+      },
+      {
+        "source_pages": [
+          53
+        ],
+        "section": "凸集的定义、运算与连通性",
+        "key": "109:53"
+      },
+      {
+        "source_pages": [
+          54
+        ],
+        "section": "凸集的定义、运算与连通性",
+        "key": "109:54"
+      },
+      {
+        "source_pages": [
+          57,
+          58,
+          59
+        ],
+        "section": "凸包、闭凸包与凸包和公式",
+        "key": "109:57"
+      },
+      {
+        "source_pages": [
+          69,
+          70
+        ],
+        "section": "重新审视渐近方向与衰退方向",
+        "key": "109:69"
+      },
+      {
+        "source_pages": [
+          77,
+          78
+        ],
+        "section": "渐近锥闭性、闭包不变与锥的特例",
+        "key": "109:77"
+      },
+      {
+        "source_pages": [
+          79
+        ],
+        "section": "渐近锥闭性、闭包不变与锥的特例",
+        "key": "109:79"
+      },
+      {
+        "source_pages": [
+          80
+        ],
+        "section": "渐近锥闭性、闭包不变与锥的特例",
+        "key": "109:80"
+      },
+      {
+        "source_pages": [
+          82
+        ],
+        "section": "三个渐近描述为什么等价",
+        "key": "109:82"
+      },
+      {
+        "source_pages": [
+          83
+        ],
+        "section": "三个渐近描述为什么等价",
+        "key": "109:83"
+      },
+      {
+        "source_pages": [
+          84
+        ],
+        "section": "用序列重证有界性与平移性质",
+        "key": "109:84"
+      },
+      {
+        "source_pages": [
+          85
+        ],
+        "section": "用序列重证有界性与平移性质",
+        "key": "109:85"
+      },
+      {
+        "source_pages": [
+          86
+        ],
+        "section": "用序列重证有界性与平移性质",
+        "key": "109:86"
+      },
+      {
+        "source_pages": [
+          87
+        ],
+        "section": "用序列重证有界性与平移性质",
+        "key": "109:87"
+      },
+      {
+        "source_pages": [
+          88
+        ],
+        "section": "乘积与交：不能交换的运算",
+        "key": "109:88"
+      },
+      {
+        "source_pages": [
+          89
+        ],
+        "section": "乘积与交：不能交换的运算",
+        "key": "109:89"
+      },
+      {
+        "source_pages": [
+          90,
+          91
+        ],
+        "section": "乘积与交：不能交换的运算",
+        "key": "109:90"
+      },
+      {
+        "source_pages": [
+          93,
+          94,
+          95,
+          96
+        ],
+        "section": "再走一遍线性像定理",
+        "key": "109:93"
+      },
+      {
+        "source_pages": [
+          98,
+          99,
+          100
+        ],
+        "section": "闭和定理：线性映射法与直接子列法",
+        "key": "109:98"
+      },
+      {
+        "source_pages": [
+          101,
+          102,
+          103
+        ],
+        "section": "闭和定理：线性映射法与直接子列法",
+        "key": "109:101"
+      },
+      {
+        "source_pages": [
+          106,
+          107
+        ],
+        "section": "渐近正则：把不同尺度统一",
+        "key": "109:106"
+      },
+      {
+        "source_pages": [
+          108
+        ],
+        "section": "渐近正则：把不同尺度统一",
+        "key": "109:108"
+      },
+      {
+        "source_pages": [
+          110,
+          111
+        ],
+        "section": "闭凸集的渐近锥等于衰退锥",
+        "key": "109:110"
+      },
+      {
+        "source_pages": [
+          112
+        ],
+        "section": "闭凸集的渐近锥等于衰退锥",
+        "key": "109:112"
+      },
+      {
+        "source_pages": [
+          113
+        ],
+        "section": "闭凸集的渐近锥等于衰退锥",
+        "key": "109:113"
+      },
+      {
+        "source_pages": [
+          114
+        ],
+        "section": "最大可含锥：与基点无关",
+        "key": "109:114"
+      },
+      {
+        "source_pages": [
+          115
+        ],
+        "section": "最大可含锥：与基点无关",
+        "key": "109:115"
+      },
+      {
+        "source_pages": [
+          117,
+          118
+        ],
+        "section": "最大可含锥：与基点无关",
+        "key": "109:117"
+      }
+    ],
+    "source_sha256": "9ad2a6006115c74287921664cc6bab5762920caf651a263a49ee20a04fb62ed2"
+  }
+}

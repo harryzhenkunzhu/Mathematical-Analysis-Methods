@@ -1,0 +1,19 @@
+{
+  "108": {
+    "pdf_pages": 52,
+    "extracted_characters": 45684,
+    "bytes": 463927,
+    "sha256": "5301419e782c326b75d18b80e2b446631d38733115137cf9da00c0fc272783f8",
+    "compile_checks": "passed"
+  },
+  "109": {
+    "pdf_pages": 55,
+    "extracted_characters": 46885,
+    "bytes": 471688,
+    "sha256": "9a9a8a0bd86c963fbe7abd9438abc8219fbea98b0d60a39155546f970c68def8",
+    "compile_checks": "passed"
+  },
+  "combined_pages": 107,
+  "standalone_zip_source_compile": "108 and 109 passed in an isolated temporary directory",
+  "visual_review": "Sampled definitions, diagrams, inverse proofs and supplementary hyperplane proof"
+}

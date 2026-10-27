@@ -1,5 +1,9 @@
 # 数理分析方法：中文自学 Lecture Notes
 
+**2026-10-27：108、109 考试自学讲义已重新编写。** 按教师顺序讲清定义、全部证明与必要补步，正文无课件截图；附例子、练习解答及原课件逐页索引。
+
+[108 新讲义](exam-108-109/pdf/gpt-108-exam.pdf) · [109 新讲义](exam-108-109/pdf/gpt-109-exam.pdf) · [两讲合订 PDF](exam-108-109/pdf/gpt-108-109-exam.pdf) · [PDF 与独立 LaTeX 源码 ZIP](downloads/gpt-108-109-exam.zip) · [内容说明](exam-108-109/README.md)
+
 新增：[证明逐步详解 PDF（完整正文，无截图）](pdf/gpt-Proofs-Full-Steps.pdf) · [证明汇编说明及页码索引](proofs/README.md) · [证明汇编 ZIP 下载](downloads/gpt-Proofs-Full-Steps.zip)
 
 每份课件对应一本独立 PDF。**原课件全部 657 页逐页嵌入**，其后附中文讲解；相关证明按主题集中展开，后续展开页给出具体原页索引。两份 `000` 是不同课件，因此分别保留为 `gpt-000` 与 `gpt-000-ZSM`。

@@ -1,0 +1,30 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=21mm,headheight=17pt]{geometry}
+\usepackage{fontspec}
+\setmainfont[AutoFakeSlant=.18]{Noto Serif CJK SC}
+\setsansfont{Noto Sans CJK SC}
+\setmonofont{Noto Sans Mono CJK SC}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{xcolor,enumitem,fancyhdr,longtable,booktabs,needspace,tikz}
+\usepackage[unicode,colorlinks=true,linkcolor=blue!55!black,urlcolor=blue!55!black]{hyperref}
+\newcommand{\R}{\mathbb{R}}\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\DeclareMathOperator{\conv}{co}\DeclareMathOperator{\cl}{cl}
+\DeclareMathOperator{\Int}{int}\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\dist}{dist}
+\newtheorem{theorem}{定理}\newtheorem{lemma}{引理}
+\newtheorem{proposition}{命题}
+\theoremstyle{definition}\newtheorem{definition}{定义}\newtheorem{example}{例}
+\renewcommand{\proofname}{证明}
+\setlength{\parindent}{0pt}\setlength{\parskip}{.5em}\linespread{1.18}
+\setlist{itemsep=3pt,topsep=4pt,leftmargin=2em}
+\emergencystretch=4em\setcounter{tocdepth}{1}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small 数理分析方法 · 证明考试自学讲义}
+\fancyhead[R]{\small Lecture \LectureID}
+\fancyfoot[C]{\thepage}

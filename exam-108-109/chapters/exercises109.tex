@@ -1,0 +1,29 @@
+\clearpage\section{109自测：把归一化和凸组合练熟}
+\subsection{计算三个渐近锥}
+求 $[2,5]$、$[2,\infty)$ 和 $C=\R\times[0,1]$ 的渐近锥。
+\paragraph{解答。}有界非空集 $[2,5]$ 的锥是 $\{0\}$。对 $[2,\infty)$，比值非负使负方向不可能；任给 $d\ge0$ 取 $x_n=2+nd,t_n=n$，得到方向 $d$，故锥 $[0,\infty)$。对条带，任意见证 $(a_n,b_n)/t_n$ 中 $0\le b_n\le1$，所以第二坐标趋于0。任意 $(d,0)$ 可用 $(nd,0)\in C$、$t_n=n$ 实现，所以 $C_\infty=\R\times\{0\}$。
+\subsection{闭集加紧集为什么闭}
+设 $A$ 闭，$B$ 紧且非空，证明 $A+B$ 闭，并说明与正半独立定理的关系。
+\paragraph{解答。}取 $z_n=a_n+b_n\to z$。$B$ 紧给 $b_{n_k}\to b\in B$，从而 $a_{n_k}=z_{n_k}-b_{n_k}\to z-b$。$A$ 闭使 $z-b\in A$，所以 $z\in A+B$。锥语言中 $B_\infty=\{0\}$，因此 $d_A+d_B=0$ 自动迫使二者为0；两个锥正半独立，闭和定理也适用。这里直接证明更短，但两种机制一致。
+\subsection{正半独立条件怎样检查}
+$A=[0,\infty)$、$B=(-\infty,0]$ 的渐近锥是否正半独立？它们的和是否闭？
+\paragraph{解答。}它们本来就是闭锥，故渐近锥分别等于自身。取 $1\in A_\infty,-1\in B_\infty$ 相加为0却都非零，所以不正半独立。但 $A+B=\R$ 仍闭。这说明定理给的是充分条件；条件失败不能反推和必不闭。
+\subsection{复写归一化矛盾}
+在 $\ker L\cap C_\infty=\{0\}$ 下，证明 $x_n\in C$ 且 $(Lx_n)$ 有界必有 $(x_n)$ 有界。
+\paragraph{解答。}若无界，可抽子列使 $r_n=\|x_n\|\to\infty$；单位列 $u_n=x_n/r_n$ 有子列趋于 $u$ 且 $\|u\|=1$。由同一 $x_n,r_n$ 见证 $u\in C_\infty$；线性连续性给 $Lu=\lim Lx_n/r_n=0$。核条件便使 $u=0$，与单位范数矛盾。三项不能漏：标度趋无穷、单位范数保非零、像有界使商趋零。
+\subsection{闭凸性各用在何处}
+设非空闭凸 $C$、$d\in C_\infty$。证明对任意 $a\in C,t\ge0$，$a+td\in C$。
+\paragraph{解答。}选 $x_n\in C,s_n\to\infty,x_n/s_n\to d$。$t=0$ 直接成立；$t>0$ 时充分大 $s_n\ge t$，比例 $t/s_n\in[0,1]$。因此凸性给 $(1-t/s_n)a+(t/s_n)x_n\in C$。此列趋于 $a+td$，闭性才让极限仍在 $C$。基点 $a$ 和长度 $t$ 都任意，所以得衰退方向。凸性用来制造集内点，闭性用来留下极限。
+\subsection{凸包和的四项展开}
+设 $a=\tfrac13a_1+\tfrac23a_2$、$b=\tfrac14b_1+\tfrac34b_2$，把 $a+b$ 写成 $A+B$ 中点的凸组合。
+\paragraph{解答。}
+\[a+b=\tfrac1{12}(a_1+b_1)+\tfrac14(a_1+b_2)
++\tfrac16(a_2+b_1)+\tfrac12(a_2+b_2).
+\]
+四个权重非负且和1。$a_1$ 的合并权重 $1/12+1/4=1/3$，$a_2$ 的合并权重 $1/6+1/2=2/3$；$b_1,b_2$ 类似。逐个核对系数才能确认得到的点确实为 $a+b$。
+\subsection{计算一个极锥}
+令 $C=\{(t,0):t\ge0\}$，求 $C^\circ$。
+\paragraph{解答。}极锥条件为 $p_1t+p_2\cdot0\le0$ 对所有 $t\ge0$ 成立。取 $t=1$ 得 $p_1\le0$；反向 $p_1\le0$ 足以使所有这些不等式成立，$p_2$ 不受限制。所以 $C^\circ=\{(p_1,p_2):p_1\le0\}$。这是一个半空间，而不是仅仅朝左的射线。
+\subsection{为什么渐近正则性有用}
+如果 $d_1,d_2\in C_\infty$，能否直接把它们的两条见证相加来证明 $C_\infty$ 凸？
+\paragraph{解答。}不能直接做，因为两条见证可能是 $x_n/s_n\to d_1$ 和 $y_n/t_n\to d_2$，标度不同。非空凸集的渐近正则性允许改用共同标度 $n$，分别选 $u_n/n\to d_1,v_n/n\to d_2$。凸性给 $z_n=\lambda u_n+(1-\lambda)v_n\in C$，于是 $z_n/n\to\lambda d_1+(1-\lambda)d_2$，成为合法的单一见证。先统一尺度再组合，是这一组定理的逻辑顺序。
