@@ -140,33 +140,11 @@ for lec,mod,total in [('108','correspondences',113),('109','vectors',118)]:
 (HERE/'coverage.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
 print(json.dumps({k:{x:v[x] for x in ['source_pages','teacher_proof_units','rendered_proof_sections']} for k,v in manifest.items()},ensure_ascii=False))
 
-combined = r"""\input{preamble.tex}
-\newcommand{\LectureID}{108、109}
-\renewcommand{\contentsname}{108与109总目录}
-\hypersetup{pdftitle={108与109：证明考试自学讲义}}
-\begin{document}
-\begin{titlepage}
-\vspace*{2cm}{\Huge 数理分析方法\par}
-\vspace{1cm}{\LARGE 108与109：证明考试自学讲义\par}
-\vspace{1cm}连续对应与最优化稳定性\par 向量、凸性与无穷远方向\par
-\vfill 本合订版使用统一总目录及连续页码。点击目录可跳转到两讲各节。\par
-目录修订：2026年10月28日
-\end{titlepage}
-\setcounter{page}{2}
-\tableofcontents
-\clearpage
-\renewcommand{\LectureID}{108}
-\renewcommand{\theHsection}{108.\arabic{section}}
-\part{Lecture 108：连续对应与最优化稳定性}
-\input{foundations.tex}
-\input{body-108.tex}
-\clearpage
-\renewcommand{\LectureID}{109}
-\setcounter{section}{0}
-\renewcommand{\theHsection}{109.\arabic{section}}
-\part{Lecture 109：向量、凸性与无穷远方向}
-\input{foundations.tex}
-\input{body-109.tex}
-\end{document}
-"""
-(OUT/'gpt-108-109-exam.tex').write_text(combined)
+# Keep the complete single-file source in sync with the combined entry.
+def embed_tex(path):
+ def replace_input(match):
+  name = match.group(1)
+  source = OUT / (name if name.endswith('.tex') else name + '.tex')
+  return '\n% Embedded ' + source.name + '\n' + embed_tex(source)
+ return re.sub(r'\\input\{([^}]+)\}', replace_input, path.read_text())
+(OUT/'gpt-108-109-standalone.tex').write_text(embed_tex(OUT/'gpt-108-109-exam.tex'))

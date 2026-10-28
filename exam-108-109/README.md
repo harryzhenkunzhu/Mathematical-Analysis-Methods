@@ -10,13 +10,17 @@
 
 - `pdf/gpt-108-exam.pdf`：连续对应、半连续性、闭图、最大值与最小值定理。
 - `pdf/gpt-109-exam.pdf`：向量运算、凸性、渐近锥、衰退锥、闭和与线性像。
-- `pdf/gpt-108-109-exam.pdf`：105页，两讲统一总目录、连续页码及可点击跳转。
+- `pdf/gpt-108-109-exam.pdf`：104页，两讲统一排版的合订讲义；首页总目录同时列出 Lecture 108 和 109（而非仅拼接两份独立 PDF），带可点击导航和连续页码。
 - [下载 ZIP](../downloads/gpt-108-109-exam.zip)：两份 PDF、合订 PDF、独立可编译 LaTeX 源码和本说明。
 
-`latex/` 中的源码可独立编译：在该目录执行 `xelatex gpt-108-exam.tex` 三次，109及合订入口 `gpt-108-109-exam.tex` 同理。需要 XeLaTeX、常用 TeX Live 宏包和 Noto CJK 字体。
+`latex/` 中的源码可独立编译：在该目录执行 `xelatex gpt-108-exam.tex` 三次，109 同理。合订版源码为 `latex/gpt-108-109-exam.tex`，运行 `xelatex gpt-108-109-exam.tex` 三次生成统一目录的合订 PDF。需要 XeLaTeX、常用 TeX Live 宏包和 Noto CJK 字体。
 
-仓库内维护：`python exam-108-109/build.py` 组装正文；`python exam-108-109/compile.py` 编译、检查、合订并打包（合订需要 Python 的 PyMuPDF）。本目录作者补充与既有逐步证明素材一起生成最终独立源码，PDF 中没有外部讲义依赖。
+仓库内维护：`python exam-108-109/build.py` 组装正文；`python exam-108-109/compile.py` 编译、检查三份 PDF 并打包（同时用 Python 的 PyMuPDF 验证 108、109 目录/书签及页数）。本目录作者补充与既有逐步证明素材一起生成最终独立源码，PDF 中没有外部讲义依赖。
 
 `coverage.json` 记录231张原课件页的分组及108个原证明单元的来源映射；相邻重复证明合并后，正文有97个证明小节，另有明确标出的补充证明。`validation.json` 记录成品页数与哈希。覆盖映射与编译检查不代替数学内容审阅。
 
 本文件为自学辅助材料，不是教师官方讲义。按用户提供课件及 Debreu《Theory of Value》相关背景整理。考试范围以教师最终说明为准。
+
+## 合订 PDF 目录修正（2026-10-28）
+
+旧版本（107 页）是直接拼接两份独立 PDF，开头显示的只是 Lecture 108 的目录；Lecture 109 的目录出现在第二份单独 PDF 的首页之后，并非丢失。现改为通过 `latex/gpt-108-109-exam.tex` **统一排版与编译**，使 Lecture 108 和 Lecture 109 均在合订 PDF 的首页总目录出现，PDF 导航书签亦同时包含两讲。两个独立 PDF 仍保留不变，合订版页数可能随新的首页目录排版发生变化。

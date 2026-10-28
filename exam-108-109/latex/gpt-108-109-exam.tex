@@ -1,28 +1,57 @@
 \input{preamble.tex}
-\newcommand{\LectureID}{108、109}
+\newcommand{\LectureID}{108--109}
+\hypersetup{
+  pdftitle={Lecture 108--109：数理分析方法证明考试自学讲义},
+  pdfauthor={中文自学讲义},
+  bookmarksopen=true,
+  bookmarksnumbered=true
+}
+% Distinct, continuously navigable section identifiers across the two lectures.
+\renewcommand{\thesection}{\thepart.\arabic{section}}
+% Hyperref destinations must stay unique when section counters restart in Part II.
+\renewcommand{\theHsection}{\arabic{part}.\arabic{section}}
+\renewcommand{\theHsubsection}{\arabic{part}.\arabic{section}.\arabic{subsection}}
+\makeatletter
+\renewcommand{\l@section}{\@dottedtocline{1}{0em}{3.8em}}
+\renewcommand{\@pnumwidth}{2.5em}
+\renewcommand{\@tocrmarg}{3.5em}
+\makeatother
 \renewcommand{\contentsname}{108与109总目录}
-\hypersetup{pdftitle={108与109：证明考试自学讲义}}
 \begin{document}
 \begin{titlepage}
-\vspace*{2cm}{\Huge 数理分析方法\par}
-\vspace{1cm}{\LARGE 108与109：证明考试自学讲义\par}
-\vspace{1cm}连续对应与最优化稳定性\par 向量、凸性与无穷远方向\par
-\vfill 本合订版使用统一总目录及连续页码。点击目录可跳转到两讲各节。\par
-目录修订：2026年10月28日
+\vspace*{1.4cm}
+{\Huge\sffamily 数理分析方法\par}
+\vspace{.8cm}
+{\LARGE\sffamily Lecture 108 + Lecture 109\par}
+\vspace{.4cm}
+{\Large 连续对应、向量与凸分析\par}
+\vspace{.9cm}
+{\Large 证明考试中文自学合订讲义\par}
+\vspace{1cm}
+\textbf{阅读说明}\par
+本书将两份独立讲义合为一个连续排版的文档。首页的统一目录同时列出 Lecture 108 和 Lecture 109 的全部专题，点击条目即可定位对应内容。两讲的定义、例子、教师证明思路、逐步推导、补充论证、练习和原课件逐页索引均保留。\par
+\vspace{.6cm}
+\textbf{两讲内容}\par
+Lecture 108：连续对应、半连续性、闭图、最大值定理及相关证明。\par
+Lecture 109：向量运算、凸集、渐近锥、衰退锥、闭和与线性像及相关证明。\par
+\vspace{.6cm}
+\textbf{页码说明}\par
+原课件页码保留在每个专题标题和逐页索引里；本合订讲义的页码从第一页起连续编号，目录页码与实际 PDF 页码一致。\par
+\vfill
+编写日期：2026 年 10 月 27 日\par
+参考背景：Gérard Debreu, \emph{Theory of Value}。\par
 \end{titlepage}
+% titlepage resets the page counter; align printed TOC page numbers with PDF pages.
 \setcounter{page}{2}
 \tableofcontents
 \clearpage
-\renewcommand{\LectureID}{108}
-\renewcommand{\theHsection}{108.\arabic{section}}
-\part{Lecture 108：连续对应与最优化稳定性}
 \input{foundations.tex}
+\clearpage
+\part{Lecture 108：连续对应与最优化稳定性}
+\setcounter{section}{0}
 \input{body-108.tex}
 \clearpage
-\renewcommand{\LectureID}{109}
-\setcounter{section}{0}
-\renewcommand{\theHsection}{109.\arabic{section}}
 \part{Lecture 109：向量、凸性与无穷远方向}
-\input{foundations.tex}
+\setcounter{section}{0}
 \input{body-109.tex}
 \end{document}

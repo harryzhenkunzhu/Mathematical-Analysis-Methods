@@ -1,0 +1,64 @@
+name: Build 108-109 exam notes
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exam-108-109/latex/**'
+      - 'exam-108-109/chapters/**'
+      - 'exam-108-109/build.py'
+      - 'exam-108-109/compile.py'
+      - '.github/workflows/exam-108-109.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: exam-108-109-main
+  cancel-in-progress: false
+
+jobs:
+  latex:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install XeLaTeX, Chinese fonts and required packages
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            texlive-xetex texlive-lang-chinese texlive-latex-extra \
+            texlive-pictures texlive-fonts-recommended fonts-noto-cjk fonts-noto-mono
+          python -m pip install --upgrade pip
+          python -m pip install 'PyMuPDF>=1.23,<2.0'
+          fc-match 'Noto Serif CJK SC'
+          # Hyperref on XeLaTeX needs Zapf Dingbats (pzdr.tfm).
+          kpsewhich pzdr.tfm
+
+      - name: Rebuild all manuscripts and check combined printed TOC
+        run: |
+          python exam-108-109/build.py
+          python exam-108-109/compile.py
+
+      - name: Commit verified PDFs and source artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exam-108-109/pdf/gpt-108-exam.pdf \
+                  exam-108-109/pdf/gpt-109-exam.pdf \
+                  exam-108-109/pdf/gpt-108-109-exam.pdf \
+                  exam-108-109/validation.json \
+                  exam-108-109/coverage.json \
+                  exam-108-109/latex/ \
+                  downloads/gpt-108-109-exam.zip
+          if ! git diff --cached --quiet; then
+            git commit -m "Rebuild verified 108-109 PDFs with unified table of contents"
+            git push origin HEAD:main
+          fi
