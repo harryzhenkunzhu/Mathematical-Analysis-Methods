@@ -10,10 +10,10 @@
 
 - `pdf/gpt-108-exam.pdf`：连续对应、半连续性、闭图、最大值与最小值定理。
 - `pdf/gpt-109-exam.pdf`：向量运算、凸性、渐近锥、衰退锥、闭和与线性像。
-- `pdf/gpt-108-109-exam.pdf`：两讲合订。
+- `pdf/gpt-108-109-exam.pdf`：105页，两讲统一总目录、连续页码及可点击跳转。
 - [下载 ZIP](../downloads/gpt-108-109-exam.zip)：两份 PDF、合订 PDF、独立可编译 LaTeX 源码和本说明。
 
-`latex/` 中的源码可独立编译：在该目录执行 `xelatex gpt-108-exam.tex` 两次，109 同理。需要 XeLaTeX、常用 TeX Live 宏包和 Noto CJK 字体。
+`latex/` 中的源码可独立编译：在该目录执行 `xelatex gpt-108-exam.tex` 三次，109及合订入口 `gpt-108-109-exam.tex` 同理。需要 XeLaTeX、常用 TeX Live 宏包和 Noto CJK 字体。
 
 仓库内维护：`python exam-108-109/build.py` 组装正文；`python exam-108-109/compile.py` 编译、检查、合订并打包（合订需要 Python 的 PyMuPDF）。本目录作者补充与既有逐步证明素材一起生成最终独立源码，PDF 中没有外部讲义依赖。
 

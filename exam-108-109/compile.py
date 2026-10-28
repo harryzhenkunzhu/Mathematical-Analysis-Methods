@@ -24,15 +24,13 @@ def compile_one(lec):
  return lec,{'pdf_pages':len(doc),'extracted_characters':len(text),'bytes':dst.stat().st_size,
              'sha256':hashlib.sha256(dst.read_bytes()).hexdigest(),'compile_checks':'passed'}
 report=dict(ThreadPoolExecutor(2).map(compile_one,['108','109']))
-combined=fitz.open(); toc=[]
-for lec in ['108','109']:
- doc=fitz.open(PDF/f'gpt-{lec}-exam.pdf'); offset=len(combined)
- toc.append([1,f'Lecture {lec}',offset+1])
- toc.extend([[level+1,title,page+offset] for level,title,page in doc.get_toc()])
- combined.insert_pdf(doc)
-combined.set_toc(toc)
-combined.set_metadata({'title':'108与109：证明考试中文自学讲义','author':'中文自学讲义'})
-combined.save(PDF/'gpt-108-109-exam.pdf',garbage=4,deflate=True)
+for _ in range(3):
+ result=subprocess.run(['xelatex','-interaction=nonstopmode','-halt-on-error','-output-directory=../build','gpt-108-109-exam.tex'],cwd=HERE/'latex',stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+ if result.returncode: raise RuntimeError(result.stdout[-3000:].decode(errors='replace'))
+shutil.copy(BUILD/'gpt-108-109-exam.pdf',PDF/'gpt-108-109-exam.pdf')
+combined=fitz.open(PDF/'gpt-108-109-exam.pdf')
+assert any('109' in p.get_text() for p in list(combined)[1:5])
+assert sum(len(p.get_links()) for p in list(combined)[1:5]) >= 54
 report['combined_pages']=len(combined)
 (HERE/'validation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 archive=HERE.parent/'downloads/gpt-108-109-exam.zip'

@@ -2,18 +2,27 @@
   "108": {
     "pdf_pages": 52,
     "extracted_characters": 45684,
-    "bytes": 463927,
-    "sha256": "5301419e782c326b75d18b80e2b446631d38733115137cf9da00c0fc272783f8",
+    "bytes": 463925,
+    "sha256": "b9e06f7b76717731057b4c3871b2d478899c8e46b9ea981141f94a1e52e7adba",
     "compile_checks": "passed"
   },
   "109": {
     "pdf_pages": 55,
     "extracted_characters": 46885,
-    "bytes": 471688,
-    "sha256": "9a9a8a0bd86c963fbe7abd9438abc8219fbea98b0d60a39155546f970c68def8",
+    "bytes": 471686,
+    "sha256": "8c6c44cd76c2c71dae233a54826457bf764a050c9519afb5f48ddbef6e1184a4",
     "compile_checks": "passed"
   },
-  "combined_pages": 107,
-  "standalone_zip_source_compile": "108 and 109 passed in an isolated temporary directory",
-  "visual_review": "Sampled definitions, diagrams, inverse proofs and supplementary hyperplane proof"
+  "combined_pages": 105,
+  "combined_navigation": {
+    "front_contents_pages": [
+      2,
+      3,
+      4
+    ],
+    "contents_links": 56,
+    "all_internal_link_destinations_valid": true,
+    "continuous_page_numbers": true
+  },
+  "combined_sha256": "be60b36a03798e3c7885d8e7833dc18f8470156d92c3d337cb0b6c02a922ec1c"
 }
