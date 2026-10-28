@@ -2,15 +2,15 @@
   "108": {
     "pdf_pages": 52,
     "extracted_characters": 45684,
-    "bytes": 463919,
-    "sha256": "ca3956939affbb29857dfab00026207b048ce1fb499b1c158c889a2fd0a6b4f2",
+    "bytes": 464001,
+    "sha256": "6d4eb054c8f753236294896784e534b6c2bc6da7718afd4dac96901c4a3fece5",
     "compile_checks": "passed"
   },
   "109": {
     "pdf_pages": 55,
     "extracted_characters": 46885,
-    "bytes": 471673,
-    "sha256": "54f9a85701126e7719e34fe492692e664c1d30df11e3779efb7b36785c8bbfb4",
+    "bytes": 471639,
+    "sha256": "a36a09db393c01b409ff9fdbe6208f177efb147837233a0855d85e0bcb04ad54",
     "compile_checks": "passed"
   },
   "combined_pages": 104,
@@ -19,8 +19,8 @@
     "lecture_108_starts": 6,
     "lecture_109_starts": 54,
     "toc_entries": 55,
-    "bytes": 685588,
-    "sha256": "d37bd20c15e0ac16dd722bccfb900a6b1cc49c43488d9e88d9bc85b9b7be3c81",
+    "bytes": 685601,
+    "sha256": "5217603cb992122b0a1f162fbf0bb5948eec425b48e77fa7494c38012fee3a8e",
     "compile_checks": "passed",
     "unified_printed_toc": "both lectures confirmed"
   }
