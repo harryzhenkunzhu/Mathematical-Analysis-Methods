@@ -35,10 +35,12 @@ jobs:
           sudo apt-get update -qq
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
             texlive-xetex texlive-lang-chinese texlive-latex-extra \
-            texlive-pictures fonts-noto-cjk fonts-noto-mono
+            texlive-pictures texlive-fonts-recommended fonts-noto-cjk fonts-noto-mono
           python -m pip install --upgrade pip
           python -m pip install 'PyMuPDF>=1.23,<2.0'
           fc-match 'Noto Serif CJK SC'
+          # Hyperref on XeLaTeX needs Zapf Dingbats (pzdr.tfm).
+          kpsewhich pzdr.tfm
 
       - name: Rebuild all manuscripts and check combined printed TOC
         run: |
